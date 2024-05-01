@@ -1,0 +1,12 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/nightfall"]
+	path = themes/nightfall
+	url = https://github.com/LordMathis/hugo-theme-nightfall.git
+[submodule "themes/hugo-theme-relearn"]
+	path = themes/hugo-theme-relearn
+	url = https://github.com/McShelby/hugo-theme-relearn.git
+[submodule "themes/clarity"]
+	path = themes/clarity
+	url = https://github.com/chipzoller/hugo-clarity

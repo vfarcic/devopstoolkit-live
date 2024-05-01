@@ -1,0 +1,11 @@
+baseURL = 'https://devopstoolkit.live/'
+languageCode = 'en-us'
+theme = 'hugo-theme-relearn'
+enableEmoji = true
+
+[params]
+  themeVariant = ['dot']
+  disableLandingPageButton = true
+  disableSearch = true
+  [params.author]
+    name = 'Viktor Farcic'

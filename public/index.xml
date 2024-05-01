@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:1313/index.html</link>
+    <description>Latest Posts How Platform Engineering Compares to Running a Restaurant Platform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.&#xA;Let me explain.&#xA;Full article »&#xA;Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement? I’m in pain… and it’s self-inflicted… and I like it.&#xA;I tend to go through an endless number of tools, services, and format in search for better ways to do my job.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Apr 2024 16:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes</title>
+      <link>http://localhost:1313/kubernetes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/kubernetes/index.html</guid>
+      <description>Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.</description>
+    </item>
+    <item>
+      <title>Internal Developer Platforms</title>
+      <link>http://localhost:1313/internal-developer-platforms/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/internal-developer-platforms/index.html</guid>
+      <description>How Platform Engineering Compares to Running a RestaurantPlatform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.&#xA;Let me explain.</description>
+    </item>
+    <item>
+      <title>Application Management</title>
+      <link>http://localhost:1313/app-management/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/app-management/index.html</guid>
+      <description>Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?I’m in pain… and it’s self-inflicted… and I like it.&#xA;I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I’m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards.</description>
+    </item>
+  </channel>
+</rss>

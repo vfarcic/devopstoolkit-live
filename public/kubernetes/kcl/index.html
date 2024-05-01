@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.4">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="I’m in pain… and it’s self-inflicted… and I like it.
+I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I’m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards. Spending endless hours going through new stuff does not make sense, but I can’t help myself. Hopefully, I might save you from doing it yourself. That’s my goal. Go through the pain of trying out everything so that you don’t have to.">
+    <meta name="author" content="Viktor Farcic">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?">
+    <meta name="twitter:description" content="I’m in pain… and it’s self-inflicted… and I like it.
+I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I’m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards. Spending endless hours going through new stuff does not make sense, but I can’t help myself. Hopefully, I might save you from doing it yourself. That’s my goal. Go through the pain of trying out everything so that you don’t have to.">
+    <meta property="og:url" content="http://localhost:1313/kubernetes/kcl/index.html">
+    <meta property="og:title" content="Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?">
+    <meta property="og:description" content="I’m in pain… and it’s self-inflicted… and I like it.
+I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I’m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards. Spending endless hours going through new stuff does not make sense, but I can’t help myself. Hopefully, I might save you from doing it yourself. That’s my goal. Go through the pain of trying out everything so that you don’t have to.">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?">
+    <meta itemprop="description" content="I’m in pain… and it’s self-inflicted… and I like it.
+I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I’m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards. Spending endless hours going through new stuff does not make sense, but I can’t help myself. Hopefully, I might save you from doing it yourself. That’s my goal. Go through the pain of trying out everything so that you don’t have to.">
+    <meta itemprop="datePublished" content="2024-04-22T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-04-22T16:00:00+00:00">
+    <meta itemprop="wordCount" content="3948">
+    <title>Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</title>
+    <link href="/kubernetes/kcl/index.xml" rel="alternate" type="application/rss+xml" title="Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?">
+    <link href="/css/fontawesome-all.min.css?1714539545" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714539545" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1714539545" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714539545" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714539545" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1714539545" rel="stylesheet">
+    <link href="/css/fonts.css?1714539545" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714539545" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1714539545" rel="stylesheet">
+    <link href="/css/theme-dot.css?1714539545" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1714539545" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1714539545" rel="stylesheet">
+    <link href="/css/print.css?1714539545" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1714539545"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'dot' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/kubernetes/kcl/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#kcl-in-action">KCL in Action</a></li>
+    <li><a href="#kcl-pros-and-cons">KCL Pros and Cons</a></li>
+    <li><a href="#destroy">Destroy</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/index.html"><span itemprop="name">Kubernetes</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes/index.html" title="Kubernetes (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/internal-developer-platforms/index.html" title="Internal Developer Platforms (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="exploring-kcl-configuration-and-data-structure-language-cue-and-pkl-replacement">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</h1>
+
+<p><strong>I&rsquo;m in pain</strong>&hellip; and it&rsquo;s self-inflicted&hellip; and I like it.</p>
+<p>I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I&rsquo;m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards. Spending endless hours going through new stuff does not make sense, but I can&rsquo;t help myself. Hopefully, I might save you from doing it yourself. That&rsquo;s my goal. Go through the pain of trying out everything so that you don&rsquo;t have to.</p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Gn6btuH3ULw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>Latelly, I&rsquo;ve been exploring different ways to manage manifests, mostly for Kubernetes resources, but, in reality, for anything that can be defined as data, meaning YAML, JSON, XML, and so on.</p>
+<p>Today I want to explore yet another language designed to work  with data structures and that language is&hellip; <a href="https://kcl-lang.io" rel="external" target="_blank">KCL</a>. It is a constraint-based record and functional language and, as I&rsquo;m pronouncing it, I realize that such a description might not make sense to most of use, so here&rsquo;s a simplified version.</p>
+<p>KCL is a language designed to work with data with the goal to produce YAMl or JSON. From that perspective it is similar to Helm, Kustomize, Jsonnet, Carvel ytt, Pkl, and, my current favorites, CUE.</p>
+<p>Now, you might be asking &ldquo;<strong>why do we need another one of those?</strong>&rdquo;, and that&rsquo;s what I&rsquo;ve been asking myself and others as well. Nevertheless, I&rsquo;m here to explore it and see if it makes sense to use it.</p>
+<p>Now, before we proceed, let me tell you what I&rsquo;m looking for.</p>
+<p>I want to use a language or a DSL that is designed for <strong>data structures</strong>. The reason for that is that YAML or JSON I might be producing is data. That requirement alone discards Helm since Helm does not understand data. Helm is a free-text templating engine that has no notion of data. It is based on Go templating that is equally bad at genering HTML pages as generating data. Nevertheless, Helm is the de-facto standard for third-party apps so I have to use it for that, but not for my apps.</p>
+<p>Then there is Kustomize that is my favorite when simple scenarios are concerned. It&rsquo;s not a language but, rather, a mechanism that allows us to overlay YAML files with other YAML files. It is simple and effective, but it fails miserably for anything but very simple scenarios. When things are done right, scenarios are simple so I use it heavily, yet, there are cases when I need more.</p>
+<p>TODO: Thumbnails: m6g0aWggdUQ, bbE1BFCs548, Nm1ioWPRRVQ</p>
+<p>Then there is Jsonnet, Carvel ytt, and a myriad of other solutions which, for one reason or another, I gave up on. Currently, I&rsquo;m torn between CUE with Timoni and Pkl. I explored all those so I won&rsquo;t go into them today. Check them out if you&rsquo;re not familiar with them. The links are in the description.</p>
+<p>Both of those are doing just what I need them to do, and that&rsquo;s where mazochism kicks in. I don&rsquo;t need another one, yet I&rsquo;m exploring KCL. There are a few reasons for doing that besides enjoying self-inflicted pain.</p>
+<p>Going back to my requirements&hellip;</p>
+<p>Besides the need for a language or a DSL that understands data-structures instead of being general-purpose anything goes, I also need to be able to define <strong>schemas</strong> but also to import schemas. It would be silly for me to reinvent the wheel by creating schemas for, let&rsquo;s say, Kubernetes APIs. I expect those to be readily available and, in case of CRDs, to have the option to import them from a cluster or a Git repo.</p>
+<p>I also insist on <strong>immutability</strong>. I experienced too many issues when working with mutable data. I want to avoid that at all costs.</p>
+<p>Finally, I don&rsquo;t want to spend weeks trying to learn it. A day is more than enough. If it takes more than that, excluding special &ldquo;advanced&rdquo; features, it&rsquo;s too complicated for my tiny brain. It needs to be <strong>easy</strong>.</p>
+<p>So, I&rsquo;m looking for a data-structure language that comes with pre-built schemas but also allows me to create them myself or import them from somewhere, I need it to be immutable and it cannot be hard to learn.</p>
+<p>With that in mind, let&rsquo;s take a look at KCL and see whether it fits those requirements and whether it might convince me to drop at CUE or Pkl.</p>
+<p>Let&rsquo;s see what KCL is all about.</p>
+<h2 id="setup">Setup</h2>
+<p>Install <code>kcl</code> CLI <a href="https://kcl-lang.io/docs/user_docs/getting-started/install#1-install-kcl" rel="external" target="_blank">https://kcl-lang.io/docs/user_docs/getting-started/install#1-install-kcl</a></p>
+<p>Install <code>kcl</code> Language Server and IDE extension from <a href="https://kcl-lang.io/docs/user_docs/getting-started/install#2-install-kcl-ide-extension" rel="external" target="_blank">https://kcl-lang.io/docs/user_docs/getting-started/install#2-install-kcl-ide-extension</a>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/vfarcic/crossplane-app
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd crossplane-app
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git pull
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout kcl</span></span></code></pre></div><h2 id="kcl-in-action">KCL in Action</h2>
+<p>Before we begin, I must say that KCL is a <strong>CNCF</strong> project meaning that it is not in the hands of a single company making it&rsquo;s future depend less on the whims of that company. It generated a lot of buzz and it has a very active community. There must be something in there, right?</p>
+<p>Right now, I&rsquo;m inside a project that requires a rather large amount of YAML. That YAML is big enough and with enough complexity and repetition that it makes no sense to write it directly. I need to generate it somehow, and I was about to switch to CUE when I got introduced to KCL so I though &ldquo;What the heck. Let&rsquo;s give it a try.&rdquo;</p>
+<p>As you can expect, I can execute <code>kcl</code> with the path to the code, hit the enter key, and&hellip;</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kcl kcl/backend.k</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apiextensions.crossplane.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Composition</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">app-backend</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">backend</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span>: <span style="color:#ae81ff">local</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">compositeTypeRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">App</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">patchSets</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">metadata</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">metadata.labels</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">resources</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">kubernetes</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">base</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ProviderConfig</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">credentials</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">source</span>: <span style="color:#ae81ff">InjectedIdentity</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">metadata.name</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">readinessChecks</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">None</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">deployment</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">base</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Object</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">forProvider</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">manifest</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">selector</span>: {}
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>                  - <span style="color:#f92672">livenessProbe</span>:
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">httpGet</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">port</span>: <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">backend</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>                    - <span style="color:#f92672">containerPort</span>: <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">readinessProbe</span>:
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">httpGet</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">port</span>: <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">resources</span>:
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">limits</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">cpu</span>: <span style="color:#ae81ff">250m</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">memory</span>: <span style="color:#ae81ff">256Mi</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">requests</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">cpu</span>: <span style="color:#ae81ff">125m</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">memory</span>: <span style="color:#ae81ff">128Mi</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">metadata.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transforms</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">string</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fmt</span>: <span style="color:#e6db74">&#39;%s-deployment&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.namespace</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.namespace</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.labels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.selector.matchLabels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.metadata.labels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.image</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].image</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].ports[0].containerPort</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].livenessProbe.httpGet.port</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].readinessProbe.httpGet.port</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.providerConfigRef.name</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">service</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">base</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Object</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">forProvider</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">manifest</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Service</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">http</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">port</span>: <span style="color:#ae81ff">8008</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">protocol</span>: <span style="color:#ae81ff">TCP</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">type</span>: <span style="color:#ae81ff">ClusterIP</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">metadata.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transforms</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">string</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fmt</span>: <span style="color:#e6db74">&#39;%s-service&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.namespace</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.namespace</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.labels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.selector.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.ports[0].port</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.ports[0].targetPort</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.providerConfigRef.name</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">ingress</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">base</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Object</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">forProvider</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">manifest</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">networking.k8s.io/v1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Ingress</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">annotations</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">ingress.kubernetes.io/ssl-redirect</span>: <span style="color:#e6db74">&#39;false&#39;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">rules</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">http</span>:
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">paths</span>:
+</span></span><span style="display:flex;"><span>                  - <span style="color:#f92672">backend</span>:
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">service</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">acme</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">pathType</span>: <span style="color:#ae81ff">ImplementationSpecific</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">metadata.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transforms</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">string</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fmt</span>: <span style="color:#e6db74">&#39;%s-ingress&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.namespace</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.namespace</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.labels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.host</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.rules[0].host</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.rules[0].http.paths[0].backend.service.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.rules[0].http.paths[0].backend.service.port.number</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.providerConfigRef.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">ToCompositeFieldPath</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.rules[0].host</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">status.host</span></span></span></code></pre></div><p>There we go.</p>
+<p>The output is over 150 lines of YAML.</p>
+<p>Now that you saw the monstruosity that was generated, let&rsquo;s take a look at the KCL definition that made that possible.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat kcl/backend.k</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>import .common
+import .deployment
+import .service
+import .ingress
+import .kubernetesProviderConfig
+
+common.Composition {
+    metadata = common.Metadata {
+        name = &#34;app-backend&#34;
+        labels = common.Labels {
+            type = &#34;backend&#34;
+            location = &#34;local&#34;
+        }
+    }
+    spec = common.Spec {
+        resources = [
+            kubernetesProviderConfig.KubernetesProviderConfig {}
+            deployment.Deployment {}
+            service.Service {}
+            ingress.Ingress {}
+        ]
+    }
+}</code></pre></div><p>At the very top, I am importing schemas, functions, global variables, and a few other things. There&rsquo;s <code>common</code> that contains, as you might expect from the name, common stuff that I could not place in a specific &ldquo;box&rdquo;. Then there are <code>deployment</code>, <code>service</code>, and <code>ingress</code> which are my abstractions that match corresponding Kubernetes resources, even though this YAML is generating Crossplane Compositions and not Kubernetes resources directly. Finally, there&rsquo;s <code>kubernetesProviderConfig</code> that is a Crossplane ProviderConfig.</p>
+<p>Such an organization allows me to avoid repetition since, as you will see soon, those imports are repeated across other KCL manifests.</p>
+<p>The actual output is generated by invoking <code>Composition</code> schema defined in common, we&rsquo;ll see it soon. That schema already contains all the values that are the same for all variations as well as variables that need to be defined explicitly. In this case, I have to define only the <code>name</code>, the <code>labels</code>, and the <code>resources</code> array that, in this case, contains <code>deployment</code>, <code>service</code>, and <code>ingress</code> schemas also imported at the top.</p>
+<p>Here&rsquo;s a variation of that manifest that generates a similar output but with a few differences.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat kcl/backend-db-remote.k</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>import .common
+import .deployment
+import .service
+import .ingress
+
+common.Composition {
+    metadata = common.Metadata {
+        name = &#34;app-backend-db-remote&#34;
+        labels = common.Labels {
+            type = &#34;backend-db&#34;
+            location = &#34;remote&#34;
+        }
+    }
+    spec = common.Spec {
+        resources = [
+            deployment.Deployment{
+                _dbEnabled = True
+                _dbSecretName = &#34;spec.parameters.dbSecret.name&#34;
+                _providerConfigName = &#34;spec.parameters.kubernetesProviderConfigName&#34;
+            },
+            service.Service{
+                _providerConfigName = &#34;spec.parameters.kubernetesProviderConfigName&#34;
+            },
+            ingress.Ingress{
+                _providerConfigName = &#34;spec.parameters.kubernetesProviderConfigName&#34;
+            },
+        ]
+    }
+}</code></pre></div><p>This KCL definition will generate a different <code>Composition</code>. Besides a different <code>name</code> and <code>labels</code>, customized versions of the <code>Deployment</code>, <code>Service</code>, and <code>Ingress</code> by passing variables to their respective schemas. We&rsquo;ll see those soon. For now, let&rsquo;s take a look at the output of that KCL definition.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kcl kcl/backend-db-remote.k</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apiextensions.crossplane.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Composition</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">app-backend-db-remote</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">backend-db</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span>: <span style="color:#ae81ff">remote</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">compositeTypeRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">App</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">patchSets</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">metadata</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">metadata.labels</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">resources</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">deployment</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">base</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Object</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">forProvider</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">manifest</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">selector</span>: {}
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>                  - <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>                    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">DB_ENDPOINT</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">valueFrom</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">secretKeyRef</span>:
+</span></span><span style="display:flex;"><span>                          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">endpoint</span>
+</span></span><span style="display:flex;"><span>                    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">DB_PASSWORD</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">valueFrom</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">secretKeyRef</span>:
+</span></span><span style="display:flex;"><span>                          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">password</span>
+</span></span><span style="display:flex;"><span>                    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">DB_PORT</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">valueFrom</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">secretKeyRef</span>:
+</span></span><span style="display:flex;"><span>                          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">port</span>
+</span></span><span style="display:flex;"><span>                          <span style="color:#f92672">optional</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>                    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">DB_USERNAME</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">valueFrom</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">secretKeyRef</span>:
+</span></span><span style="display:flex;"><span>                          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">username</span>
+</span></span><span style="display:flex;"><span>                    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">DB_NAME</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">livenessProbe</span>:
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">httpGet</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">port</span>: <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">backend</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>                    - <span style="color:#f92672">containerPort</span>: <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">readinessProbe</span>:
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">httpGet</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">port</span>: <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">resources</span>:
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">limits</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">cpu</span>: <span style="color:#ae81ff">250m</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">memory</span>: <span style="color:#ae81ff">256Mi</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">requests</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">cpu</span>: <span style="color:#ae81ff">125m</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">memory</span>: <span style="color:#ae81ff">128Mi</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">metadata.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transforms</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">string</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fmt</span>: <span style="color:#e6db74">&#39;%s-deployment&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.namespace</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.namespace</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.labels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.selector.matchLabels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.metadata.labels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.image</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].image</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].ports[0].containerPort</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].livenessProbe.httpGet.port</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].readinessProbe.httpGet.port</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.dbSecret.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].env[0].valueFrom.secretKeyRef.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.dbSecret.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].env[1].valueFrom.secretKeyRef.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.dbSecret.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].env[2].valueFrom.secretKeyRef.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.dbSecret.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].env[3].valueFrom.secretKeyRef.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.dbSecret.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.template.spec.containers[0].env[4].value</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.kubernetesProviderConfigName</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.providerConfigRef.name</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">service</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">base</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Object</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">forProvider</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">manifest</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Service</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">http</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">port</span>: <span style="color:#ae81ff">8008</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">protocol</span>: <span style="color:#ae81ff">TCP</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">type</span>: <span style="color:#ae81ff">ClusterIP</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">metadata.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transforms</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">string</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fmt</span>: <span style="color:#e6db74">&#39;%s-service&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.namespace</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.namespace</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.labels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.selector.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.ports[0].port</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.ports[0].targetPort</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.kubernetesProviderConfigName</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.providerConfigRef.name</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">ingress</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">base</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Object</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">forProvider</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">manifest</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">networking.k8s.io/v1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Ingress</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">annotations</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">ingress.kubernetes.io/ssl-redirect</span>: <span style="color:#e6db74">&#39;false&#39;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">rules</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">http</span>:
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">paths</span>:
+</span></span><span style="display:flex;"><span>                  - <span style="color:#f92672">backend</span>:
+</span></span><span style="display:flex;"><span>                      <span style="color:#f92672">service</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">acme</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">pathType</span>: <span style="color:#ae81ff">ImplementationSpecific</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">patches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">metadata.name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transforms</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">string</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fmt</span>: <span style="color:#e6db74">&#39;%s-ingress&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.namespace</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.namespace</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.metadata.labels.app</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.host</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.rules[0].host</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.id</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.rules[0].http.paths[0].backend.service.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.port</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.rules[0].http.paths[0].backend.service.port.number</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.parameters.kubernetesProviderConfigName</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">spec.providerConfigRef.name</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">ToCompositeFieldPath</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">fromFieldPath</span>: <span style="color:#ae81ff">spec.forProvider.manifest.spec.rules[0].host</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">toFieldPath</span>: <span style="color:#ae81ff">status.host</span></span></span></code></pre></div><p>That&rsquo;s a longer one with around 200 lines of YAML.</p>
+<p>Let&rsquo;s shift focus on the imports. One of those was <code>common</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat kcl/common.k</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>schema Composition:
+    apiVersion = &#34;apiextensions.crossplane.io/v1&#34;
+    kind = &#34;Composition&#34;
+    metadata: Metadata
+    spec: Spec
+
+schema Metadata:
+    name: str
+    labels: Labels
+
+schema Spec:
+    compositeTypeRef = {
+        apiVersion = &#34;devopstoolkitseries.com/v1alpha1&#34;
+        kind = &#34;App&#34;
+    }
+    patchSets = [{
+        name = &#34;metadata&#34;
+        patches = [{fromFieldPath = &#34;metadata.labels&#34;}]
+    }]
+    resources: []
+
+schema Labels:
+    type: str
+    location: str
+
+schema KubernetesObject:
+    name: str
+    base = {
+        apiVersion = &#34;kubernetes.crossplane.io/v1alpha1&#34;
+        kind = &#34;Object&#34;
+        spec: KubernetesObjectSpec
+    }
+    patches: []
+
+schema KubernetesObjectBase:
+    apiVersion = &#34;kubernetes.crossplane.io/v1alpha1&#34;
+    kind = &#34;Object&#34;
+    spec: KubernetesObjectSpec
+
+schema KubernetesObjectSpec:
+    forProvider: KubernetesObjectForProvider
+
+schema KubernetesObjectForProvider:
+    manifest: any
+
+Patches = lambda name: str -&gt; [] {
+    [
+        {
+            fromFieldPath = &#34;spec.id&#34;
+            toFieldPath = &#34;metadata.name&#34;
+            transforms = [{type = &#34;string&#34;, string = { fmt = &#34;%s-{}&#34;.format(name)}}]
+        },
+        {fromFieldPath = &#34;spec.id&#34;, toFieldPath = &#34;spec.forProvider.manifest.metadata.name&#34;},
+        {fromFieldPath = &#34;spec.parameters.namespace&#34;, toFieldPath = &#34;spec.forProvider.manifest.metadata.namespace&#34;},
+        {fromFieldPath = &#34;spec.id&#34;, toFieldPath = &#34;spec.forProvider.manifest.metadata.labels.app&#34;},
+    ]
+}
+
+ManifestSpec = &#34;spec.forProvider.manifest.spec&#34;</code></pre></div><p>Most of that file contains a schema I&rsquo;m using to generate output I need. There is <code>Composition</code> with a few hard-coded values like <code>apiVersion</code> and <code>kind</code>, and a few sub-schemas like <code>Metadata</code> and <code>Spec</code>. <code>Metadata</code>, on the other hand, defines a <code>str</code> variable <code>name</code>. That&rsquo;s the name we saw at the very beginning. Whoever is using that schema has to define it or KCL will throw an error.</p>
+<p>That continues on and on with different schemas containing either fields that are hard-coded or variables that need to be defined by whoever is using them.</p>
+<p>Now, the syntax itself is pretty much Json with key values being separate by <code>=</code> and values and types being separated by <code>:</code>. Objects are defined with curly braces <code>{}</code> and arrays with square brackets <code>[]</code>. There are a few more things that are different from Json but, in general, if you know Json or CUE, you should be able to pick it up quickly. If you&rsquo;re not familiar with either of those, you&rsquo;ll still be able to learn it relatively fast. KCL is one of the most powerful yet one of the easiest data-structure languages I used. We&rsquo;ll talk about that later.</p>
+<p>We can also use functions like, in this case, <code>Patches</code>. In KCL, functions are called <code>lambda</code> and this one defines a single argument <code>name</code> that is a <code>str</code> and returns an array (<code>[</code>, <code>]</code>) of objects (<code>{</code>).</p>
+<p>Finally, that definition defines a variable <code>ManifestSpec</code> that I&rsquo;m using as a way to avoid typing that path.</p>
+<p>There&rsquo;s more though. Much much more than we can explore in this video, so I&rsquo;ll focus on only a few other aspects of KCL which we can see in the <code>deployment.k</code> file which is one of the imports we saw at the start.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat kcl/deployment.k</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>import .common
+import k8s.api.apps.v1 as k8sapps
+
+schema Deployment(common.KubernetesObject):
+    _dbEnabled: bool = False
+    _dbSecretName: str = &#34;spec.id&#34;
+    _providerConfigName: str = &#34;spec.id&#34;
+    _container = &#34;{}.template.spec.containers[0]&#34;.format(common.ManifestSpec)
+    name = &#34;deployment&#34;
+    base = common.KubernetesObjectBase{
+        spec.forProvider.manifest = k8sapps.Deployment{
+            spec = {
+                selector = {}
+                template = {
+                    spec = {
+                        containers = [{
+                            name = &#34;backend&#34;
+                            ports = [{containerPort = 80 }]
+                            livenessProbe = {httpGet = {path = &#34;/&#34;, port = 80 }}
+                            readinessProbe = {httpGet = {path = &#34;/&#34;, port = 80 }}
+                            resources = {
+                                limits = {cpu = &#34;250m&#34;, memory = &#34;256Mi&#34; }
+                                requests = {cpu = &#34;125m&#34;, memory = &#34;128Mi&#34; }
+                            }
+                            if _dbEnabled:
+                                env = [
+                                    {name = &#34;DB_ENDPOINT&#34;, valueFrom.secretKeyRef.key = &#34;endpoint&#34; },
+                                    {name = &#34;DB_PASSWORD&#34;, valueFrom.secretKeyRef.key = &#34;password&#34; },
+                                    {name = &#34;DB_PORT&#34;, valueFrom.secretKeyRef = {key = &#34;port&#34;,  optional = True }},
+                                    {name = &#34;DB_USERNAME&#34;,  valueFrom.secretKeyRef.key = &#34;username&#34; },
+                                    {name = &#34;DB_NAME&#34; },
+                                ]
+                        }]
+                    }
+                }
+            }
+        }
+    }
+    patches = common.Patches(&#34;deployment&#34;) + [
+        {
+            fromFieldPath = &#34;spec.id&#34;,
+            toFieldPath = &#34;{}.selector.matchLabels.app&#34;.format(common.ManifestSpec)
+        }, {
+            fromFieldPath = &#34;spec.id&#34;,
+            toFieldPath = &#34;{}.template.metadata.labels.app&#34;.format(common.ManifestSpec)
+        }, {
+            fromFieldPath = &#34;spec.parameters.image&#34;,
+            toFieldPath = &#34;{}.image&#34;.format(_container)
+        }, {
+            fromFieldPath = &#34;spec.parameters.port&#34;,
+            toFieldPath = &#34;{}.ports[0].containerPort&#34;.format(_container)
+        }, {
+            fromFieldPath = &#34;spec.parameters.port&#34;,
+            toFieldPath = &#34;{}.livenessProbe.httpGet.port&#34;.format(_container)
+        }, {
+            fromFieldPath = &#34;spec.parameters.port&#34;,
+            toFieldPath = &#34;{}.readinessProbe.httpGet.port&#34;.format(_container)
+        },
+        if _dbEnabled:
+            {
+                fromFieldPath = _dbSecretName,
+                toFieldPath = &#34;{}.env[0].valueFrom.secretKeyRef.name&#34;.format(_container)
+            }, {
+                fromFieldPath = _dbSecretName,
+                toFieldPath = &#34;{}.env[1].valueFrom.secretKeyRef.name&#34;.format(_container)
+            }, {
+                fromFieldPath = _dbSecretName,
+                toFieldPath = &#34;{}.env[2].valueFrom.secretKeyRef.name&#34;.format(_container)
+            },
+            {
+                fromFieldPath = _dbSecretName,
+                toFieldPath = &#34;{}.env[3].valueFrom.secretKeyRef.name&#34;.format(_container)
+            }, {
+                fromFieldPath = _dbSecretName,
+                toFieldPath = &#34;{}.env[4].value&#34;.format(_container)
+            },
+        {
+            fromFieldPath = _providerConfigName,
+            toFieldPath = &#34;spec.providerConfigRef.name&#34;
+        },
+    ]</code></pre></div><p>Look at that <code>import</code>. KCL comes with pre-built schemas for all core Kubernetes APIs, and many others. In this case, we&rsquo;re importing <code>k8s.api.apps.v1</code> and using it to define <code>k8sapps.Deployment</code> which, surprise surprise, is a Kubernetes Deployment.</p>
+<p><em>Don&rsquo;t be confused that the Deployment is defined inside spec.forProvider.manifest. That&rsquo;s a part of a Crossplane Composition which I&rsquo;m not exploring in this video but only using as an example of what KCL can do.</em></p>
+<p>The <code>Deployment</code> schema I&rsquo;m defining here is inheriting from the <code>KubernetesObject</code> schema I defined in the <code>common</code>. That means that it inherits everything from that one and I can define only the things that are different.</p>
+<p>Inside that schema, I defined a few variables with names prefixed with <code>_</code>. Those are not exported and, as such, are mutable. That&rsquo;s a great feature of KCL. Exported variables are immutable, non-exported are not. That might be one of the things I like the most about KCL. It&rsquo;s immutable when exported data is concerned, but it still allows us to mutate non-exported data. If you&rsquo;re not familiar with terms &ldquo;exported&rdquo; and &ldquo;non-exported&rdquo;, think of them as &ldquo;public&rdquo; and &ldquo;private&rdquo; in other languages. Only exported data is output to YAML or JSON.</p>
+<p>We can see, for example, that <code>_dbEnabled</code> is a <code>bool</code> variable with the default value of <code>False</code>. The rest follows the similar pattern.</p>
+<p>The last non-exported variable shows the usage of the <code>format</code> function that will replace open-closed curly braces (<code>{}</code>) with the value of <code>common.ManifestSpec</code>.</p>
+<p>What else&hellip;</p>
+<p>The <code>patches</code> value is an interesting one. it showcases unioning of collections. Over there I&rsquo;m saying that the value should be a combination of a list defined in common <code>Patches(&quot;deployment&quot;)</code> and whatever is defined below. There are some common entries that should be defined in all patches and by including items from that collection with whatever is defined below, I&rsquo;m avoiding repetition.</p>
+<p>Patches itself, if you remember, is a function that returns an array of objects. That&rsquo;s the one we saw when we explore common.k file.</p>
+<p>The last thing I want to show is the ability to define expressions. In this case, it is a simple <code>if</code> conditional that will include a few more entries into the list if <code>_dbEnabled</code> is True.</p>
+<p>We saw only a fraction of what KCL can so, but I think that was enogh syntax for today. KCL is massive and you should spend a bit of time going though the docs yourself.</p>
+<p>Outside the syntax itself, there are a couple of other things I feel are worth mentioning.</p>
+<p>The CLI itself is not overwhelming, yet it does have a few important features outside of the obvious one that allows us to generate YAML or JSON from KCL definitions.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kcl --help</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>The KCL Command Line Interface (CLI).
+
+KCL is an open-source, constraint-based record and functional language that
+enhances the writing of complex configurations, including those for cloud-native
+scenarios. The KCL website: https://kcl-lang.io
+
+Usage:
+  kcl [command]
+
+Available Commands:
+  clean       KCL clean tool
+  completion  Generate the autocompletion script for the specified shell
+  doc         KCL document tool
+  fmt         KCL format tool
+  help        Help about any command
+  import      KCL import tool
+  lint        Lint KCL codes.
+  mod         KCL module management
+  play        Open the kcl playground in the browser.
+  registry    KCL registry management
+  run         Run KCL codes.
+  server      Run a KCL server
+  test        KCL test tool
+  version     Show version of the KCL CLI
+  vet         KCL validation tool
+
+Flags:
+  -h, --help      help for kcl
+  -v, --version   version for kcl
+
+Use &#34;kcl [command] --help&#34; for more information about a command.</code></pre></div><p>We can, for example, use <code>import</code> to convert existing JSON, YAML, Go structs, Terraform, OpenAPI, Kubernetes CRDs, and a few other formats into KCL. That&rsquo;s great as a starting point.</p>
+<p>We can use <code>mod</code> to initiate a KCL project, add dependencies like those we saw earlier when I showed Kubernetes schemas, to package KCL, or to pull it or push it into a registry.</p>
+<p>There is the option to <code>play</code> with KCL by spining up a local server that will allow us to interact with KCL in a browser.</p>
+<p>And so on and so forth.</p>
+<p>IDE support is supperb. I&rsquo;m using VS Code and the KCL extension is great. It provides <strong>syntax highlighting</strong>, <strong>auto-complete</strong>, <strong>go-to-definition</strong>, and a few other features that make working with KCL a breeze.</p>
+<p>There is also integration and support for a bunch of other tools like Argo CD and Flux, CI pipelines, Hashi Vault, Terraform, and a few others.</p>
+<p>Okay. That&rsquo;s it as far as walkthrough it concerned. Let&rsquo;s talk about pros and cons.</p>
+<h2 id="kcl-pros-and-cons">KCL Pros and Cons</h2>
+<p>As a reminder, my requirements are to have a language or a DSL that is focused on <strong>data-structures</strong>, the ability to work with <strong>schemas</strong>, <strong>immutability</strong>, and for it to be <strong>easy to learn</strong>.</p>
+<p>KCL meets all those and so much more.</p>
+<p>As a matter of fact, I could not find a single thing I don&rsquo;t like except that I was initially confused with the documentation but that was my fault. I was too hasty.</p>
+<p>If I would have to nitpick, I&rsquo;d say that the only potential, but minor, issue is that the docs contain quite a few spelling errors in the English version. I can only guess that Chinese version is better but, for obvious reasons, I cannot confirm that. Nevertheless, that&rsquo;s a minor issue that does not affect the quality of the docs.</p>
+<p>That&rsquo;s it. That&rsquo;s the only negative thing I could find. KCL is awesome, and here are only a few out of many reasons why I think so.</p>
+<p><strong>Documentation</strong> is amazing, even though I had initial trouble understanding how it is organized. It is clear that a lot of attention is put into the design of the language and documenting every detail that mateers. I disliked it at first because of the docs but now that I went through most of it, I can safely say that was my fault. The docs are great.</p>
+<p>Having all exported data <strong>immutable</strong> is just what I think we need and that&rsquo;s what KCL provides. The addition of mutable non-exported data is a great feature.</p>
+<p>It&rsquo;s (relatively) <strong>easy to learn</strong>. You&rsquo;ll be up-and-running in no time, a day at most. You will not know everything KCL offers, that takes time, but you&rsquo;ll be able to do most things in a day.</p>
+<p>What else&hellip; It&rsquo;s <strong>powerful</strong>. I did not find anything missing. Everything I needed so far is there, and I know that there&rsquo;s so much more so it my needs change in the future, I&rsquo;m confident that KCL will be able to accommodate them.</p>
+<p>Next, the <strong>VS Code</strong> plugin is great. Syntax highlighting, auto-complete, goto definitions, and all other features we might expect are there. It&rsquo;s a pleasure to work with KCL in VS Code.</p>
+<p>Finally, KCL is a project donated to Cloud Native Computing Foundation (<strong>CNCF</strong>). That makes it less prone to future license changes and makes it more likely to have a vibrant and diverse community.</p>
+<p>Personally, I cannot sit on more than two chairs at the same time. Until now, I was torn between CUE and Pkl. I&rsquo;ll kick one of those out to gain space for KCL. Pkl, you&rsquo;re out. KCL is in. I might be biased though. I love CUE and KCL looks very similar to it except that it&rsquo;s easier to learn. It&rsquo;s those two now.</p>
+<p>Thank you for watching.
+See you in the next one.
+Cheers.</p>
+<h2 id="destroy">Destroy</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout main</span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="/dot-narrow-yellow-bg.png"/></a>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/index.html" class="parent "><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/kcl/index.html" class="active"><a class="padding" href="/kubernetes/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li></ul></li>
+          <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
+          <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
+          <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/kubernetes/kcl/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-dot" value="dot" selected>Dot</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1714539545" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1714539545" defer></script>
+    <script src="/js/theme.js?1714539545" defer></script>
+  </body>
+</html>
