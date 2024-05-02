@@ -9,3 +9,6 @@ enableEmoji = true
   disableSearch = true
   [params.author]
     name = 'Viktor Farcic'
+
+[markup.goldmark.renderer]
+unsafe= true

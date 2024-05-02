@@ -114,7 +114,7 @@ silly-demo 1/1   Running 0        7s
 
 ...we can see that it is `running`.
 
-![](diag-01.png)
+<img src="diag-01.png" style="width:50%; float:right; padding: 10px">
 
 We sent a request to Kubernetes API  to apply a manifest containing a Pod with a single container. As a result, Kubernetes started running that container  wrapped inside a Pod . That's the container with our application.
 
@@ -699,7 +699,7 @@ As expected, there are five Pods. If you see more, you were inpatient and did no
 
 The number of Pods does not matter right now. What does matter is that there is only one `persistentvolume`. All the replicas of the application, the Pods, got the same volume attached. They are all sharing the same storage.
 
-![](diag-04.png)
+<img src="diag-04.png" style="width:50%; float:right; padding: 10px">
 
 So, we sent a request to Kube API to apply a PersistentVolumeClaim and a Deployment  so those were created or updated inside the cluster . The Deployment itself created a ReplicaSet  which created five Pods . Since the Pods themselves ware instructed, through the template in the Deployment, to use the claim to request a volume, a PersistentVolume was created  and attached to all the Pods .
 
@@ -1001,7 +1001,7 @@ If we exclude the `control-plane` node that, typically, should not have any work
 
 Here's what happened.
 
-![](diag-06.png)
+<img src="diag-06.png" style="width:50%; float:right; padding: 10px">
 
 We have a Kubernetes cluster with a control plane  and three worker nodes . We applied a DaemonSet  which, in turn, ensured that there is a Pod based on the template in every single node of the cluster . If we would add more nodes to the cluster , the DaemonSet would ensure that a Pod is running there as well . If we would remove a node ... nothing would happen. We would have one less node and with it gone, one less Pod.
 

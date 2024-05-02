@@ -5,33 +5,37 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content="Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.">
+    <meta name="description" content="Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.
+Mastering Kubernetes Testing Kyverno Chainsaw!Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Kubernetes">
-    <meta name="twitter:description" content="Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.">
+    <meta name="twitter:description" content="Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.
+Mastering Kubernetes Testing Kyverno Chainsaw!Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it.">
     <meta property="og:url" content="http://localhost:1313/kubernetes/index.html">
     <meta property="og:title" content="Kubernetes">
-    <meta property="og:description" content="Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.">
+    <meta property="og:description" content="Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.
+Mastering Kubernetes Testing Kyverno Chainsaw!Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="Kubernetes">
-    <meta itemprop="description" content="Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.">
-    <meta itemprop="dateModified" content="2024-04-15T16:00:00+00:00">
-    <meta itemprop="wordCount" content="38">
+    <meta itemprop="description" content="Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.
+Mastering Kubernetes Testing Kyverno Chainsaw!Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it.">
+    <meta itemprop="dateModified" content="2024-05-06T16:00:00+00:00">
+    <meta itemprop="wordCount" content="157">
     <title>Kubernetes</title>
     <link href="/kubernetes/index.xml" rel="alternate" type="application/rss+xml" title="Kubernetes">
-    <link href="/css/fontawesome-all.min.css?1714540636" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714540636" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1714540636" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714540636" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714540636" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1714540636" rel="stylesheet">
-    <link href="/css/fonts.css?1714540636" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714540636" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1714540636" rel="stylesheet">
-    <link href="/css/theme-dot.css?1714540636" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1714540636" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1714540636" rel="stylesheet">
-    <link href="/css/print.css?1714540636" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1714540636"></script>
+    <link href="/css/fontawesome-all.min.css?1714667050" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714667050" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1714667050" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714667050" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714667050" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1714667050" rel="stylesheet">
+    <link href="/css/fonts.css?1714667050" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714667050" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1714667050" rel="stylesheet">
+    <link href="/css/theme-dot.css?1714667050" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1714667050" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1714667050" rel="stylesheet">
+    <link href="/css/print.css?1714667050" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1714667050"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -98,6 +102,8 @@
 <div class="children children-h2 children-sort-date">
 	
 <h2><a href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></h2><p><p>You might be new to <strong>Kubernetes</strong> or you might have been working with it for a while. No matter your experience level, you might not be aware of all the <strong>Kubernetes Workload APIs</strong>.</p></p>
+<h2><a href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></h2><p><p><strong>Testing is important</strong>, no matter what you&rsquo;re working on. If you write Java code, you need to test it. If you&rsquo;re managing infrastructure, you need to test it. If you&rsquo;re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.</p>
+<p>Now, today&rsquo;s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of <strong>test-driven development</strong>, <strong>test automation</strong>, <strong>CI/CD pipelines</strong>, or anything else related to testing.</p></p>
 </div>
 
             <footer class="footline">
@@ -120,7 +126,8 @@
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/kubernetes/index.html" class="active parent "><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li></ul></li>
+          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -177,8 +184,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1714540636" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1714540636" defer></script>
-    <script src="/js/theme.js?1714540636" defer></script>
+    <script src="/js/clipboard.min.js?1714667050" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1714667050" defer></script>
+    <script src="/js/theme.js?1714667050" defer></script>
   </body>
 </html>

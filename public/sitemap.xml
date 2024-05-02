@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/index.html</loc>
+    <loc>http://localhost:1313/kubernetes/index.html</loc>
+    <lastmod>2024-05-06T16:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/internal-developer-platforms/index.html</loc>
     <lastmod>2024-04-29T16:00:00+00:00</lastmod>
   </url>
   <url>
@@ -9,12 +13,20 @@
     <lastmod>2024-04-22T16:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/platform-engineering-menu/index.html</loc>
+    <loc>http://localhost:1313/internal-developer-platforms/platform-engineering-menu/index.html</loc>
     <lastmod>2024-04-29T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/app-management/kcl/index.html</loc>
     <lastmod>2024-04-22T16:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/kubernetes/workloads/index.html</loc>
+    <lastmod>2024-04-15T16:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/kubernetes/chainsaw/index.html</loc>
+    <lastmod>2024-04-08T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>

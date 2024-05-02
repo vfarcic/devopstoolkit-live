@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mastering Kubernetes Testing Kyverno Chainsaw!</title>
+    <link>http://localhost:1313/kubernetes/chainsaw/index.html</link>
+    <description>Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.&#xA;Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/kubernetes/chainsaw/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

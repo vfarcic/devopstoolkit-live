@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Single Pane of Glass for Kubernetes Clusters with Clusterpedia</title>
+    <link>http://localhost:1313/kubernetes/clusterpedia/index.html</link>
+    <description>For a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that. I can easily see what’s going on in a cluster with kubectl or any, literally any, Kubernetes dashboard. What I’m missing, and what all the tools I tried so far fail to deliver, is a single pane of glass for all my Kubernetes clusters.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/kubernetes/clusterpedia/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

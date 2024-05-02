@@ -23,20 +23,20 @@ I tend to go through an endless number of tools, services, and format in search 
 I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I’m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards. Spending endless hours going through new stuff does not make sense, but I can’t help myself. Hopefully, I might save you from doing it yourself. That’s my goal. Go through the pain of trying out everything so that you don’t have to.">
     <meta itemprop="datePublished" content="2024-04-22T16:00:00+00:00">
     <meta itemprop="dateModified" content="2024-04-22T16:00:00+00:00">
-    <meta itemprop="wordCount" content="3948">
+    <meta itemprop="wordCount" content="3937">
     <title>Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</title>
     <link href="/app-management/kcl/index.xml" rel="alternate" type="application/rss+xml" title="Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?">
-    <link href="/css/fontawesome-all.min.css?1714540636" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714540636" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1714540636" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714540636" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714540636" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1714540636" rel="stylesheet">
-    <link href="/css/fonts.css?1714540636" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714540636" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1714540636" rel="stylesheet">
-    <link href="/css/theme-dot.css?1714540636" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1714540636" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1714540636" rel="stylesheet">
-    <link href="/css/print.css?1714540636" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1714540636"></script>
+    <link href="/css/fontawesome-all.min.css?1714667050" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714667050" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1714667050" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714667050" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714667050" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1714667050" rel="stylesheet">
+    <link href="/css/fonts.css?1714667050" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714667050" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1714667050" rel="stylesheet">
+    <link href="/css/theme-dot.css?1714667050" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1714667050" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1714667050" rel="stylesheet">
+    <link href="/css/print.css?1714667050" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1714667050"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -122,8 +122,7 @@ I tend to go through an endless number of tools, services, and format in search 
 <p>Now, before we proceed, let me tell you what I&rsquo;m looking for.</p>
 <p>I want to use a language or a DSL that is designed for <strong>data structures</strong>. The reason for that is that YAML or JSON I might be producing is data. That requirement alone discards Helm since Helm does not understand data. Helm is a free-text templating engine that has no notion of data. It is based on Go templating that is equally bad at genering HTML pages as generating data. Nevertheless, Helm is the de-facto standard for third-party apps so I have to use it for that, but not for my apps.</p>
 <p>Then there is Kustomize that is my favorite when simple scenarios are concerned. It&rsquo;s not a language but, rather, a mechanism that allows us to overlay YAML files with other YAML files. It is simple and effective, but it fails miserably for anything but very simple scenarios. When things are done right, scenarios are simple so I use it heavily, yet, there are cases when I need more.</p>
-<p>TODO: Thumbnails: m6g0aWggdUQ, bbE1BFCs548, Nm1ioWPRRVQ</p>
-<p>Then there is Jsonnet, Carvel ytt, and a myriad of other solutions which, for one reason or another, I gave up on. Currently, I&rsquo;m torn between CUE with Timoni and Pkl. I explored all those so I won&rsquo;t go into them today. Check them out if you&rsquo;re not familiar with them. The links are in the description.</p>
+<p>Then there is Jsonnet, Carvel ytt, and a myriad of other solutions which, for one reason or another, I gave up on. Currently, I&rsquo;m torn between <a href="https://youtu.be/m6g0aWggdUQ" rel="external" target="_blank">CUE</a> with <a href="https://youtu.be/bbE1BFCs548" rel="external" target="_blank">Timoni</a> and <a href="https://youtu.be/Nm1ioWPRRVQ" rel="external" target="_blank">Pkl</a>. I explored all those so I won&rsquo;t go into them today. Check them out if you&rsquo;re not familiar with them.</p>
 <p>Both of those are doing just what I need them to do, and that&rsquo;s where mazochism kicks in. I don&rsquo;t need another one, yet I&rsquo;m exploring KCL. There are a few reasons for doing that besides enjoying self-inflicted pain.</p>
 <p>Going back to my requirements&hellip;</p>
 <p>Besides the need for a language or a DSL that understands data-structures instead of being general-purpose anything goes, I also need to be able to define <strong>schemas</strong> but also to import schemas. It would be silly for me to reinvent the wheel by creating schemas for, let&rsquo;s say, Kubernetes APIs. I expect those to be readily available and, in case of CRDs, to have the option to import them from a cluster or a Git repo.</p>
@@ -795,7 +794,8 @@ Cheers.</p>
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/kubernetes/index.html" class=""><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li></ul></li>
+          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class="parent "><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -852,8 +852,8 @@ Cheers.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1714540636" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1714540636" defer></script>
-    <script src="/js/theme.js?1714540636" defer></script>
+    <script src="/js/clipboard.min.js?1714667050" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1714667050" defer></script>
+    <script src="/js/theme.js?1714667050" defer></script>
   </body>
 </html>

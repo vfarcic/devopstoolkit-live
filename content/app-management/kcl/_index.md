@@ -25,9 +25,7 @@ I want to use a language or a DSL that is designed for **data structures**. The 
 
 Then there is Kustomize that is my favorite when simple scenarios are concerned. It's not a language but, rather, a mechanism that allows us to overlay YAML files with other YAML files. It is simple and effective, but it fails miserably for anything but very simple scenarios. When things are done right, scenarios are simple so I use it heavily, yet, there are cases when I need more.
 
-TODO: Thumbnails: m6g0aWggdUQ, bbE1BFCs548, Nm1ioWPRRVQ
-
-Then there is Jsonnet, Carvel ytt, and a myriad of other solutions which, for one reason or another, I gave up on. Currently, I'm torn between CUE with Timoni and Pkl. I explored all those so I won't go into them today. Check them out if you're not familiar with them. The links are in the description.
+Then there is Jsonnet, Carvel ytt, and a myriad of other solutions which, for one reason or another, I gave up on. Currently, I'm torn between [CUE](https://youtu.be/m6g0aWggdUQ) with [Timoni](https://youtu.be/bbE1BFCs548) and [Pkl](https://youtu.be/Nm1ioWPRRVQ). I explored all those so I won't go into them today. Check them out if you're not familiar with them.
 
 Both of those are doing just what I need them to do, and that's where mazochism kicks in. I don't need another one, yet I'm exploring KCL. There are a few reasons for doing that besides enjoying self-inflicted pain.
 
