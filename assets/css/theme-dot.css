@@ -2,7 +2,7 @@
 
 :root {
     --PRIMARY-color: rgb( 255, 215, 0 ); /* brand primary color */
-    --SECONDARY-color: rgb( 255, 215, 0 ); /* brand secondary color */
+    --SECONDARY-color: rgba(255, 217, 0, 0.699); /* brand secondary color */
 
     --MAIN-BG-color: rgba( 35, 44, 50 ); /* background color of content */
 
