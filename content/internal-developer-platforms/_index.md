@@ -1,6 +1,6 @@
 +++
 title = "Internal Developer Platforms"
-weight = 2
+weight = 20
 hidden = false
 +++
 

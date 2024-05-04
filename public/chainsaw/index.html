@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.4">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.
+Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
+    <meta name="author" content="Viktor Farcic">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mastering Kubernetes Testing Kyverno Chainsaw!">
+    <meta name="twitter:description" content="Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.
+Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
+    <meta property="og:url" content="http://localhost:1313/chainsaw/index.html">
+    <meta property="og:title" content="Mastering Kubernetes Testing Kyverno Chainsaw!">
+    <meta property="og:description" content="Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.
+Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Mastering Kubernetes Testing Kyverno Chainsaw!">
+    <meta itemprop="description" content="Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.
+Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
+    <meta itemprop="datePublished" content="2024-04-08T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-04-08T16:00:00+00:00">
+    <meta itemprop="wordCount" content="4012">
+    <title>Mastering Kubernetes Testing Kyverno Chainsaw!</title>
+    <link href="/chainsaw/index.xml" rel="alternate" type="application/rss+xml" title="Mastering Kubernetes Testing Kyverno Chainsaw!">
+    <link href="/css/fontawesome-all.min.css?1714831218" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714831218" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1714831218" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714831218" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714831218" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1714831218" rel="stylesheet">
+    <link href="/css/fonts.css?1714831218" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714831218" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1714831218" rel="stylesheet">
+    <link href="/css/theme-dot.css?1714831218" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1714831218" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1714831218" rel="stylesheet">
+    <link href="/css/print.css?1714831218" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1714831218"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'dot' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/chainsaw/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#kyverno-chainsaw-in-action">Kyverno Chainsaw in Action</a></li>
+    <li><a href="#kyverno-chainsaw-pros-and-cons">Kyverno Chainsaw Pros and Cons</a></li>
+    <li><a href="#destroy">Destroy</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Mastering Kubernetes Testing Kyverno Chainsaw!</span><meta itemprop="position" content="1"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/app-management/kcl/index.html" title="Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement? (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="mastering-kubernetes-testing-kyverno-chainsaw">Mastering Kubernetes Testing Kyverno Chainsaw!</h1>
+
+<p><strong>Testing is important</strong>, no matter what you&rsquo;re working on. If you write Java code, you need to test it. If you&rsquo;re managing infrastructure, you need to test it. If you&rsquo;re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.</p>
+<p>Now, today&rsquo;s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of <strong>test-driven development</strong>, <strong>test automation</strong>, <strong>CI/CD pipelines</strong>, or anything else related to testing.</p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hQJWGzogIiI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>Instead, today I want to focus on testing Kubernetes resources.</p>
+<p>Most people just write Kubernetes manifests directly as YAML or package them into Helm charts, or Kustomize, or whatever else we might be using. Once it&rsquo;s done, those people would just deploy that something to a Kubernetes cluster. That strategy tends to be successful if you are religious since it relies on prayer to the deity of choice to be successful. &ldquo;Dear God, bless those resources and let them be run successfully. I have no idea what will happen so I will rely on your infinite wisdom.&rdquo;</p>
+<p><strong>Good engineers test everything, all the time</strong>. They test continuously while developing, and they test through CI/CD pipelines after pushing to Git. The former allows us to write code faster, and the latter gives us needed confidence. Now, when I said that good engineers test everything, I meant <strong>everything</strong>, and that includes Kubernetes resources.</p>
+<p>However, we have a problem.</p>
+<p>When testing is concerned, the situation with Kubernetes is <strong>pathetic</strong>. We do not have many tools that can help us test Kubernetes resources. We certainly have plethora of tools to test applications running in Kubernetes, but we do not have much to test Kubernetes resources themselves.</p>
+<p>There&rsquo;s hope or, to be more precise, there was hope that died. A while ago, we got <a href="https://kuttl.dev" rel="external" target="_blank">KUTTL</a>.</p>
+<p>I already explored KUTTL in <a href="https://youtu.be/ZSTQQNu4laY" rel="external" target="_blank">that video</a>, so I won&rsquo;t go into details here. Watch it if you haven&rsquo;t already. The link is in the description.</p>
+<p>The problem with KUTTL is&hellip; No! Wait&hellip; It would be easier to explain what is NOT a problem with KUTTL. The main positive thing about KUTTL is that it exists. It&rsquo;s one of the few, if not the only tool of that kind thus making it great simply because there is nothing better.</p>
+<p>KUTTL is a project that is not maintained. The last release was published over a year ago. That, by itself, is a huge red flag. On top of that, it is missing too many features that I feel are critical.</p>
+<ul>
+<li>No patching</li>
+<li>No templating</li>
+<li>Insufficient output</li>
+<li>No catch.</li>
+</ul>
+<p>I, for example, am in a desperate need of a mechanism to patch or update existing resources, I need some form of templating to avoid repetitions, I need better outputs, and I need some form of a catch mechanism that will allow me to execute additional steps when a test fails so that I get more information about the failure.</p>
+<p>That&rsquo;s my list of missing features and I think I found a replacement that meets all of those. That replacement is <strong><a href="https://kyverno.github.io/chainsaw" rel="external" target="_blank">Kyverno Chainsaw</a></strong>.</p>
+<p>Just as my requirements are the result of frustration when working with <strong>KUTTL</strong>. Luckily for me, Kyverno folks faced similar obstacles. They needed a tool to test Kyverno, they used KUTTL, and they quickly hit walls that prevented them to do what they wanted to do.</p>
+<p>But&hellip; There&rsquo;s a big difference between me and Kyverno folks. While my dissapointed with KUTTL resulted in me crying at night, they did something about it. They tried contributing to KUTTL, but that did not work out for a variety of reasons. Then they decided to create a new tool, a new project, and that is today known as Kyverno Chainsaw.</p>
+<p>It&rsquo;s great, so let&rsquo;s see it in action.</p>
+<h2 id="setup">Setup</h2>
+<p>Make sure that Docker is up and running.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/vfarcic/crossplane-sql
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd crossplane-sql
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git pull
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout chainsaw</span></span></code></pre></div><blockquote>
+<p>Watch <a href="https://youtu.be/WiFLtcBvGMU" rel="external" target="_blank">Nix for Everyone: Unleash Devbox for Simplified Development</a> if you are not familiar with Devbox. Alternatively, you can skip Devbox and install all the tools listed in <code>devbox.json</code> yourself.</p>
+</blockquote>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>devbox shell
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>task cluster-create</span></span></code></pre></div><h2 id="kyverno-chainsaw-in-action">Kyverno Chainsaw in Action</h2>
+<p>Here&rsquo;s what I do when I want to start working on this repo.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>chainsaw test</span></span></code></pre></div><p>The output is as follows (truncated for brevity).</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>...
+=== NAME  chainsaw/azure#01
+    | 12:09:52 | azure | @cleanup | DELETE    | DONE  | v1/Namespace @ chainsaw-alive-weevil
+=== NAME  chainsaw/azure
+    | 12:09:53 | azure | @cleanup | DELETE    | DONE  | v1/Namespace @ chainsaw-touching-treefrog
+=== NAME  chainsaw/aws
+    | 12:09:56 | aws | @cleanup | DELETE    | DONE  | v1/Namespace @ chainsaw-merry-starfish
+--- PASS: chainsaw (0.00s)
+    --- PASS: chainsaw/azure#01 (15.37s)
+    --- PASS: chainsaw/azure (15.95s)
+    --- PASS: chainsaw/aws (18.90s)
+PASS
+Tests Summary...
+- Passed  tests 3
+- Failed  tests 0
+- Skipped tests 0
+Done.</code></pre></div><p>That run all the tests related to that project which, by the way, are a few Crossplane Compositions.</p>
+<p>That&rsquo;s irrelevant for this story though. I&rsquo;d run similar set of tests for any type of Kubernetes resources.</p>
+<p>Actually, I do not run tests like that but, instead, I run them through Task which executes tests every time I make a change to my Kubernetes manifests or tests themselves. That is also beyond the point. What matters is that I can execute tests whenever I want to validate any of my Kubernetes resources and I can execute something similar from pipeline builds triggered when I push a change to a Git repo.</p>
+<p>TODO: Thumbnail: Z7EnwBaJzCk</p>
+<blockquote>
+<p>If you are not familiar with Task, you should be. You can watch <a href="https://youtu.be/Z7EnwBaJzCk" rel="external" target="_blank">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a> to get familiar with it. It&rsquo;s awesome.</p>
+</blockquote>
+<p>Now, if you are familiar with KUTTL, you might be thinking that Chainsaw is the same, just with a nicer output. If that&rsquo;s what you&rsquo;re thinking, you&rsquo;re wrong. Chainsaw is so much more, and we can see some of that by exploring one of my <code>Test</code> definitions.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/aws/chainsaw-test.yaml</span></span></code></pre></div><p>The output is as follows (truncated for brevity).</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">chainsaw.kyverno.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Test</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">aws</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">bindings</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">hyperscaler</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">value</span>: <span style="color:#ae81ff">aws</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">cluster</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">value</span>: <span style="color:#ae81ff">eks</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">apply</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">file</span>: <span style="color:#ae81ff">../common/install.yaml</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">...</span></span></span></code></pre></div><p>Just as KUTTL, Chainsaw allows us to run tests based on naming convention where applying resources and testing them is executed based on file name ordering and with asserts always being named <code>assert</code>.</p>
+<p>However, with the <code>Test</code> manifest like this one, we can gain more control over what is executed, when it&rsquo;s executed, what something does, and so on and so forth.</p>
+<p>At the very top I&rsquo;m specifying that Chainsaw should expect some files to serve as <code>template</code>. Further on, there are two <code>bindings</code>. In this specific case, <code>hyperscaler</code> is set to <code>aws</code> and <code>cluster</code>to <code>eks</code>. Templates and bindings allow us to avoid repetition. In my case, there are manifests for Azure, Google Cloud, and, as we can see in this example, for AWS. Since those are often very similar with only changes to a few values, I could define all three once and let Chainsaw replace those bindings with actual values. That&rsquo;s, in a way, similar to what we would normally do with Helm or any other templating engine.</p>
+<p>Further on, we have the <code>try</code> section that starts with the instruction to apply whatever is defined in <code>../common/install.yaml</code>, so let&rsquo;s take a look at that file.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/common/install.yaml</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Secret</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">(join(&#39;-&#39;, [&#39;my-db&#39;, $hyperscaler, &#39;password&#39;]))</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">password</span>: <span style="color:#ae81ff">cG9zdGdyZXM=</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SQLClaim</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">(join(&#39;-&#39;, [&#39;my-db&#39;, $hyperscaler]))</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">compositionSelector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">provider</span>: <span style="color:#ae81ff">($hyperscaler)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">db</span>: <span style="color:#ae81ff">postgresql</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">parameters</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;13.4&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">size</span>: <span style="color:#ae81ff">medium</span></span></span></code></pre></div><p>This is where I&rsquo;m using <code>bindings</code> we saw in the <code>Test</code> file.</p>
+<p>Since all three variations are similar, instead of defining three separate files to apply them, I have this one manifest that uses Chainsaw bindings and functions.</p>
+<p>For example, the <code>name</code> of the secret should be <code>my-db-aws-password</code> for AWS, <code>my-db-azure-password</code> for Azure, and <code>my-db-google-password</code> for GCP. So, instead of hardcoding those values, I&rsquo;m using the <code>join</code> function that combines hard-coded <code>my-db</code> and <code>password</code> with the <code>hyperscaler</code> value defined in <code>Test</code> bindings.</p>
+<p>We can observe a similar situation with <code>SQLClaim</code> <code>spec.id</code> field that contains a similar <code>join</code> function as the value. Then there is <code>spec.compositionSelector.matchLabels.provider</code> that only has the <code>hyperscaler</code> value.</p>
+<p>As I said, that&rsquo;s similar to what we would expect with something like Helm templating. Now, just to avoid confusion that might lead you to say &ldquo;but why don&rsquo;t we use Helm templating instead of Chainsaw&rsquo;s syntax&rdquo;&hellip; You&rsquo;ll see later that there is much more to it than simple templating.</p>
+<p>Now, to be clear, that <code>join</code> function, and many other features of Chainsaw can look scary. The reaction might be &ldquo;<strong>This is silly</strong>&rdquo; or &ldquo;<strong>This is too much to learn</strong>&rdquo; or &ldquo;<strong>This does not make sense, I should write tests in a different way</strong>&rdquo;. Those are some of the thoughts I had when I saw Chainsaw for the first time, and we&rsquo;ll comment on how I feel about them now near the end of the video.</p>
+<p>Let&rsquo;s go back to the <code>Test</code> file and see what else I have there.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/aws/chainsaw-test.yaml</span></span></code></pre></div><p>The output is as follows (truncated for brevity).</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">chainsaw.kyverno.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Test</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">aws</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">...</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">apply</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">file</span>: <span style="color:#ae81ff">../common/install.yaml</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">assert</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">file</span>: <span style="color:#ae81ff">../common/assert-install.yaml</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">assert</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">file</span>: <span style="color:#ae81ff">assert-install.yaml</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">...</span></span></span></code></pre></div><p>After <code>install.yaml</code> is applied, I want to perform some tests. Some of those are fairly similar no matter whether they are run for AWS resources of something else, while others are very specific to AWS. To solve that, I have two <code>assert</code> entries. The common asserts are in the <code>assert-install.yaml</code> file, so let&rsquo;s take a look at it.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/common/assert-install.yaml</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SQLClaim</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">compositionRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">(join(&#39;-&#39;, [$hyperscaler, &#39;postgresql&#39;]))</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">compositionSelector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">db</span>: <span style="color:#ae81ff">postgresql</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">provider</span>: <span style="color:#ae81ff">($hyperscaler)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">(join(&#39;-&#39;, [&#39;my-db&#39;, $hyperscaler]))</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">parameters</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">size</span>: <span style="color:#ae81ff">medium</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;13.4&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">resourceRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SQL</span></span></span></code></pre></div><p>This one uses the same <code>join</code> function as before but, this time, it is used to generate the asssert manifest. The final output is what is compared against the actual resources in the cluster meaning that it will try to find <code>SQLClaim</code> that matches that exact specification.</p>
+<p>The second assert manifest is <code>assert-install.yaml</code> in the <code>aws</code> directory, so let&rsquo;s take a look at that one as well.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/aws/assert-install.yaml</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SQL</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">crossplane.io/claim-name</span>: <span style="color:#ae81ff">my-db</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">claimRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SQLClaim</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">compositionRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">aws-postgresql</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">compositionSelector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">db</span>: <span style="color:#ae81ff">postgresql</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">provider</span>: <span style="color:#ae81ff">aws</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">compositionUpdatePolicy</span>: <span style="color:#ae81ff">Automatic</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">parameters</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">size</span>: <span style="color:#ae81ff">medium</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;13.4&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">resourceRefs</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">InternetGateway</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">MainRouteTableAssociation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">RouteTableAssociation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws-1a</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">RouteTableAssociation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws-1b</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">RouteTableAssociation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws-1c</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">RouteTable</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Route</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SecurityGroupRule</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SecurityGroup</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Subnet</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws-a</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Subnet</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws-b</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Subnet</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws-c</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">VPC</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ProviderConfig</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws-sql</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kubernetes.crossplane.io/v1alpha2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Object</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws-secret</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">postgresql.sql.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ProviderConfig</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">rds.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Instance</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">rds.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SubnetGroup</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">ec2.aws.upbound.io/v1beta1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">InternetGateway</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">annotations</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">crossplane.io/composition-resource-name</span>: <span style="color:#ae81ff">gateway</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">crossplane.io/claim-name</span>: <span style="color:#ae81ff">my-db</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ownerReferences</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">blockOwnerDeletion</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">controller</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SQL</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">deletionPolicy</span>: <span style="color:#ae81ff">Delete</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">forProvider</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">region</span>: <span style="color:#ae81ff">us-east-1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">tags</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">crossplane-kind</span>: <span style="color:#ae81ff">internetgateway.ec2.aws.upbound.io</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">crossplane-name</span>: <span style="color:#ae81ff">my-db-aws</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">crossplane-providerconfig</span>: <span style="color:#ae81ff">default</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">vpcIdSelector</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">matchControllerRef</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">managementPolicy</span>: <span style="color:#ae81ff">FullControl</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">providerConfigRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">default</span>
+</span></span><span style="display:flex;"><span>...</span></span></code></pre></div><p>That one is essentially the same as what we would do with KUTTL. There are no templates or functions simply because that assert is not reused. It is very specific to managed resources for AWS. There&rsquo;s nothing fancy there since there is no need for anything fancy.</p>
+<p>There&rsquo;s one important note here. Take a look at <code>spec.resourceRefs</code>. It is an array of items and the assert validates that exactly the same items specified here are available in the actual resource in the cluster. They even have to be defined in the same order. No more. No less. It needs to be exactly the same.</p>
+<p>Now, that&rsquo;s perfectly okay in this specific example but, as you&rsquo;ll see later, that can become a nightmare to assert as we start updating resources. For now, remember that there are currently eighteen entries in <code>spec.resourceRefs</code>. That will become important later.</p>
+<p>Speaking of updates, let&rsquo;s go back to the <code>Test</code> manifest.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/aws/chainsaw-test.yaml</span></span></code></pre></div><p>The output is as follows (truncated for brevity).</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">chainsaw.kyverno.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Test</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">aws</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">...</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">...</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">patch</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">file</span>: <span style="color:#ae81ff">../common/db.yaml</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">assert</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">file</span>: <span style="color:#ae81ff">../common/assert-db.yaml</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">...</span></span></span></code></pre></div><p>After the asserts that validated that the resource initially applied and child resources it created are as they are supposed to be, I wanted to update the <code>SQLClaim</code>. With KUTTL, that would mean creating a copy of it, making some modifications, and applying the whole manifest again. That&rsquo;s another example of repetition.</p>
+<p>To avoid that, I used Chainsaw&rsquo;s <code>patch</code> option, so let&rsquo;s take a look at it.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/common/db.yaml</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SQLClaim</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">my-db</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">parameters</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">databases</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db-01</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db-02</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db-03</span></span></span></code></pre></div><p>This is very similar to Kustomize overlay mechanism. Instead of specifying the whole <code>SQLClaim</code> again, I&rsquo;m saying something like &ldquo;find the <code>SQLClaim</code> named <code>my-db</code> and update it by adding <code>spec.parameters.databases</code> with those three entries. That allows me to avoid repetition, except for the identifiers like <code>apiVersion</code>, <code>kind</code> and <code>metadata.name</code>.</p>
+<p>Now, testing that patch could be complicated, but is actually made relatively simple with Chainsaw, so let&rsquo;s take a look at the <code>assert-db.yaml</code> file that should validate that change.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/common/assert-db.yaml</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">devopstoolkitseries.com/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">SQL</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">crossplane.io/claim-name</span>: <span style="color:#ae81ff">my-db</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">parameters</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">databases</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db-01</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db-02</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db-03</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(resourceRefs[?kind == &#39;Database&#39;])</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">postgresql.sql.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">(join(&#39;-&#39;, [&#39;my-db&#39;, $hyperscaler, &#39;db-01&#39;]))</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">postgresql.sql.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">(join(&#39;-&#39;, [&#39;my-db&#39;, $hyperscaler, &#39;db-02&#39;]))</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">postgresql.sql.crossplane.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">(join(&#39;-&#39;, [&#39;my-db&#39;, $hyperscaler, &#39;db-03&#39;]))</span>
+</span></span><span style="display:flex;"><span>...</span></span></code></pre></div><p>The expected outcome of the patch we applied should be the addition of three additional resource spun up by <code>SQL</code>. There were eighteen before and now there should be twenty one. Now, at this stage, I&rsquo;m only interested in those three so having to list all twenty one sounds like a waste of time. That&rsquo;s what I would have to do with KUTTL, but not with Chainsaw.</p>
+<p>Instead, I can apply filtering. I can say &ldquo;Get all <code>resourceRefs</code> entries, then filter them so that only those that contain <code>kind</code> set to <code>Database</code> are left. I don&rsquo;t care about the others. I want only those.&rdquo;</p>
+<p>Now, that I filtered entries of the <code>resourceRefs</code>, I can assert that they are exactly what I expect them to be. There should be <code>my-db-aws-db-01</code>, <code>my-db-aws-db-02</code>, and <code>my-db-aws-db-03</code>. Since the similar pattern should be asserted for Azure and Google as well, that <code>name</code> is assembled using the <code>join</code> function and <code>hyperscaler</code> variable just as we did before.</p>
+<p>There&rsquo;s one more, out of many features, that I&rsquo;d like to show.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat tests/aws/chainsaw-test.yaml</span></span></code></pre></div><p>The output is as follows (truncated for brevity).</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">chainsaw.kyverno.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Test</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">aws</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">...</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">...</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">catch</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">get</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">resource</span>: <span style="color:#ae81ff">managed</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">describe</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">resource</span>: <span style="color:#ae81ff">sqls</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">selector</span>: <span style="color:#ae81ff">crossplane.io/claim-namespace=$NAMESPACE</span></span></span></code></pre></div><p>Just as most other test frameworks, each step has <code>try</code>, <code>catch</code>, and <code>finally</code> blocks. So far, we explored only <code>try</code> which I used as a mechanism to <code>apply</code> and <code>patch</code> resources, and to <code>assert</code> them. That&rsquo;s the backbone that everyone will be using. But, in some cases, we might want to leverage <code>catch</code> blocks that are executed in case there are failures, and the <code>finally</code> block that is executed always at the end. Personally, I did not find <code>finally</code> useful in my projects since Chainsaw automatically deletes all the resources created in the <code>try</code> block. Nevertheless, if you have some additional cleanup to do, that&rsquo;s when you would do it.</p>
+<p>The <code>catch</code> block is, at least in my case, very useful. You see, when a test fails, the output Chainsaw provides by default is not always sufficient. I often need more. In this specific case, I need to see all the managed resources running in the cluster as well as the events of the main resource under test.</p>
+<p>That&rsquo;s why I added two <code>catch</code> statements. The first one is a <code>get</code> that returns all <code>managed</code> resources and the other one is <code>describe</code> that, as the name would suggest, describes the <code>sqls</code> resource with the specific label.</p>
+<p>Now, to be clear, I could accomplish the same with the <code>script</code> that would execute <code>kubectl get managed</code> and <code>kubectl describe</code> commands. The effect would be the same, and the specifics are probably not important for this story. What matters is that there is a mechanism for me to retrieve additional information in case of the failure of one of the asserts and that I can use that information to deduce what I did wrong.</p>
+<p>I only scretched the surface with Kyverno Chainsaw and I&rsquo;ll leave it to you to explore it in more depth, but only after we go through pros and cons.</p>
+<h2 id="kyverno-chainsaw-pros-and-cons">Kyverno Chainsaw Pros and Cons</h2>
+<p>I must admit something. When I first saw Chainsaw, I was not impressed. I thought that it is moving into a wrong direction. I thought that <strong>Kyverno JSON Query Language</strong> might not be the best way to express complex logic and that we would be better off writing those tests in a programming language of choice which, in my case, would be Go.</p>
+<p>That might still be the case. There&rsquo;s still something telling me that I might be better of writing tests as &ldquo;real&rdquo; code instead of YAML interpolated with Kyverno JSON Query Language. It does not seem right to convert YAML into anything that it is not already; into anything beyond data structures.</p>
+<p>Nevertheless, I do think that Chainsaw is, right now, the best tool to test Kubernetes resources. KUTTL is too limiting and results in too much repetition which I was tempted to avoid through some silly workarounds.</p>
+<p>Hence, even before we go through Chainsaw pros and cons, I can safely say <strong>use it</strong>. It has its faults, just as anything else does, but it is a huge step forward when compared to what we had in the past.</p>
+<p>With that being said, there are a few negative things, so let&rsquo;s start with those first.</p>
+<p>TODO: Header: Cons; Items: Docs; YAML; Learning curve; No string interpolation</p>
+<p>To begin with, documentation is not very good. I strugled a lot with it. <strong>Docs</strong> might be the main reason why my initial impressions of Chainsaw were negative. Fortunately for me, folks behind the project were very helpful and made me &ldquo;see the light&rdquo; eventually. I&rsquo;m sold now. I am committed to Chainsaw when testing my Kuberentes resources, but that&rsquo;s not thanks to documentation but, rather, very approachable maintainers. Now, to be clear, almost all projects have horrible docs in their early stages so I&rsquo;m not saying that Chainsaw documentation is worse than others but, rather, that it is just as bad as most early stage projects.</p>
+<p>I am not convinced that expressing logic inside <strong>YAML</strong> is a good idea. If we are in need of loops, conditionals, and other constructs, we are, generally speaking, better of with something like Go, or Python, or Java, or CUE, or any other language you might be familiar with. That being said, Kyverno JSON Query Language is very powerful and it works well. It&rsquo;s not something developed specifically for Chainsaw but, rather, something that has been battle tested with Kyverno itself. Hence, I&rsquo;m split between <strong>this is great</strong> and <strong>this should not be done with YAML</strong>.</p>
+<p>Now that I mentioned Kyverno JSON Query Language, there is also a relatively steep <strong>learning curve</strong>, at least when testing is concerned. It might take a while until you get a grip on Kyverno JSON Query Language which is the backbone of Chainsaw. If you are already using Kyverno, you should have no trouble jumping into Chainsaw. But if you are not, it might take a while until you feel comfortable.</p>
+<p>Finally, there is <strong>no string interpolation</strong>. Having to use functions like <code>join</code> instead of simply interpolating strings and variables makes tests harder to write than they should be and even harder to read by those not versed in it.</p>
+<p>There must be other issues but, at least for me, those are the biggest ones and, frankly, I&rsquo;m not worried about any of those except the doubt whether to use YAML in the first place. I&rsquo;ll explain later why I&rsquo;m not worried, just after we go through the good things; though the pros.</p>
+<p>TODO: Header: Pros; Items: Maintainers; Templates, bindings, functions; Output; Try/catch/finaly; Patching; KUTTL compatibility</p>
+<p>The first and, potentially most important thing about Chainsaw is the openess, enthysiasm, and proactiveness of the <strong>maintainers</strong>. Now, to be clear, vast majority of the commits are done by two people with occasional commits by a few others so it&rsquo;s not a big project with massive number of maintainers. Never the less, I was impressed to see how proactive they are in reaching to other communities, listening to feedback, adapting the project to the needs of early adopters, and all the other things that projects at such early stage should be doing but are often not. I asked for some features and some of them were already added to the project while others are ongoing. I wanted bindings, I got bindings. I wanted it to be available as a Nix package, and, by the time you watch this, that will probably done. I got burned by not being able to use string interpolations, and I&rsquo;m sure that will be added soon. That&rsquo;s the reason why I said that I&rsquo;m not worried about the cons. I&rsquo;m sure that the issues I discovered will be fixed soon. If you discover something, I&rsquo;m sure you&rsquo;ll get the same treatment as long as you let the project know what that something is.</p>
+<p>Next, <strong>templates, bindings, and functions</strong> are awesome. Chainsaw is piggy backing on Kyverno that already has many of those things nailed down, and that&rsquo;s giving Chainsaw a huge boost. Since the project started by Kyverno, they have the know-how that allows them to move fast on top of what they already know. Those alone enabled me to greatly simplify my tests that were previously written for KUTTL and to do things that I could not do before.</p>
+<p>Then there is <strong>output</strong> that is much easier to read and deduce what&rsquo;s wrong.</p>
+<p>That output is greatly augmented with additional instructions I can add to the <code>catch</code> block so the mere existence of <strong>Try/catch/finaly</strong>* blocks is important, especially since it follows a common practice in testing.</p>
+<p>Then there is <strong>patching</strong> which helps greatly with constant updates of the resources for the sake of creating more robust test scenarios.</p>
+<p>Finally, if you are already using KUTTL, you can switch to Chainsaw without any modifications. Chainsaw can run <strong>KUTTL</strong> tests as they are. Now, to be clear, you won&rsquo;t get much of the benefits of Chainsaw by only changing the CLI. You will, eventually, have to rewrite some of the tests or start writing new ones in a Chainsaw-friendly way. That&rsquo;s to be expected. But, what matters, at least to KUTTL users, is that you do not need to rewrite all your tests right away. You can just switch to the <code>chainsaw</code> CLI right away without any upfront investment and transition manifests later when you see that you&rsquo;ll gain benefits from that effort.</p>
+<p>All in all Chainsaw is awesome and I strongly recommend it. It has its quirks but, as far as I know, it is the best tool for testing Kubernetes resources right now.</p>
+<p>The community is very welcoming and I suggest you get in touch with them if you have a suggestion for improvement.</p>
+<p>Thank you for watching.
+See you in the next one.
+Cheers.</p>
+<h2 id="destroy">Destroy</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>task cluster-destroy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>exit</span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="/dot-narrow-yellow-bg.png"/></a>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/index.html" class=""><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
+          <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
+          <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
+          <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li></ul></li>
+          <li data-nav-id="/chainsaw/index.html" class="active"><a class="padding" href="/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/chainsaw/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-dot" value="dot" selected>Dot</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1714831218" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1714831218" defer></script>
+    <script src="/js/theme.js?1714831218" defer></script>
+  </body>
+</html>

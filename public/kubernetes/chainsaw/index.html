@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
@@ -12,7 +12,7 @@ Now, today’s session will not focus on all the ways we can test something. I w
     <meta name="twitter:title" content="Mastering Kubernetes Testing Kyverno Chainsaw!">
     <meta name="twitter:description" content="Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.
 Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
-    <meta property="og:url" content="http://localhost:1313/kubernetes/chainsaw/index.html">
+    <meta property="og:url" content="https://devopstoolkit.live/kubernetes/chainsaw/index.html">
     <meta property="og:title" content="Mastering Kubernetes Testing Kyverno Chainsaw!">
     <meta property="og:description" content="Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.
 Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
@@ -23,25 +23,25 @@ Now, today’s session will not focus on all the ways we can test something. I w
 Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
     <meta itemprop="datePublished" content="2024-04-08T16:00:00+00:00">
     <meta itemprop="dateModified" content="2024-04-08T16:00:00+00:00">
-    <meta itemprop="wordCount" content="4012">
+    <meta itemprop="wordCount" content="4003">
     <title>Mastering Kubernetes Testing Kyverno Chainsaw!</title>
     <link href="/kubernetes/chainsaw/index.xml" rel="alternate" type="application/rss+xml" title="Mastering Kubernetes Testing Kyverno Chainsaw!">
-    <link href="/css/fontawesome-all.min.css?1714668122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714668122" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1714668122" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714668122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714668122" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1714668122" rel="stylesheet">
-    <link href="/css/fonts.css?1714668122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714668122" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1714668122" rel="stylesheet">
-    <link href="/css/theme-dot.css?1714668122" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1714668122" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1714668122" rel="stylesheet">
-    <link href="/css/print.css?1714668122" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1714668122"></script>
+    <link href="/css/fontawesome-all.min.css?1714837029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714837029" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1714837029" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714837029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714837029" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1714837029" rel="stylesheet">
+    <link href="/css/fonts.css?1714837029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714837029" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1714837029" rel="stylesheet">
+    <link href="/css/theme-dot.css?1714837029" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1714837029" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1714837029" rel="stylesheet">
+    <link href="/css/print.css?1714837029" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1714837029"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/devopstoolkit.live';
       // variant stuff
       window.variants && variants.init( [ 'dot' ] );
       // translations
@@ -170,7 +170,6 @@ Tests Summary...
 Done.</code></pre></div><p>That run all the tests related to that project which, by the way, are a few Crossplane Compositions.</p>
 <p>That&rsquo;s irrelevant for this story though. I&rsquo;d run similar set of tests for any type of Kubernetes resources.</p>
 <p>Actually, I do not run tests like that but, instead, I run them through Task which executes tests every time I make a change to my Kubernetes manifests or tests themselves. That is also beyond the point. What matters is that I can execute tests whenever I want to validate any of my Kubernetes resources and I can execute something similar from pipeline builds triggered when I push a change to a Git repo.</p>
-<p>TODO: Thumbnail: Z7EnwBaJzCk</p>
 <blockquote>
 <p>If you are not familiar with Task, you should be. You can watch <a href="https://youtu.be/Z7EnwBaJzCk" rel="external" target="_blank">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a> to get familiar with it. It&rsquo;s awesome.</p>
 </blockquote>
@@ -447,13 +446,27 @@ Done.</code></pre></div><p>That run all the tests related to that project which,
 <p>Nevertheless, I do think that Chainsaw is, right now, the best tool to test Kubernetes resources. KUTTL is too limiting and results in too much repetition which I was tempted to avoid through some silly workarounds.</p>
 <p>Hence, even before we go through Chainsaw pros and cons, I can safely say <strong>use it</strong>. It has its faults, just as anything else does, but it is a huge step forward when compared to what we had in the past.</p>
 <p>With that being said, there are a few negative things, so let&rsquo;s start with those first.</p>
-<p>TODO: Header: Cons; Items: Docs; YAML; Learning curve; No string interpolation</p>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Docs</li>
+<li>YAML</li>
+<li>Learning curve</li>
+<li>No string interpolation</li>
+</ul>
 <p>To begin with, documentation is not very good. I strugled a lot with it. <strong>Docs</strong> might be the main reason why my initial impressions of Chainsaw were negative. Fortunately for me, folks behind the project were very helpful and made me &ldquo;see the light&rdquo; eventually. I&rsquo;m sold now. I am committed to Chainsaw when testing my Kuberentes resources, but that&rsquo;s not thanks to documentation but, rather, very approachable maintainers. Now, to be clear, almost all projects have horrible docs in their early stages so I&rsquo;m not saying that Chainsaw documentation is worse than others but, rather, that it is just as bad as most early stage projects.</p>
 <p>I am not convinced that expressing logic inside <strong>YAML</strong> is a good idea. If we are in need of loops, conditionals, and other constructs, we are, generally speaking, better of with something like Go, or Python, or Java, or CUE, or any other language you might be familiar with. That being said, Kyverno JSON Query Language is very powerful and it works well. It&rsquo;s not something developed specifically for Chainsaw but, rather, something that has been battle tested with Kyverno itself. Hence, I&rsquo;m split between <strong>this is great</strong> and <strong>this should not be done with YAML</strong>.</p>
 <p>Now that I mentioned Kyverno JSON Query Language, there is also a relatively steep <strong>learning curve</strong>, at least when testing is concerned. It might take a while until you get a grip on Kyverno JSON Query Language which is the backbone of Chainsaw. If you are already using Kyverno, you should have no trouble jumping into Chainsaw. But if you are not, it might take a while until you feel comfortable.</p>
 <p>Finally, there is <strong>no string interpolation</strong>. Having to use functions like <code>join</code> instead of simply interpolating strings and variables makes tests harder to write than they should be and even harder to read by those not versed in it.</p>
 <p>There must be other issues but, at least for me, those are the biggest ones and, frankly, I&rsquo;m not worried about any of those except the doubt whether to use YAML in the first place. I&rsquo;ll explain later why I&rsquo;m not worried, just after we go through the good things; though the pros.</p>
-<p>TODO: Header: Pros; Items: Maintainers; Templates, bindings, functions; Output; Try/catch/finaly; Patching; KUTTL compatibility</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Maintainers</li>
+<li>Templates, bindings, functions</li>
+<li>Output</li>
+<li>Try/catch/finaly</li>
+<li>Patching</li>
+<li>KUTTL compatibility</li>
+</ul>
 <p>The first and, potentially most important thing about Chainsaw is the openess, enthysiasm, and proactiveness of the <strong>maintainers</strong>. Now, to be clear, vast majority of the commits are done by two people with occasional commits by a few others so it&rsquo;s not a big project with massive number of maintainers. Never the less, I was impressed to see how proactive they are in reaching to other communities, listening to feedback, adapting the project to the needs of early adopters, and all the other things that projects at such early stage should be doing but are often not. I asked for some features and some of them were already added to the project while others are ongoing. I wanted bindings, I got bindings. I wanted it to be available as a Nix package, and, by the time you watch this, that will probably done. I got burned by not being able to use string interpolations, and I&rsquo;m sure that will be added soon. That&rsquo;s the reason why I said that I&rsquo;m not worried about the cons. I&rsquo;m sure that the issues I discovered will be fixed soon. If you discover something, I&rsquo;m sure you&rsquo;ll get the same treatment as long as you let the project know what that something is.</p>
 <p>Next, <strong>templates, bindings, and functions</strong> are awesome. Chainsaw is piggy backing on Kyverno that already has many of those things nailed down, and that&rsquo;s giving Chainsaw a huge boost. Since the project started by Kyverno, they have the know-how that allows them to move fast on top of what they already know. Those alone enabled me to greatly simplify my tests that were previously written for KUTTL and to do things that I could not do before.</p>
 <p>Then there is <strong>output</strong> that is much easier to read and deduce what&rsquo;s wrong.</p>
@@ -497,6 +510,7 @@ Cheers.</p>
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
           <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li></ul></li>
+          <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
@@ -549,8 +563,8 @@ Cheers.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1714668122" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1714668122" defer></script>
-    <script src="/js/theme.js?1714668122" defer></script>
+    <script src="/js/clipboard.min.js?1714837029" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1714837029" defer></script>
+    <script src="/js/theme.js?1714837029" defer></script>
   </body>
 </html>

@@ -102,8 +102,6 @@ That's irrelevant for this story though. I'd run similar set of tests for any ty
 
 Actually, I do not run tests like that but, instead, I run them through Task which executes tests every time I make a change to my Kubernetes manifests or tests themselves. That is also beyond the point. What matters is that I can execute tests whenever I want to validate any of my Kubernetes resources and I can execute something similar from pipeline builds triggered when I push a change to a Git repo.
 
-TODO: Thumbnail: Z7EnwBaJzCk
-
 > If you are not familiar with Task, you should be. You can watch [Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally](https://youtu.be/Z7EnwBaJzCk) to get familiar with it. It's awesome.
 
 Now, if you are familiar with KUTTL, you might be thinking that Chainsaw is the same, just with a nicer output. If that's what you're thinking, you're wrong. Chainsaw is so much more, and we can see some of that by exploring one of my `Test` definitions.
@@ -498,7 +496,11 @@ Hence, even before we go through Chainsaw pros and cons, I can safely say **use 
 
 With that being said, there are a few negative things, so let's start with those first.
 
-TODO: Header: Cons; Items: Docs; YAML; Learning curve; No string interpolation
+**Cons:**
+* Docs
+* YAML
+* Learning curve
+* No string interpolation
 
 To begin with, documentation is not very good. I strugled a lot with it. **Docs** might be the main reason why my initial impressions of Chainsaw were negative. Fortunately for me, folks behind the project were very helpful and made me "see the light" eventually. I'm sold now. I am committed to Chainsaw when testing my Kuberentes resources, but that's not thanks to documentation but, rather, very approachable maintainers. Now, to be clear, almost all projects have horrible docs in their early stages so I'm not saying that Chainsaw documentation is worse than others but, rather, that it is just as bad as most early stage projects.
 
@@ -510,7 +512,13 @@ Finally, there is **no string interpolation**. Having to use functions like `joi
 
 There must be other issues but, at least for me, those are the biggest ones and, frankly, I'm not worried about any of those except the doubt whether to use YAML in the first place. I'll explain later why I'm not worried, just after we go through the good things; though the pros.
 
-TODO: Header: Pros; Items: Maintainers; Templates, bindings, functions; Output; Try/catch/finaly; Patching; KUTTL compatibility
+**Pros:**
+* Maintainers
+* Templates, bindings, functions
+* Output
+* Try/catch/finaly
+* Patching
+* KUTTL compatibility
 
 The first and, potentially most important thing about Chainsaw is the openess, enthysiasm, and proactiveness of the **maintainers**. Now, to be clear, vast majority of the commits are done by two people with occasional commits by a few others so it's not a big project with massive number of maintainers. Never the less, I was impressed to see how proactive they are in reaching to other communities, listening to feedback, adapting the project to the needs of early adopters, and all the other things that projects at such early stage should be doing but are often not. I asked for some features and some of them were already added to the project while others are ongoing. I wanted bindings, I got bindings. I wanted it to be available as a Nix package, and, by the time you watch this, that will probably done. I got burned by not being able to use string interpolations, and I'm sure that will be added soon. That's the reason why I said that I'm not worried about the cons. I'm sure that the issues I discovered will be fixed soon. If you discover something, I'm sure you'll get the same treatment as long as you let the project know what that something is.
 
