@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How Platform Engineering Compares to Running a Restaurant</title>
-    <link>https://devopstoolkit.live/internal-developer-platforms/platform-engineering-menu/index.html</link>
+    <link>http://localhost:1313/internal-developer-platforms/platform-engineering-menu/index.html</link>
     <description>Platform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.&#xA;Let me explain.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://devopstoolkit.live/internal-developer-platforms/platform-engineering-menu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/internal-developer-platforms/platform-engineering-menu/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

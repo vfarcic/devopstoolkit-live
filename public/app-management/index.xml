@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Application Management</title>
-    <link>https://devopstoolkit.live/app-management/index.html</link>
+    <link>http://localhost:1313/app-management/index.html</link>
     <description>Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?I’m in pain… and it’s self-inflicted… and I like it.&#xA;I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I’m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Apr 2024 16:00:00 +0000</lastBuildDate>
-    <atom:link href="https://devopstoolkit.live/app-management/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/app-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</title>
-      <link>https://devopstoolkit.live/app-management/kcl/index.html</link>
+      <link>http://localhost:1313/app-management/kcl/index.html</link>
       <pubDate>Mon, 22 Apr 2024 16:00:00 +0000</pubDate>
-      <guid>https://devopstoolkit.live/app-management/kcl/index.html</guid>
+      <guid>http://localhost:1313/app-management/kcl/index.html</guid>
       <description>I’m in pain… and it’s self-inflicted… and I like it.&#xA;I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I’m never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards. Spending endless hours going through new stuff does not make sense, but I can’t help myself. Hopefully, I might save you from doing it yourself. That’s my goal. Go through the pain of trying out everything so that you don’t have to.</description>
     </item>
   </channel>
