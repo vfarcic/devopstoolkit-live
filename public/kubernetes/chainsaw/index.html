@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
@@ -12,7 +12,7 @@ Now, today’s session will not focus on all the ways we can test something. I w
     <meta name="twitter:title" content="Mastering Kubernetes Testing Kyverno Chainsaw!">
     <meta name="twitter:description" content="Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.
 Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
-    <meta property="og:url" content="http://localhost:1313/kubernetes/chainsaw/index.html">
+    <meta property="og:url" content="https://devopstoolkit.live/kubernetes/chainsaw/index.html">
     <meta property="og:title" content="Mastering Kubernetes Testing Kyverno Chainsaw!">
     <meta property="og:description" content="Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.
 Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
@@ -23,25 +23,25 @@ Now, today’s session will not focus on all the ways we can test something. I w
 Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.">
     <meta itemprop="datePublished" content="2024-04-08T16:00:00+00:00">
     <meta itemprop="dateModified" content="2024-04-08T16:00:00+00:00">
-    <meta itemprop="wordCount" content="4003">
+    <meta itemprop="wordCount" content="3992">
     <title>Mastering Kubernetes Testing Kyverno Chainsaw!</title>
     <link href="/kubernetes/chainsaw/index.xml" rel="alternate" type="application/rss+xml" title="Mastering Kubernetes Testing Kyverno Chainsaw!">
-    <link href="/css/fontawesome-all.min.css?1714938267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714938267" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1714938267" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714938267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714938267" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1714938267" rel="stylesheet">
-    <link href="/css/fonts.css?1714938267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714938267" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1714938267" rel="stylesheet">
-    <link href="/css/theme-dot.css?1714938267" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1714938267" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1714938267" rel="stylesheet">
-    <link href="/css/print.css?1714938267" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1714938267"></script>
+    <link href="/css/fontawesome-all.min.css?1714946401" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714946401" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1714946401" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714946401" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714946401" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1714946401" rel="stylesheet">
+    <link href="/css/fonts.css?1714946401" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714946401" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1714946401" rel="stylesheet">
+    <link href="/css/theme-dot.css?1714946401" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1714946401" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1714946401" rel="stylesheet">
+    <link href="/css/print.css?1714946401" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1714946401"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/devopstoolkit.live';
       // variant stuff
       window.variants && variants.init( [ 'dot' ] );
       // translations
@@ -475,9 +475,6 @@ Done.</code></pre></div><p>That run all the tests related to that project which,
 <p>Finally, if you are already using KUTTL, you can switch to Chainsaw without any modifications. Chainsaw can run <strong>KUTTL</strong> tests as they are. Now, to be clear, you won&rsquo;t get much of the benefits of Chainsaw by only changing the CLI. You will, eventually, have to rewrite some of the tests or start writing new ones in a Chainsaw-friendly way. That&rsquo;s to be expected. But, what matters, at least to KUTTL users, is that you do not need to rewrite all your tests right away. You can just switch to the <code>chainsaw</code> CLI right away without any upfront investment and transition manifests later when you see that you&rsquo;ll gain benefits from that effort.</p>
 <p>All in all Chainsaw is awesome and I strongly recommend it. It has its quirks but, as far as I know, it is the best tool for testing Kubernetes resources right now.</p>
 <p>The community is very welcoming and I suggest you get in touch with them if you have a suggestion for improvement.</p>
-<p>Thank you for watching.
-See you in the next one.
-Cheers.</p>
 <h2 id="destroy">Destroy</h2>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>task cluster-destroy
 </span></span><span style="display:flex;"><span>
@@ -510,7 +507,10 @@ Cheers.</p>
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
           <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li></ul></li>
+          <li data-nav-id="/development-environments/index.html" class=""><a class="padding" href="/development-environments/index.html">Development Environments</a><ul id="R-subsections-b40bb3dd3715504862627d465ed722c6" class="morespace collapsible-menu">
+          <li data-nav-id="/development-environments/kcl/index.html" class=""><a class="padding" href="/development-environments/kcl/index.html">Nix for Everyone: Unleash Devbox for Simplified Development</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
+          <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
@@ -563,8 +563,8 @@ Cheers.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1714938267" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1714938267" defer></script>
-    <script src="/js/theme.js?1714938267" defer></script>
+    <script src="/js/clipboard.min.js?1714946401" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1714946401" defer></script>
+    <script src="/js/theme.js?1714946401" defer></script>
   </body>
 </html>

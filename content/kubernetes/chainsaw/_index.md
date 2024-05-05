@@ -536,10 +536,6 @@ All in all Chainsaw is awesome and I strongly recommend it. It has its quirks bu
 
 The community is very welcoming and I suggest you get in touch with them if you have a suggestion for improvement.
 
-Thank you for watching.
-See you in the next one.
-Cheers.
-
 ## Destroy
 
 ```sh

@@ -724,10 +724,6 @@ Finally, the fact that Clusterpedia functionality is exposed as **Kubernetes API
 
 That's it.
 
-Thank you for watching.
-See you in the next one.
-Cheers.
-
 ## Destroy
 
 ```sh

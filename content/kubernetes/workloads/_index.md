@@ -1192,10 +1192,6 @@ Was this video useful? Would it make sense to continue through other Kubernetes 
 
 Let me know in the comments.
 
-Thank you for watching.
-See you in the next one.
-Cheers.
-
 ## Destroy
 
 ```sh

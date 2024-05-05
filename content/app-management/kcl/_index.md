@@ -803,10 +803,6 @@ Finally, KCL is a project donated to Cloud Native Computing Foundation (**CNCF**
 
 Personally, I cannot sit on more than two chairs at the same time. Until now, I was torn between CUE and Pkl. I'll kick one of those out to gain space for KCL. Pkl, you're out. KCL is in. I might be biased though. I love CUE and KCL looks very similar to it except that it's easier to learn. It's those two now.
 
-Thank you for watching.
-See you in the next one.
-Cheers.
-
 ## Destroy
 
 ```sh
