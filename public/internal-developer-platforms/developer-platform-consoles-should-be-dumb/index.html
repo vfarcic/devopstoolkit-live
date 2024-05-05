@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.4">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="Most of the developer platform consoles I saw are getting it completely wrong, and I honestly cannot understand why. For decades now we know that a good UI is a dumb UI. A good UI does not contain much logic. UIs rely on APIs to discover what can be done and what information is needed to do whatever should be done. Yet, when I see developer portal UIs, more often than not, they do not try to rely on APIs. Instead, they are doing their best to ignore them, to bypass them, to use their internal APIs, and to do too much for no good reason.
+Hence, this post is about creating good a developer portal console by making it dumb.">
+    <meta name="author" content="Viktor Farcic">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Developer Platform Consoles Should Be Dumb">
+    <meta name="twitter:description" content="Most of the developer platform consoles I saw are getting it completely wrong, and I honestly cannot understand why. For decades now we know that a good UI is a dumb UI. A good UI does not contain much logic. UIs rely on APIs to discover what can be done and what information is needed to do whatever should be done. Yet, when I see developer portal UIs, more often than not, they do not try to rely on APIs. Instead, they are doing their best to ignore them, to bypass them, to use their internal APIs, and to do too much for no good reason.
+Hence, this post is about creating good a developer portal console by making it dumb.">
+    <meta property="og:url" content="http://localhost:1313/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html">
+    <meta property="og:title" content="Developer Platform Consoles Should Be Dumb">
+    <meta property="og:description" content="Most of the developer platform consoles I saw are getting it completely wrong, and I honestly cannot understand why. For decades now we know that a good UI is a dumb UI. A good UI does not contain much logic. UIs rely on APIs to discover what can be done and what information is needed to do whatever should be done. Yet, when I see developer portal UIs, more often than not, they do not try to rely on APIs. Instead, they are doing their best to ignore them, to bypass them, to use their internal APIs, and to do too much for no good reason.
+Hence, this post is about creating good a developer portal console by making it dumb.">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Developer Platform Consoles Should Be Dumb">
+    <meta itemprop="description" content="Most of the developer platform consoles I saw are getting it completely wrong, and I honestly cannot understand why. For decades now we know that a good UI is a dumb UI. A good UI does not contain much logic. UIs rely on APIs to discover what can be done and what information is needed to do whatever should be done. Yet, when I see developer portal UIs, more often than not, they do not try to rely on APIs. Instead, they are doing their best to ignore them, to bypass them, to use their internal APIs, and to do too much for no good reason.
+Hence, this post is about creating good a developer portal console by making it dumb.">
+    <meta itemprop="datePublished" content="2024-03-11T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-03-11T16:00:00+00:00">
+    <meta itemprop="wordCount" content="3119">
+    <title>Developer Platform Consoles Should Be Dumb</title>
+    <link href="/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.xml" rel="alternate" type="application/rss+xml" title="Developer Platform Consoles Should Be Dumb">
+    <link href="/css/fontawesome-all.min.css?1714948799" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714948799" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1714948799" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714948799" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714948799" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1714948799" rel="stylesheet">
+    <link href="/css/fonts.css?1714948799" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714948799" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1714948799" rel="stylesheet">
+    <link href="/css/theme-dot.css?1714948799" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1714948799" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1714948799" rel="stylesheet">
+    <link href="/css/print.css?1714948799" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1714948799"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'dot' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#what-do-developer-portals-do-but-shouldnt">What Do Developer Portals Do (But Shouldn&rsquo;t)</a></li>
+    <li><a href="#apis-vs-clis">APIs vs. CLIs</a></li>
+    <li><a href="#developer-portals-based-on-apis">Developer Portals Based on APIs</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/internal-developer-platforms/index.html"><span itemprop="name">Internal Developer Platforms</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Developer Platform Consoles Should Be Dumb</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/internal-developer-platforms/platform-engineering-menu/index.html" title="How Platform Engineering Compares to Running a Restaurant (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/app-management/index.html" title="Application Management (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="developer-platform-consoles-should-be-dumb">Developer Platform Consoles Should Be Dumb</h1>
+
+<p>Most of the developer platform consoles I saw are getting it completely wrong, and I honestly cannot understand why. For decades now we know that <strong>a good UI is a dumb UI</strong>. A good UI does not contain much logic. UIs rely on APIs to discover what can be done and what information is needed to do whatever should be done. Yet, when I see developer portal UIs, more often than not, they do not try to rely on APIs. Instead, they are doing their best to ignore them, to bypass them, to use their internal APIs, and to do too much for no good reason.</p>
+<p>Hence, this post is about creating good a developer portal console by making it dumb.</p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Qy2QmJkwkP0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="what-do-developer-portals-do-but-shouldnt">What Do Developer Portals Do (But Shouldn&rsquo;t)</h2>
+<p>Developer Portals are hot right now. Everyone is trying to figure out a way to make developers productive by enabling them to create and deploy applications, services, and infrastructure, to observe the outcomes, and whatever else they need to do without opening JIRA tickets. We&rsquo;re trying to move away from ticket-ops to consuming internal services. Hence, we can describe developer portals with a slogan like <strong>JIRA is dead, long live developer portals</strong>.</p>
+<p>Now, there are many flavors of developer portals. Some of them are just frontends, like <strong>Backstage</strong> and <strong>Port</strong>, while others are pretending to be full solutions like <strong>Humanitec</strong>. Today we&rsquo;ll focus on the former group, in part because I think that &ldquo;complete&rdquo; solutions are just silly because they are failing to understand who the users of such solutions are. Still, I&rsquo;ll hold my tongue on that one since that would be a completely different subject that would force me to swear even more than I usually do.</p>
+<p>So, what do those developer portal frontends or consoles do?</p>
+<p>TODO: Diagram: diag-01.mp4 (show all those components before numbers right away)</p>
+<p>Some allow us to create hard-coded forms (1) that others can use to define instances of abstractions and then they &ldquo;expand&rdquo; into &ldquo;real&rdquo; resources. They convert simple forms into Helm (2) and Terraform (3) values and execute <code>helm install</code> (4), <code>terraform apply</code> (5), and similar commands. I can characterize those as Docker Compose clones that transform simple intefaces into manifests use by Kubernetes, hyperscalers, and others. Hard-coding logic into UIs is just as silly as hard-coding logic into CLIs, so I&rsquo;ll ignore those.</p>
+<p>TODO: Diagram: diag-02.mp4 (show all those components before numbers right away)</p>
+<p>Others evaluate values files (1), preferably stored in Git (2), and auto-generate forms with fields and drop-down lists (3). Users can use those forms to, essentially, fill in those fields (4) and let the UI transform that into YAML (5), HCL (6), or whatever the tech is, and execute <code>helm install</code> (7), <code>terraform apply</code> (8), and similar commands. That&rsquo;s seamingly better since it allows experts in those tools and that tech and those service providers, to define what something is (9) and visualize it for others, for service consumers. Nevertheless, while that&rsquo;s not as bad of an approach as hard-coding stuff directly in the UI, it is still bad. Those UIs are, essentially, templating engines and CLI executors. Those are still silly.</p>
+<p>TODO: Logos: port.png</p>
+<p>Then we have tools that allow us to &ldquo;program&rdquo; interfaces. They allow us to define data structures that are converted into forms with fields and drop down lists. Typically, data generated through those forms would be pushed to Git, or to GitHub Actions, or they would be converted into other formats like Helm charts, Kubernetes Kustomize files, HCL modules, and so on and so forth. That&rsquo;s, for example, the approach of <strong>Port</strong> that looks like a great solution since it allows service providers to define what something is and service consumers to generate definitions at the right level of abstractions, and submit them somewhere. Still, just as others, that approach is silly as well. It&rsquo;s not that different from others, just a bit more agnostic to specific implementations.</p>
+<p>The reason why I&rsquo;m declaring all those solutions as <strong>silly</strong> is simple. They are all taking a more complicated, yet less efficient and less flexible way to accomplish something. None of those rely on APIs of services they are supposed to represent. None of those leverage the fact that APIs provide <strong>discoverability and schemas</strong> that can be used to dynamically figure out what is available and what something is.</p>
+<p>TODO: Logos: backstage.webp, port.png</p>
+<p>So there it goes. I&rsquo;m declaring most, if not all, developer portal consoles as silly <strong>overengineered solutions</strong> that are missing the fact that all they need to do is to be dumb and graphically represent APIs. I&rsquo;m publicly shaming <strong>Backstage</strong>, <strong>Port</strong>, and other similar solutions. They are great, but they are also missing the point. They do not rely on APIs for discovery and schemas.</p>
+<p>Actually, to be more precise, we can create Backstage plugins that would do what I&rsquo;m about to describe but, more often than not, that&rsquo;s not how they&rsquo;re designed.</p>
+<p>I&rsquo;ll show you how consoles should work and how we should design them if we&rsquo;re building them ourselves or what we should expect from third-party solutions. But, before I do that, we need to discuss the differences between APIs and CLIs.</p>
+<h2 id="apis-vs-clis">APIs vs. CLIs</h2>
+<p>Let&rsquo;s back off of graphical user interfaces, of consoles, for a moment.</p>
+<p>TODO: Diagram: diag-03.mp4</p>
+<p>Everything we do these days is behind APIs. If we want an EC2 instance (1), we send a request to the AWS API (2). If we want a Cloud Run service (3), with send a request to Google Cloud API (4). If we would like an AKS cluster (5), we send a request to Azure API (6). If we want to have a resource in Kubernetes (7), we send a request to Kubernetes API (8). We cannot avoid APIs and even if we could, there is no good reason to avoid them. APIs are a better way to communicate with control planes behind those services than any other method.</p>
+<p>TODO: Diagram: diag-04.mp4</p>
+<p>However, it is not always obvious that we almost always use APIs. You might be used to using Terraform, which is a CLI (1). It might seem that Terraform is automagically instructing AWS to manage resources (2) but, in reality, it is transforming HCL (3) into AWS API requests (4).</p>
+<p>Similarly, it might seem that Helm (5) is automagically being applied directly inside the cluster (6), but Kubernetes does not understand Helm charts. It does not know anything about it. Instead, Helm converts templates (7) into YAML (8) and sends it to Kubernetes API (9). The end-result of executing <code>helm install</code> is the same as if we would execute <code>helm template</code> that outputs &ldquo;pure&rdquo; YAML and then apply it to the cluster with <code>kubectl apply</code>. <code>kubectl</code>, on the other hand, is essentially, sending requests to Kubernetes API. It is a convenient replacement for <code>curl</code>.</p>
+<p>Hence, the question is only whether we communicate with APIs directly or through CLIs. The latter is more convenient, mostly because we can use higher-level abstractions.</p>
+<p>Most services are low-level. If we need a Kubernetes cluster in AWS, we have an option to create an EKS control plane, node groups, networking, and everything else directly, or we can wrap it all up into a Terraform project. If we do the latter, the end-users, the service consumers, can focus only on the values file and ignore everything else. Similarly, if we&rsquo;d like to have an application in Kubernetes, instead of managing a Deployment, and a Service, and an Ingress, and everything else separately, we can wrap it all up into a Helm chart and expose values file which is what the end-users would see and use.</p>
+<p>Now, to be clear, Terraform, Helm, and other similar tools are not only wrappers that expose values. They serve other purposes, but, within the context of developer portals and consoles, they are critical since those are typically exposed in graphical user interfaces. What people see in UIs is, more often than not, a form based on value files. Those are representations of the service. Those are higher-level abstractions. Those are the focuses of developer portals, and that&rsquo;s the part that is wrong since we need to design consoles with forms that represent those values as hard-coded fields, or fields extracted from files. That reminds me of how we operated 30 years ago when APIs were essentially files moved over network.</p>
+<p>TODO: Diagram: diag-05.mp4</p>
+<p>Instead, Consoles (1) should talk directly with APIs (2). That would be a very easy thing to do since a Console could go to an API and ask &ldquo;what do you have&rdquo; (3). If that is AWS, it would return a list of almost one thousand resources (4). From there on, the console user, the service consumer, could pick any of those. That would be the discovery which dynamically returns all available services. So, let&rsquo;s say that a user picks EC2 (5). The console could go back to AWS API and ask for a schema (6) and the console could generate a form with all the fields that can be filled (7). From there on, the user would fill in or select a region, the size, the operating system, and anything else he or she believes is important, click the &ldquo;submit&rdquo; button, and let the console propagate that information to AWS by sending yet another request to the API (8). As a result, that resource, in this case EC2, should be running in the service provider, in this case AWS (9).</p>
+<p>That should work. Right? We&rsquo;ll&hellip; That&rsquo;s not a good idea either since APIs like Kubernetes, AWS, Google Cloud, and Azure are based on low-level resources. That&rsquo;s great for some of us since it is easier to assemble low-level abstractions in an attempt to get exactly what we want. However, that&rsquo;s, at the same time, bad for everyone else. A service consumer should be able to define a backend application instead of assembling a Kubernetes Deployment, and a Service, and an Ingress, and a service mesh, and everything else we deem important. Similarly, a user should be able to say &ldquo;I want a small Kubernetes cluster in this region&rdquo; instead of having to combine EKS, and a node group, and subnets, and a VPC, and all other low-level resources. And, the end result would be a group of low-level resources tailor-made to act in a way that is established to be a good practice in a given organization. It would be production-ready.</p>
+<p>So, using value files is not a good idea, but using APIs of service providers is not a good idea either. As a matter of fact, CLI tools like Terraform were created so that we can create new abstractions instead of talking directly with service provider APIs. However, such tools failed to understand that we can create our own APIs, especially now with the advancement of extensible APIs like Kubernetes.</p>
+<p>So, what should we do? The answer is obvious. We should create our own abstractions, just as we did so far, but, this time, those abstractions will be accessible through APIs.</p>
+<p>TODO: Logo: crossplane.png</p>
+<p><em>Before we move on, you might think that I&rsquo;m about to tell you that &ldquo;your own abstrations backed by APIs&rdquo; means Crossplane, but that&rsquo;s not the case. It can be anything. We can do it with Terraform, with Ansible, or whichever other technology we use today. So, if Crossplane is not your thing, rest assured that I am not on a mission to convince you otherwise, at least not today.</em></p>
+<p>Here&rsquo;s how those consoles should work. Here&rsquo;s the design. Here&rsquo;s what you should expect from third-party solutions or, if you&rsquo;re into building it yourself, here&rsquo;s what you should build.</p>
+<h2 id="developer-portals-based-on-apis">Developer Portals Based on APIs</h2>
+<p>TODO: Diagram: diag-06 (Use aws.png, azure.png, google-cloud.png, and kubernetes.png logos instead of text)</p>
+<p>So far, we established a few key components required for developer portal consoles. We need a graphical user interface, a console (1), APIs of the service providers like AWS, Azure, Google Cloud, and Kubernetes (2), and a set of APIs that we will build ourselves (3). We do that by creating our own abstractions that represent services our end users will consume. That can be backend and frontend applications, databases, clusters, or anything else (4). Those services combine and manage low-level resources like those in AWS, Azure, Google Cloud or Kubernetes (5). The important part of those internal services, at least in the context of today&rsquo;s subject, is that they expose their own APIs (6) and those APIs serve three primary purposes; discoverability, operations, and observability (7). Those are crucial for developer portal consoles.</p>
+<p>If, for example, we want to build a Web UI that enables users to consume services, that UI can be dumb. It does not have to know anything except the address of the API. There is no need for it to know which services are offered, what are specific fields that represent each of those services, which operations can be done with them, or how to observe resources. It does not need to know any of those things. It can be dumb, mainly because of the discoverability I mentioned earlier.</p>
+<p>If the console knows the address of the API, it can talk to it. For example, if a user wants to create something, the console can simply ask the API &ldquo;which services are available?&rdquo; (8). The API, in turn, should respond with a list that contains things like backend and frontend applications, PostgreSQL and MySQL databases, Kubernetes clusters in AWS, Google Cloud, and Azure, serverless applications, and so on and so forth.</p>
+<p>That&rsquo;s the first part of the discoverability story. The API knows which endpoints are exposed and if those endpoints represent services, the console can present the list by simply quering the API.</p>
+<p>But that&rsquo;s not all, when discoverability is concerned. APIs can also provide a schema (9) for any of those services. So, for example, if a user selects a PostgreSQL database, the console can simply go back to the API and ask for the schema of that specific endpoint. With the schema retrieved, it can dynamically generate the form with fields, and dropdown lists, and whatever else is useful to the end users. It knows which parameters are available, which ones are required, what is the type of each of the parameters, and so on and so forth. That&rsquo;s the purpose of having a schema and any API endpoint should have it. If it doesn&rsquo;t, you should be ashamed of your APIs.</p>
+<p>Further on, service consumers should be able to perform some operations. That&rsquo;s what others would call CRUD (create, read, update, and delete), but, in my case, it&rsquo;s only apply, read, and delete (10), since I assume that systems can figure out whether a resource should be created or updated. Now, depending on the system and permissions, service consumers might be allowed only a subset of those operations. For example, we might be able to apply and read the status of a database, but not to delete it. APIs should provide that information as well, typically based on RBAC.</p>
+<p>Finally, as you can probably guess, console does not need to know much about observability either since info comes through that same API as well. Complex observability tends to be separate from portal consoles, so we&rsquo;re often talking about simple cases like resource statuses, relevant logs and events. Those should be provided through that same API (11).</p>
+<p>All in all, there&rsquo;s no need to consoles to be &ldquo;clever&rdquo;. Good ones are dumb. The only thing they need to know is who to ask for information, paint it on a screen as forms, and communicate data provided by users back.</p>
+<p>Once we make them &ldquo;dumb&rdquo; by relying on APIs, we can think about more clever usages like synchronizing data with Git, sending webhooks, and so on. Those are bonuses, and even those should likely just be communications to some API.</p>
+<p>Hence, most of the work in making developer portals is not in the console, but in creating services that are exposed through APIs. Services can, and often are, complex. Graphical user interfaces shouldn&rsquo;t be.</p>
+<p>Now comes the big question. How can we build those services and expose them through APIs? How can we build the prerequisites required for graphical user interfaces, for consoles?</p>
+<p>The answer to those questions is obvious. That&rsquo;s Kubernetes (12), and when I say Kubernetes, I do not mean &ldquo;a thingy where your applications packaged as containers are running.&rdquo;</p>
+<p>Kubernetes is, first and foremost, an extensible API. These days, it&rsquo;s easy to create Kubernetes CRDs or Custom Resource Definitions that, effectively, extend the API. Behind those CRDs are controllers that do whatever we want them to do, and there is a plethora of tools that help us create controllers. Essentially, those controllers can be anything we want. If you are used to working with Ansible, it can easily become a controller that extends Kubernetes API through CRDs. If you prefer Terraform, or anything else, the answer is still the same. It&rsquo;s easy to create a CRD, it&rsquo;s just simple YAML, and anything can be wrapped into a controller that reacts to CRs or Custom Resources based on those CRDs. There&rsquo;s no excuse not to do it. In some cases, you won&rsquo;t even need to do anything. You can adopt Knative, KubeVirt, or any other of the projects that extend Kubernetes and give us simple interfaces to manage complex things. Those also extend Kubernetes API and they can also be discovered by your console.</p>
+<p><em>Effectively, in this context, when I talk about Kubernetes, I talk about a control plane that manages resources wherever they are and exposes abstractions as API endpoints. If you prefer to use something else, go ahead. The logic is the same.</em></p>
+<p>Hence, all that the console needs to do is ask Kubernetes which resource definitions are available, let users choose one, go back to Kubernetes to retrieve the schema, and paint it on the screen. That would be discoverability and operations, and the story is similar for observability. Ask for statuses, events, and logs, and show it to users.</p>
+<p>It&rsquo;s easy. UIs can be dumb. <strong>UIs should be dumb</strong>, and I get constantly surprised by projects in the developer portals space trying to make it anything more than that. Similarly, I get surprised when others start creating their own servers and databases and hidden or non existent APIs, while there is Kubernetes that does most of the heavy lifting. It&rsquo;s there. It&rsquo;s a standard. Use it!</p>
+<p>TODO: Logo: crossplane.png</p>
+<p><em>As I promised, I did not try to convince you to use Crossplane, even though it is my tool of choice to extend Kubernetes with user-facing interfaces. I did it!</em></p>
+<p>Thank you for watching.
+See you in the next one.
+Cheers.</p>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="/dot-narrow-yellow-bg.png"/></a>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/index.html" class=""><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
+          <li data-nav-id="/internal-developer-platforms/index.html" class="parent "><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li>
+          <li data-nav-id="/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html" class="active"><a class="padding" href="/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html">Developer Platform Consoles Should Be Dumb</a></li></ul></li>
+          <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
+          <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li>
+          <li data-nav-id="/app-management/pkl/index.html" class=""><a class="padding" href="/app-management/pkl/index.html">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</a></li></ul></li>
+          <li data-nav-id="/development-environments/index.html" class=""><a class="padding" href="/development-environments/index.html">Development Environments</a><ul id="R-subsections-b40bb3dd3715504862627d465ed722c6" class="morespace collapsible-menu">
+          <li data-nav-id="/development-environments/nix/index.html" class=""><a class="padding" href="/development-environments/nix/index.html">Nix for Everyone: Unleash Devbox for Simplified Development</a></li></ul></li>
+          <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
+          <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
+          <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
+          <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-dot" value="dot" selected>Dot</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1714948799" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1714948799" defer></script>
+    <script src="/js/theme.js?1714948799" defer></script>
+  </body>
+</html>

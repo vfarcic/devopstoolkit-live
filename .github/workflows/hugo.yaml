@@ -31,9 +31,6 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Theme
-        run: |
-          git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4

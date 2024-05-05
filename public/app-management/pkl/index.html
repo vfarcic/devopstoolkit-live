@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.4">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="Pkl is CUE killer!
+Pkl is JSON and YAML killer!
+Those are two sentences I heard lately. The former could be the case, while the latter is just silly. Let me explain.">
+    <meta name="author" content="Viktor Farcic">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE">
+    <meta name="twitter:description" content="Pkl is CUE killer!
+Pkl is JSON and YAML killer!
+Those are two sentences I heard lately. The former could be the case, while the latter is just silly. Let me explain.">
+    <meta property="og:url" content="http://localhost:1313/app-management/pkl/index.html">
+    <meta property="og:title" content="Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE">
+    <meta property="og:description" content="Pkl is CUE killer!
+Pkl is JSON and YAML killer!
+Those are two sentences I heard lately. The former could be the case, while the latter is just silly. Let me explain.">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE">
+    <meta itemprop="description" content="Pkl is CUE killer!
+Pkl is JSON and YAML killer!
+Those are two sentences I heard lately. The former could be the case, while the latter is just silly. Let me explain.">
+    <meta itemprop="datePublished" content="2024-03-25T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-03-25T16:00:00+00:00">
+    <meta itemprop="wordCount" content="3752">
+    <title>Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</title>
+    <link href="/app-management/pkl/index.xml" rel="alternate" type="application/rss+xml" title="Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE">
+    <link href="/css/fontawesome-all.min.css?1714948784" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1714948784" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1714948784" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714948784" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1714948784" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1714948784" rel="stylesheet">
+    <link href="/css/fonts.css?1714948784" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1714948784" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1714948784" rel="stylesheet">
+    <link href="/css/theme-dot.css?1714948784" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1714948784" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1714948784" rel="stylesheet">
+    <link href="/css/print.css?1714948784" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1714948784"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'dot' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/app-management/pkl/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#pkl-in-action">Pkl in Action</a></li>
+    <li><a href="#pkl-pros-and-cons">Pkl Pros and Cons</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/app-management/index.html"><span itemprop="name">Application Management</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/app-management/kcl/index.html" title="Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement? (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/development-environments/index.html" title="Development Environments (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="is-pkl-the-ultimate-data-format-unveiling-the-challenger-to-yaml-json-and-cue">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</h1>
+
+<p><strong>Pkl is CUE killer!</strong></p>
+<p><strong>Pkl is JSON and YAML killer!</strong></p>
+<p>Those are two sentences I heard lately. The former could be the case, while the latter is just silly. Let me explain.</p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Nm1ioWPRRVQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<img src="/logo/cue.svg" style="width:25%; float:right; padding: 10px">
+<p>It all started with a question I got a while ago. <strong>Is Pkl CUE killer?</strong> I love CUE. I use it for all my &ldquo;complex&rdquo; manifests, so, naturally, I had to take a look at it. I tried it and I discarded it. It looked silly. However, since it comes from Apple, I gave it another try, and it still looked silly, at least when compared to CUE. Still, I did not give up. I tried it for the third time and something clicked. There&rsquo;s something compelling about it. It started growing on me, so I decided to start using it seriously. I moved a few manifests to <a href="https://pkl-lang.org" rel="external" target="_blank">Pkl</a>. Now, you might say that a few manifests is not much, but it is, considering that the few manifests I chose to move to <code>pkl</code> are around two thousand lines long. It a decently big sample with quite a few repetitions, loops, and conditionals. Hence, I believe I have a good sample for the initial judgement.</p>
+<p>Let&rsquo;s start with the use cases.</p>
+<p>There are two primary reasons one might adopt <a href="https://pkl-lang.org" rel="external" target="_blank">Pkl</a>. You might use it as the <strong>configuration format inside your applications</strong>. Instead of reading YAML, JSON, properties, or any other format, our applications might be reading Pkl. I believe that&rsquo;s the primary motivation behind Pkl and, at the same time, something I have zero interest in adopting. YAML works failry well for that. It&rsquo;s easy to read from your code, or from anywhere else. There is no format easier to read than YAML and it is the de-facto standard. I have no intention changing that.</p>
+<p>Now, the fact that YAML is easy to read does not mean that it is easy to write. Or, to be more precise, to maintain. Anyone can write YAML, and, I believe that everyone should write YAML but, in some cases, YAML becomes too convoluted when working with big or complex definitions and when we need to update it. That&rsquo;s why many of us are generating rather than writing YAML. That&rsquo;s why we see wide adoption of Helm, Kustomize, Jsonnet, Carvel ytt, and other tools and formats, including my favorite, CUE. We write templates or overlays which produce YAML which, in turn, is consumed by humans or machines.</p>
+<p>That&rsquo;s where Pkl comes in. It aims to be a replacement of your favorite tool to <strong>generate static configurations</strong> no matter what the format of that configuration is. It formats into YAML, Json, Jsonnet, PCF, Properties, Plist, TextProto, xml, as well as into its own format. Hence, we can use Pkl to write dynamic templates that can be converted into almost any statis format. That&rsquo;s not much different from CUE. Both are &ldquo;special&rdquo; formats that allow us to define data dynamically. One, CUE, is based on Go while the other, Pkl, seem to have taken inspiration from Java and Groovy. At least, that&rsquo;s the impression I got.</p>
+<p>Let&rsquo;s take a closer look at it.</p>
+<h2 id="setup">Setup</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/vfarcic/crossplane-sql
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd crossplane-sql
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout pkl</span></span></code></pre></div><ul>
+<li>Download <code>pkl</code> by following the instructions at <a href="https://pkl-lang.org/main/current/pkl-cli/index.html#download" rel="external" target="_blank">https://pkl-lang.org/main/current/pkl-cli/index.html#download</a>.</li>
+</ul>
+<h2 id="pkl-in-action">Pkl in Action</h2>
+<p>Here&rsquo;s one of my Pkl definitions.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat pkl/aws.pkl</span></span></code></pre></div><p>That&rsquo;s a &ldquo;real world&rdquo; example of Pkl. That&rsquo;s one of the Pkl definitions I use to generate some of my Crossplane Compositions. We&rsquo;ll take a closer look at it in a moment. For now, let&rsquo;s see what it produces.</p>
+<p>We can evaluate that file&hellip;</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pkl eval pkl/aws.pkl</span></span></code></pre></div><p>&hellip;and the output is still Pkl except that now templates were converted into the final output.</p>
+<p>Now, that won&rsquo;t be useful to majority of us. Unless you plan to rewrite your application to use Pkl format directly, you expect something else. You might, for example, need to format it to YAML. All we have to do to get YAML is to add the <code>--format</code> argument.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pkl eval pkl/aws.pkl --format yaml</span></span></code></pre></div><p>There we go. I got YAML I needed. Your needs might be different. You might need Json instead, so let&rsquo;s change the value of the <code>--format</code> argument, hit the enter key, and&hellip;</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pkl eval pkl/aws.pkl --format json</span></span></code></pre></div><p>&hellip;the output is Json.</p>
+<p>Pkl also supports Jsonnet, PCF, Properties, Plist, TestProto, and XML.</p>
+<p>That&rsquo;s one of the similarities with CUE. Both provide a way to define templates that represent data and data can be output into any data format.</p>
+<p>Now, let&rsquo;s get back to the Pkl file we saw earlier and comment on a few of the key features.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat pkl/aws.pkl</span></span></code></pre></div><div class="highlight wrap-code"><pre tabindex="0"><code>...
+apiVersion = &#34;apiextensions.crossplane.io/v1&#34;
+kind       = &#34;Composition&#34;
+...</code></pre></div><p>Those few lines look very similar to YAML, except that we&rsquo;re using equal signs instead of colons to separate keys from values.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>...
+metadata {
+    name = &#34;aws-postgresql&#34;
+    labels {
+        provider = &#34;aws&#34;
+        db       = &#34;postgresql&#34;
+    }
+}
+spec {
+    compositeTypeRef {
+        apiVersion = &#34;devopstoolkitseries.com/v1alpha1&#34;
+        kind       = &#34;SQL&#34;
+    }
+    mode = &#34;Pipeline&#34;
+    pipeline {
+        new {
+            functionRef { name = &#34;crossplane-contrib-function-patch-and-transform&#34; }
+            ...</code></pre></div><p>The next few lines look more like Json, which is normal since Pkl is, I believe, built on top of Java which also likes curly braces (<code>{</code> and <code>}</code>).</p>
+<p>Still, so far there&rsquo;s nothing truly interesting in what I marked so far, so let&rsquo;s go up near the top where I defined a few classes.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>...
+class Subnet {
+    hidden zoneVar: String
+    hidden cidrBlockVar: String
+    name = &#34;subnet-\(zoneVar)&#34;
+    base {
+        apiVersion = &#34;ec2.aws.upbound.io/v1beta1&#34;
+        kind       = &#34;Subnet&#34;
+        metadata { labels { zone = &#34;us-east-1\(zoneVar)&#34; } }
+        ...
+...</code></pre></div><p>Now, if you check the documentation, you will not find information what classes (<code>class</code>) are or what they&rsquo;re used for. The explanation starts with &ldquo;Classes are arranged in a single inheritance hierarchy.&rdquo; Great. Now I know how they are arranged without knowing what they are. Well done!</p>
+<p>As a matter of fact, you won&rsquo;t find much information about anything in Pkl docs. If there would be a competition for the worst docs ever, Pkl would be a finalist. It would not win the worst documentation ever since Nix would get the gold medal, so Pkl would need to satisfy itself with silver or bronze.</p>
+<p>Anyways&hellip; From what I gathered, Pkl classes are similar to Java classes. We can use them to create instances of something and that something, in case of Pkl, are data objects.</p>
+<p>So, here I have a class called <code>Subnet</code> which contains a combination of static data, plus a few variables.</p>
+<p>The reason for the existence of that specific <code>class</code> is to avoid repetition. I had to define three subnets which are mostly the same except for the zone and CIDR blocks.</p>
+<p>So, I defined those two as variables <code>zoneVar</code> and <code>cidrBlockVar</code>. Both are <code>String</code> variables without default values meaning that whomever uses that class needs to specify them. Since, by default, Pkl outputs all data and it treats variables as data, I had to specify that those variablesare <code>hidden</code>, not output. Later on, I used those variables to customize the output, like in the case of <code>base.metadata.labels.zone</code> key that contains a combination of static text and value of the <code>zoneVar</code> variable.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>                    (Subnet) {
+                        zoneVar = &#34;a&#34;
+                        cidrBlockVar = &#34;11.0.0.0/24&#34;
+                    }
+                    (Subnet) {
+                        zoneVar = &#34;b&#34;
+                        cidrBlockVar = &#34;11.0.1.0/24&#34;
+                    }
+                    (Subnet) {
+                        zoneVar = &#34;c&#34;
+                        cidrBlockVar = &#34;11.0.2.0/24&#34;
+                    }
+...</code></pre></div><p>Further down, I&rsquo;m invoking that class (<code>Subnet</code>) three times, each with different values for the zone and the CIDR block. As a result, I&rsquo;m getting three Subnets without unnecessary duplication.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>...
+spec {
+    ...
+    pipeline {
+        new {
+            ...
+            input {
+                ...
+                resources {
+                    default {
+                        base {
+                            apiVersion = &#34;ec2.aws.upbound.io/v1beta1&#34;
+                            spec { forProvider { region = &#34;us-east-1&#34; } }
+                        }
+                        patches { new {
+                            type = &#34;PatchSet&#34;
+                            patchSetName = &#34;metadata&#34;
+                        } }
+                    }
+                    new {
+                        name = &#34;vpc&#34;
+                        base {
+                            kind = &#34;VPC&#34;
+                            spec { forProvider {
+                                cidrBlock          = &#34;11.0.0.0/16&#34;
+                                enableDnsSupport   = true
+                                enableDnsHostnames = true
+                            } }
+                        }
+                    }
+                    ...</code></pre></div><p>Everything I shown so far are key/value examples and it took me a while to understand how to create lists. As a matter of fact, they are easy once you get over the hurdle of uncomprehensible documentation. If a value is a <code>new</code> object, it automatically becomes an item in a list.</p>
+<p>Here, for example, I&rsquo;m saying that the first item in the list of <code>resources</code> is whatever is inside the <code>new</code> object.</p>
+<p>Here&rsquo;s a nice one though. We can define <code>default</code> values of objects in a list. In this case, I&rsquo;m specifying that the default <code>spec.apiVersion</code> will be <code>ec2.aws.upbound.io/v1beta1</code>, that the <code>base.spec.forProvider.region</code> will be, by default <code>us-east-1</code>, and so on and so forth. Later on, inside the <code>new</code> objects, I can overwrite specific default entries.</p>
+<p>There are also templates like the  one I defined in <code>goTemplate.pkl</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat pkl/goTemplate.pkl</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>hidden templateVar: String
+hidden delimLeft = &#34;{{&#34;
+hidden delimRight = &#34;}}&#34;
+
+functionRef { name = &#34;crossplane-contrib-function-go-templating&#34; }
+step: String
+input {
+    apiVersion = &#34;gotemplating.fn.crossplane.io/v1beta1&#34;
+    kind       = &#34;GoTemplate&#34;
+    source     = &#34;Inline&#34;
+    delims {
+        left = delimLeft
+        right = delimRight
+    }
+    inline {
+      template = templateVar
+    }
+}</code></pre></div><p>That&rsquo;s a template similar to a <code>class</code>, yet slightly different, and I dare you to understand the differences from the docs.</p>
+<p>Anyways, over here I&rsquo;m defining some <code>hidden</code> variables and some data (<code>functionRef</code>, <code>apiVersion</code>) just as I did before. The major difference is that it is specified in a separate file which I can reference, as I did in <code>daprComponents.pkl</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat pkl/daprComponents.pkl</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>amends &#34;goTemplate.pkl&#34;
+
+step = &#34;dapr-components&#34;
+templateVar = &#34;&#34;&#34;
+    {{ if and .observed.composite.resource.spec.parameters.secrets.daprComponents .observed.composite.resource.spec.parameters.secrets.pullToCluster }}
+    {{ range .observed.composite.resource.spec.parameters.databases }}
+    ---
+    apiVersion: kubernetes.crossplane.io/v1alpha2
+    kind: Object
+    metadata:
+      name: {{ $.observed.composite.resource.spec.id }}-dapr-component-{{ . }}
+      annotations:
+        gotemplating.fn.crossplane.io/composition-resource-name: {{ $.observed.composite.resource.spec.id }}-dapr-component-{{ . }}
+    spec:
+      providerConfigRef:
+        name: {{ $.observed.composite.resource.spec.parameters.secrets.pullToCluster }}
+      forProvider:
+        manifest:
+          apiVersion: dapr.io/v1alpha1
+          kind: Component
+          metadata:
+            name: {{ $.observed.composite.resource.spec.id }}-{{ . }}
+            namespace: {{ $.observed.composite.resource.spec.parameters.secrets.pullToClusterNamespace }}
+          spec:
+            type: state.postgresql
+            version: v1
+            metadata:
+              - name: connectionString
+                secretKeyRef:
+                  name: {{ $.observed.composite.resource.spec.id }}
+                  key: conn-{{ . }}
+    {{ end }}
+    {{ end }}
+    &#34;&#34;&#34;</code></pre></div><p>This is also a template which imports the previous template (<code>goTemplate.pkl). Now, by default, templates are immutable, unless we choose to </code>ammend` them, just as I&rsquo;m doing here.</p>
+<p><em>You can safely ignore the insanity I have here with the value of <code>templateVar</code> set to a GoTemplate inside Pkl. The reasons for that are irrelevant for this story.</em></p>
+<p>There are many other aspects of Pkl, and here&rsquo;s an important note. Pkl can output results into many different formats, but that does not mean that everything works in all the formats. If, for example, you go through the quickstart, you&rsquo;ll find this example. Try to output it as YAML or JSON, and you&rsquo;ll see that it does not work. The only format Pkl can always output to is Pkl. For everything else, you need to ensure that what you&rsquo;re doing is compatible with YAML, Json, Jsonnet, or whatever the destination format is.</p>
+<p>What else&hellip;?</p>
+<p>It works as a Gradle plugin, and it supports IntelliJ, VS Code, and Neovim. I tend to use VS Code and the plugin is&hellip; Pasable. It&rsquo;s not great, but it works, more or less.</p>
+<p>There are also language bindings for Java, Kotlin, Swift, and Go which can be useful if you do choose to adopt Pkl as the configuration format instead of a tool that converts templates into something else like YAML or Json. I&rsquo;m not sure that the former makes sense and, if it doesn&rsquo;t, the bindings are, more or less, useless. Still, you might go all in on Pkl and, if you do, and if you happen to be a Java or Go shop, you&rsquo;ll find those bindings useful.</p>
+<h2 id="pkl-pros-and-cons">Pkl Pros and Cons</h2>
+<p>Here&rsquo;s the big question. <strong>Should you adopt Pkl</strong> and ditch whatever you&rsquo;re using right now? The answer to that question is&hellip; <strong>It depends</strong>. If, for example, you&rsquo;re planning to create YAML that represents Kubernetes resources, you might want to go with something specifically designed to work with Kubernetes. If it&rsquo;s a set of relatively simple manifests that require small amount of changes, what you typically have with your own applications, <strong>Kustomize</strong> is still a better choice. If you are using third-party applications, <strong>Helm</strong> is inevitable. If you are distributing your applications to others, Helm is still inevitable since that&rsquo;s what others are expecting.</p>
+<p>Should you then adopt Pkl as the configuration format your applications use instead of Properties files or YAML or whatever you&rsquo;re using today? There&rsquo;s probably no need to switch, especially not this early while Pkl is still in early stages.</p>
+<p>So, does that mean that there is <strong>no space for Pkl</strong>?</p>
+<p>I think there is a good use case when the end result, YAML, Json, XML, or whatever you&rsquo;re using is sufficiently big with repetitions and frequent updates.</p>
+<p>That&rsquo;s the situation I&rsquo;m in with Crossplane Compositions I shown in this video. There&rsquo;s around two thousand lines of YAML to be generated. It&rsquo;s too much YAML for me to manage directly with too many repetions across Compositions. I have all that complexity in form of Crossplane Compositions precisely so that users of my services, in this case databases, do not need to deal with it. They will just create a few lines of YAML that represent claims and all the required resources will be assembled inside a control plane cluster. Nevertheless, I need to assemble all that YAML somehow, and writing YAML directly is not an option, so I needed something else.</p>
+<p>That something else could be Helm charts which I don&rsquo;t like. Helm is unaware that it is working with data. It is a free-text templating engine. On top of that, it&rsquo;s missing too many features I deem important. Hence, Helm is not a good option, at least not for me. Then there are formats like Jsonnet, ytt, and a few others which do not make sense for simple setups, but are great for situations I&rsquo;m in. However, my choice is none of those. I prefer CUE backed by Timoni.</p>
+<p><em>If you are not familiar with CUE or Timoni, please watch <a href="https://youtu.be/m6g0aWggdUQ" rel="external" target="_blank">Is CUE The Perfect Language For Kubernetes Manifests (Helm Templates Replacement)?</a> and <a href="https://youtu.be/bbE1BFCs548" rel="external" target="_blank">Is Timoni With CUE a Helm Replacement?</a>.</em></p>
+<p>So, in my case, if I am to adopt Pkl, it would be as a replacement for CUE which I use to generate YAML. Hence, the initial two questions are good ones.</p>
+<p><strong>Should Pkl replace JSON or YAML?</strong> The answer to that one is a big <strong>No</strong>. If what you have is small enough and not updated frequently, use YAML or Json directly. There&rsquo;s no need to complicate your life with anything else. If your situation is more complicated and you need to generate YAML or Json, than the question is a different one.</p>
+<p><strong>Should Pkl replace Jsonnet or CUE?</strong> or whichever other solution you might be using?</p>
+<p>I&rsquo;m now torn between CUE and Pkl. I feel that CUE is a better choice but with a steeper learning curve. If you master CUE and you learn to deal with its immutability, you should probably stick with it. On the other hand, if you want something easier to learn yet very effective, Pkl is actually a pretty good one. Nevertheless, It&rsquo;ll still take a while until you wrap your head around it. You won&rsquo;t learn it in an hour, so it&rsquo;s somewhere between the simplicity of Kustomize on one side, and CUE or Jsonnet on the other.</p>
+<p>Personally, I stopped using anything but Kustomize for simple situations and CUE for more complex scenarios. Now I&rsquo;m adding Pkl to the mix and I&rsquo;ll do my best to continue using CUE for some of my projects and Pkl for others so that I get a better understanding of the pros and cons of both and, more importantly, figure out which one feels better. After all, if both can accomplish, more or less the same results, it&rsquo;s more about the feeling than anything else. Hence, I&rsquo;ll use both in the upcoming months and try to establish which one of the two I like more.</p>
+<p>With all that in mind, here are the pros and cons but, unlike in other videos, they are heavily focused on my use cases.</p>
+<p><strong>Cons</strong></p>
+<ul>
+<li>Documentation</li>
+<li>Why?</li>
+<li>(Probably) not better than CUE</li>
+</ul>
+<p>Starting with negatives or cons, the first one on the list is <strong>documentation</strong>. It&rsquo;s not the worst documentation I saw, that privilege goes to Nix, but it is still pretty bad. Pkl is a language or a DSL making it hard to figure out what is what without a good documentation. If it would be yet another tool, it would be different. It&rsquo;s relatively easy to understand what a CLI does or what to do in a Web UI type of a solution. But this is not it. This is a language and a language needs exceptional documentation and plenty of examples. More over, it&rsquo;s not only about the docs alone. For example, given that Pkl is relatively new, you won&rsquo;t find much help outside the official docs. You cannot rely much on stack overflow and AI tools like Copilot will not help you either. As a matter of fact, I asked GitHub Copilot to explain a Pkl file and it deduced that it is HCL or something similar. All that is to be expected and the phase any new project, especially a language needs to pass through. If Pkl gets wider adoption, it will have more contributions, including the docs, it will have conversations on StackOverflow and Reddit, and AIs will eventually learn what it is. But that&rsquo;s the future. That&rsquo;s not the stage the project is in today.</p>
+<p>The second negative point is a single word question: &ldquo;<strong>Why?</strong>&rdquo; What is the reason behind the existence of yet another language or a DSL that allows us to transform data into YAML, Json, XML, or any other static format?</p>
+<p>My understanding is that Apple uses it internally. It probably works well for them so there is a strong chance that it will work for others. That&rsquo;s great. I will always support companies sharing their internal projects.</p>
+<p>There is a page in the docs that compares Pkl with other solutions. It talks about the reasons why not to use a static config format like YAML, Json, and XML, and that makes sense. That&rsquo;s why we have languages like CUE, templates like Helm, overlaying solutions like Kustomize, and other config languages like Jsonnet and HCL. There was no reason to compare itself with static config formats. That&rsquo;s obvious. Then it goes on into a comparison with general purpose languages and that makes sense as well. Most of us do not use Python or Java or JavaScript to create static configs. We have tools for that. We have CUE which is based on Go, Helm which is also based on Go, CDK8S which works with most of the languages, and many others. Hence, I understand why we should not use general purpose languages directly. The dissapointing part is that the docs did not mention any of the libraries and frameworks that are based on general purpose languages. That would be a good comparison. Even if you&rsquo;d say that CUE and Helm are not good because they use Go syntax which you might not like and CDK8S is too much focused on Kubernetes, there is still Pulumi and many others that can transform your general purpose language of choice into YAML or whichever other format you need.</p>
+<p>I suspect that the key is in Java. I suspect that Pkl creators work with Java and wanted something close to Java yet something that is not Java alone.</p>
+<p>Finally, the comparison page goes on to compare it with configuration languages like Jsonnet, HCL, and Dhall. There are no good arguments there except embedding into JVM applications, making my suspicion that it&rsquo;s all about Java a valid one.</p>
+<p>All in all, I&rsquo;m not sure that the reasons for creating Pkl are valid beyond the ability to embeed it into JVM applications.</p>
+<p>Finally, the last negative point and that it is <strong>not better than CUE</strong>. At best, it is slightly easier to learn than CUE, especially if you are not familiar with Jsonnet and Go since CUE is a combination of those two. Where Pkl shines is for those not familiar with those. It takes time to learn Pkl, but it probably takes even more time to learn CUE so I&rsquo;ll change my statement to &ldquo;CUE is probably a better choice for complex setups if you are willing to learn it&rdquo;.</p>
+<p>Those were negative points that might make you think that I really dislike Pkl, but that&rsquo;s not the case. The more I use it, the more I like it. I am not saying that it will replace my configurations defined as CUE but only that it could. Time will tell.</p>
+<p><strong>Pros</strong></p>
+<ul>
+<li>(Relatively) easy to learn</li>
+<li>Outputs to any format</li>
+<li>Language bindings</li>
+</ul>
+<p>As for the positive points, for the pros&hellip;</p>
+<p>To begin with, Pkl is <strong>relatively easy to learn</strong> when compared to Jsonnet, CUE, and other languages and formats. It&rsquo;s not easy though. It&rsquo;s just slighly easier, and that&rsquo;s a good thing if the goal is to get wide adoption.</p>
+<p>Another great thing, even though it is not unique, is that we can <strong>output Pkl to almost any static configuration format</strong>. If we need YAML, it can be output to YAML. If we need JSON, it can be output to JSON. XML, Properties, PCF&hellip; All are supported. Now, to be clear, that&rsquo;s not much of an advantage since CUE and others can also output to almost any format. When the purpose of a language is to generate structured data, it&rsquo;s easy to output that data to any format. Still, Pkl can output to almost anything, and that&rsquo;s a good thing, even though I doubt that you&rsquo;ll need the same data in more than one format.</p>
+<p>The last potentially great feature are <strong>language bindings</strong>. If you want to consume Pkl format directly from inside the code of your application, Pkl allows you to do that easily, as long as that language is Java, Kotlin, Swift, or Go. Whether you should do that, whether you should have your app consume Pkl files instead of YAML, Json, or XML is a completely other question. I&rsquo;d say no, but I might be wrong, so I&rsquo;m giving language bindings thumbs up just in case.</p>
+<p>All in all, Pkl is growing up on me. It started with &ldquo;<strong>I don&rsquo;t like this</strong>. I don&rsquo;t understand why it exists&rdquo; and now it&rsquo;s in the &ldquo;<strong>It might be a good thing</strong>&rdquo; category. I&rsquo;ll continue using CUE for some of my projects and Pkl for others. I&rsquo;ll let you know which one will prevail.</p>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="/dot-narrow-yellow-bg.png"/></a>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/index.html" class=""><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
+          <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li>
+          <li data-nav-id="/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html" class=""><a class="padding" href="/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html">Developer Platform Consoles Should Be Dumb</a></li></ul></li>
+          <li data-nav-id="/app-management/index.html" class="parent "><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
+          <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li>
+          <li data-nav-id="/app-management/pkl/index.html" class="active"><a class="padding" href="/app-management/pkl/index.html">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</a></li></ul></li>
+          <li data-nav-id="/development-environments/index.html" class=""><a class="padding" href="/development-environments/index.html">Development Environments</a><ul id="R-subsections-b40bb3dd3715504862627d465ed722c6" class="morespace collapsible-menu">
+          <li data-nav-id="/development-environments/nix/index.html" class=""><a class="padding" href="/development-environments/nix/index.html">Nix for Everyone: Unleash Devbox for Simplified Development</a></li></ul></li>
+          <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
+          <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
+          <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
+          <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/app-management/pkl/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-dot" value="dot" selected>Dot</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1714948784" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1714948784" defer></script>
+    <script src="/js/theme.js?1714948784" defer></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer Platform Consoles Should Be Dumb</title>
+    <link>http://localhost:1313/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html</link>
+    <description>Most of the developer platform consoles I saw are getting it completely wrong, and I honestly cannot understand why. For decades now we know that a good UI is a dumb UI. A good UI does not contain much logic. UIs rely on APIs to discover what can be done and what information is needed to do whatever should be done. Yet, when I see developer portal UIs, more often than not, they do not try to rely on APIs. Instead, they are doing their best to ignore them, to bypass them, to use their internal APIs, and to do too much for no good reason.&#xA;Hence, this post is about creating good a developer portal console by making it dumb.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
