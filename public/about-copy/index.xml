@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About The DeveOps Toolkit</title>
+    <link>http://localhost:1313/about-copy/index.html</link>
+    <description>We want to help you learn the tools and the processes that you should be using and applying in your day-to-day job. We want to help you make decisions. What works well, what doesn’t work, why you should choose one tool over the other, and how to get up-to-speed quickly. Which tool works the best for a given task? What should we explore in more depth, and what is a waste of time?</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/about-copy/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

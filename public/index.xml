@@ -36,5 +36,12 @@
       <guid>http://localhost:1313/about/index.html</guid>
       <description>We want to help you learn the tools and the processes that you should be using and applying in your day-to-day job. We want to help you make decisions. What works well, what doesn’t work, why you should choose one tool over the other, and how to get up-to-speed quickly. Which tool works the best for a given task? What should we explore in more depth, and what is a waste of time?</description>
     </item>
+    <item>
+      <title>Sponsor DevOps Toolkit</title>
+      <link>http://localhost:1313/sponsor/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sponsor/index.html</guid>
+      <description>The following sponsorship options are available on The DevOps Toolkit YouTube channel:&#xA;30-60 seconds ad inside a video Full video review and/or tutorial The objective behind accepting sponsorships in the The DevOps Toolkit channel is to cover the costs of equipment and post-production (e.g., editing, animations, etc.). As such, the number of sponsorship spots is limited.&#xA;30-60 seconds ad inside a video The price of a 30-60 seconds ad inside a video is $1000.</description>
+    </item>
   </channel>
 </rss>
