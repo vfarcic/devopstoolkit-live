@@ -3,11 +3,18 @@
   <channel>
     <title>Kubernetes</title>
     <link>http://localhost:1313/kubernetes/index.html</link>
-    <description>Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.&#xA;Mastering Kubernetes Testing Kyverno Chainsaw!Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it.</description>
+    <description>Single Pane of Glass for Kubernetes Clusters with ClusterpediaFor a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Apr 2024 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2024 16:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Single Pane of Glass for Kubernetes Clusters with Clusterpedia</title>
+      <link>http://localhost:1313/kubernetes/clusterpedia/index.html</link>
+      <pubDate>Mon, 06 May 2024 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/kubernetes/clusterpedia/index.html</guid>
+      <description>For a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that. I can easily see what’s going on in a cluster with kubectl or any, literally any, Kubernetes dashboard. What I’m missing, and what all the tools I tried so far fail to deliver, is a single pane of glass for all my Kubernetes clusters.</description>
+    </item>
     <item>
       <title>Mastering Kubernetes: Dive into Workloads APIs</title>
       <link>http://localhost:1313/kubernetes/workloads/index.html</link>
@@ -21,6 +28,13 @@
       <pubDate>Mon, 08 Apr 2024 16:00:00 +0000</pubDate>
       <guid>http://localhost:1313/kubernetes/chainsaw/index.html</guid>
       <description>Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.&#xA;Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.</description>
+    </item>
+    <item>
+      <title>Mastering Kubernetes: Dive into Service and Network APIs</title>
+      <link>http://localhost:1313/kubernetes/services-ingress-cluster-api/index.html</link>
+      <pubDate>Sat, 13 May 2023 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/kubernetes/services-ingress-cluster-api/index.html</guid>
+      <description> In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.&#xA;When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.</description>
     </item>
   </channel>
 </rss>

@@ -21,10 +21,18 @@
     <lastmod>2024-03-18T16:00:00+00:00</lastmod>
   </url>
   <url>
+    <loc>http://localhost:1313/ci-cd/index.html</loc>
+    <lastmod>2024-03-04T16:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/about/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/sponsor/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/kubernetes/clusterpedia/index.html</loc>
+    <lastmod>2024-05-06T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/internal-developer-platforms/platform-engineering-menu/index.html</loc>
@@ -55,8 +63,12 @@
     <lastmod>2024-03-18T16:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/internal-developer-platforms/developer-platform-consoles-should-be-dumb/index.html</loc>
-    <lastmod>2024-03-11T16:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html</loc>
+    <lastmod>2024-03-04T16:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/kubernetes/services-ingress-cluster-api/index.html</loc>
+    <lastmod>2023-05-13T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>

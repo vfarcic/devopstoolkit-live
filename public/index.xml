@@ -13,7 +13,7 @@
       <link>http://localhost:1313/kubernetes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/kubernetes/index.html</guid>
-      <description>Mastering Kubernetes: Dive into Workloads APIsYou might be new to Kubernetes or you might have been working with it for a while. No matter your experience level, you might not be aware of all the Kubernetes Workload APIs.&#xA;Mastering Kubernetes Testing Kyverno Chainsaw!Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it.</description>
+      <description>Single Pane of Glass for Kubernetes Clusters with ClusterpediaFor a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.</description>
     </item>
     <item>
       <title>Internal Developer Platforms</title>
