@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
+<img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Kubernetes: Dive into Service and Network APIs](/kubernetes/services-ingress-cluster-api)
 
@@ -15,7 +15,7 @@ When I asked whether it would be interesting to explore another set of Kubernete
 
 **[Full article >>](/kubernetes/services-ingress-cluster-api)**
 
---- -->
+---
 
 <img src="/kubernetes/clusterpedia/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
