@@ -5,33 +5,37 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content="Single Pane of Glass for Kubernetes Clusters with ClusterpediaFor a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.">
+    <meta name="description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
+When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Kubernetes">
-    <meta name="twitter:description" content="Single Pane of Glass for Kubernetes Clusters with ClusterpediaFor a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.">
+    <meta name="twitter:description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
+When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
     <meta property="og:url" content="http://localhost:1313/kubernetes/index.html">
     <meta property="og:title" content="Kubernetes">
-    <meta property="og:description" content="Single Pane of Glass for Kubernetes Clusters with ClusterpediaFor a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.">
+    <meta property="og:description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
+When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="Kubernetes">
-    <meta itemprop="description" content="Single Pane of Glass for Kubernetes Clusters with ClusterpediaFor a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.">
-    <meta itemprop="dateModified" content="2024-05-06T16:00:00+00:00">
+    <meta itemprop="description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
+When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta itemprop="dateModified" content="2024-05-13T16:00:00+00:00">
     <meta itemprop="wordCount" content="346">
     <title>Kubernetes</title>
     <link href="/kubernetes/index.xml" rel="alternate" type="application/rss+xml" title="Kubernetes">
-    <link href="/css/fontawesome-all.min.css?1715392316" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1715392316" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1715392316" rel="stylesheet">
-    <link href="/css/auto-complete.css?1715392316" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1715392316" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1715392316" rel="stylesheet">
-    <link href="/css/fonts.css?1715392316" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1715392316" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1715392316" rel="stylesheet">
-    <link href="/css/theme-dot.css?1715392316" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1715392316" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1715392316" rel="stylesheet">
-    <link href="/css/print.css?1715392316" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1715392316"></script>
+    <link href="/css/fontawesome-all.min.css?1715732639" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1715732639" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1715732639" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715732639" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1715732639" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1715732639" rel="stylesheet">
+    <link href="/css/fonts.css?1715732639" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1715732639" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1715732639" rel="stylesheet">
+    <link href="/css/theme-dot.css?1715732639" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1715732639" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1715732639" rel="stylesheet">
+    <link href="/css/print.css?1715732639" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1715732639"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -49,6 +53,27 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NXCC9XM9Y"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2NXCC9XM9Y');
+        }
+      </script>
+    
+  
+
+
   </head>
   <body class="mobile-support html" data-url="/kubernetes/index.html">
     <div id="R-body" class="default-animation">
@@ -72,7 +97,7 @@
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="(🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes/clusterpedia/index.html" title="Single Pane of Glass for Kubernetes Clusters with Clusterpedia (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes/services-ingress-cluster-api/index.html" title="Mastering Kubernetes: Dive into Service and Network APIs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -97,13 +122,13 @@
 
 <div class="children children-h2 children-sort-date">
 	
+<h2><a href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></h2><p><img src="/logo/kubernetes.png" style="width:50%; float:right; padding: 10px">
+<p>In the <a href="https://youtu.be/U6weXlzQxoY" rel="external" target="_blank">Mastering Kubernetes: Dive into Workloads APIs</a> video we explored Kubernetes <strong>Workload APIs</strong>. We saw the differences between <strong>Pods</strong>, <strong>ReplicaSets</strong>, <strong>Jobs</strong>, <strong>Deployments</strong>, <strong>StatefulSets</strong>, <strong>DaemonSets</strong>, and <strong>CronJobs</strong>.</p>
+<p>When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say &ldquo;<strong>Yes. Do more!</strong>&rdquo; So, today we will continue where we left.</p></p>
 <h2><a href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></h2><p><p>For a while now, we have tools that promise that we can manage a <strong>fleet of Kubernetes clusters</strong> as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don&rsquo;t need tools for that. I can easily see what&rsquo;s going on in a cluster with kubectl or any, literally any, Kubernetes dashboard. What I&rsquo;m missing, and what all the tools I tried so far fail to deliver, is a <strong>single pane of glass</strong> for all my Kubernetes clusters.</p></p>
 <h2><a href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></h2><p><p>You might be new to <strong>Kubernetes</strong> or you might have been working with it for a while. No matter your experience level, you might not be aware of all the <strong>Kubernetes Workload APIs</strong>.</p></p>
 <h2><a href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></h2><p><p><strong>Testing is important</strong>, no matter what you&rsquo;re working on. If you write Java code, you need to test it. If you&rsquo;re managing infrastructure, you need to test it. If you&rsquo;re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.</p>
 <p>Now, today&rsquo;s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of <strong>test-driven development</strong>, <strong>test automation</strong>, <strong>CI/CD pipelines</strong>, or anything else related to testing.</p></p>
-<h2><a href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></h2><p><img src="/logo/kubernetes.png" style="width:50%; float:right; padding: 10px">
-<p>In the <a href="https://youtu.be/U6weXlzQxoY" rel="external" target="_blank">Mastering Kubernetes: Dive into Workloads APIs</a> video we explored Kubernetes <strong>Workload APIs</strong>. We saw the differences between <strong>Pods</strong>, <strong>ReplicaSets</strong>, <strong>Jobs</strong>, <strong>Deployments</strong>, <strong>StatefulSets</strong>, <strong>DaemonSets</strong>, and <strong>CronJobs</strong>.</p>
-<p>When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say &ldquo;<strong>Yes. Do more!</strong>&rdquo; So, today we will continue where we left.</p></p>
 </div>
 
             <footer class="footline">
@@ -126,10 +151,10 @@
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/kubernetes/index.html" class="active parent "><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
-          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li></ul></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -195,8 +220,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1715392316" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1715392316" defer></script>
-    <script src="/js/theme.js?1715392316" defer></script>
+    <script src="/js/clipboard.min.js?1715732639" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1715732639" defer></script>
+    <script src="/js/theme.js?1715732639" defer></script>
   </body>
 </html>

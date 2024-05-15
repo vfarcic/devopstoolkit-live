@@ -4,7 +4,7 @@ date = 2024-05-13T16:00:00+00:00
 draft = false
 +++
 
-<img src="/logo/kubernetes.png" style="width:50%; float:right; padding: 10px">
+<img src="/logo/kubernetes.png" style="width:40%; float:right; padding: 10px">
 
 In the [Mastering Kubernetes: Dive into Workloads APIs](https://youtu.be/U6weXlzQxoY) video we explored Kubernetes **Workload APIs**. We saw the differences between **Pods**, **ReplicaSets**, **Jobs**, **Deployments**, **StatefulSets**, **DaemonSets**, and **CronJobs**.
 

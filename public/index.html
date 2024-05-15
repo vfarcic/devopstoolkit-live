@@ -6,29 +6,33 @@
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="Latest Posts Single Pane of Glass for Kubernetes Clusters with Clusterpedia For a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.">
+    <meta name="description" content="Latest Posts Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
+When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Latest Posts Single Pane of Glass for Kubernetes Clusters with Clusterpedia For a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.">
+    <meta name="twitter:description" content="Latest Posts Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
+When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
     <meta property="og:url" content="http://localhost:1313/index.html">
-    <meta property="og:description" content="Latest Posts Single Pane of Glass for Kubernetes Clusters with Clusterpedia For a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.">
+    <meta property="og:description" content="Latest Posts Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
+When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
-    <meta itemprop="description" content="Latest Posts Single Pane of Glass for Kubernetes Clusters with Clusterpedia For a while now, we have tools that promise that we can manage a fleet of Kubernetes clusters as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don’t need tools for that.">
-    <meta itemprop="dateModified" content="2024-05-06T16:00:00+00:00">
-    <meta itemprop="wordCount" content="279">
+    <meta itemprop="description" content="Latest Posts Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
+When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta itemprop="dateModified" content="2024-05-13T16:00:00+00:00">
+    <meta itemprop="wordCount" content="351">
     <title></title>
-    <link href="/css/fontawesome-all.min.css?1715392316" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1715392316" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1715392316" rel="stylesheet">
-    <link href="/css/auto-complete.css?1715392316" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1715392316" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1715392316" rel="stylesheet">
-    <link href="/css/fonts.css?1715392316" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1715392316" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1715392316" rel="stylesheet">
-    <link href="/css/theme-dot.css?1715392316" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1715392316" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1715392316" rel="stylesheet">
-    <link href="/css/print.css?1715392316" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1715392316"></script>
+    <link href="/css/fontawesome-all.min.css?1715732639" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1715732639" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1715732639" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715732639" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1715732639" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1715732639" rel="stylesheet">
+    <link href="/css/fonts.css?1715732639" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1715732639" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1715732639" rel="stylesheet">
+    <link href="/css/theme-dot.css?1715732639" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1715732639" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1715732639" rel="stylesheet">
+    <link href="/css/print.css?1715732639" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1715732639"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='.';
@@ -46,6 +50,27 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NXCC9XM9Y"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2NXCC9XM9Y');
+        }
+      </script>
+    
+  
+
+
   </head>
   <body class="mobile-support html" data-url="/index.html">
     <div id="R-body" class="default-animation">
@@ -60,6 +85,7 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
+    <li><a href="#mastering-kubernetes-dive-into-service-and-network-apiskubernetesservices-ingress-cluster-api"><a href="/kubernetes/services-ingress-cluster-api">Mastering Kubernetes: Dive into Service and Network APIs</a></a></li>
     <li><a href="#single-pane-of-glass-for-kubernetes-clusters-with-clusterpediakubernetesclusterpedia"><a href="/kubernetes/clusterpedia">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></a></li>
     <li><a href="#how-platform-engineering-compares-to-running-a-restaurantinternal-developer-platformsplatform-engineering-menu"><a href="/internal-developer-platforms/platform-engineering-menu">How Platform Engineering Compares to Running a Restaurant</a></a></li>
     <li><a href="#exploring-kcl-configuration-and-data-structure-language-cue-and-pkl-replacementapp-managementkcl"><a href="/app-management/kcl">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></a></li>
@@ -97,17 +123,12 @@
 <h1 id=""></h1>
 
 <h1 id="latest-posts">Latest Posts</h1>
-<!-- <img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
-
-## [Mastering Kubernetes: Dive into Service and Network APIs](/kubernetes/services-ingress-cluster-api)
-
-In the [Mastering Kubernetes: Dive into Workloads APIs](https://youtu.be/U6weXlzQxoY) video we explored Kubernetes **Workload APIs**. We saw the differences between **Pods**, **ReplicaSets**, **Jobs**, **Deployments**, **StatefulSets**, **DaemonSets**, and **CronJobs**.
-
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say "**Yes. Do more!**" So, today we will continue where we left.
-
-**[Full article >>](/kubernetes/services-ingress-cluster-api)**
-
---- -->
+<img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
+<h2 id="mastering-kubernetes-dive-into-service-and-network-apiskubernetesservices-ingress-cluster-api"><a href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></h2>
+<p>In the <a href="https://youtu.be/U6weXlzQxoY" rel="external" target="_blank">Mastering Kubernetes: Dive into Workloads APIs</a> video we explored Kubernetes <strong>Workload APIs</strong>. We saw the differences between <strong>Pods</strong>, <strong>ReplicaSets</strong>, <strong>Jobs</strong>, <strong>Deployments</strong>, <strong>StatefulSets</strong>, <strong>DaemonSets</strong>, and <strong>CronJobs</strong>.</p>
+<p>When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say &ldquo;<strong>Yes. Do more!</strong>&rdquo; So, today we will continue where we left.</p>
+<p><strong><a href="/kubernetes/services-ingress-cluster-api/index.html">Full article &raquo;</a></strong></p>
+<hr>
 <img src="/kubernetes/clusterpedia/thumbnail.png" style="width:50%; float:right; padding: 10px">
 <h2 id="single-pane-of-glass-for-kubernetes-clusters-with-clusterpediakubernetesclusterpedia"><a href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></h2>
 <p>For a while now, we have tools that promise that we can manage a <strong>fleet of Kubernetes clusters</strong> as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don&rsquo;t need tools for that. I can easily see what&rsquo;s going on in a cluster with kubectl or any, literally any, Kubernetes dashboard. What I&rsquo;m missing, and what all the tools I tried so far fail to deliver, is a <strong>single pane of glass</strong> for all my Kubernetes clusters.</p>
@@ -143,10 +164,10 @@ When I asked whether it would be interesting to explore another set of Kubernete
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/kubernetes/index.html" class=""><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
-          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li></ul></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -212,8 +233,8 @@ When I asked whether it would be interesting to explore another set of Kubernete
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1715392316" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1715392316" defer></script>
-    <script src="/js/theme.js?1715392316" defer></script>
+    <script src="/js/clipboard.min.js?1715732639" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1715732639" defer></script>
+    <script src="/js/theme.js?1715732639" defer></script>
   </body>
 </html>

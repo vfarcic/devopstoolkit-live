@@ -12,3 +12,7 @@ enableEmoji = true
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-2NXCC9XM9Y'
