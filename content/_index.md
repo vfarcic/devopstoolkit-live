@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png" style="width:50%; float:right; padding: 10px">
+
+## [Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget](/observability/inspektor-gadget-kubernetes-debugging-ebpf)
+
+Kubernetes ecosystem is one of the most, if not the most extensive we've ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux. Sometimes, I crave for **simple commands** similar to those I would use when trying to figure out what's going on in a single server.
+
+**[Full article >>](/observability/inspektor-gadget-kubernetes-debugging-ebpf)**
+
+--- -->
+
 <img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Kubernetes: Dive into Service and Network APIs](/kubernetes/services-ingress-cluster-api)
@@ -34,13 +44,3 @@ For a while now, we have tools that promise that we can manage a **fleet of Kube
 Platform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.
 
 **[Full article >>](/internal-developer-platforms/platform-engineering-menu)**
-
----
-
-## [Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?](/app-management/kcl)
-
-**I'm in pain**... and it's self-inflicted... and I like it.
-
-I tend to go through an endless number of tools, services, and format in search for better ways to do my job. I'm never satisfied. I always think that there is something better out there. So I go through pain of learning a new tool or a language only to jump into a new one shortly afterwards. Spending endless hours going through new stuff does not make sense, but I can't help myself. Hopefully, I might save you from doing it yourself. That's my goal. Go through the pain of trying out everything so that you don't have to.
-
-**[Full article >>](/app-management/kcl)**

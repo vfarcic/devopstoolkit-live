@@ -51,6 +51,13 @@
       <description>Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.</description>
     </item>
     <item>
+      <title>Observability</title>
+      <link>http://localhost:1313/observability/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/observability/index.html</guid>
+      <description>Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor GadgetKubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.</description>
+    </item>
+    <item>
       <title>About The DeveOps Toolkit</title>
       <link>http://localhost:1313/about/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

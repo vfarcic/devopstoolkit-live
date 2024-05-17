@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</title>
+    <link>http://localhost:1313/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html</link>
+    <description>Kubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux. Sometimes, I crave for simple commands similar to those I would use when trying to figure out what’s going on in a single server.&#xA;…and a few others.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
