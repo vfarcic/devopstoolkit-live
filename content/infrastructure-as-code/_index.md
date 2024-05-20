@@ -1,6 +1,6 @@
 +++
-title = "Observability"
-weight = 80
+title = "Infrastructure-as-Code (IaC)"
+weight = 70
 hidden = false
 +++
 

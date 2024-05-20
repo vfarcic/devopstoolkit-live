@@ -3,17 +3,10 @@
   <channel>
     <title>Observability</title>
     <link>http://localhost:1313/observability/index.html</link>
-    <description>Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor GadgetKubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.</description>
+    <description> </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 May 2023 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="http://localhost:1313/observability/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</title>
-      <link>http://localhost:1313/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html</link>
-      <pubDate>Sat, 20 May 2023 16:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html</guid>
-      <description>Kubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux. Sometimes, I crave for simple commands similar to those I would use when trying to figure out what’s going on in a single server.&#xA;…and a few others.</description>
-    </item>
   </channel>
 </rss>
