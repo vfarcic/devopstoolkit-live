@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</title>
+    <link>http://localhost:1313/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html</link>
+    <description>When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -6,33 +6,29 @@
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="Latest Posts Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta name="description" content="Latest Posts Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget Kubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Latest Posts Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta name="twitter:description" content="Latest Posts Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget Kubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.">
     <meta property="og:url" content="http://localhost:1313/index.html">
-    <meta property="og:description" content="Latest Posts Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta property="og:description" content="Latest Posts Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget Kubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
-    <meta itemprop="description" content="Latest Posts Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
-    <meta itemprop="dateModified" content="2024-05-20T16:00:00+00:00">
-    <meta itemprop="wordCount" content="228">
+    <meta itemprop="description" content="Latest Posts Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget Kubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.">
+    <meta itemprop="dateModified" content="2024-05-27T16:00:00+00:00">
+    <meta itemprop="wordCount" content="327">
     <title></title>
-    <link href="/css/fontawesome-all.min.css?1716166125" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716166125" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1716166125" rel="stylesheet">
-    <link href="/css/auto-complete.css?1716166125" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716166125" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1716166125" rel="stylesheet">
-    <link href="/css/fonts.css?1716166125" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716166125" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1716166125" rel="stylesheet">
-    <link href="/css/theme-dot.css?1716166125" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1716166125" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1716166125" rel="stylesheet">
-    <link href="/css/print.css?1716166125" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1716166125"></script>
+    <link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1716386908" rel="stylesheet">
+    <link href="/css/auto-complete.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1716386908" rel="stylesheet">
+    <link href="/css/fonts.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1716386908" rel="stylesheet">
+    <link href="/css/theme-dot.css?1716386908" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1716386908" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1716386908" rel="stylesheet">
+    <link href="/css/print.css?1716386908" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1716386908"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='.';
@@ -85,6 +81,7 @@ When I asked whether it would be interesting to explore another set of Kubernete
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
+    <li><a href="#mastering-kubernetes-debugging-leveraging-ebpf-with-inspektor-gadgetobservabilityinspektor-gadget-kubernetes-debugging-ebpf"><a href="/observability/inspektor-gadget-kubernetes-debugging-ebpf">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></a></li>
     <li><a href="#mastering-kubernetes-dive-into-service-and-network-apiskubernetesservices-ingress-cluster-api"><a href="/kubernetes/services-ingress-cluster-api">Mastering Kubernetes: Dive into Service and Network APIs</a></a></li>
     <li><a href="#single-pane-of-glass-for-kubernetes-clusters-with-clusterpediakubernetesclusterpedia"><a href="/kubernetes/clusterpedia">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></a></li>
     <li><a href="#how-platform-engineering-compares-to-running-a-restaurantinternal-developer-platformsplatform-engineering-menu"><a href="/internal-developer-platforms/platform-engineering-menu">How Platform Engineering Compares to Running a Restaurant</a></a></li>
@@ -122,6 +119,15 @@ When I asked whether it would be interesting to explore another set of Kubernete
 <h1 id=""></h1>
 
 <h1 id="latest-posts">Latest Posts</h1>
+<!-- <img src="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png" style="width:50%; float:right; padding: 10px">
+
+## [From Makefile to Justfile (or Taskfile): Recipe Runner Replacement](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)
+
+When I work locally, if I need to create a cluster I just execute `cluster-create`, wait for a few moments, and a local cluster with everything I need is running.
+
+**[Full article >>](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)**
+
+--- -->
 <!-- <img src="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Terraform vs. Crossplane vs. Ansible - Rivals or Allies?](/infrastructure-as-code/ansible-vs-terraform-vs-crossplane)
@@ -131,15 +137,11 @@ I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or
 **[Full article >>](/infrastructure-as-code/ansible-vs-terraform-vs-crossplane)**
 
 --- -->
-<!-- <img src="/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget](/observability/inspektor-gadget-kubernetes-debugging-ebpf)
-
-Kubernetes ecosystem is one of the most, if not the most extensive we've ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux. Sometimes, I crave for **simple commands** similar to those I would use when trying to figure out what's going on in a single server.
-
-**[Full article >>](/observability/inspektor-gadget-kubernetes-debugging-ebpf)**
-
---- -->
+<img src="/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<h2 id="mastering-kubernetes-debugging-leveraging-ebpf-with-inspektor-gadgetobservabilityinspektor-gadget-kubernetes-debugging-ebpf"><a href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></h2>
+<p>Kubernetes ecosystem is one of the most, if not the most extensive we&rsquo;ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux. Sometimes, I crave for <strong>simple commands</strong> similar to those I would use when trying to figure out what&rsquo;s going on in a single server.</p>
+<p><strong><a href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Full article &raquo;</a></strong></p>
+<hr>
 <img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
 <h2 id="mastering-kubernetes-dive-into-service-and-network-apiskubernetesservices-ingress-cluster-api"><a href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></h2>
 <p>In the <a href="https://youtu.be/U6weXlzQxoY" rel="external" target="_blank">Mastering Kubernetes: Dive into Workloads APIs</a> video we explored Kubernetes <strong>Workload APIs</strong>. We saw the differences between <strong>Pods</strong>, <strong>ReplicaSets</strong>, <strong>Jobs</strong>, <strong>Deployments</strong>, <strong>StatefulSets</strong>, <strong>DaemonSets</strong>, and <strong>CronJobs</strong>.</p>
@@ -190,10 +192,11 @@ Kubernetes ecosystem is one of the most, if not the most extensive we've ever se
           <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
-          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
-          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
-          <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
-          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li>
+          <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</a></li></ul></li>
+          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a></li>
+          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
+          <li data-nav-id="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" class=""><a class="padding" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
@@ -248,8 +251,8 @@ Kubernetes ecosystem is one of the most, if not the most extensive we've ever se
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1716166125" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1716166125" defer></script>
-    <script src="/js/theme.js?1716166125" defer></script>
+    <script src="/js/clipboard.min.js?1716386908" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1716386908" defer></script>
+    <script src="/js/theme.js?1716386908" defer></script>
   </body>
 </html>

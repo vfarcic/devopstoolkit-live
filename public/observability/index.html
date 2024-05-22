@@ -5,32 +5,33 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content=" ">
+    <meta name="description" content="Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor GadgetKubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Observability">
-    <meta name="twitter:description" content=" ">
+    <meta name="twitter:description" content="Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor GadgetKubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.">
     <meta property="og:url" content="http://localhost:1313/observability/index.html">
     <meta property="og:title" content="Observability">
-    <meta property="og:description" content=" ">
+    <meta property="og:description" content="Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor GadgetKubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="Observability">
-    <meta itemprop="description" content=" ">
+    <meta itemprop="description" content="Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor GadgetKubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.">
     <meta itemprop="dateModified" content="2024-05-20T16:00:00+00:00">
+    <meta itemprop="wordCount" content="99">
     <title>Observability</title>
     <link href="/observability/index.xml" rel="alternate" type="application/rss+xml" title="Observability">
-    <link href="/css/fontawesome-all.min.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1716166122" rel="stylesheet">
-    <link href="/css/auto-complete.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1716166122" rel="stylesheet">
-    <link href="/css/fonts.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1716166122" rel="stylesheet">
-    <link href="/css/theme-dot.css?1716166122" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1716166122" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1716166122" rel="stylesheet">
-    <link href="/css/print.css?1716166122" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1716166122"></script>
+    <link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1716386908" rel="stylesheet">
+    <link href="/css/auto-complete.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1716386908" rel="stylesheet">
+    <link href="/css/fonts.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1716386908" rel="stylesheet">
+    <link href="/css/theme-dot.css?1716386908" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1716386908" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1716386908" rel="stylesheet">
+    <link href="/css/print.css?1716386908" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1716386908"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -90,9 +91,9 @@
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Observability</span><meta itemprop="position" content="1"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" title="Terraform vs. Crossplane vs. Ansible - Rivals or Allies? (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/infrastructure-as-code/index.html" title="Infrastructure-as-Code (IaC) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/about/index.html" title="About The DeveOps Toolkit (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" title="Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -117,6 +118,8 @@
 
 <div class="children children-h2 children-sort-date">
 	
+<h2><a href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></h2><p><p>Kubernetes ecosystem is one of the most, if not the most extensive we&rsquo;ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux. Sometimes, I crave for <strong>simple commands</strong> similar to those I would use when trying to figure out what&rsquo;s going on in a single server.</p>
+<p>&hellip;and a few others.</p></p>
 </div>
 
             <footer class="footline">
@@ -153,10 +156,11 @@
           <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
-          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
-          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
-          <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
-          <li data-nav-id="/observability/index.html" class="active"><a class="padding" href="/observability/index.html">Observability</a></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li>
+          <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</a></li></ul></li>
+          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a></li>
+          <li data-nav-id="/observability/index.html" class="active parent "><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
+          <li data-nav-id="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" class=""><a class="padding" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
@@ -211,8 +215,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1716166122" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1716166122" defer></script>
-    <script src="/js/theme.js?1716166122" defer></script>
+    <script src="/js/clipboard.min.js?1716386908" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1716386908" defer></script>
+    <script src="/js/theme.js?1716386908" defer></script>
   </body>
 </html>

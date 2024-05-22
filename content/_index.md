@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png" style="width:50%; float:right; padding: 10px">
+
+## [From Makefile to Justfile (or Taskfile): Recipe Runner Replacement](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)
+
+When I work locally, if I need to create a cluster I just execute `cluster-create`, wait for a few moments, and a local cluster with everything I need is running.
+
+**[Full article >>](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)**
+
+--- -->
+
 <!-- <img src="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Terraform vs. Crossplane vs. Ansible - Rivals or Allies?](/infrastructure-as-code/ansible-vs-terraform-vs-crossplane)
@@ -15,7 +25,7 @@ I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or
 
 --- -->
 
-<!-- <img src="/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget](/observability/inspektor-gadget-kubernetes-debugging-ebpf)
 
@@ -23,7 +33,7 @@ Kubernetes ecosystem is one of the most, if not the most extensive we've ever se
 
 **[Full article >>](/observability/inspektor-gadget-kubernetes-debugging-ebpf)**
 
---- -->
+---
 
 <img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
 

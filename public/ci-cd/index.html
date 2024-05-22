@@ -5,33 +5,37 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.">
+    <meta name="description" content="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.
+From Makefile to Justfile (or Taskfile): Recipe Runner ReplacementWhen I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="CI/CD">
-    <meta name="twitter:description" content="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.">
+    <meta name="twitter:description" content="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.
+From Makefile to Justfile (or Taskfile): Recipe Runner ReplacementWhen I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.">
     <meta property="og:url" content="http://localhost:1313/ci-cd/index.html">
     <meta property="og:title" content="CI/CD">
-    <meta property="og:description" content="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.">
+    <meta property="og:description" content="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.
+From Makefile to Justfile (or Taskfile): Recipe Runner ReplacementWhen I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="CI/CD">
-    <meta itemprop="description" content="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.">
+    <meta itemprop="description" content="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and LocallyWhen I work with pipelines, what you might call CI, or CI/CD, I have “special” requirements that might not be the same as what others might have, or, more likely, what others think of.
+From Makefile to Justfile (or Taskfile): Recipe Runner ReplacementWhen I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.">
     <meta itemprop="dateModified" content="2024-03-04T16:00:00+00:00">
-    <meta itemprop="wordCount" content="48">
+    <meta itemprop="wordCount" content="86">
     <title>CI/CD</title>
     <link href="/ci-cd/index.xml" rel="alternate" type="application/rss+xml" title="CI/CD">
-    <link href="/css/fontawesome-all.min.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1716166122" rel="stylesheet">
-    <link href="/css/auto-complete.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1716166122" rel="stylesheet">
-    <link href="/css/fonts.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1716166122" rel="stylesheet">
-    <link href="/css/theme-dot.css?1716166122" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1716166122" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1716166122" rel="stylesheet">
-    <link href="/css/print.css?1716166122" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1716166122"></script>
+    <link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1716386908" rel="stylesheet">
+    <link href="/css/auto-complete.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1716386908" rel="stylesheet">
+    <link href="/css/fonts.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1716386908" rel="stylesheet">
+    <link href="/css/theme-dot.css?1716386908" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1716386908" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1716386908" rel="stylesheet">
+    <link href="/css/print.css?1716386908" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1716386908"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -119,6 +123,7 @@
 <div class="children children-h2 children-sort-date">
 	
 <h2><a href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></h2><p><p>When I work with pipelines, what you might call CI, or CI/CD, I have &ldquo;special&rdquo; requirements that might not be the same as what others might have, or, more likely, what others think of.</p></p>
+<h2><a href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</a></h2><p><p>When I work locally, if I need to create a cluster I just execute <code>cluster-create</code>, wait for a few moments, and a local cluster with everything I need is running.</p></p>
 </div>
 
             <footer class="footline">
@@ -155,10 +160,11 @@
           <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class="active parent "><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
-          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
-          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
-          <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
-          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li>
+          <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</a></li></ul></li>
+          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a></li>
+          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
+          <li data-nav-id="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" class=""><a class="padding" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
@@ -213,8 +219,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1716166122" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1716166122" defer></script>
-    <script src="/js/theme.js?1716166122" defer></script>
+    <script src="/js/clipboard.min.js?1716386908" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1716386908" defer></script>
+    <script src="/js/theme.js?1716386908" defer></script>
   </body>
 </html>

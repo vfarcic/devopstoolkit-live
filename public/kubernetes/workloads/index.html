@@ -22,17 +22,17 @@
     <meta itemprop="wordCount" content="6152">
     <title>Mastering Kubernetes: Dive into Workloads APIs</title>
     <link href="/kubernetes/workloads/index.xml" rel="alternate" type="application/rss+xml" title="Mastering Kubernetes: Dive into Workloads APIs">
-    <link href="/css/fontawesome-all.min.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1716166122" rel="stylesheet">
-    <link href="/css/auto-complete.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1716166122" rel="stylesheet">
-    <link href="/css/fonts.css?1716166122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716166122" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1716166122" rel="stylesheet">
-    <link href="/css/theme-dot.css?1716166122" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1716166122" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1716166122" rel="stylesheet">
-    <link href="/css/print.css?1716166122" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1716166122"></script>
+    <link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1716386908" rel="stylesheet">
+    <link href="/css/auto-complete.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1716386908" rel="stylesheet">
+    <link href="/css/fonts.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1716386908" rel="stylesheet">
+    <link href="/css/theme-dot.css?1716386908" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1716386908" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1716386908" rel="stylesheet">
+    <link href="/css/print.css?1716386908" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1716386908"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -250,8 +250,8 @@ a-team    ReplicaSet/silly-demo  -            23s
 a-team    ├─Pod/silly-demo-7z7zt True         23s
 a-team    ├─Pod/silly-demo-hj4k2 True         23s
 a-team    └─Pod/silly-demo-npgb6 True         23s</code></pre></div><p>kubectl tree plugin allows us to explore ownership relationships between Kubernetes resource. In this case, we can see that the <code>ReplicaSet</code> created three <code>Pods</code> and it now owns them. It&rsquo;s responsible for them. It&rsquo;s making sure that the &ldquo;contract&rdquo; is maintained meaning that it is ensuring that three Pods based on the template we specified are always up-and-running.</p>
-<p><a href="#R-image-d5aefde1572afac729557308aba78117" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes/workloads/diag-02.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5aefde1572afac729557308aba78117"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes/workloads/diag-02.png"></a></p>
+<p><a href="#R-image-b0b86c6988a1fdd3ad2215a55107a386" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes/workloads/diag-02.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0b86c6988a1fdd3ad2215a55107a386"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes/workloads/diag-02.png"></a></p>
 <p>All in all, we sent a request to the Kube API to apply a ReplicaSet . Since that ReplicaSet did not exist, Kubernetes created it . The ReplicaSet controller detected a discrepancy between the desired and the actual state. We said that we want to have three Pods , and there were none owner by that ReplicaSet. Hence, the controller created three Pods  based on the template we defined.</p>
 <p>We can confirm that is indeed the case by deleting one of those Pods,</p>
 <p><em>Replace <code>[...]</code> with the name of one of the Pods (e.g., <code>silly-demo-7z7zt</code>)</em></p>
@@ -365,8 +365,8 @@ a-team      ├─Pod/silly-demo-5f76b8d84-c9vkt True         10s
 a-team      ├─Pod/silly-demo-5f76b8d84-j9wgh True         10s
 a-team      ├─Pod/silly-demo-5f76b8d84-rspnv True         10s
 a-team      └─Pod/silly-demo-5f76b8d84-vchgz True         10s</code></pre></div><p>On the first look, creating that <code>Deployment</code> seems like a waste. The end result are the same five <code>Pods</code> we would get if we created the <code>ReplicaSet</code> directly.</p>
-<p><a href="#R-image-f183f039c8e16ee8ab60eaf7b99d663e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes/workloads/diag-03.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f183f039c8e16ee8ab60eaf7b99d663e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes/workloads/diag-03.png"></a></p>
+<p><a href="#R-image-e33f32f96792cfc5884993943702e9e3" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes/workloads/diag-03.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e33f32f96792cfc5884993943702e9e3"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes/workloads/diag-03.png"></a></p>
 <p>We sent a request to the Kube API to apply a manifest of a Deployment , a Deployment was created , and its controller created a ReplicaSet . The controller of the ReplicaSet saw that Pods are missing, so it created them .</p>
 <p>Now, let&rsquo;s take a look at one of the things that make Deployments special. As you saw before, updating a template of a ReplicaSet does not affect existing Pods so changing the image tag did not produce the effect we wanted. Let&rsquo;s see what will happen if we do the same with the Deployment.</p>
 <p>Here&rsquo;s a diff of the changes I made to the Deployment manifest.</p>
@@ -582,8 +582,8 @@ NAME                                                      CAPACITY ACCESS MODES 
 persistentvolume/pvc-254a27c2-2c82-44bc-afb2-b95e93b3c2d5 1Gi      RWO          Delete         Bound  a-team/silly-claim-silly-demo-0 standard     &lt;unset&gt;                      85s
 persistentvolume/pvc-7b8eccc9-ad50-4387-b3d8-4f6664e86bc6 1Gi      RWO          Delete         Bound  a-team/silly-claim-silly-demo-1 standard     &lt;unset&gt;                      65s</code></pre></div><p>This is the important different. This time, containers in each <code>pod</code> got a separate <code>persistentvolume</code>, a separate storage attached.</p>
 <p>Here&rsquo;s what we did and what happened.</p>
-<p><a href="#R-image-83521537e7721e8a289d49368dd7dfc8" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes/workloads/diag-05.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-83521537e7721e8a289d49368dd7dfc8"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes/workloads/diag-05.png"></a></p>
+<p><a href="#R-image-0646c511e006b50b327e627a1d091a7a" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes/workloads/diag-05.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0646c511e006b50b327e627a1d091a7a"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes/workloads/diag-05.png"></a></p>
 <p>We sent a request to Kube API to apply a StatefulSet . Since that StatefulSet did not exist in the cluster, a new one was created . Since we specified that it should contain two replicas, two Pods were created by the StatefulSet controller . In parallel, the StatefulSet created two PersistentVolumeClaims , which claimed two volumes  and atteched one to each of the Pods .</p>
 <p>Let&rsquo;s see what happens if, for example, we increate the number of replicas.</p>
 <p>Here&rsquo;s the diff between the old and the new manifest.</p>
@@ -686,8 +686,8 @@ a-team    └─Pod/silly-demo-vn5xg False PodCompleted 11s</code></pre></div><p
 <p>Now, even though the Pod is no longer running, we can still access the logs it created.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team logs <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --selector app.kubernetes.io/name<span style="color:#f92672">=</span>silly-demo</span></span></code></pre></div><p>The output is as follows.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>What is this?</code></pre></div><p><a href="#R-image-9f2f065c26e47dac2814b5840a8d9c7c" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes/workloads/diag-07.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f2f065c26e47dac2814b5840a8d9c7c"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes/workloads/diag-07.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>What is this?</code></pre></div><p><a href="#R-image-a6bdabc2b189d043e96824683396db25" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes/workloads/diag-07.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a6bdabc2b189d043e96824683396db25"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes/workloads/diag-07.png"></a></p>
 <p>There we go. We sent a request to Kube API to apply a Job , a Job was created  and its controller created a Pod . The container in that Pod started a process that, eventually, finished doing whatever it was doing and returned exit code 0 . That was it. Unlike other workload types, the Job did not try to restart it or to recreate it.</p>
 <p>The job finished, so let&rsquo;s remove it before we move into a next workload type.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team delete --filename job/base.yaml</span></span></code></pre></div><h2 id="cronjobs-in-kubernetes">CronJobs in Kubernetes</h2>
@@ -773,10 +773,11 @@ Was this video useful? Would it make sense to continue through other Kubernetes 
           <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
-          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
-          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
-          <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
-          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li>
+          <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</a></li></ul></li>
+          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a></li>
+          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
+          <li data-nav-id="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" class=""><a class="padding" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
@@ -831,8 +832,8 @@ Was this video useful? Would it make sense to continue through other Kubernetes 
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1716166122" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1716166122" defer></script>
-    <script src="/js/theme.js?1716166122" defer></script>
+    <script src="/js/clipboard.min.js?1716386908" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1716386908" defer></script>
+    <script src="/js/theme.js?1716386908" defer></script>
   </body>
 </html>

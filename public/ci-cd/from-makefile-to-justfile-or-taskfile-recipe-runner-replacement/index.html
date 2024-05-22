@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.4">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.">
+    <meta name="author" content="Viktor Farcic">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png">
+    <meta name="twitter:title" content="From Makefile to Justfile (or Taskfile): Recipe Runner Replacement">
+    <meta name="twitter:description" content="When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.">
+    <meta property="og:url" content="http://localhost:1313/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">
+    <meta property="og:title" content="From Makefile to Justfile (or Taskfile): Recipe Runner Replacement">
+    <meta property="og:description" content="When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png">
+    <meta itemprop="name" content="From Makefile to Justfile (or Taskfile): Recipe Runner Replacement">
+    <meta itemprop="description" content="When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.">
+    <meta itemprop="datePublished" content="2023-06-03T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2023-06-03T16:00:00+00:00">
+    <meta itemprop="wordCount" content="2529">
+    <meta itemprop="image" content="http://localhost:1313/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png">
+    <title>From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</title>
+    <link href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.xml" rel="alternate" type="application/rss+xml" title="From Makefile to Justfile (or Taskfile): Recipe Runner Replacement">
+    <link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1716386908" rel="stylesheet">
+    <link href="/css/auto-complete.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1716386908" rel="stylesheet">
+    <link href="/css/fonts.css?1716386908" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1716386908" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1716386908" rel="stylesheet">
+    <link href="/css/theme-dot.css?1716386908" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1716386908" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1716386908" rel="stylesheet">
+    <link href="/css/print.css?1716386908" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1716386908"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'dot' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NXCC9XM9Y"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2NXCC9XM9Y');
+        }
+      </script>
+    
+  
+
+
+  </head>
+  <body class="mobile-support html" data-url="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#just-define-justfile-and-just-run-it">just Define Justfile and just Run It</a></li>
+    <li><a href="#just-and-justfile-pros-and-cons">just and Justfile Pros and Cons</a></li>
+    <li><a href="#destroy">Destroy</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ci-cd/index.html"><span itemprop="name">CI/CD</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" title="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/infrastructure-as-code/index.html" title="Infrastructure-as-Code (IaC) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="from-makefile-to-justfile-or-taskfile-recipe-runner-replacement">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</h1>
+
+<p>When I work locally, if I need to create a cluster I just execute <code>cluster-create</code>, wait for a few moments, and a local cluster with everything I need is running.</p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hgNN2wOE7lc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>just cluster-create</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>...
+function.pkg.crossplane.io/crossplane-contrib-function-go-templating condition met
+function.pkg.crossplane.io/crossplane-contrib-function-patch-and-transform condition met</code></pre></div><p>If I need to run tests in the background while developing, I just execute <code>test-watch</code> and let my tests run every time I make a change to the source code.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>just test-watch</span></span></code></pre></div><p>The output is as follows (truncated for brevity).</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>....
+PASS
+Tests Summary...
+- Passed  tests 3
+- Failed  tests 0
+- Skipped tests 0
+Done.
+[Command was successful]</code></pre></div><p>When I&rsquo;m finished, I just execute <code>cluster-destroy</code>, and move on.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>just cluster-destroy</span></span></code></pre></div><p>The tool I&rsquo;m using to just execute something is&hellip; <em>just</em>.</p>
+<p>It is a tool that allows us to <strong>execute tasks</strong> which, with <em>just</em>, are called recipes. That&rsquo;s what it does, and the question is whether it does it well. Should you use it? Should you replace your Makefile, Taskfile, or other formats to <em>just</em>?</p>
+<p>It&rsquo;s no secret that <strong>I don&rsquo;t like Makefile</strong>. It served us well over decades, but it&rsquo;s too complex and too brittle for my taste. If I never see .PHONY recipes again, I will die a happy person. If I never again encounter an error because I used spaces instead of tabs, I will consider it a success. Tabs are evil and should never be used as indentation.</p>
+<p>just solves many of the issues I have with GNU make and Makefile. It is a valid replacement for a tool and a format that should have been retired long time ago.</p>
+<p>Now, I already talked about an alternative to Makefile in the <a href="https://youtu.be/Z7EnwBaJzCk" rel="external" target="_blank">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a> video where I explored Taskfile. Many of you told me that its great, but quite a few of you sent me a message complaining about it being YAML. <strong>&ldquo;We do NOT want more YAML!&rdquo;</strong> <strong>&ldquo;YAML is evil!&rdquo;</strong> <strong>&ldquo;YAML ruined my marriage!&rdquo;</strong>.</p>
+<p>I invented only one of those.</p>
+<p>Others asked me what I think about <em>just</em> since it is very similar to Task, but without YAML. Instead of answering those directly, I decided to make a video.</p>
+<p>I can summarize <em>just</em> as a Make and Makefile replacement, just as Task and Taskfile are also replacements. The major difference is that there is no YAML.</p>
+<p>Let&rsquo;s take a look at it.</p>
+<h2 id="setup">Setup</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/vfarcic/crossplane-kubernetes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd crossplane-kubernetes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git pull
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout just</span></span></code></pre></div><blockquote>
+<p>Make sure that Docker is up-and-running. We&rsquo;ll use it to create a Kind cluster.</p>
+</blockquote>
+<blockquote>
+<p>Watch <a href="https://youtu.be/WiFLtcBvGMU" rel="external" target="_blank">https://youtu.be/WiFLtcBvGMU</a> if you are not familiar with Devbox. Alternatively, you can skip Devbox and install all the tools listed in <code>devbox.json</code> yourself.</p>
+</blockquote>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>devbox shell</span></span></code></pre></div><h2 id="just-define-justfile-and-just-run-it">just Define Justfile and just Run It</h2>
+<p>As we can expect from the tools that enable us to run something, we can use just to execute any previously defined recipes.</p>
+<p>In this project, I typically start my work by creating a local cluster, installing some third-party apps, deploying what I&rsquo;m working on, and a few other things I need before I start working on it. I defined all that as a recipe called <code>cluster-create</code>, so let me execute it.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>just cluster-create</span></span></code></pre></div><p>The output is as follows (truncated for brevity).</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>...
+function.pkg.crossplane.io/crossplane-contrib-function-auto-ready condition met
+function.pkg.crossplane.io/crossplane-contrib-function-go-templating condition met
+function.pkg.crossplane.io/crossplane-contrib-function-patch-and-transform condition met</code></pre></div><p>Now that everything I need is set up, I would normally execute <code>test-watch</code> recipe.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>just test-watch</span></span></code></pre></div><p>The output is as follows (truncated for brevity).</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>...
+PASS
+Tests Summary...
+- Passed  tests 3
+- Failed  tests 0
+- Skipped tests 0
+Done.
+[Command was successful]</code></pre></div><p>All my tests were executed and now it is watching for changes in my source code. The moment I modify any of the files that it is monitoring it will re-run the tests. That way I can focus on code knowing that tests are running in the background and will let me know if I mess it up.</p>
+<blockquote>
+<p>Press <code>ctrl+c</code> to stop the watcher.</p>
+</blockquote>
+<p>Once I&rsquo;m done working, I just execute <code>cluster-destroy</code> and wipe out everything.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>just cluster-destroy</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>kind delete cluster
+Deleting cluster &#34;kind&#34; ...
+Deleted nodes: [&#34;kind-control-plane&#34;]</code></pre></div><p>Now, if you watched <a href="https://youtu.be/Z7EnwBaJzCk" rel="external" target="_blank">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a> you might have noticed that the recipes I just executed with just are the same as those I had with Taskfile. That&rsquo;s on purpose. This is the same project and I wanted to compare the two based on the same criteria. I wanted to see why would we choose one over the other.</p>
+<p>Let&rsquo;s see what we can do with just apart from being able to execute recipes.</p>
+<p>We can, for example, get a list of all the recipes by simply executing <code>just</code> without any additional argument.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>just</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>just --list
+Available recipes:
+    cluster-create         # Creates a kind cluster, installs Crossplane, providers, and packages, waits until they are healthy, and runs tests.
+    cluster-destroy        # Destroys the cluster
+    default                # List tasks.
+    package-apply          # Applies Compositions and Composite Resource Definition.
+    package-generate       # Generates package files.
+    package-generate-apply # Combines `package-generate` and `package-apply`.
+    package-publish        # Builds and pushes the package.
+    test                   # Combines `cluster-create`, `test-watch` (without the watcher), and `cluster-destroy` tasks.
+    test-once              # Runs tests once assuming that the cluster is already created and everything is installed.
+    test-watch             # Runs tests in the watch mode assuming that the cluster is already created and everything is installed.</code></pre></div><p>There we go. That&rsquo;s the list of all the recipes we can execute with just in this project. There is a name of a recipe (<code>cluster-create</code>) and a description (<code># Creates a kind cluster...</code>).</p>
+<p>If we&rsquo;d like a more detailed information about any of those, we can execute <code>just</code> with the instruction to <code>show</code> a specific recipe.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>just --show cluster-create</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code># Creates a kind cluster, installs Crossplane, providers, and packages, waits until they are healthy, and runs tests.
+cluster-create: package-generate _cluster-create-kind
+    helm upgrade --install crossplane crossplane-stable/crossplane --namespace crossplane-system --create-namespace --wait
+    for provider in `ls -1 providers | grep -v config`; do kubectl apply --filename providers/$provider; done
+    just package-apply
+    sleep 60
+    kubectl wait --for=condition=healthy provider.pkg.crossplane.io --all --timeout={{ timeout }}
+    kubectl wait --for=condition=healthy function.pkg.crossplane.io --all --timeout={{ timeout }}</code></pre></div><p>There are quite a few other things we can do with the CLI. Nevertheless, what matters, at least when the CLI is concerned, is that we can discover which recipes are available, get information about any specific recipe, and execute it.</p>
+<p>None of those things distinguish <em>just</em> from the competition. Where it differs is not that much in what it can, or cannot do, but, rather, in the syntax used to define recipes, so let&rsquo;s take a look at <code>Justfile</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat Justfile</span></span></code></pre></div><p>The output is as follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>timeout := &#34;300s&#34;
+
+# List tasks.
+default:
+  just --list
+
+# Generates package files.
+package-generate:
+  timoni build dot-kubernetes timoni &gt; package/all.yaml
+  head -n -1 package/all.yaml &gt; package/all.yaml.tmp
+  mv package/all.yaml.tmp package/all.yaml
+
+# Applies Compositions and Composite Resource Definition.
+package-apply:
+  kubectl apply --filename package/definition.yaml &amp;&amp; sleep 1
+  kubectl apply --filename package/all.yaml
+
+# Builds and pushes the package.
+package-publish: package-generate
+  up login --token $UP_TOKEN
+  up xpkg build --package-root package --name kubernetes.xpkg
+  up xpkg push --package package/kubernetes.xpkg xpkg.upbound.io/$UP_ACCOUNT/dot-kubernetes:$VERSION
+  rm package/kubernetes.xpkg
+  yq --inplace &#34;.spec.package = \&#34;xpkg.upbound.io/devops-toolkit/dot-kubernetes:$VERSION\&#34;&#34; config.yaml
+
+# Combines `package-generate` and `package-apply`.
+package-generate-apply: package-generate package-apply
+
+# Combines `cluster-create`, `test-watch` (without the watcher), and `cluster-destroy` tasks.
+test: cluster-create test-watch cluster-destroy
+
+# Runs tests in the watch mode assuming that the cluster is already created and everything is installed.
+test-watch: package-generate package-apply
+  watchexec -w timoni -w tests &#34;just package-generate-apply &amp;&amp; chainsaw test&#34;
+
+# Runs tests once assuming that the cluster is already created and everything is installed.
+test-once: package-generate package-apply
+  chainsaw test
+
+# Creates a kind cluster, installs Crossplane, providers, and packages, waits until they are healthy, and runs tests.
+cluster-create: package-generate _cluster-create-kind
+  helm upgrade --install crossplane crossplane-stable/crossplane --namespace crossplane-system --create-namespace --wait
+  for provider in `ls -1 providers | grep -v config`; do kubectl apply --filename providers/$provider; done
+  just package-apply
+  sleep 60
+  kubectl wait --for=condition=healthy provider.pkg.crossplane.io --all --timeout={{timeout}}
+  kubectl wait --for=condition=healthy function.pkg.crossplane.io --all --timeout={{timeout}}
+
+# Destroys the cluster
+cluster-destroy:
+  kind delete cluster
+
+# Creates a kind cluster
+_cluster-create-kind:
+  -kind create cluster
+  -helm repo add crossplane-stable https://charts.crossplane.io/stable
+  -helm repo update
+  helm upgrade --install crossplane crossplane-stable/crossplane --namespace crossplane-system --create-namespace --wait
+  for provider in `ls -1 providers | grep -v config`; do kubectl apply --filename providers/$provider; done</code></pre></div><p>At the top, I defined a variable <code>timeout</code>. That way I can easily change the value without trying to figure out where it is used. We&rsquo;ll see that one in action later.</p>
+<p>The recipes are defined with a name that ends with a colon. The first recipe I defined is called <code>default</code> and it executes a single command <code>just --list</code>.</p>
+<p>The first recipe is always the default one and, in this case, I chose that it should simply list all the available recipes. That way, I don&rsquo;t have to execute <code>just --list</code>. Instead, I can simply execute <code>just</code> as I did above.</p>
+<p>Comments above recipe names (<code># Generates package files.</code>) serve as descriptions. That&rsquo;s what was displayed when I listed all the recipes.</p>
+<p>A recipe can execute any number of sequential commands. In the case of <code>package-generate</code>, I am executing <code>timoni</code>, followed by <code>head</code>, and <code>mv</code>. It does not matter what those commands do and why I have them. What matters is that any command can be executed sequentially as part of running a recipe.</p>
+<p>Recipes can depend on other recipes.</p>
+<p>In the case of <code>package-publish</code>, the <code>package-generate</code> will be executed before it starts running the commands (<code>up login</code>, <code>up xpkg</code>, &hellip;).</p>
+<p>Commands are not mandatory. We can have recipes that only depend on other recipes like in the case of <code>package-generate-apply</code> which would do nothing but run <code>package-generate</code> and <code>package-apply</code>.</p>
+<p>Unlike Taskfile, Justfile does not have a built-in mechanism to watch for file changes and re-run a task or a recipe. That&rsquo;s not necessarily a bad thing since that feature in Taskfile does not work as intended. It is its weakest point so I&rsquo;m glad that Justfile does not even attempt to do that. Instead, if we would like to watch for changes in some files and execute some commands we can use a separate CLI for that. In this case, I&rsquo;m using <code>watchexec</code> to monitor <code>timoni</code> and <code>tests</code> directories and execute a <code>just</code> recipe <code>package-generate-apply</code> whenever a file in one of those directories changes.</p>
+<p>Now, that&rsquo;s not ideal either since running just CLI from inside just can result in some silly issues. Nevertheless, there is no built-in watcher and that&rsquo;s still better than the one baked into Taskfile which does not work as it should.</p>
+<p>We can also define &ldquo;internal&rdquo; recipes by prefixing them with <code>_</code> (<code>_cluster-create-kind</code>). Those recipes will not be available when executing just CLI but only internally. They can only be invoked by other recipes.</p>
+<p>By default, execution of a recipe stops the moment it encounters an error. We can avoid that by prefixing a command with <code>-</code>. For example, if <code>kind create cluster</code> command fails, just recipe will continue running. It will ignore that error. So, whichever other recipe uses <code>_cluster-create-kind</code> as a dependency would continue running even if it fails to create a KinD cluster.</p>
+<p>There are, ofcouse, many other features of just but I feel that what we explored so far is enough to give you a clue whether Justfile might be a good alternative to Makefile and Taskfile.</p>
+<h2 id="just-and-justfile-pros-and-cons">just and Justfile Pros and Cons</h2>
+<p>Let me start by saying that Justfile is, without doubt, a better option than Makefile. I won&rsquo;t even bother listing all my grievances with Makefile. I don&rsquo;t want to see it ever again.</p>
+<p>The real question is whether Justfile is better than Taskfile, so that&rsquo;s what I&rsquo;ll compare it with.</p>
+<p>There are many things that work against Justfile, at least when compared with Taskfile, so let&rsquo;s start with those.</p>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Smaller community</li>
+<li>VS Code addon</li>
+<li>No &ldquo;special&rdquo; features</li>
+<li>No dry-run</li>
+<li>No watcher</li>
+</ul>
+<p>To begin with, just and Justfile have a <strong>smaller community</strong>. There are fewer forks and stars in the repo, fewer contributors, and less activity. Now, that&rsquo;s not necessarily a reason to choose one over the other, especially since just has a healthy and active community, just not as big as the one behind Taskfile. It&rsquo;s a minor con.</p>
+<p><strong>VS Code</strong> addon is not maintained any more and, frankly, it was never good. As a matter of fact, there is more than one of those and all but one are dead. The one that isn&rsquo;t is relatively new and not very good either.</p>
+<p>just does not have <strong>&ldquo;special&rdquo; features</strong>. There are no for constructs, there is no option to defer execution of a task, and so on and so forth. I&rsquo;d like to say that just is intentionally missing those things since it assumes that you&rsquo;ll use Shell scripts and commands to accomplish those but that&rsquo;s not the case since it did add some of those like the ability to ignore errors by prefixing a command with &ldquo;-&rdquo;. That could also be done with a &ldquo;special&rdquo; syntax. Hence, I don&rsquo;t buy that is intentional but, rather, missing. Still, it&rsquo;s also a minor issue since you can indeed accomplish all those with a bit of scripting.</p>
+<p>What else&hellip; There is <strong>no dry-run</strong>. We can see which commands will be executed but we cannot get the exact commands after loops, variables, and other stuff is expanded. We cannot see what exactly will be executed. Taskfile does that very well. Now, to be honest, that&rsquo;s not something I use often, so it&rsquo;s a minor issue as well.</p>
+<p>Finally, there is <strong>no watcher</strong>. Now, that&rsquo;s is not really a bad thing since the baked-in watcher in Taskfile does not work as it should be, so I use watchexec over there as well. Hence, that&rsquo;s not really a con.</p>
+<p>Now, let&rsquo;s move into good things, into pros.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Simpler</li>
+<li>Not YAML</li>
+</ul>
+<p>When compared with Makefile, the list of pros is huge, but that&rsquo;s not what we&rsquo;re doing today. We&rsquo;re comparing it with Taskfile and there are only two selling points.</p>
+<p>To begin with, Justfile syntax is easier to learn than the syntax of Taskfile. Now, when I say &ldquo;easier&rdquo;, both are easy. You will have no trouble learning either of the two. You&rsquo;ll be master in either in a matter of hours. So, it&rsquo;s just that you&rsquo;ll learn Justfile a bit faster. If it takes half a day to master Taksfile, it takes even less to master Justfile. So, this one is a minor advantage and I&rsquo;m listing it only so that the one that comes next is not the only one.</p>
+<p>The major difference is that it is not YAML. That&rsquo;s the only reason I can imagine one would choose Justfile over Taskfile.</p>
+<p>Now, that might sound like an insignificant reason to use Justfile, especially since there are a few cons. They are minor, but cons nevertheless.</p>
+<p>Still, YAML is not everyone&rsquo;s cup of tee and it might introduce unnecessary verbosity. Justfile feels more elegant. There is no need to specify keys and values. It&rsquo;s just a recipe followed with dependencies and commands. It&rsquo;s easier to write and easier to read.</p>
+<p>All in all, both tools are great and the choice will likely depend on how much you like or dislike YAML.</p>
+<h2 id="destroy">Destroy</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout main</span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="/dot-narrow-yellow-bg.png"/></a>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/index.html" class=""><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
+          <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
+          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
+          <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
+          <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
+          <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li>
+          <li data-nav-id="/app-management/pkl/index.html" class=""><a class="padding" href="/app-management/pkl/index.html">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</a></li></ul></li>
+          <li data-nav-id="/development-environments/index.html" class=""><a class="padding" href="/development-environments/index.html">Development Environments</a><ul id="R-subsections-b40bb3dd3715504862627d465ed722c6" class="morespace collapsible-menu">
+          <li data-nav-id="/development-environments/nix/index.html" class=""><a class="padding" href="/development-environments/nix/index.html">Nix for Everyone: Unleash Devbox for Simplified Development</a></li></ul></li>
+          <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
+          <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
+          <li data-nav-id="/ci-cd/index.html" class="parent "><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li>
+          <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class="active"><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</a></li></ul></li>
+          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a></li>
+          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
+          <li data-nav-id="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" class=""><a class="padding" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></li></ul></li>
+          <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
+          <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-dot" value="dot" selected>Dot</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1716386908" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1716386908" defer></script>
+    <script src="/js/theme.js?1716386908" defer></script>
+  </body>
+</html>
