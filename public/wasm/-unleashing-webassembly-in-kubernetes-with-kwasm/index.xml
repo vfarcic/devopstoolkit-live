@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:1313/wasm/-unleashing-webassembly-in-kubernetes-with-kwasm/index.html</link>
+    <description>####################################################&#xA;Unleashing WebAssembly in Kubernetes with Kwasm ####################################################&#xA;Additional Info: - Kwasm: https://kwasm.sh - WASM vs Docker Containers vs Kubernetes vs Serverless: The Battle for Cloud Native Supremacy: https://youtu.be/uZ8xI26sno8 #########&#xA;Intro #########&#xA;Do NOT run the command that follows. It is only a preview. We’ll set it all up later. cat app.yaml&#xA;#########&#xA;Setup #########&#xA;git clone https://github.com/vfarcic/kwasm-demo&#xA;cd kwasm-demo&#xA;Make sure that Docker is up-and-running. We’ll use it to create a KinD cluster.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/wasm/-unleashing-webassembly-in-kubernetes-with-kwasm/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

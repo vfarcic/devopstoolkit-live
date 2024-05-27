@@ -6,7 +6,7 @@
     <description>Latest Posts Terraform vs. Crossplane vs. Ansible - Rivals or Allies? I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or any other tool that primarily manages resources, be it those in hyperscalers like AWS, Google Cloud, and Azure, or in Kubernetes, or anywhere else. Well… Today I’m here to tell you that none of those tools are going away any time soon. We need all of those.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 May 2024 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2024 16:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes</title>
@@ -55,7 +55,7 @@
       <link>http://localhost:1313/infrastructure-as-code/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/infrastructure-as-code/index.html</guid>
-      <description> </description>
+      <description>Terraform vs. Crossplane vs. Ansible - Rivals or Allies?I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or any other tool that primarily manages resources, be it those in hyperscalers like AWS, Google Cloud, and Azure, or in Kubernetes, or anywhere else. Well… Today I’m here to tell you that none of those tools are going away any time soon. We need all of those. We need configuration management tools like Ansible, we need Infrastructure-as-Code (IaC) tools like Terraform and Pulumi, and we need control planes, be it opinionated ones like AWS, Google Cloud, and Azure, or those that allow us to build our own control planes like Crossplane.</description>
     </item>
     <item>
       <title>Observability</title>
@@ -63,6 +63,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/observability/index.html</guid>
       <description>Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor GadgetKubernetes ecosystem is one of the most, if not the most extensive we’ve ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux.</description>
+    </item>
+    <item>
+      <title>WebAssembly (WASM)</title>
+      <link>http://localhost:1313/wasm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wasm/index.html</guid>
+      <description> </description>
     </item>
     <item>
       <title>About The DeveOps Toolkit</title>

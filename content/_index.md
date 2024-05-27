@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/thumbnail.png" style="width:50%; float:right; padding: 10px">
+
+## [Terraform vs. Crossplane vs. Ansible - Rivals or Allies?](/wasm/unleashing-webassembly-in-kubernetes-with-kwasm)
+
+I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or any other tool that primarily manages resources, be it those in hyperscalers like AWS, Google Cloud, and Azure, or in Kubernetes, or anywhere else. Well... Today I'm here to tell you that none of those tools are going away any time soon. We need all of those. We need configuration management tools like Ansible, we need Infrastructure-as-Code (IaC) tools like Terraform and Pulumi, and we need control planes, be it opinionated ones like AWS, Google Cloud, and Azure, or those that allow us to build our own control planes like Crossplane.
+
+**[Full article >>](/wasm/unleashing-webassembly-in-kubernetes-with-kwasm)**
+
+--- -->
+
 <!-- <img src="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [From Makefile to Justfile (or Taskfile): Recipe Runner Replacement](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)

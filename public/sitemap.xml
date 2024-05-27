@@ -33,10 +33,18 @@
     <lastmod>2024-05-20T16:00:00+00:00</lastmod>
   </url>
   <url>
+    <loc>http://localhost:1313/wasm/index.html</loc>
+    <lastmod>2023-06-10T16:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/about/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/sponsor/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html</loc>
+    <lastmod>2024-05-27T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html</loc>
@@ -81,6 +89,10 @@
   <url>
     <loc>http://localhost:1313/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html</loc>
     <lastmod>2024-03-04T16:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html</loc>
+    <lastmod>2023-06-10T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>
