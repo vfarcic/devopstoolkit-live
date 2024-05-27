@@ -15,7 +15,7 @@ When I work locally, if I need to create a cluster I just execute `cluster-creat
 
 --- -->
 
-<!-- <img src="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Terraform vs. Crossplane vs. Ansible - Rivals or Allies?](/infrastructure-as-code/ansible-vs-terraform-vs-crossplane)
 
@@ -23,7 +23,7 @@ I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or
 
 **[Full article >>](/infrastructure-as-code/ansible-vs-terraform-vs-crossplane)**
 
---- -->
+---
 
 <img src="/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
