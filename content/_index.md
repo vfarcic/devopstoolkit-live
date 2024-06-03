@@ -15,7 +15,7 @@ I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or
 
 --- -->
 
-<!-- <img src="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [From Makefile to Justfile (or Taskfile): Recipe Runner Replacement](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)
 
@@ -23,7 +23,7 @@ When I work locally, if I need to create a cluster I just execute `cluster-creat
 
 **[Full article >>](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)**
 
---- -->
+---
 
 <img src="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
@@ -64,13 +64,3 @@ When I asked whether it would be interesting to explore another set of Kubernete
 For a while now, we have tools that promise that we can manage a **fleet of Kubernetes clusters** as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don't need tools for that. I can easily see what's going on in a cluster with kubectl or any, literally any, Kubernetes dashboard. What I'm missing, and what all the tools I tried so far fail to deliver, is a **single pane of glass** for all my Kubernetes clusters.
 
 **[Full article >>](/kubernetes/clusterpedia)**
-
----
-
-<img src="/internal-developer-platforms/platform-engineering-menu/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
-
-## [How Platform Engineering Compares to Running a Restaurant](/internal-developer-platforms/platform-engineering-menu)
-
-Platform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.
-
-**[Full article >>](/internal-developer-platforms/platform-engineering-menu)**

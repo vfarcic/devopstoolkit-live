@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>http://localhost:1313/wasm/index.html</loc>
-    <lastmod>2023-06-10T16:00:00+00:00</lastmod>
+    <lastmod>2024-06-10T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/about/index.html</loc>
@@ -89,10 +89,6 @@
   <url>
     <loc>http://localhost:1313/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html</loc>
     <lastmod>2024-03-04T16:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html</loc>
-    <lastmod>2023-06-10T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>
