@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>http://localhost:1313/ci-cd/index.html</loc>
-    <lastmod>2024-03-04T16:00:00+00:00</lastmod>
+    <lastmod>2024-06-03T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/infrastructure-as-code/index.html</loc>
@@ -43,6 +43,10 @@
     <loc>http://localhost:1313/sponsor/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html</loc>
+    <lastmod>2024-06-03T16:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html</loc>
     <lastmod>2024-05-27T16:00:00+00:00</lastmod>
   </url>
@@ -60,6 +64,10 @@
   </url>
   <url>
     <loc>http://localhost:1313/internal-developer-platforms/platform-engineering-menu/index.html</loc>
+    <lastmod>2024-04-29T16:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html</loc>
     <lastmod>2024-04-29T16:00:00+00:00</lastmod>
   </url>
   <url>
