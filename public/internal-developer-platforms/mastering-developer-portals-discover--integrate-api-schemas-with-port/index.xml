@@ -3,7 +3,7 @@
   <channel>
     <title>Mastering Developer Portals: Discover &amp; Integrate API Schemas with Port</title>
     <link>http://localhost:1313/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html</link>
-    <description>FIXME:</description>
+    <description>I am so dissaspointed with developer portal consoles for ignoring the fact that almost everything is discoverable through APIs. Why should I design forms and fields in Backstage if Backstage should be able to ask an API for a schema? Even if that schema is not exactly what I need and I might have to remove parts of it, that’s still easier and better than starting from scratch. It’s a waste of time to do the same thing over and over again. We should define what we have, expose that through an API, and all other tools should just “discover” it. Just as that’s true for, let’s say, kubectl, it should be true for graphical user interfaces.&#xA;Hence, I spent months complaining about it and… I got it.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>

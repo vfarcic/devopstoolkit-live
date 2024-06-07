@@ -3,7 +3,7 @@
   <channel>
     <title>Internal Developer Platforms</title>
     <link>http://localhost:1313/internal-developer-platforms/index.html</link>
-    <description>How Platform Engineering Compares to Running a RestaurantPlatform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.&#xA;Let me explain.&#xA;Mastering Developer Portals: Discover &amp; Integrate API Schemas with PortFIXME:</description>
+    <description>How Platform Engineering Compares to Running a RestaurantPlatform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.&#xA;Let me explain.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Apr 2024 16:00:00 +0000</lastBuildDate>
@@ -14,13 +14,6 @@
       <pubDate>Mon, 29 Apr 2024 16:00:00 +0000</pubDate>
       <guid>http://localhost:1313/internal-developer-platforms/platform-engineering-menu/index.html</guid>
       <description>Platform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.&#xA;Let me explain.</description>
-    </item>
-    <item>
-      <title>Mastering Developer Portals: Discover &amp; Integrate API Schemas with Port</title>
-      <link>http://localhost:1313/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html</link>
-      <pubDate>Mon, 29 Apr 2024 16:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html</guid>
-      <description>FIXME:</description>
     </item>
   </channel>
 </rss>

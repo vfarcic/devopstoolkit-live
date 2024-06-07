@@ -25,17 +25,17 @@
     <meta itemprop="image" content="http://localhost:1313/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/thumbnail.png">
     <title>Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</title>
     <link href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.xml" rel="alternate" type="application/rss+xml" title="Terraform vs. Crossplane vs. Ansible - Rivals or Allies?">
-    <link href="/css/fontawesome-all.min.css?1717717094" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1717717094" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1717717094" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717717094" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1717717094" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1717717094" rel="stylesheet">
-    <link href="/css/fonts.css?1717717094" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1717717094" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1717717094" rel="stylesheet">
-    <link href="/css/theme-dot.css?1717717094" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1717717094" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1717717094" rel="stylesheet">
-    <link href="/css/print.css?1717717094" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1717717094"></script>
+    <link href="/css/fontawesome-all.min.css?1717717909" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1717717909" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1717717909" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717717909" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1717717909" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1717717909" rel="stylesheet">
+    <link href="/css/fonts.css?1717717909" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1717717909" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1717717909" rel="stylesheet">
+    <link href="/css/theme-dot.css?1717717909" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1717717909" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1717717909" rel="stylesheet">
+    <link href="/css/print.css?1717717909" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1717717909"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -168,12 +168,12 @@
 <p>Here comes an important note. Just as AWS does not care how we send requests to its API, Crossplane or any other control plane does not care how we do that either. Both AWS and Crossplane care only what&rsquo;s happening after they receive something through their APIs.</p>
 <p>Hence, from the user perspective, from the perspective of a person that needs to request a desired state or initiate an operation through an API, there is still the need to define that state somehow and to convert it into API calls.</p>
 <p>That&rsquo;s where Terraform, Pulumi, Helm, or any other tool comes in. We need those tools to manage API requests. That&rsquo;s why I don&rsquo;t believe that Terraform and Pulumi are competing with Crossplane. They are the tools that transform code (8) into API requests (9). Crossplane creates those APIs and acts as a scheduler with control loops. It is a control plane.</p>
-<p><a href="#R-image-bb842c90b1448e0aca0e922b089175ad" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/helm.svg?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bb842c90b1448e0aca0e922b089175ad"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/helm.svg?height=10vw&classes=inline"></a>
-<a href="#R-image-b8796d5e4d085eb1c848235bf929fed9" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/terraform.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8796d5e4d085eb1c848235bf929fed9"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/terraform.png?height=10vw&classes=inline"></a>
-<a href="#R-image-8596645dd6b1fa17b8d1835111fbf60d" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/pulumi.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8596645dd6b1fa17b8d1835111fbf60d"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/pulumi.png?height=10vw&classes=inline"></a></p>
+<p><a href="#R-image-a2623339ceca12a04d85d6ce176c2133" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/helm.svg?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2623339ceca12a04d85d6ce176c2133"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/helm.svg?height=10vw&classes=inline"></a>
+<a href="#R-image-99a9a5f061b8f4b0ae5fa97cd7dc32c8" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/terraform.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-99a9a5f061b8f4b0ae5fa97cd7dc32c8"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/terraform.png?height=10vw&classes=inline"></a>
+<a href="#R-image-fa42bc8517b3c2ad79a2f0913761543e" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/pulumi.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fa42bc8517b3c2ad79a2f0913761543e"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/pulumi.png?height=10vw&classes=inline"></a></p>
 <p>Hence, Terraform and Pulumi compete with Helm and other similar tools that are designed to convert code into API requests. They complement Crossplane since Crossplane does not have a mechanism to convert code into client-side requests. Crossplane enables us to create APIs and relies on other tools to convert code into client-side requests. Those tools can be Helm, Terraform, Pulumi, or any other similar tool.</p>
 <p>The problems arrise when we misinterpret the primary function of a tool. Each tool can do more than its core function, yet that does not mean that is is good at doing &ldquo;side hussle&rdquo;.</p>
 <img src="/logo/ansible.png" style="width:10%; float:right; padding: 10px">
@@ -182,12 +182,12 @@
 <p>We should not call those tools Infrastructure-as-Code since they perform the same core function as Helm or even <code>kubectl</code>. The problem is that I do not have a better name for such tools. Nevertheless, what matters is that they convert code into API requests, mostly for the purpose of propagating the desired state to an API.</p>
 <p><strong>Control planes</strong> are designed to <strong>expose APIs</strong> to end users and perform <strong>scheduling</strong>. They watch for <strong>drifts</strong> continuously. They do <strong>reconciliation</strong>, and all the other things we&rsquo;re already used to. Control planes are, at the same time, acting as Infrastrucutre-as-Code tools since they can invoke other APIs as well, but that&rsquo;s not their primary purpose. They are meant to expose APIs and do orchestration, drift-detection, and reconciliation.</p>
 <p>With all that in mind, I can safely say that we need all three types of tools. Unless everything is accessible through APIs, we need configuration management tools. That is especially true for those running their own datacenters. We should strive to go towards API-only systems, but that might not be the reality for all.</p>
-<p><a href="#R-image-1f6678d053e56249a66ec13c966f1e94" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/terraform.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1f6678d053e56249a66ec13c966f1e94"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/terraform.png?height=10vw&classes=inline"></a>
-<a href="#R-image-fd5a2a2f77b9c16800cb3bf90818f39f" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/pulumi.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fd5a2a2f77b9c16800cb3bf90818f39f"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/pulumi.png?height=10vw&classes=inline"></a>
-<a href="#R-image-0067bb421c202487ec9462dfed1492c0" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/helm.svg?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0067bb421c202487ec9462dfed1492c0"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/helm.svg?height=10vw&classes=inline"></a></p>
+<p><a href="#R-image-863210eb14e30837fbeade83ef3fb4c8" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/terraform.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-863210eb14e30837fbeade83ef3fb4c8"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/terraform.png?height=10vw&classes=inline"></a>
+<a href="#R-image-ee209829a93663d8859abf55a2b2426d" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/pulumi.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee209829a93663d8859abf55a2b2426d"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/pulumi.png?height=10vw&classes=inline"></a>
+<a href="#R-image-0d4d2f65c934848a7c929c8532431875" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/helm.svg?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0d4d2f65c934848a7c929c8532431875"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/helm.svg?height=10vw&classes=inline"></a></p>
 <p>We also need a way to convert code into API requests. Using <code>curl</code> to instruct a control plane what to do is too tedios. That&rsquo;s where Terraform, Pulumi, Helm, and other similar tools come in.</p>
 <p>Finally, given that hyperscalers provide APIs for low level resources, we often need to define our own. For example, we might need to define what it means to have a database both on the API level, but also on the orchestration level. That&rsquo;s where control planes come in and we often have to have our own custom made on top of generic ones like AWS.</p>
             <footer class="footline">
@@ -215,8 +215,7 @@
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
           <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
-          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li>
-          <li data-nav-id="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html" class=""><a class="padding" href="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html">Mastering Developer Portals: Discover &amp; Integrate API Schemas with Port</a></li></ul></li>
+          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
           <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li>
           <li data-nav-id="/app-management/pkl/index.html" class=""><a class="padding" href="/app-management/pkl/index.html">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</a></li></ul></li>
@@ -286,8 +285,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1717717094" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1717717094" defer></script>
-    <script src="/js/theme.js?1717717094" defer></script>
+    <script src="/js/clipboard.min.js?1717717909" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1717717909" defer></script>
+    <script src="/js/theme.js?1717717909" defer></script>
   </body>
 </html>
