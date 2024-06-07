@@ -1,7 +1,7 @@
 
 +++
 title = 'Mastering Developer Portals: Discover & Integrate API Schemas with Port'
-date = 2023-06-24T16:00:00+00:00
+date = 2024-06-24T16:00:00+00:00
 draft = false
 +++
 
