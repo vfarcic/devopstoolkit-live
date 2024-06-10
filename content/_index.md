@@ -17,15 +17,15 @@ Hence, I spent months complaining about it and... I got it.
 
 --- -->
 
-<!-- <img src="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
-## [Terraform vs. Crossplane vs. Ansible - Rivals or Allies?](/wasm/unleashing-webassembly-in-kubernetes-with-kwasm)
+## [Unleashing WebAssembly in Kubernetes with Kwasm](/wasm/unleashing-webassembly-in-kubernetes-with-kwasm)
 
-I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or any other tool that primarily manages resources, be it those in hyperscalers like AWS, Google Cloud, and Azure, or in Kubernetes, or anywhere else. Well... Today I'm here to tell you that none of those tools are going away any time soon. We need all of those. We need configuration management tools like Ansible, we need Infrastructure-as-Code (IaC) tools like Terraform and Pulumi, and we need control planes, be it opinionated ones like AWS, Google Cloud, and Azure, or those that allow us to build our own control planes like Crossplane.
+I am going to show you something you've seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.
 
 **[Full article >>](/wasm/unleashing-webassembly-in-kubernetes-with-kwasm)**
 
---- -->
+---
 
 <img src="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
@@ -66,13 +66,3 @@ In the [Mastering Kubernetes: Dive into Workloads APIs](https://youtu.be/U6weXlz
 When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say "**Yes. Do more!**" So, today we will continue where we left.
 
 **[Full article >>](/kubernetes/services-ingress-cluster-api)**
-
----
-
-<img src="/kubernetes/clusterpedia/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Single Pane of Glass for Kubernetes Clusters with Clusterpedia](/kubernetes/clusterpedia)
-
-For a while now, we have tools that promise that we can manage a **fleet of Kubernetes clusters** as one, yet they all failed to do just that. They all failed to provide a single pane of glass for all the clusters in a fleet. All the tools I know eventually show us what is happening in a single cluster and, honestly, I don't need tools for that. I can easily see what's going on in a cluster with kubectl or any, literally any, Kubernetes dashboard. What I'm missing, and what all the tools I tried so far fail to deliver, is a **single pane of glass** for all my Kubernetes clusters.
-
-**[Full article >>](/kubernetes/clusterpedia)**
