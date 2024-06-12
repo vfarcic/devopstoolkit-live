@@ -3,10 +3,17 @@
   <channel>
     <title>WebAssembly (WASM)</title>
     <link>http://localhost:1313/wasm/index.html</link>
-    <description> </description>
+    <description>Unleashing WebAssembly in Kubernetes with KwasmI am going to show you something you’ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.&#xA;Here it goes.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2024 16:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/wasm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unleashing WebAssembly in Kubernetes with Kwasm</title>
+      <link>http://localhost:1313/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html</link>
+      <pubDate>Mon, 10 Jun 2024 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html</guid>
+      <description>I am going to show you something you’ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.&#xA;Here it goes.</description>
+    </item>
   </channel>
 </rss>

@@ -5,6 +5,7 @@ title = ""
 
 # Latest Posts
 
+
 <!-- <img src="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Developer Portals: Discover & Integrate API Schemas with Port](/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port)
@@ -14,6 +15,18 @@ I am so **dissaspointed with developer portal consoles** for ignoring the fact t
 Hence, I spent months complaining about it and... I got it.
 
 **[Full article >>](/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port)**
+
+--- -->
+
+<!-- <img src="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/thumbnail.png" style="width:50%; float:right; padding: 10px">
+
+## [Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe](/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe)
+
+Right now, I am connected to a PostgreSQL database and you are thinking that is boring. Who wants to see me querying a database?
+
+Well... Wait until you see what I can query from such a database.
+
+**[Full article >>](/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe)**
 
 --- -->
 

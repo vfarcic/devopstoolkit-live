@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://localhost:1313/index.html</link>
-    <description>Latest Posts From Makefile to Justfile (or Taskfile): Recipe Runner Replacement When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.&#xA;Full article »&#xA;Terraform vs. Crossplane vs. Ansible - Rivals or Allies? I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or any other tool that primarily manages resources, be it those in hyperscalers like AWS, Google Cloud, and Azure, or in Kubernetes, or anywhere else.</description>
+    <description>Latest Posts Unleashing WebAssembly in Kubernetes with Kwasm I am going to show you something you’ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.&#xA;Full article »&#xA;From Makefile to Justfile (or Taskfile): Recipe Runner Replacement When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Jun 2024 16:00:00 +0000</lastBuildDate>
@@ -69,7 +69,14 @@
       <link>http://localhost:1313/wasm/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/wasm/index.html</guid>
-      <description> </description>
+      <description>Unleashing WebAssembly in Kubernetes with KwasmI am going to show you something you’ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.&#xA;Here it goes.</description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/cloud/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cloud/index.html</guid>
+      <description>Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with SteampipeRight now, I am connected to a PostgreSQL database and you are thinking that is boring. Who wants to see me querying a database?&#xA;Well… Wait until you see what I can query from such a database.</description>
     </item>
     <item>
       <title>About The DeveOps Toolkit</title>

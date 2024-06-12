@@ -5,32 +5,37 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content=" ">
+    <meta name="description" content="Unleashing WebAssembly in Kubernetes with KwasmI am going to show you something you’ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.
+Here it goes.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="WebAssembly (WASM)">
-    <meta name="twitter:description" content=" ">
+    <meta name="twitter:description" content="Unleashing WebAssembly in Kubernetes with KwasmI am going to show you something you’ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.
+Here it goes.">
     <meta property="og:url" content="http://localhost:1313/wasm/index.html">
     <meta property="og:title" content="WebAssembly (WASM)">
-    <meta property="og:description" content=" ">
+    <meta property="og:description" content="Unleashing WebAssembly in Kubernetes with KwasmI am going to show you something you’ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.
+Here it goes.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="WebAssembly (WASM)">
-    <meta itemprop="description" content=" ">
+    <meta itemprop="description" content="Unleashing WebAssembly in Kubernetes with KwasmI am going to show you something you’ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.
+Here it goes.">
     <meta itemprop="dateModified" content="2024-06-10T16:00:00+00:00">
+    <meta itemprop="wordCount" content="44">
     <title>WebAssembly (WASM)</title>
     <link href="/wasm/index.xml" rel="alternate" type="application/rss+xml" title="WebAssembly (WASM)">
-    <link href="/css/fontawesome-all.min.css?1717719653" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1717719653" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1717719653" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717719653" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1717719653" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1717719653" rel="stylesheet">
-    <link href="/css/fonts.css?1717719653" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1717719653" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1717719653" rel="stylesheet">
-    <link href="/css/theme-dot.css?1717719653" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1717719653" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1717719653" rel="stylesheet">
-    <link href="/css/print.css?1717719653" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1717719653"></script>
+    <link href="/css/fontawesome-all.min.css?1718211841" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718211841" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1718211841" rel="stylesheet">
+    <link href="/css/auto-complete.css?1718211841" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718211841" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1718211841" rel="stylesheet">
+    <link href="/css/fonts.css?1718211841" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718211841" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1718211841" rel="stylesheet">
+    <link href="/css/theme-dot.css?1718211841" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1718211841" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1718211841" rel="stylesheet">
+    <link href="/css/print.css?1718211841" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1718211841"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -92,7 +97,7 @@
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" title="Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/about/index.html" title="About The DeveOps Toolkit (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html" title="Unleashing WebAssembly in Kubernetes with Kwasm (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -117,6 +122,8 @@
 
 <div class="children children-h2 children-sort-date">
 	
+<h2><a href="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html">Unleashing WebAssembly in Kubernetes with Kwasm</a></h2><p><p>I am going to show you something you&rsquo;ve seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.</p>
+<p>Here it goes.</p></p>
 </div>
 
             <footer class="footline">
@@ -159,7 +166,10 @@
           <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
           <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
           <li data-nav-id="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" class=""><a class="padding" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></li></ul></li>
-          <li data-nav-id="/wasm/index.html" class="active"><a class="padding" href="/wasm/index.html">WebAssembly (WASM)</a></li>
+          <li data-nav-id="/wasm/index.html" class="active parent "><a class="padding" href="/wasm/index.html">WebAssembly (WASM)</a><ul id="R-subsections-b0ea8ce9b33b696880b6f35f6467d614" class="morespace collapsible-menu">
+          <li data-nav-id="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html" class=""><a class="padding" href="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html">Unleashing WebAssembly in Kubernetes with Kwasm</a></li></ul></li>
+          <li data-nav-id="/cloud/index.html" class=""><a class="padding" href="/cloud/index.html">Cloud</a><ul id="R-subsections-04db32118cfbb6755505814035576930" class="morespace collapsible-menu">
+          <li data-nav-id="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" class=""><a class="padding" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html">Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
@@ -214,8 +224,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1717719653" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1717719653" defer></script>
-    <script src="/js/theme.js?1717719653" defer></script>
+    <script src="/js/clipboard.min.js?1718211841" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1718211841" defer></script>
+    <script src="/js/theme.js?1718211841" defer></script>
   </body>
 </html>
