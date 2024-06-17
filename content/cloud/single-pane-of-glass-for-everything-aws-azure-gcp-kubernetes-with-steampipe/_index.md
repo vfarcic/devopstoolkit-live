@@ -11,7 +11,7 @@ Well... Wait until you see what I can query from such a database.
 
 <!--more-->
 
-{{< youtube AhdBJQVx0bQ >}}
+{{< youtube 0pG3txMPKJI >}}
 
 I can, for example, ask it to retrieve data by selecting `cluster`, `namespace`, and `name` columns from all Kubernetes clusters (`kubernetes_all`), and that the data should represent all Pods (`kubernetes_pod`) in those clusters.
 
