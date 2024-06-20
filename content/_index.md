@@ -5,6 +5,23 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png" style="width:50%; float:right; padding: 10px">
+
+## [Scaling Explained Through Kubernetes HPA, VPA, KEDA & Cluster Autoscaler](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)
+
+Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
+
+If our processes use more memory and CPU than what they need, they are wasting money or "stealing" those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that's the good outcome. Much worse situation is that underpowered processes might crash with "out of memory" and other similar exceptions.
+
+Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
+
+* **What do we scale?**
+* **Where do we scale?**
+* **Who scales?**
+
+**[Full article >>](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)**
+
+--- -->
 
 <!-- <img src="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/thumbnail.png" style="width:50%; float:right; padding: 10px">
 

@@ -6,7 +6,7 @@
     <description>Latest Posts Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, …) with Steampipe Right now, I am connected to a PostgreSQL database and you are thinking that is boring. Who wants to see me querying a database?&#xA;Well… Wait until you see what I can query from such a database.&#xA;Full article »&#xA;Unleashing WebAssembly in Kubernetes with Kwasm I am going to show you something you’ve seen many times before.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jun 2024 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2024 16:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes</title>

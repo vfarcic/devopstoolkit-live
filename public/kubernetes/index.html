@@ -21,21 +21,21 @@ When I asked whether it would be interesting to explore another set of Kubernete
     <meta itemprop="name" content="Kubernetes">
     <meta itemprop="description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
 When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
-    <meta itemprop="dateModified" content="2024-05-13T16:00:00+00:00">
-    <meta itemprop="wordCount" content="491">
+    <meta itemprop="dateModified" content="2024-07-01T16:00:00+00:00">
+    <meta itemprop="wordCount" content="346">
     <title>Kubernetes</title>
     <link href="/kubernetes/index.xml" rel="alternate" type="application/rss+xml" title="Kubernetes">
-    <link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1718889190" rel="stylesheet">
-    <link href="/css/auto-complete.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1718889190" rel="stylesheet">
-    <link href="/css/fonts.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1718889190" rel="stylesheet">
-    <link href="/css/theme-dot.css?1718889190" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1718889190" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1718889190" rel="stylesheet">
-    <link href="/css/print.css?1718889190" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1718889190"></script>
+    <link href="/css/fontawesome-all.min.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1718890107" rel="stylesheet">
+    <link href="/css/auto-complete.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1718890107" rel="stylesheet">
+    <link href="/css/fonts.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1718890107" rel="stylesheet">
+    <link href="/css/theme-dot.css?1718890107" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1718890107" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1718890107" rel="stylesheet">
+    <link href="/css/print.css?1718890107" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1718890107"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -129,12 +129,6 @@ When I asked whether it would be interesting to explore another set of Kubernete
 <h2><a href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></h2><p><p>You might be new to <strong>Kubernetes</strong> or you might have been working with it for a while. No matter your experience level, you might not be aware of all the <strong>Kubernetes Workload APIs</strong>.</p></p>
 <h2><a href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></h2><p><p><strong>Testing is important</strong>, no matter what you&rsquo;re working on. If you write Java code, you need to test it. If you&rsquo;re managing infrastructure, you need to test it. If you&rsquo;re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.</p>
 <p>Now, today&rsquo;s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of <strong>test-driven development</strong>, <strong>test automation</strong>, <strong>CI/CD pipelines</strong>, or anything else related to testing.</p></p>
-<h2><a href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></h2><p><p>Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.</p>
-<p>If our processes use more memory and CPU than what they need, they are wasting money or &ldquo;stealing&rdquo; those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that&rsquo;s the good outcome. Much worse situation is that underpowered processes might crash with &ldquo;out of memory&rdquo; and other similar exceptions.</p>
-<p>Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.</p>
-<p><strong>What do we scale?</strong>
-<strong>Where do we scale?</strong>
-<strong>Who scales?</strong></p></p>
 </div>
 
             <footer class="footline">
@@ -160,8 +154,7 @@ When I asked whether it would be interesting to explore another set of Kubernete
           <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
-          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class=""><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li></ul></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -236,8 +229,8 @@ When I asked whether it would be interesting to explore another set of Kubernete
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1718889190" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1718889190" defer></script>
-    <script src="/js/theme.js?1718889190" defer></script>
+    <script src="/js/clipboard.min.js?1718890107" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1718890107" defer></script>
+    <script src="/js/theme.js?1718890107" defer></script>
   </body>
 </html>

@@ -8,43 +8,46 @@
     <meta name="description" content="Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
 If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that’s the good outcome. Much worse situation is that underpowered processes might crash with “out of memory” and other similar exceptions.
 Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
-What do we scale? Where do we scale? Who scales?">
+What do we scale? Where do we scale? Who scales? ">
     <meta name="author" content="Viktor Farcic">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png">
     <meta name="twitter:title" content="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler">
     <meta name="twitter:description" content="Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
 If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that’s the good outcome. Much worse situation is that underpowered processes might crash with “out of memory” and other similar exceptions.
 Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
-What do we scale? Where do we scale? Who scales?">
+What do we scale? Where do we scale? Who scales? ">
     <meta property="og:url" content="http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">
     <meta property="og:title" content="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler">
     <meta property="og:description" content="Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
 If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that’s the good outcome. Much worse situation is that underpowered processes might crash with “out of memory” and other similar exceptions.
 Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
-What do we scale? Where do we scale? Who scales?">
+What do we scale? Where do we scale? Who scales? ">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png">
     <meta itemprop="name" content="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler">
     <meta itemprop="description" content="Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
 If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that’s the good outcome. Much worse situation is that underpowered processes might crash with “out of memory” and other similar exceptions.
 Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
-What do we scale? Where do we scale? Who scales?">
+What do we scale? Where do we scale? Who scales? ">
     <meta itemprop="datePublished" content="2023-07-01T16:00:00+00:00">
     <meta itemprop="dateModified" content="2023-07-01T16:00:00+00:00">
-    <meta itemprop="wordCount" content="5554">
+    <meta itemprop="wordCount" content="5500">
+    <meta itemprop="image" content="http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png">
     <title>Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</title>
     <link href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.xml" rel="alternate" type="application/rss+xml" title="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler">
-    <link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1718889190" rel="stylesheet">
-    <link href="/css/auto-complete.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1718889190" rel="stylesheet">
-    <link href="/css/fonts.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1718889190" rel="stylesheet">
-    <link href="/css/theme-dot.css?1718889190" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1718889190" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1718889190" rel="stylesheet">
-    <link href="/css/print.css?1718889190" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1718889190"></script>
+    <link href="/css/fontawesome-all.min.css?1718889966" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718889966" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1718889966" rel="stylesheet">
+    <link href="/css/auto-complete.css?1718889966" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718889966" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1718889966" rel="stylesheet">
+    <link href="/css/fonts.css?1718889966" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718889966" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1718889966" rel="stylesheet">
+    <link href="/css/theme-dot.css?1718889966" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1718889966" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1718889966" rel="stylesheet">
+    <link href="/css/print.css?1718889966" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1718889966"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -143,9 +146,11 @@ What do we scale? Where do we scale? Who scales?">
 <p>Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.</p>
 <p>If our processes use more memory and CPU than what they need, they are wasting money or &ldquo;stealing&rdquo; those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that&rsquo;s the good outcome. Much worse situation is that underpowered processes might crash with &ldquo;out of memory&rdquo; and other similar exceptions.</p>
 <p>Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.</p>
-<p><strong>What do we scale?</strong>
-<strong>Where do we scale?</strong>
-<strong>Who scales?</strong></p>
+<ul>
+<li><strong>What do we scale?</strong></li>
+<li><strong>Where do we scale?</strong></li>
+<li><strong>Who scales?</strong></li>
+</ul>
     
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FIXME?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
@@ -153,14 +158,13 @@ What do we scale? Where do we scale? Who scales?">
     </div>
 
 <p>So, it is about <strong>what</strong>, and <strong>where</strong>, and <strong>who</strong>.</p>
-<img src="diag-01.png" style="width:60%; float:right; padding: 10px">
+<img src="diag-01.png" style="width:40%; float:right; padding: 10px">
 <p>Let&rsquo;s start with what we scale. We can scale processes, <strong>applications</strong>, so that they get the right amount of memory and CPU. Remember, it&rsquo;s about finding the right amount of resources. Too much is expensive and not enough means that apps will be slow or will crash. That memory and CPU is provided through nodes, through <strong>servers</strong>. Those also need to have just the right amount or memory and CPU. If all the servers combined do not have the resources applications need, we will not be able to scale up those apps. On the other hand, if they have more resources than what those applications need, we are wasting money. If you&rsquo;re using a hyperscaler like AWS, Azure, or Google Cloud, using more server capacity than needed increases cost for no good reason. Having less means that some applications won&rsquo;t be able to run.</p>
 <p>All in all, we scale both application and servers. Applications need resources and servers provide those resources. Ideally, applications should be configured to consume just the right amount of memory and CPU and servers should provide that same amount of resources. No more, no less.</p>
 <p>The next is &ldquo;where&rdquo; or, to be more precise, the direction. We can scale &ldquo;stuff&rdquo; by increasing the size or increasing the number. It can go up and down, or left and right. It can be <strong>vertical</strong> or <strong>horizontal</strong>.</p>
 <p>Vertical scaling means that we are adding more memory and CPU. We increase the amount a process of an application is allowed to consume and we increase resources assigned to servers. We make them taller, or we make them shorter.</p>
 <p>Horizontal scaling is about increasing the number of something. Instead of increasing or decreasing memory and CPU assigned to an application, we increase, or decrease the number of replicas of an application.</p>
 <p>The same can be said for servers. We can change their size vertically by increasing or decreasing memory and CPU, or we can change the number of servers. A collection of servers is a cluster and we can change the total amount of resources of a cluster by having bigger servers, or we can change the number of servers in a cluster.</p>
-<p>TODO: Ignore drawing of a human</p>
 <p>Finally, we have the &ldquo;who&rdquo;. Who scales applications and servers? It can <strong>humans</strong> who reconfigure applications to use a different amount of resources. Similarly, humans can be creating virtual machines with different sizes or adding physical memory and CPU to physical servers.</p>
 <p>Alternatively, we can have machines doing that work. We can have processes that scale applications and virtual servers based on criteria like memory and CPU consumption, or, as we&rsquo;ll see later, any other data. That&rsquo;s what we call <strong>automation</strong>.</p>
 <p>Now, it&rsquo;s not secret that I&rsquo;m not very fond of humans. I tend to have much easier time reasoning with machines, so you might think that I will advocate automation of any type of scaling, but, as we&rsquo;ll see later, that&rsquo;s not the case. There are situations when scaling is better done manually.</p>
@@ -283,11 +287,9 @@ Status:
         Cpu:     830m
         Memory:  932494442496
 ...</code></pre></div><p>The key is the Recommendation section that shows us a recommendation for the container <code>silly-demo</code>. Over there, we can see <code>Lower Bound</code> which is the minimum amount of recommended resources, <code>Target</code> being the recommended values, <code>Uncapped Target</code> representing the most recent recommendation, and, finally, <code>Upper Bound</code> that shows the maximum amount of recommended resources.</p>
-<p>TODO: Skip this command from the screen recording.</p>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team get pods</span></span></code></pre></div><p>Since the update mode is set to Auto, VPA will be updating the target resource, the Deployment, periodically. However, more often than note, that update is not performed to the Pods created before VPA calculated the recommendation. So, to see it in action, we&rsquo;ll <code>delete</code> the <code>pods</code>&hellip;</p>
+<p>Since the update mode is set to Auto, VPA will be updating the target resource, the Deployment, periodically. However, more often than note, that update is not performed to the Pods created before VPA calculated the recommendation. So, to see it in action, we&rsquo;ll <code>delete</code> the <code>pods</code>&hellip;</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team delete pods <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --selector app.kubernetes.io/name<span style="color:#f92672">=</span>silly-demo</span></span></code></pre></div><p>TODO: Skip this command from the screen recording.</p>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team get pods</span></span></code></pre></div><p>&hellip;and take a look at <code>resources</code> of the Pod.</p>
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --selector app.kubernetes.io/name<span style="color:#f92672">=</span>silly-demo</span></span></code></pre></div><p>&hellip;and take a look at <code>resources</code> of the Pod.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team get pod <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --selector app.kubernetes.io/name<span style="color:#f92672">=</span>silly-demo <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --output jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{.items[0].spec.containers[0].resources}&#34;</span> <span style="color:#ae81ff">\
@@ -429,7 +431,6 @@ silly-demo-... 1/1   Running 0        52s
 silly-demo-... 1/1   Running 0        98s
 silly-demo-... 1/1   Running 0        2m11s
 silly-demo-... 1/1   Running 0        95s</code></pre></div><p>There&rsquo;s not much more to it. HPA is relatively simple to define, and it works fairly well. Just remember not to mix it with VPA. Those two are not aware of each other so both might be scaling up and down, left and right without taking into the account that the other one accomplished the goal.</p>
-<p>TODO: Ignore screen coming up</p>
 <p>There is, however, a better way to scale applications horizontally.</p>
 <p>Let&rsquo;s <code>delete</code> what we did so far,&hellip;</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team delete --filename scale/hpa.yaml
@@ -438,8 +439,7 @@ silly-demo-... 1/1   Running 0        95s</code></pre></div><p>There&rsquo;s not
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --filename scale/app-resources.yaml</span></span></code></pre></div><p>&hellip;and apply the app without the scaler again.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team apply <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --filename scale/app-resources.yaml</span></span></code></pre></div><h2 id="horizontal-scaling-applications-with-keda">Horizontal Scaling Applications with KEDA</h2>
-<p>TODO: Lower-third: keda.sh, keda.png</p>
-<p>The &ldquo;better&rdquo; way to scale apps horizontally is Kubernetes Event-Driven Autoscaling or KEDA.</p>
+<p>The &ldquo;better&rdquo; way to scale apps horizontally is <a href="https://keda.sh/" rel="external" target="_blank">Kubernetes Event-Driven Autoscaling or KEDA</a>.</p>
 <p>Here&rsquo;s an example.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat scale/keda.yaml</span></span></code></pre></div><p>The output is as follows.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">keda.sh/v1alpha1</span>
@@ -459,8 +459,8 @@ silly-demo-... 1/1   Running 0        95s</code></pre></div><p>There&rsquo;s not
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">serverAddress</span>: <span style="color:#ae81ff">http://prometheus-server.monitoring:80</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">threshold</span>: <span style="color:#e6db74">&#34;250000000&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">query</span>: <span style="color:#ae81ff">sum(container_memory_usage_bytes{namespace=&#34;a-team&#34;, container=&#34;silly-demo&#34;})</span></span></span></code></pre></div><p>It is a <code>ScaledObject</code> which, just as the VPA and HPA manifests we used is referencing the <code>Deployment</code> <code>silly-demo</code>. It has the minimum number of replicas set to <code>1</code> and the maximum to <code>20</code>. The difference, when compared with the HPA, is in the <code>triggers</code> which can contain any number of scalers.</p>
-<p>TODO: Show the list of <code>Scalers</code> from the left-hand menu at <a href="https://keda.sh/docs" rel="external" target="_blank">https://keda.sh/docs</a>.</p>
-<p>Look at that. We can trigger scaling based on data from ActiveMQ, Apache Kafka, Apache Pulsar, ArangoDB, AWS this and that, and so on and so forth. Almost anything anyone could imagine as the source of data to scale apps is available.</p>
+<img src="scalers.png" style="width:35%; float:right; padding: 10px">
+<p>We can trigger scaling based on data from ActiveMQ, Apache Kafka, Apache Pulsar, ArangoDB, AWS this and that, and so on and so forth. Almost anything anyone could imagine as the source of data to scale apps is available.</p>
 <p>In this case, we&rsquo;re using <code>prometheus</code> running inside the same cluster (<code>http://prometheus-server.monitoring:80</code>). We&rsquo;re setting 250MB (<code>250000000</code>) as the threshold and using the <code>query</code> that retrieves memory usage of the application.</p>
 <p>Now, to be clear, that&rsquo;s a silly example that does not show KEDA in its full glory since the result will be almost the same as if we used HPA. I was too lazy to setup a complicated demo so I&rsquo;m leaving it to your imagination to run wild and figure out all the use-cases we could accomplish using all those scalers. Or, if your imagination is not working today, you might want to check the <a href="https://youtu.be/3lcaawKAv6s" rel="external" target="_blank">KEDA: Kubernetes Event-Driven Autoscaling</a> video I published a while ago.</p>
 <p>Let&rsquo;s apply the manifest and see it in action,&hellip;</p>
@@ -727,8 +727,8 @@ Cheers.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1718889190" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1718889190" defer></script>
-    <script src="/js/theme.js?1718889190" defer></script>
+    <script src="/js/clipboard.min.js?1718889966" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1718889966" defer></script>
+    <script src="/js/theme.js?1718889966" defer></script>
   </body>
 </html>

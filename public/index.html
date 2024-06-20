@@ -27,20 +27,20 @@ Unleashing WebAssembly in Kubernetes with Kwasm I am going to show you something
 Well… Wait until you see what I can query from such a database.
 Full article »
 Unleashing WebAssembly in Kubernetes with Kwasm I am going to show you something you’ve seen many times before.">
-    <meta itemprop="dateModified" content="2024-06-24T16:00:00+00:00">
-    <meta itemprop="wordCount" content="430">
+    <meta itemprop="dateModified" content="2024-07-01T16:00:00+00:00">
+    <meta itemprop="wordCount" content="358">
     <title></title>
-    <link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1718889190" rel="stylesheet">
-    <link href="/css/auto-complete.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1718889190" rel="stylesheet">
-    <link href="/css/fonts.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1718889190" rel="stylesheet">
-    <link href="/css/theme-dot.css?1718889190" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1718889190" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1718889190" rel="stylesheet">
-    <link href="/css/print.css?1718889190" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1718889190"></script>
+    <link href="/css/fontawesome-all.min.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1718890107" rel="stylesheet">
+    <link href="/css/auto-complete.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1718890107" rel="stylesheet">
+    <link href="/css/fonts.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1718890107" rel="stylesheet">
+    <link href="/css/theme-dot.css?1718890107" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1718890107" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1718890107" rel="stylesheet">
+    <link href="/css/print.css?1718890107" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1718890107"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='.';
@@ -98,7 +98,6 @@ Unleashing WebAssembly in Kubernetes with Kwasm I am going to show you something
     <li><a href="#from-makefile-to-justfile-or-taskfile-recipe-runner-replacementci-cdfrom-makefile-to-justfile-or-taskfile-recipe-runner-replacement"><a href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement">From Makefile to Justfile (or Taskfile): Recipe Runner Replacement</a></a></li>
     <li><a href="#terraform-vs-crossplane-vs-ansible---rivals-or-alliesinfrastructure-as-codeansible-vs-terraform-vs-crossplane"><a href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></a></li>
     <li><a href="#mastering-kubernetes-debugging-leveraging-ebpf-with-inspektor-gadgetobservabilityinspektor-gadget-kubernetes-debugging-ebpf"><a href="/observability/inspektor-gadget-kubernetes-debugging-ebpf">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></a></li>
-    <li><a href="#mastering-kubernetes-dive-into-service-and-network-apiskubernetesservices-ingress-cluster-api"><a href="/kubernetes/services-ingress-cluster-api">Mastering Kubernetes: Dive into Service and Network APIs</a></a></li>
   </ul>
 </nav>
                 </div>
@@ -133,6 +132,23 @@ Unleashing WebAssembly in Kubernetes with Kwasm I am going to show you something
 <h1 id=""></h1>
 
 <h1 id="latest-posts">Latest Posts</h1>
+<!-- <img src="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png" style="width:50%; float:right; padding: 10px">
+
+## [Scaling Explained Through Kubernetes HPA, VPA, KEDA & Cluster Autoscaler](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)
+
+Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
+
+If our processes use more memory and CPU than what they need, they are wasting money or "stealing" those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that's the good outcome. Much worse situation is that underpowered processes might crash with "out of memory" and other similar exceptions.
+
+Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
+
+* **What do we scale?**
+* **Where do we scale?**
+* **Who scales?**
+
+**[Full article >>](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)**
+
+--- -->
 <!-- <img src="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Developer Portals: Discover & Integrate API Schemas with Port](/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port)
@@ -171,10 +187,6 @@ Hence, I spent months complaining about it and... I got it.
 <p><strong><a href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Full article &raquo;</a></strong></p>
 <hr>
 <img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
-<h2 id="mastering-kubernetes-dive-into-service-and-network-apiskubernetesservices-ingress-cluster-api"><a href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></h2>
-<p>In the <a href="https://youtu.be/U6weXlzQxoY" rel="external" target="_blank">Mastering Kubernetes: Dive into Workloads APIs</a> video we explored Kubernetes <strong>Workload APIs</strong>. We saw the differences between <strong>Pods</strong>, <strong>ReplicaSets</strong>, <strong>Jobs</strong>, <strong>Deployments</strong>, <strong>StatefulSets</strong>, <strong>DaemonSets</strong>, and <strong>CronJobs</strong>.</p>
-<p>When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say &ldquo;<strong>Yes. Do more!</strong>&rdquo; So, today we will continue where we left.</p>
-<p><strong><a href="/kubernetes/services-ingress-cluster-api/index.html">Full article &raquo;</a></strong></p>
 
             <footer class="footline">
             </footer>
@@ -199,8 +211,7 @@ Hence, I spent months complaining about it and... I got it.
           <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
-          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class=""><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li></ul></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -275,8 +286,8 @@ Hence, I spent months complaining about it and... I got it.
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1718889190" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1718889190" defer></script>
-    <script src="/js/theme.js?1718889190" defer></script>
+    <script src="/js/clipboard.min.js?1718890107" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1718890107" defer></script>
+    <script src="/js/theme.js?1718890107" defer></script>
   </body>
 </html>

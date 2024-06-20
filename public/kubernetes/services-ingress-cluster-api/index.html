@@ -29,17 +29,17 @@ When I asked whether it would be interesting to explore another set of Kubernete
     <meta itemprop="image" content="http://localhost:1313/kubernetes/services-ingress-cluster-api/thumbnail.jpeg">
     <title>Mastering Kubernetes: Dive into Service and Network APIs</title>
     <link href="/kubernetes/services-ingress-cluster-api/index.xml" rel="alternate" type="application/rss+xml" title="Mastering Kubernetes: Dive into Service and Network APIs">
-    <link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1718889190" rel="stylesheet">
-    <link href="/css/auto-complete.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1718889190" rel="stylesheet">
-    <link href="/css/fonts.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718889190" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1718889190" rel="stylesheet">
-    <link href="/css/theme-dot.css?1718889190" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1718889190" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1718889190" rel="stylesheet">
-    <link href="/css/print.css?1718889190" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1718889190"></script>
+    <link href="/css/fontawesome-all.min.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1718890107" rel="stylesheet">
+    <link href="/css/auto-complete.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1718890107" rel="stylesheet">
+    <link href="/css/fonts.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718890107" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1718890107" rel="stylesheet">
+    <link href="/css/theme-dot.css?1718890107" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1718890107" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1718890107" rel="stylesheet">
+    <link href="/css/print.css?1718890107" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1718890107"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -420,14 +420,14 @@ silly-demo   LoadBalancer   10.95.50.22   34.75.165.181   8080:30797/TCP   117s<
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: <span style="color:#ae81ff">ClusterIP</span></span></span></code></pre></div><p>It is a <code>ClusterIP</code> Service and all the services you will write will be of that type. As you will see soon, there is no need for you to expose ports through NodePort or to create load balancers. Most of the time, if not always, all your services should be accessible only from inside the cluster.</p>
 <p>I know. That might sound confusing. I&rsquo;ll explain why in a moment, right after we apply the ClusterIP Service.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl --namespace a-team apply --filename service/base.yaml</span></span></code></pre></div><p>We&rsquo;ll use an Ingress controller to do all the work required for requests to reach our Services.</p>
-<p><a href="#R-image-eb8d414029fb73f20356137e3c38ae5c" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/nginx.svg?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb8d414029fb73f20356137e3c38ae5c"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/nginx.svg?height=8vw&classes=inline"></a>
-<a href="#R-image-04f9db3ba778d36bc9256762d3cecda1" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/contour.svg?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-04f9db3ba778d36bc9256762d3cecda1"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/contour.svg?height=8vw&classes=inline"></a>
-<a href="#R-image-df960bb6238709ac7e5f9d0d8bf18f40" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/kong.png?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-df960bb6238709ac7e5f9d0d8bf18f40"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/kong.png?height=8vw&classes=inline"></a>
-<a href="#R-image-0f359cc51c5d941dd546aed09bbde52a" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/traefik.png?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f359cc51c5d941dd546aed09bbde52a"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/traefik.png?height=8vw&classes=inline"></a></p>
+<p><a href="#R-image-0a4850f811ea76a5ceab5cffc6ffb681" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/nginx.svg?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0a4850f811ea76a5ceab5cffc6ffb681"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/nginx.svg?height=8vw&classes=inline"></a>
+<a href="#R-image-0f28c4944d566b7fa8bf597f1f4a0ab7" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/contour.svg?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f28c4944d566b7fa8bf597f1f4a0ab7"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/contour.svg?height=8vw&classes=inline"></a>
+<a href="#R-image-b67bd499e8d9f329fba20d3f86971f72" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/kong.png?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b67bd499e8d9f329fba20d3f86971f72"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/kong.png?height=8vw&classes=inline"></a>
+<a href="#R-image-cc2d943c6f64198fa51d0f813102ccc1" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/traefik.png?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc2d943c6f64198fa51d0f813102ccc1"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/traefik.png?height=8vw&classes=inline"></a></p>
 <p>Now, unlike Services themselves, Ingress is not available in Kubernetes out-of-the-box. Ingress specification is there, but Kubernetes does not come with an implementation of that spec. We need to pick one out of many. It could be NGINX Ingress, or Contour, or Kong, or any other. There are many and it would take too much time to go through the pros and cons of all of them. Instead, we&rsquo;ll just install one I picked, and that one is Traefik.</p>
 <p>The installation is simple with <code>helm upgrade --install</code>, name, repo, and Namespace.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>helm upgrade --install traefik traefik <span style="color:#ae81ff">\
@@ -602,8 +602,7 @@ silly-demo   [&#34;silly-demo.34.120.55.14.nip.io&#34;]   3s</code></pre></div><
           <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class="active"><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
-          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class=""><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li></ul></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -678,8 +677,8 @@ silly-demo   [&#34;silly-demo.34.120.55.14.nip.io&#34;]   3s</code></pre></div><
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1718889190" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1718889190" defer></script>
-    <script src="/js/theme.js?1718889190" defer></script>
+    <script src="/js/clipboard.min.js?1718890107" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1718890107" defer></script>
+    <script src="/js/theme.js?1718890107" defer></script>
   </body>
 </html>

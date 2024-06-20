@@ -1,7 +1,7 @@
 
 +++
 title = 'Scaling Explained Through Kubernetes HPA, VPA, KEDA & Cluster Autoscaler'
-date = 2023-07-01T16:00:00+00:00
+date = 2024-07-01T16:00:00+00:00
 draft = false
 +++
 
@@ -11,17 +11,17 @@ If our processes use more memory and CPU than what they need, they are wasting m
 
 Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
 
-**What do we scale?**
-**Where do we scale?**
-**Who scales?**
+* **What do we scale?**
+* **Where do we scale?**
+* **Who scales?**
 
 <!--more-->
 
-{{< youtube FIXME >}}
+{{< youtube zfPi3qiHmqw >}}
 
 So, it is about **what**, and **where**, and **who**.
 
-<img src="diag-01.png" style="width:60%; float:right; padding: 10px">
+<img src="diag-01.png" style="width:40%; float:right; padding: 10px">
 
 Let's start with what we scale. We can scale processes, **applications**, so that they get the right amount of memory and CPU. Remember, it's about finding the right amount of resources. Too much is expensive and not enough means that apps will be slow or will crash. That memory and CPU is provided through nodes, through **servers**. Those also need to have just the right amount or memory and CPU. If all the servers combined do not have the resources applications need, we will not be able to scale up those apps. On the other hand, if they have more resources than what those applications need, we are wasting money. If you're using a hyperscaler like AWS, Azure, or Google Cloud, using more server capacity than needed increases cost for no good reason. Having less means that some applications won't be able to run.
 
@@ -34,8 +34,6 @@ Vertical scaling means that we are adding more memory and CPU. We increase the a
 Horizontal scaling is about increasing the number of something. Instead of increasing or decreasing memory and CPU assigned to an application, we increase, or decrease the number of replicas of an application.
 
 The same can be said for servers. We can change their size vertically by increasing or decreasing memory and CPU, or we can change the number of servers. A collection of servers is a cluster and we can change the total amount of resources of a cluster by having bigger servers, or we can change the number of servers in a cluster.
-
-TODO: Ignore drawing of a human
 
 Finally, we have the "who". Who scales applications and servers? It can **humans** who reconfigure applications to use a different amount of resources. Similarly, humans can be creating virtual machines with different sizes or adding physical memory and CPU to physical servers.
 
@@ -236,23 +234,11 @@ Status:
 
 The key is the Recommendation section that shows us a recommendation for the container `silly-demo`. Over there, we can see `Lower Bound` which is the minimum amount of recommended resources, `Target` being the recommended values, `Uncapped Target` representing the most recent recommendation, and, finally, `Upper Bound` that shows the maximum amount of recommended resources.
 
-TODO: Skip this command from the screen recording.
-
-```sh
-kubectl --namespace a-team get pods
-```
-
 Since the update mode is set to Auto, VPA will be updating the target resource, the Deployment, periodically. However, more often than note, that update is not performed to the Pods created before VPA calculated the recommendation. So, to see it in action, we'll `delete` the `pods`...
 
 ```sh
 kubectl --namespace a-team delete pods \
     --selector app.kubernetes.io/name=silly-demo
-```
-
-TODO: Skip this command from the screen recording.
-
-```sh
-kubectl --namespace a-team get pods
 ```
 
 ...and take a look at `resources` of the Pod.
@@ -534,8 +520,6 @@ silly-demo-... 1/1   Running 0        95s
 
 There's not much more to it. HPA is relatively simple to define, and it works fairly well. Just remember not to mix it with VPA. Those two are not aware of each other so both might be scaling up and down, left and right without taking into the account that the other one accomplished the goal.
 
-TODO: Ignore screen coming up
-
 There is, however, a better way to scale applications horizontally.
 
 Let's `delete` what we did so far,...
@@ -556,9 +540,7 @@ kubectl --namespace a-team apply \
 
 ## Horizontal Scaling Applications with KEDA
 
-TODO: Lower-third: keda.sh, keda.png
-
-The "better" way to scale apps horizontally is Kubernetes Event-Driven Autoscaling or KEDA.
+The "better" way to scale apps horizontally is [Kubernetes Event-Driven Autoscaling or KEDA](https://keda.sh/).
 
 Here's an example.
 
@@ -590,9 +572,9 @@ spec:
 
 It is a `ScaledObject` which, just as the VPA and HPA manifests we used is referencing the `Deployment` `silly-demo`. It has the minimum number of replicas set to `1` and the maximum to `20`. The difference, when compared with the HPA, is in the `triggers` which can contain any number of scalers.
 
-TODO: Show the list of `Scalers` from the left-hand menu at https://keda.sh/docs.
+<img src="scalers.png" style="width:35%; float:right; padding: 10px">
 
-Look at that. We can trigger scaling based on data from ActiveMQ, Apache Kafka, Apache Pulsar, ArangoDB, AWS this and that, and so on and so forth. Almost anything anyone could imagine as the source of data to scale apps is available.
+We can trigger scaling based on data from ActiveMQ, Apache Kafka, Apache Pulsar, ArangoDB, AWS this and that, and so on and so forth. Almost anything anyone could imagine as the source of data to scale apps is available.
 
 In this case, we're using `prometheus` running inside the same cluster (`http://prometheus-server.monitoring:80`). We're setting 250MB (`250000000`) as the threshold and using the `query` that retrieves memory usage of the application.
 
