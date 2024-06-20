@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</title>
+    <link>http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html</link>
+    <description>Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.&#xA;If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that’s the good outcome. Much worse situation is that underpowered processes might crash with “out of memory” and other similar exceptions.&#xA;Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.&#xA;What do we scale? Where do we scale? Who scales?</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

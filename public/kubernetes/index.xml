@@ -36,5 +36,12 @@
       <guid>http://localhost:1313/kubernetes/chainsaw/index.html</guid>
       <description>Testing is important, no matter what you’re working on. If you write Java code, you need to test it. If you’re managing infrastructure, you need to test it. If you’re working with IoT, you need to test it. There is no excuse not to test while working and before moving it to production. Testing while working allows us to work more efficiently. Testing before moving something to production allows us to have confidence that it will not explode.&#xA;Now, today’s session will not focus on all the ways we can test something. I will not go into mad rant explaining the importance of test-driven development, test automation, CI/CD pipelines, or anything else related to testing.</description>
     </item>
+    <item>
+      <title>Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</title>
+      <link>http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html</link>
+      <pubDate>Sat, 01 Jul 2023 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html</guid>
+      <description>Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.&#xA;If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that’s the good outcome. Much worse situation is that underpowered processes might crash with “out of memory” and other similar exceptions.&#xA;Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.&#xA;What do we scale? Where do we scale? Who scales?</description>
+    </item>
   </channel>
 </rss>

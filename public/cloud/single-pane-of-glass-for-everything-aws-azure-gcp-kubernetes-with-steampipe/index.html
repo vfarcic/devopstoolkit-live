@@ -23,23 +23,23 @@ Well… Wait until you see what I can query from such a database.">
     <meta itemprop="name" content="Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe">
     <meta itemprop="description" content="Right now, I am connected to a PostgreSQL database and you are thinking that is boring. Who wants to see me querying a database?
 Well… Wait until you see what I can query from such a database.">
-    <meta itemprop="datePublished" content="2023-06-17T16:00:00+00:00">
-    <meta itemprop="dateModified" content="2023-06-17T16:00:00+00:00">
+    <meta itemprop="datePublished" content="2024-06-17T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-06-17T16:00:00+00:00">
     <meta itemprop="wordCount" content="4813">
     <meta itemprop="image" content="http://localhost:1313/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/thumbnail.png">
     <title>Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe</title>
     <link href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.xml" rel="alternate" type="application/rss+xml" title="Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe">
-    <link href="/css/fontawesome-all.min.css?1718211847" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718211847" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1718211847" rel="stylesheet">
-    <link href="/css/auto-complete.css?1718211847" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718211847" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1718211847" rel="stylesheet">
-    <link href="/css/fonts.css?1718211847" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718211847" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1718211847" rel="stylesheet">
-    <link href="/css/theme-dot.css?1718211847" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1718211847" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1718211847" rel="stylesheet">
-    <link href="/css/print.css?1718211847" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1718211847"></script>
+    <link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1718889190" rel="stylesheet">
+    <link href="/css/auto-complete.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718889190" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1718889190" rel="stylesheet">
+    <link href="/css/fonts.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718889190" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1718889190" rel="stylesheet">
+    <link href="/css/theme-dot.css?1718889190" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1718889190" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1718889190" rel="stylesheet">
+    <link href="/css/print.css?1718889190" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1718889190"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -481,18 +481,18 @@ Well… Wait until you see what I can query from such a database.">
 <img src="/logo/clusterpedia.png" style="width:25%; float:right; padding: 10px">
 <p>Steampipe reminds me of Clusterpedia. The major difference is that Steampipe is generic while Clusterpedia is focused on data coming exclusively from Kubernetes clusters. Both approaches have their pros and cons.</p>
 <p>Both are using PostgreSQL to store and query data. The major difference is how we query that data. When using Clusterpedia, we might not even be aware that there is a database behind it since it exposes everything through a Kubernetes-compatible API. Hence, we can use <code>kubectl</code> to query data as if all the clusters are a single cluster with resources having additional labels added to it. Clusterpedia can do that since it has a limited scope. It works only with Kubernetes resources.</p>
-<p><a href="#R-image-4924682dbf47c214e43f6909dece87a5" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/aws.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4924682dbf47c214e43f6909dece87a5"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/aws.png?height=5vw&classes=inline"></a>
-<a href="#R-image-fa089b68e1231588102ed67c39f31f78" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/azure.png?height=3vw&classes=inline" style=" height: 3vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fa089b68e1231588102ed67c39f31f78"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/azure.png?height=3vw&classes=inline"></a>
-<a href="#R-image-e62d9706cbc02c57d2dcd0be770d9d47" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/google-cloud.png?height=3vw&classes=inline" style=" height: 3vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e62d9706cbc02c57d2dcd0be770d9d47"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/google-cloud.png?height=3vw&classes=inline"></a>
-<a href="#R-image-9fafd6699d12b490529d639954ce099a" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/kubernetes.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9fafd6699d12b490529d639954ce099a"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/kubernetes.png?height=5vw&classes=inline"></a>
-<a href="#R-image-1a8614488459ddbff80671ea0140b566" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/slack.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1a8614488459ddbff80671ea0140b566"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/slack.png?height=5vw&classes=inline"></a>
-<a href="#R-image-d3caa57824fe7ec876010c350976e139" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/openai.jpeg?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d3caa57824fe7ec876010c350976e139"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/openai.jpeg?height=5vw&classes=inline"></a></p>
+<p><a href="#R-image-4bb976d1cb4cb87e804800a9cea045e2" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/aws.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4bb976d1cb4cb87e804800a9cea045e2"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/aws.png?height=5vw&classes=inline"></a>
+<a href="#R-image-15cccc27a101526dc16558ddda9d51be" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/azure.png?height=3vw&classes=inline" style=" height: 3vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-15cccc27a101526dc16558ddda9d51be"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/azure.png?height=3vw&classes=inline"></a>
+<a href="#R-image-f0365a5923dc5276660510cda0de0829" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/google-cloud.png?height=3vw&classes=inline" style=" height: 3vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f0365a5923dc5276660510cda0de0829"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/google-cloud.png?height=3vw&classes=inline"></a>
+<a href="#R-image-bf9da97e3d4ccba3f3c72f4a73bf9e7a" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/kubernetes.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bf9da97e3d4ccba3f3c72f4a73bf9e7a"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/kubernetes.png?height=5vw&classes=inline"></a>
+<a href="#R-image-ba8341c188c2d7e21b2a754dbe4e7808" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/slack.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba8341c188c2d7e21b2a754dbe4e7808"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/slack.png?height=5vw&classes=inline"></a>
+<a href="#R-image-94d9e9be2fa6b36621571a09f92c057f" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/openai.jpeg?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94d9e9be2fa6b36621571a09f92c057f"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/openai.jpeg?height=5vw&classes=inline"></a></p>
 <p>Steampipe is a completely different beast. It&rsquo;s scope is, essentially, everything. AWS, Azure, Google Cloud, Kubernetes, Slack, OpenAI, or almost anything else one can imagine can be a source of data. The price for such a wide scope is that we cannot work with data from any of those sources &ldquo;natively&rdquo;. We cannot query AWS resources using <code>aws</code> CLI, nor Kubernetes resources using <code>kubectl</code>. It&rsquo;s all SQL.</p>
 <p>Now, that is not a bad thing. SQL is simple yet much more effective way to query data than querying APIs directly or through CLIs. As a matter of fact, I still don&rsquo;t understand why we still keep etcd in Kubernetes. It should be replaced by PostgreSQL or any other SQL database.</p>
 <p>Still, no matter how great SQL is, Steampipe has a few issues, so let&rsquo;s start with those.</p>
@@ -554,7 +554,8 @@ Well… Wait until you see what I can query from such a database.">
           <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
-          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
+          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class=""><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -629,8 +630,8 @@ Well… Wait until you see what I can query from such a database.">
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1718211847" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1718211847" defer></script>
-    <script src="/js/theme.js?1718211847" defer></script>
+    <script src="/js/clipboard.min.js?1718889190" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1718889190" defer></script>
+    <script src="/js/theme.js?1718889190" defer></script>
   </body>
 </html>

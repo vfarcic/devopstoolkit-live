@@ -18,7 +18,7 @@ Hence, I spent months complaining about it and... I got it.
 
 --- -->
 
-<!-- <img src="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe](/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe)
 
@@ -28,7 +28,7 @@ Well... Wait until you see what I can query from such a database.
 
 **[Full article >>](/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe)**
 
---- -->
+---
 
 <img src="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/thumbnail.png" style="width:50%; float:right; padding: 10px">
 

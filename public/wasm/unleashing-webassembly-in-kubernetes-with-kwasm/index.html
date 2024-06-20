@@ -29,17 +29,17 @@ Here it goes.">
     <meta itemprop="image" content="http://localhost:1313/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/thumbnail.png">
     <title>Unleashing WebAssembly in Kubernetes with Kwasm</title>
     <link href="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.xml" rel="alternate" type="application/rss+xml" title="Unleashing WebAssembly in Kubernetes with Kwasm">
-    <link href="/css/fontawesome-all.min.css?1718211841" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718211841" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1718211841" rel="stylesheet">
-    <link href="/css/auto-complete.css?1718211841" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718211841" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1718211841" rel="stylesheet">
-    <link href="/css/fonts.css?1718211841" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718211841" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1718211841" rel="stylesheet">
-    <link href="/css/theme-dot.css?1718211841" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1718211841" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1718211841" rel="stylesheet">
-    <link href="/css/print.css?1718211841" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1718211841"></script>
+    <link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718889190" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1718889190" rel="stylesheet">
+    <link href="/css/auto-complete.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718889190" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1718889190" rel="stylesheet">
+    <link href="/css/fonts.css?1718889190" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718889190" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1718889190" rel="stylesheet">
+    <link href="/css/theme-dot.css?1718889190" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1718889190" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1718889190" rel="stylesheet">
+    <link href="/css/print.css?1718889190" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1718889190"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -182,18 +182,18 @@ Here it goes.">
 <p>Yet, WASM did not see a wide adoption. Why is that? If WASM is superior to containers, why didn&rsquo;t we switch to it already? The answer is simple. It&rsquo;s not about containers. The question is not whether WASM is better or worse than containers. The questions is whether WASM has the ecosystem needed to provide everything we need to run apps. <strong>It&rsquo;s about the ecosystem</strong>.</p>
 <img src="/logo/cncf.png" style="width:40%; float:right; padding: 10px">
 <p>We run containers in Kubernetes and that means that the whole Kubernetes ecosystem is at our disposal. We can use Kubernetes scheduler to distribute containers across a fleet of nodes. We can use Prometheus, Jaeger, Loki, and Grafana to observe what&rsquo;s going on with those containers running in a Kubernetes cluster. We can leverage Cilium for networking, Argo CD or Flux for GitOps, Kyverno or OPA Gatekeeper for policies, and so on and so forth. Most of the projects in the <a href="https://cncf.io" rel="external" target="_blank">CNCF</a> ecosystem are designed to be Kubernetes-native meaning that we can pick and choose any of them and they will all work seamesly with each other. CNCF alone contains around two hundred projects, and that&rsquo;s only a fraction of what we have at our disposal. There&rsquo;s an endless stream of projects and serviecs that are not in CNCF. That&rsquo;s what makes Kubernetes so amazing. It is <strong>the biggest ecosystem</strong> anyone ever saw and it is <strong>the standard</strong>. Kubernetes runs anywhere and is offered by everyone.</p>
-<p><a href="#R-image-ee1a2b15314b572f3c5b150e441e8606" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/fermyon.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee1a2b15314b572f3c5b150e441e8606"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/fermyon.png?height=5vw&classes=inline"></a>
-<a href="#R-image-5bd3ea564fd924aad3e93797628c0eac" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/aws.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5bd3ea564fd924aad3e93797628c0eac"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/aws.png?height=5vw&classes=inline"></a>
-<a href="#R-image-3615e4c7446e0570a739479c18b81036" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/google-cloud.png?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3615e4c7446e0570a739479c18b81036"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/google-cloud.png?height=8vw&classes=inline"></a>
-<a href="#R-image-53d73d04a0fce146a04b5998202fa094" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/azure.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-53d73d04a0fce146a04b5998202fa094"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/azure.png?height=5vw&classes=inline"></a>
-<a href="#R-image-dbbd3bccae1b216cad11778a44d0a401" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/civo.svg?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dbbd3bccae1b216cad11778a44d0a401"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/civo.svg?height=5vw&classes=inline"></a>
-<a href="#R-image-cd9f3732fca98f8e300eced79165cc5b" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/digital-ocean.png?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cd9f3732fca98f8e300eced79165cc5b"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/digital-ocean.png?height=8vw&classes=inline"></a></p>
+<p><a href="#R-image-f7be43d31fb3b47ac5ece6a385e48677" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/fermyon.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f7be43d31fb3b47ac5ece6a385e48677"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/fermyon.png?height=5vw&classes=inline"></a>
+<a href="#R-image-48bbd6b9e38b268a176eac2865644c72" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/aws.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-48bbd6b9e38b268a176eac2865644c72"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/aws.png?height=5vw&classes=inline"></a>
+<a href="#R-image-2a5d188233f905d36aa78d4d9dd9bc2a" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/google-cloud.png?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2a5d188233f905d36aa78d4d9dd9bc2a"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/google-cloud.png?height=8vw&classes=inline"></a>
+<a href="#R-image-3cf475752e1f84d0c8a03c30ed7e8d80" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/azure.png?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3cf475752e1f84d0c8a03c30ed7e8d80"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/azure.png?height=5vw&classes=inline"></a>
+<a href="#R-image-c5a25d933f11a4fb634025115d7e54dd" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/civo.svg?height=5vw&classes=inline" style=" height: 5vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c5a25d933f11a4fb634025115d7e54dd"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/civo.svg?height=5vw&classes=inline"></a>
+<a href="#R-image-1b5edd060c7122d3146d566bed3af905" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/digital-ocean.png?height=8vw&classes=inline" style=" height: 8vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1b5edd060c7122d3146d566bed3af905"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/digital-ocean.png?height=8vw&classes=inline"></a></p>
 <p>WASM&rsquo;s ecosystem, on the other hand, feels <strong>insignificant</strong>. Anyone wanting to deploy, observe, and manage applications as WASM has to deal with almost non-existent ecosystem. We can use <a href="https://fermyon.com/cloud" rel="external" target="_blank">Fermyon Cloud</a> to run WASM but how can that be compared with AWS, Google Cloud, Azure, CIVO, Digital Ocean, and almost any other cloud provider that offers endless number of services designed to run containers. We can run WASM on a single server using Fermyon Spin or even Docker itself, but that cannot be compared with the power Kubernetes brings to the table.</p>
 <p>Even though WASM is, arguably, a superior way to run applications, containers, mostly through Kubernetes, have the ecosystem that WASM doesn&rsquo;t. Hence, there are only two paths forward.</p>
 <p>WASM can <strong>create its own ecosystem</strong>.</p>
@@ -397,7 +397,8 @@ ingress.networking.k8s.io/silly-demo nginx silly-demo.127.0.0.1.nip.io         8
           <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
-          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
+          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class=""><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
@@ -472,8 +473,8 @@ ingress.networking.k8s.io/silly-demo nginx silly-demo.127.0.0.1.nip.io         8
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1718211841" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1718211841" defer></script>
-    <script src="/js/theme.js?1718211841" defer></script>
+    <script src="/js/clipboard.min.js?1718889190" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1718889190" defer></script>
+    <script src="/js/theme.js?1718889190" defer></script>
   </body>
 </html>
