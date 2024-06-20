@@ -71,11 +71,3 @@ Kubernetes ecosystem is one of the most, if not the most extensive we've ever se
 ---
 
 <img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
-
-## [Mastering Kubernetes: Dive into Service and Network APIs](/kubernetes/services-ingress-cluster-api)
-
-In the [Mastering Kubernetes: Dive into Workloads APIs](https://youtu.be/U6weXlzQxoY) video we explored Kubernetes **Workload APIs**. We saw the differences between **Pods**, **ReplicaSets**, **Jobs**, **Deployments**, **StatefulSets**, **DaemonSets**, and **CronJobs**.
-
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say "**Yes. Do more!**" So, today we will continue where we left.
-
-**[Full article >>](/kubernetes/services-ingress-cluster-api)**
