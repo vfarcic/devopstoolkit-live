@@ -61,6 +61,8 @@ gh repo view --web
 
 > Open `Actions` and click the `I understand my workflows, go ahead and enable them` button.
 
+> Open `Settings` > `Secrets and variables` > `Actions` and add `Repository secrets` named `PORT_CLIENT_ID` and `PORT_CLIENT_SECRET`. You can get those values from the Port UI.
+
 > Make sure that Docker is up-and-running. We'll use it to create a KinD cluster.
 
 > Watch [Nix for Everyone: Unleash Devbox for Simplified Development](https://youtu.be/WiFLtcBvGMU) if you are not familiar with Devbox. Alternatively, you can skip Devbox and install all the tools listed in `devbox.json` yourself.
