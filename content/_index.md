@@ -23,7 +23,7 @@ Hence, the goal is to assign just the right amount of resources to processes. No
 
 --- -->
 
-<!-- <img src="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Developer Portals: Discover & Integrate API Schemas with Port](/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port)
 
@@ -33,7 +33,7 @@ Hence, I spent months complaining about it and... I got it.
 
 **[Full article >>](/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port)**
 
---- -->
+---
 
 <img src="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
@@ -74,17 +74,3 @@ When I work locally, if I need to create a cluster I just execute `cluster-creat
 I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or any other tool that primarily manages resources, be it those in hyperscalers like AWS, Google Cloud, and Azure, or in Kubernetes, or anywhere else. Well... Today I'm here to tell you that none of those tools are going away any time soon. We need all of those. We need configuration management tools like Ansible, we need Infrastructure-as-Code (IaC) tools like Terraform and Pulumi, and we need control planes, be it opinionated ones like AWS, Google Cloud, and Azure, or those that allow us to build our own control planes like Crossplane.
 
 **[Full article >>](/infrastructure-as-code/ansible-vs-terraform-vs-crossplane)**
-
----
-
-<img src="/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget](/observability/inspektor-gadget-kubernetes-debugging-ebpf)
-
-Kubernetes ecosystem is one of the most, if not the most extensive we've ever seen. There are tools for everything, including observability. We can collect metrics, logs, and traces for almost anything, we can query them, and we can see them in dashboards. There are hundreds of solutions for that alone, yet, sometimes, I miss simplicity of tools I would normally use in Linux. Sometimes, I crave for **simple commands** similar to those I would use when trying to figure out what's going on in a single server.
-
-**[Full article >>](/observability/inspektor-gadget-kubernetes-debugging-ebpf)**
-
----
-
-<img src="/kubernetes/services-ingress-cluster-api/thumbnail.jpeg" style="width:50%; float:right; padding: 10px">
