@@ -29,17 +29,17 @@
     <meta itemprop="image" content="http://localhost:1313/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png">
     <title>Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</title>
     <link href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.xml" rel="alternate" type="application/rss+xml" title="Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget">
-    <link href="/css/fontawesome-all.min.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718890107" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1718890107" rel="stylesheet">
-    <link href="/css/auto-complete.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718890107" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1718890107" rel="stylesheet">
-    <link href="/css/fonts.css?1718890107" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718890107" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1718890107" rel="stylesheet">
-    <link href="/css/theme-dot.css?1718890107" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1718890107" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1718890107" rel="stylesheet">
-    <link href="/css/print.css?1718890107" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1718890107"></script>
+    <link href="/css/fontawesome-all.min.css?1719328766" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1719328766" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1719328766" rel="stylesheet">
+    <link href="/css/auto-complete.css?1719328766" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1719328766" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1719328766" rel="stylesheet">
+    <link href="/css/fonts.css?1719328766" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1719328766" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1719328766" rel="stylesheet">
+    <link href="/css/theme-dot.css?1719328766" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1719328766" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1719328766" rel="stylesheet">
+    <link href="/css/print.css?1719328766" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1719328766"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -151,12 +151,12 @@ tcp4       0      0  10.20.1.111.54134      mad07s09-in-f3.1.https ESTABLISHED
 <div class="highlight wrap-code"><pre tabindex="0"><code>vfarcic 54770 0.0  0.0 410755984 5360   ?? S&lt; Thu08PM 0:00.03 /Applications/...
 vfarcic  1403 0.0  0.0 443745824 1824   ?? S  15Mar24 0:01.61 /Applications...
 vfarcic 83185 0.0  0.0 410072768  912 s070 R+ 10:15PM 0:00.00 grep --color=...</code></pre></div><p>&hellip;that outputs all active processes.</p>
-<p><a href="#R-image-212a8791cd3441badabd16c01602399d" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/prometheus.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-212a8791cd3441badabd16c01602399d"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/prometheus.png?height=15vw&classes=inline"></a>
-<a href="#R-image-9254e342d5a6ffe4989f65c8782b3217" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/grafana.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9254e342d5a6ffe4989f65c8782b3217"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/grafana.png?height=15vw&classes=inline"></a>
-<a href="#R-image-1a016049cb0d0fe108ec82d01612de9c" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/loki.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1a016049cb0d0fe108ec82d01612de9c"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/loki.png?height=15vw&classes=inline"></a></p>
+<p><a href="#R-image-0f81c9100b1e85999a2dd5e702f2040f" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/prometheus.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f81c9100b1e85999a2dd5e702f2040f"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/prometheus.png?height=15vw&classes=inline"></a>
+<a href="#R-image-788dce3961e0fefc0cd66dc88db66591" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/grafana.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-788dce3961e0fefc0cd66dc88db66591"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/grafana.png?height=15vw&classes=inline"></a>
+<a href="#R-image-e6e835a0e94184025ceaa639218dc610" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/loki.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e6e835a0e94184025ceaa639218dc610"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/loki.png?height=15vw&classes=inline"></a></p>
 <p>In other words, sometimes I miss the ability to inspect what&rsquo;s going on in a cluster without going into tools like Prometheus, Grafana, Loki, and others. I miss the simplicity of micro-CLI commands.</p>
 <p>Now, to be clear, I can do a lot with <code>kubectl</code> alone. I can list all the Pods or any other type of resources. I can see events, I can see logs, and many other things. However, they are at a higher level than, for example, <code>ps</code> that lists processes.</p>
 <p>That is understandable since <code>kubectl</code> knows what Kubernetes API knows, and that&rsquo;s great, but if I would like to dive deeper and see what&rsquo;s happening at lower levels, I would need to enter into one of the nodes and start digging in. That&rsquo;s a bad idea for many reasons. To begin with, there can be many nodes in a cluster and I have no intention going through each of the separately. As a matter of fact, I often do not even have SSH access to individual nodes. Why would I?</p>
@@ -226,12 +226,12 @@ Creating CustomResourceDefinition/traces.gadget.kinvolk.io...
 Waiting for gadget pod(s) to be ready...
 1/1 gadget pod(s) ready
 Retrieving Gadget Catalog...
-Inspektor Gadget successfully deployed</code></pre></div><p><a href="#R-image-6d1334cc1ec48d4d2c67dcd4cf76444a" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/argo-cd.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d1334cc1ec48d4d2c67dcd4cf76444a"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/argo-cd.png?height=10vw&classes=inline"></a>
-<a href="#R-image-2435b839f10cfe9e6e617b13bef9003d" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/flux.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2435b839f10cfe9e6e617b13bef9003d"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/flux.png?height=10vw&classes=inline"></a>
-<a href="#R-image-5543da01c0fcdcc659477e573736b2fa" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/artifact-hub.png?height=7vw&classes=inline" style=" height: 7vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5543da01c0fcdcc659477e573736b2fa"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/artifact-hub.png?height=7vw&classes=inline"></a></p>
+Inspektor Gadget successfully deployed</code></pre></div><p><a href="#R-image-b8e7e6635d5fa9311322dfb64d825bda" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/argo-cd.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8e7e6635d5fa9311322dfb64d825bda"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/argo-cd.png?height=10vw&classes=inline"></a>
+<a href="#R-image-bcdde0a3886a10b1d0dfe624e6d6cc83" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/flux.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bcdde0a3886a10b1d0dfe624e6d6cc83"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/flux.png?height=10vw&classes=inline"></a>
+<a href="#R-image-64639e5378bc751e746cc9d9c256e8e8" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/artifact-hub.png?height=7vw&classes=inline" style=" height: 7vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-64639e5378bc751e746cc9d9c256e8e8"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/artifact-hub.png?height=7vw&classes=inline"></a></p>
 <p>It&rsquo;s nice that a tool can be deployed with a single command, when using a demo like this one. But, when it comes to a serious usage, I would expect it to be able to output manifests so that I could store them in Git and synchronize them with Argo CD, Flux, or whichever other GitOps tool you might have chosen by mistake. It could also be a Helm chart and, if you search for it the ArtifactHub, you&rsquo;ll find it. So, you might say &ldquo;Problem solved. Helm charts work with GitOps tools.&rdquo; That would be true. However, that Helm chart is not mentioned anywhere in the docs. It&rsquo;s not in the installation instructions nor anywhere else so I can only assume that chart is a result of some whichcraft, or that the community does not care about it, or that they don&rsquo;t think anyone should use it. Otherwise, it would be mentioned at least once in the docs. Right?</p>
 <p>Anyways&hellip; Let&rsquo;s move on and take a look at what we can do with the kubectl addon.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl gadget --help</span></span></code></pre></div><p>The output is as follows.</p>
@@ -493,6 +493,7 @@ Cheers.</p>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
           <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html" class=""><a class="padding" href="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html">Mastering Developer Portals: Discover &amp; Integrate API Schemas with Port</a></li>
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
           <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li>
@@ -503,7 +504,8 @@ Cheers.</p>
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
           <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li>
+          <li data-nav-id="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" class=""><a class="padding" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html">If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</a></li></ul></li>
           <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
           <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
           <li data-nav-id="/observability/index.html" class="parent "><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
@@ -566,8 +568,8 @@ Cheers.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1718890107" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1718890107" defer></script>
-    <script src="/js/theme.js?1718890107" defer></script>
+    <script src="/js/clipboard.min.js?1719328766" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1719328766" defer></script>
+    <script src="/js/theme.js?1719328766" defer></script>
   </body>
 </html>

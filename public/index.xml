@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://localhost:1313/index.html</link>
-    <description>Latest Posts Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, …) with Steampipe Right now, I am connected to a PostgreSQL database and you are thinking that is boring. Who wants to see me querying a database?&#xA;Well… Wait until you see what I can query from such a database.&#xA;Full article »&#xA;Unleashing WebAssembly in Kubernetes with Kwasm I am going to show you something you’ve seen many times before.</description>
+    <description>Latest Posts Mastering Developer Portals: Discover &amp; Integrate API Schemas with Port I am so dissaspointed with developer portal consoles for ignoring the fact that almost everything is discoverable through APIs. Why should I design forms and fields in Backstage if Backstage should be able to ask an API for a schema? Even if that schema is not exactly what I need and I might have to remove parts of it, that’s still easier and better than starting from scratch.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jul 2024 16:00:00 +0000</lastBuildDate>
@@ -20,7 +20,7 @@
       <link>http://localhost:1313/internal-developer-platforms/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/internal-developer-platforms/index.html</guid>
-      <description>How Platform Engineering Compares to Running a RestaurantPlatform engineering should follow similar patterns as restaurants, yet we often confuse it with a kitchen or a supermarket.&#xA;Let me explain.</description>
+      <description>Mastering Developer Portals: Discover &amp; Integrate API Schemas with PortI am so dissaspointed with developer portal consoles for ignoring the fact that almost everything is discoverable through APIs. Why should I design forms and fields in Backstage if Backstage should be able to ask an API for a schema? Even if that schema is not exactly what I need and I might have to remove parts of it, that’s still easier and better than starting from scratch.</description>
     </item>
     <item>
       <title>Application Management</title>

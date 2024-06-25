@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/thumbnail.png" style="width:50%; float:right; padding: 10px">
+
+## [Mastering Developer Portals: Discover & Integrate API Schemas with Port](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)
+
+**Makefile** walks into a bar and notices **Dockerfile** sitting alone. She joins him, they talk, they flirt...
+
+> The rest of that story has been censored. You'll have to fill in the gaps using your imagination.
+
+...a baby was born, and that baby was named **Earthfile**.
+
+**[Full article >>](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)**
+
+--- -->
+
 <!-- <img src="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Scaling Explained Through Kubernetes HPA, VPA, KEDA & Cluster Autoscaler](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)
