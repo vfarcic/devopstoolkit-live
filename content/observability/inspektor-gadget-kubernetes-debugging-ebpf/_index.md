@@ -515,10 +515,6 @@ Another important note is that you might already be using Inspektor Gadget witho
 
 That's it. If you're looking for commands equivalent to ps, top, netstat, and other similar, yet indispensable commands when managing Linux, but adapted to Kuberentes, then Inspektor Gadget might be just the right tool for you.
 
-Thank you for watching.
-See you in the next one.
-Cheers.
-
 ## Destroy
 
 ```sh

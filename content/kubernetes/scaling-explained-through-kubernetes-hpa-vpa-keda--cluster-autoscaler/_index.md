@@ -872,10 +872,6 @@ While scaling apps vertically has limited value, **horizontal scaling is a must*
 
 If we turn our attention to **servers**, **vertical scaling is**, most of the time, just **silly**. Just as vertical scaling of apps results in recreation of the Pods, at least until in-place updates reach GA, vertical scaling of servers results in creation of new servers, at least when VMs in hyperscalers are concerned. If new nodes are created, we can just as well scale horizontally. On the other hand, I cannot imagine a single reason why anyone would not **always use horizontal scaling** for the nodes. It's a no brainer. Enable cluster autoscaler right away. Just do it.
 
-Thank you for watching.
-See you in the next one.
-Cheers.
-
 ## Destroy
 
 ```sh
