@@ -13,7 +13,7 @@ draft = false
 
 <!--more-->
 
-{{< youtube cbO2b2QF0h8 >}}
+{{< youtube YP9N82-5TAg >}}
 
 We all know and love Dockerfile. It's great for building container images and, through Multi-stage builds we can do even more like, for example, run tests before an image was built. On the other hand, Makefile is old and grumpy one that not many are still in love with. Yet, it is, in a way, the de-facto standard for executing tasks. We need both types of tools and I've been advocating for replacing **Makefile** with **Taskfile** or **Justfile** and combining them with Dockerfile. So, we still need both types of tools, no matter whether tasks are run with Makefile, or Justfile, or Taskfile, or anything else.
 
