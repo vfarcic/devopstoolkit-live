@@ -19,7 +19,7 @@ title = ""
 
 --- -->
 
-<!-- <img src="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Scaling Explained Through Kubernetes HPA, VPA, KEDA & Cluster Autoscaler](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)
 
@@ -35,7 +35,7 @@ Hence, the goal is to assign just the right amount of resources to processes. No
 
 **[Full article >>](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
@@ -78,13 +78,3 @@ I am going to show you something you've seen many times before. Yet, looks can b
 When I work locally, if I need to create a cluster I just execute `cluster-create`, wait for a few moments, and a local cluster with everything I need is running.
 
 **[Full article >>](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)**
-
----
-
-<img src="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Terraform vs. Crossplane vs. Ansible - Rivals or Allies?](/infrastructure-as-code/ansible-vs-terraform-vs-crossplane)
-
-I am often asked to compare Crossplane with Terraform, or Pulumi, or Ansible, or any other tool that primarily manages resources, be it those in hyperscalers like AWS, Google Cloud, and Azure, or in Kubernetes, or anywhere else. Well... Today I'm here to tell you that none of those tools are going away any time soon. We need all of those. We need configuration management tools like Ansible, we need Infrastructure-as-Code (IaC) tools like Terraform and Pulumi, and we need control planes, be it opinionated ones like AWS, Google Cloud, and Azure, or those that allow us to build our own control planes like Crossplane.
-
-**[Full article >>](/infrastructure-as-code/ansible-vs-terraform-vs-crossplane)**
