@@ -1,7 +1,7 @@
 
 +++
 title = 'If Dockerfile and Makefile Had a Baby... Earthly and Earthfile'
-date = 2024-07-08T16:00:00+00:00
+date = 2024-07-01T16:00:00+00:00
 draft = false
 +++
 
