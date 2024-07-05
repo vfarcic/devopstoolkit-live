@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [GitOps Broke CI/CD! Here is How to Fix It With Argo Events](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)
+
+**GitOps is amazing**, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. **GitOps broke CI/CD processes**, and we need to fix that.
+
+Let me explain.xxx
+
+**[Full article >>](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)**
+
+--- -->
+
 <!-- <img src="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Developer Portals: Discover & Integrate API Schemas with Port](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)

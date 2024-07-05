@@ -31,23 +31,23 @@ What do we scale? Where do we scale? Who scales? ">
 If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that’s the good outcome. Much worse situation is that underpowered processes might crash with “out of memory” and other similar exceptions.
 Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
 What do we scale? Where do we scale? Who scales? ">
-    <meta itemprop="datePublished" content="2023-07-01T16:00:00+00:00">
-    <meta itemprop="dateModified" content="2023-07-01T16:00:00+00:00">
-    <meta itemprop="wordCount" content="5500">
+    <meta itemprop="datePublished" content="2024-07-01T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-07-01T16:00:00+00:00">
+    <meta itemprop="wordCount" content="5489">
     <meta itemprop="image" content="http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png">
     <title>Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</title>
     <link href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.xml" rel="alternate" type="application/rss+xml" title="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler">
-    <link href="/css/fontawesome-all.min.css?1718889966" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1718889966" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1718889966" rel="stylesheet">
-    <link href="/css/auto-complete.css?1718889966" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1718889966" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1718889966" rel="stylesheet">
-    <link href="/css/fonts.css?1718889966" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1718889966" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1718889966" rel="stylesheet">
-    <link href="/css/theme-dot.css?1718889966" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1718889966" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1718889966" rel="stylesheet">
-    <link href="/css/print.css?1718889966" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1718889966"></script>
+    <link href="/css/fontawesome-all.min.css?1720143038" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720143038" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720143038" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720143038" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720143038" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720143038" rel="stylesheet">
+    <link href="/css/fonts.css?1720143038" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720143038" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720143038" rel="stylesheet">
+    <link href="/css/theme-dot.css?1720143038" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720143038" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720143038" rel="stylesheet">
+    <link href="/css/print.css?1720143038" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720143038"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -119,9 +119,9 @@ What do we scale? Where do we scale? Who scales? ">
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes/chainsaw/index.html" title="Mastering Kubernetes Testing Kyverno Chainsaw! (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes/index.html" title="Kubernetes (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/internal-developer-platforms/index.html" title="Internal Developer Platforms (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes/services-ingress-cluster-api/index.html" title="Mastering Kubernetes: Dive into Service and Network APIs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -153,7 +153,7 @@ What do we scale? Where do we scale? Who scales? ">
 </ul>
     
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FIXME?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/HQY2jgSN6pA?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
       ></iframe>
     </div>
 
@@ -616,9 +616,6 @@ node/gke-dot2-default-pool-... Ready  &lt;none&gt; 35m v1.28.8-gke.1095000</code
 <p>Use <strong>vertical scaling with legacy apps</strong> that cannot run in more than one replica. For everything else, Vertical Pod Autoscaler is useful mostly to provide <strong>recommendations</strong> how much memory and CPU to assign to Pods manually. The biggest obstacle for wider adoption of vertical scalers, at least when Kubernetes is concerned, lies in conflicts with horizontal scalers. That might change soon given that quite a few companies, especially those associated with cost reduction, are working on better ways to scale vertically. Nevertheless, none of those I&rsquo;ve seen so far are good enough to be used for anything but recommendations that should be applied manually.</p>
 <p>While scaling apps vertically has limited value, <strong>horizontal scaling is a must</strong> for all applications that can run multiple replicas and do not get penalized by being dynamic. Those are, typically, stateless apps. More often then not, horizontal scaling should be part of every app and, when Kubernetes is concerned, the main question is whether to use <strong>Horizontal Pod Autoscaler</strong> or <strong>KEDA</strong>. The former is more than fine when scaling decisions are made based on memory and CPU while KEDA shines for scaling based on any other criteria.</p>
 <p>If we turn our attention to <strong>servers</strong>, <strong>vertical scaling is</strong>, most of the time, just <strong>silly</strong>. Just as vertical scaling of apps results in recreation of the Pods, at least until in-place updates reach GA, vertical scaling of servers results in creation of new servers, at least when VMs in hyperscalers are concerned. If new nodes are created, we can just as well scale horizontally. On the other hand, I cannot imagine a single reason why anyone would not <strong>always use horizontal scaling</strong> for the nodes. It&rsquo;s a no brainer. Enable cluster autoscaler right away. Just do it.</p>
-<p>Thank you for watching.
-See you in the next one.
-Cheers.</p>
 <h2 id="destroy">Destroy</h2>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout main
 </span></span><span style="display:flex;"><span>
@@ -648,12 +645,13 @@ Cheers.</p>
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/kubernetes/index.html" class="parent "><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class="active"><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li>
           <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
-          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class="active"><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li></ul></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
           <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html" class=""><a class="padding" href="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html">Mastering Developer Portals: Discover &amp; Integrate API Schemas with Port</a></li>
           <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
           <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
           <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li>
@@ -663,6 +661,7 @@ Cheers.</p>
           <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
+          <li data-nav-id="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" class=""><a class="padding" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html">If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</a></li>
           <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
           <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
           <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
@@ -727,8 +726,8 @@ Cheers.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1718889966" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1718889966" defer></script>
-    <script src="/js/theme.js?1718889966" defer></script>
+    <script src="/js/clipboard.min.js?1720143038" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720143038" defer></script>
+    <script src="/js/theme.js?1720143038" defer></script>
   </body>
 </html>

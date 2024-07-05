@@ -5,37 +5,37 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta name="description" content="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster AutoscalerScaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
+If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Kubernetes">
-    <meta name="twitter:description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta name="twitter:description" content="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster AutoscalerScaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
+If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck.">
     <meta property="og:url" content="http://localhost:1313/kubernetes/index.html">
     <meta property="og:title" content="Kubernetes">
-    <meta property="og:description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta property="og:description" content="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster AutoscalerScaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
+If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="Kubernetes">
-    <meta itemprop="description" content="Mastering Kubernetes: Dive into Service and Network APIs In the Mastering Kubernetes: Dive into Workloads APIs video we explored Kubernetes Workload APIs. We saw the differences between Pods, ReplicaSets, Jobs, Deployments, StatefulSets, DaemonSets, and CronJobs.
-When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say “Yes. Do more!” So, today we will continue where we left.">
+    <meta itemprop="description" content="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster AutoscalerScaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
+If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck.">
     <meta itemprop="dateModified" content="2024-07-01T16:00:00+00:00">
-    <meta itemprop="wordCount" content="346">
+    <meta itemprop="wordCount" content="491">
     <title>Kubernetes</title>
     <link href="/kubernetes/index.xml" rel="alternate" type="application/rss+xml" title="Kubernetes">
-    <link href="/css/fontawesome-all.min.css?1719328766" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1719328766" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1719328766" rel="stylesheet">
-    <link href="/css/auto-complete.css?1719328766" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1719328766" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1719328766" rel="stylesheet">
-    <link href="/css/fonts.css?1719328766" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1719328766" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1719328766" rel="stylesheet">
-    <link href="/css/theme-dot.css?1719328766" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1719328766" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1719328766" rel="stylesheet">
-    <link href="/css/print.css?1719328766" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1719328766"></script>
+    <link href="/css/fontawesome-all.min.css?1720143038" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720143038" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720143038" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720143038" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720143038" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720143038" rel="stylesheet">
+    <link href="/css/fonts.css?1720143038" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720143038" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720143038" rel="stylesheet">
+    <link href="/css/theme-dot.css?1720143038" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720143038" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720143038" rel="stylesheet">
+    <link href="/css/print.css?1720143038" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720143038"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -97,7 +97,7 @@ When I asked whether it would be interesting to explore another set of Kubernete
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="(🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes/services-ingress-cluster-api/index.html" title="Mastering Kubernetes: Dive into Service and Network APIs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" title="Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -122,6 +122,14 @@ When I asked whether it would be interesting to explore another set of Kubernete
 
 <div class="children children-h2 children-sort-date">
 	
+<h2><a href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></h2><p><p>Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.</p>
+<p>If our processes use more memory and CPU than what they need, they are wasting money or &ldquo;stealing&rdquo; those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that&rsquo;s the good outcome. Much worse situation is that underpowered processes might crash with &ldquo;out of memory&rdquo; and other similar exceptions.</p>
+<p>Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.</p>
+<ul>
+<li><strong>What do we scale?</strong></li>
+<li><strong>Where do we scale?</strong></li>
+<li><strong>Who scales?</strong></li>
+</ul></p>
 <h2><a href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></h2><p><img src="/logo/kubernetes.png" style="width:40%; float:right; padding: 10px">
 <p>In the <a href="https://youtu.be/U6weXlzQxoY" rel="external" target="_blank">Mastering Kubernetes: Dive into Workloads APIs</a> video we explored Kubernetes <strong>Workload APIs</strong>. We saw the differences between <strong>Pods</strong>, <strong>ReplicaSets</strong>, <strong>Jobs</strong>, <strong>Deployments</strong>, <strong>StatefulSets</strong>, <strong>DaemonSets</strong>, and <strong>CronJobs</strong>.</p>
 <p>When I asked whether it would be interesting to explore another set of Kubernetes APIs, you overwhelmed me with responses that all say &ldquo;<strong>Yes. Do more!</strong>&rdquo; So, today we will continue where we left.</p></p>
@@ -151,6 +159,7 @@ When I asked whether it would be interesting to explore another set of Kubernete
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/kubernetes/index.html" class="active parent "><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class=""><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li>
           <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
           <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
           <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
@@ -166,9 +175,9 @@ When I asked whether it would be interesting to explore another set of Kubernete
           <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
+          <li data-nav-id="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" class=""><a class="padding" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html">If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</a></li>
           <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li>
-          <li data-nav-id="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" class=""><a class="padding" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html">If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</a></li></ul></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
           <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
           <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
           <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
@@ -231,8 +240,8 @@ When I asked whether it would be interesting to explore another set of Kubernete
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1719328766" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1719328766" defer></script>
-    <script src="/js/theme.js?1719328766" defer></script>
+    <script src="/js/clipboard.min.js?1720143038" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720143038" defer></script>
+    <script src="/js/theme.js?1720143038" defer></script>
   </body>
 </html>

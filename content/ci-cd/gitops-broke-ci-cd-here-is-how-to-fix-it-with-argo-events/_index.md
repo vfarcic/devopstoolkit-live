@@ -1,45 +1,37 @@
 
 +++
-title = 'GitOps Broke CI/CD! Here's How to Fix It With Argo Events'
+title = 'GitOps Broke CI/CD! Here is How to Fix It With Argo Events'
 date = 2024-07-15T16:00:00+00:00
 draft = false
 +++
-
-FIXME:
-
-<!--more-->
-
-{{< youtube FIXME: >}}
-
-## Intro
 
 **GitOps is amazing**, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. **GitOps broke CI/CD processes**, and we need to fix that.
 
 Let me explain.
 
-TODO: Title roll
+<!--more-->
+
+{{< youtube LTlDRJovO7Q >}}
+
+<img src="diag-01.png" style="width:70%; float:right; padding: 10px">
 
 Imagine the following workflow steps.
 
-TODO: Diagram: diag-01
-
-1. Checkout code (1)
-2. Run unit tests (2)
-3. Build and push a new container image (3)
-4. Deploy the new release (4)
-5. Run functional tests (5)
+1. Checkout code
+2. Run unit tests
+3. Build and push a new container image
+4. Deploy the new release
+5. Run functional tests
 
 The whole process is often much more complicated than that. Still, those few steps should be enough for me to make the point I'm about to make.
 
-TODO: Logos: argo-cd.png, flux.png
-
-Now, if we are practicing GitOps, the step that deploys the code is actually not deploying anything but, instead, it is making changes to manifests and pushing them to a repo (6). From there on, Argo CD or Flux (7) would realize that there is a **change in the desired state** and make changes to the cluster (8) so that the actual state is the same.
+Now, if we are practicing GitOps, the step that deploys the code is actually not deploying anything but, instead, it is making changes to manifests and pushing them to a repo. From there on, Argo CD or Flux would realize that there is a **change in the desired state** and make changes to the cluster so that the actual state is the same.
 
 **GitOps requires rethinking CI/CD to accommodate decoupled deployment processes.**
 
 The problem is in whichever steps we might have in our workflows after the deployment. How do we, for example, run functional tests or do whatever else needs to be done once a new release is running?
 
-We cannot let the workflow run continue its course (9) after changes are pushed to Git since there is a decoupled process that does the deployment or, to be more precise, reconciliation between the desired state (what is in Git) and the actual state (what is in a cluster). We cannot know for sure when will that process start nor when it will end. So, we have to remove those steps from that specific workflow run and, probably, execute it separately. Hence, we have two, if not more workflows with decoupled and asynchronous processes in between. We need **a way to trigger that second workflow** run and the only way we can do that is by monitoring the state of resources and executing some kind of a trigger when those we're interested in are created or updated.
+We cannot let the workflow run continue its course after changes are pushed to Git since there is a decoupled process that does the deployment or, to be more precise, reconciliation between the desired state (what is in Git) and the actual state (what is in a cluster). We cannot know for sure when will that process start nor when it will end. So, we have to remove those steps from that specific workflow run and, probably, execute it separately. Hence, we have two, if not more workflows with decoupled and asynchronous processes in between. We need **a way to trigger that second workflow** run and the only way we can do that is by monitoring the state of resources and executing some kind of a trigger when those we're interested in are created or updated.
 
 Here's an example.
 
@@ -63,13 +55,13 @@ gh repo view --web
 
 ...we can see that the `ci` workflow run was executed.
 
-![](../../tmp/gh-actions-ci-01.png)
+![](gh-actions-ci-01.png)
 
 That workflow ended up pushing changes to a manifest and stopped. There was nothing else for it to do since that's where Argo CD kicks in. It detected changes to the repo and synchronized them into the cluster.
 
 However, a few moments later, a new workflow run was executed even though we did not push anything to any Git repo.
 
-![](../../tmp/gh-actions-00.png)
+![](gh-actions-00.png)
 
 How did that happen? What executed that workflow run? How did it know that a new release of the application was deployed to the cluster?
 
@@ -257,8 +249,6 @@ spec:
 
 In this specific case, we are using the `argo-events` Service Account we created earlier so that the EventSource can observe resources we're interested in.
 
-TODO: Bullets: AMQP, AWS SNS, AWS SQS, Azure Service Bus, Azure Queue Storage, Calendar, Emitter, File, GCP Pub/Sub, GitHub, GitLab, Bitbucket (Cloud), Bitbucket Server, Kafka, Minio, MQTT, NATS, NSQ, Redis, Redis Streams, Resource, Webhook, Pulsar
-
 Event sources can be many. We could consume events from a bunch of sources. Here comes the list: **AMQP, AWS SNS, AWS SQS, Azure Service Bus, Azure Queue Storage, Calendar, Emitter, File, GCP Pub/Sub, GitHub, GitLab, Bitbucket (Cloud), Bitbucket Server, Kafka, Minio, MQTT, NATS, NSQ, Redis, Redis Streams, Resource, Webhook, Pulsar**.
 
 I got tired just by reading those and I'm certainly not going to go through all of them in more detail, mostly because only one of those matters for today's story.
@@ -266,8 +256,6 @@ I got tired just by reading those and I'm certainly not going to go through all 
 We want to observe specific Kubernetes resources, so that manifest defines `resource` named `app`. That's an arbitrary name that does not matter much. What does matter is that it will watch `deployments`. Specifically, it will generate a cloud event every time a deployment is created (`ADD`) or updated (`UPDATE`) inside the `a-team` Namespace.
 
 In other words, we're **generating cloud events whenever specific resources in Kubernetes are created or updated**. We are not specifying what to do with those events just yet. We'll do that soon. For now, let's apply that manifest.
-
-TODO: Ignore screen coming up...
 
 ```sh
 kubectl --namespace argo-events apply \
@@ -331,8 +319,6 @@ Sensors are essentially **triggers** we can use to specify what to do when an ev
 
 First, there are `dependencies`. That's where we're saying that it depends on the `app` EventSource we applied earlier.
 
-TODO: Bullets: Argo Workflow Trigger, AWS Lambda, NATS Trigger, Kafka Trigger, Kubernetes Object Trigger, Log, OpenWhisk Trigger, Slack Trigger, Azure Event Hubs, Pulsar Trigger, Build Your Own Trigger, HTTP Trigger
-
 Most of the action is in `triggers`. We could have specified that we'd like to start an **Argo Workflow** run, or to instantiate an **AWS Lambda**, or to send a message to **NATS** or **Kafka**, or to create a **Kubernetes resource**, or to send it to **logs**, or to create a function in **OpenWhisk**, or to send a message on **Slack**, or an **Azure event**, or to create a **Pulsar topic**. We could also build our own **http trigger**. 
 
 We won't use any of those since all we need is to send an HTTP request to GitHub Actions so we're using the `http` trigger.
@@ -382,7 +368,7 @@ gh repo view --web
 
 We can see that the `ci` workflow was executed.
 
-![](../../tmp/gh-actions-ci-01.png)
+![](gh-actions-ci-01.png)
 
 While it's running, let's take a quick look at it's definition.
 
@@ -450,8 +436,6 @@ In other words, that workflow is not deploying anything but updating manifests i
 
 We can confirm that's what really happened by pulling the latest changes from Git.
 
-TODO: Ignore screen coming up...
-
 ```sh
 git pull
 ```
@@ -488,7 +472,7 @@ We can see that a new workflow functional-tests was executed. That's the workflo
 
 Instead of triggering one workflow run that executes functional tests, we got plenty. What we did is pointless. There is no good reason why we would run functional tests many times for a single change, yet, Argo Events did not do anything wrong. As a matter of fact, Argo Events triggered all those workflows correctly.
 
-![](../../tmp/gh-actions-01.png)
+![](gh-actions-01.png)
 
 We said that we'd like to trigger a workflow every time a Deployment is created (added) or updated, so that's what Argo Events did, even though it might look like it went beserk.
 
@@ -582,27 +566,23 @@ If we take a look at the `functional-tests` workflow runs, we can see that only 
 
 Mission accomplished. To quote Borat, one of the biggest phylosophers or our time: "**Great success!**"
 
-![](../../tmp/gh-actions-02.png)
+![](gh-actions-02.png)
 
 Here's what happened.
 
 ## What Happened?
 
-TODO: Diagram: diag-02
+<img src="diag-02.png" style="width:70%; float:right; padding: 10px">
 
-One of GitHub Actions Workflows is configured to run on every commit to the mainline (1) so a run was executed (2). It checked out the code (3), it run unit tests (4), it built an image and pushed it to a registry (5), it modified the image in the Deployment manifest (6), and it pushed the changes back to the repo (7). That's the end of the Workflow run. It did not deploy anything nor it executed any task we might want to run after deployments.
+One of GitHub Actions Workflows is configured to run on every commit to the mainline so a run was executed. It checked out the code, it run unit tests, it built an image and pushed it to a registry, it modified the image in the Deployment manifest, and it pushed the changes back to the repo. That's the end of the Workflow run. It did not deploy anything nor it executed any task we might want to run after deployments.
 
-Argo CD (8) is unaware of what we do in workflows. It does not care about any of them. It's decoupled from other processes. All it cares is the drift between the desired and the actual state. So, once changes to the manifests were pushed to the repo, it detected drift between the desired state (9), the manifests, and the actual state, the Kubernetes resources (10). It did whatever it needs to do to remove the drift by making changes to the actual resources. That's GitOps equivalent of a "traditional" deployment. Just as Argo CD was unaware of the workflow run that made changes to the manifests stored in Git, it is also unaware of what needs to be done afterwards. It does not care. It has a single job and it does not care about jobs done by anyone else.
+Argo CD is unaware of what we do in workflows. It does not care about any of them. It's decoupled from other processes. All it cares is the drift between the desired and the actual state. So, once changes to the manifests were pushed to the repo, it detected drift between the desired state, the manifests, and the actual state, the Kubernetes resources. It did whatever it needs to do to remove the drift by making changes to the actual resources. That's GitOps equivalent of a "traditional" deployment. Just as Argo CD was unaware of the workflow run that made changes to the manifests stored in Git, it is also unaware of what needs to be done afterwards. It does not care. It has a single job and it does not care about jobs done by anyone else.
 
-EventSource, an Argo Events (11) component, also unaware of GitHub Actions and Argo CD, detected a new ReplicaSet (12) that was created by the Deployment and triggered an HTTP request to GitHub Actions workflow *functional-test* (13). That resulted in a run of that workflow that executed functional tests (14).
+EventSource, an Argo Events component, also unaware of GitHub Actions and Argo CD, detected a new ReplicaSet that was created by the Deployment and triggered an HTTP request to GitHub Actions workflow *functional-test*. That resulted in a run of that workflow that executed functional tests.
 
 That's a simple version of the process and I'll leave it to you to expand it to your own needs.
 
 Here's the key takeaway for today: **Argo Events effectively solves GitOps' post-deployment challenges by intelligently triggering workflows.**
-
-Thank you for watching.
-See you in the next one.
-Cheers.
 
 ## Destroy
 

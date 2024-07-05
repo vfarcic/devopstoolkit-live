@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitOps Broke CI/CD! Here is How to Fix It With Argo Events</title>
+    <link>http://localhost:1313/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html</link>
+    <description>GitOps is amazing, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. GitOps broke CI/CD processes, and we need to fix that.&#xA;Let me explain.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>http://localhost:1313/ci-cd/index.html</loc>
-    <lastmod>2024-06-03T16:00:00+00:00</lastmod>
+    <lastmod>2024-07-15T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/infrastructure-as-code/index.html</loc>
@@ -45,6 +45,14 @@
   </url>
   <url>
     <loc>http://localhost:1313/sponsor/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html</loc>
+    <lastmod>2024-07-01T16:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html</loc>
+    <lastmod>2024-07-01T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html</loc>
@@ -109,10 +117,6 @@
   <url>
     <loc>http://localhost:1313/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html</loc>
     <lastmod>2024-03-04T16:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html</loc>
-    <lastmod>2023-07-08T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>
