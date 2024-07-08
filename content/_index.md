@@ -17,7 +17,7 @@ Let me explain.xxx
 
 --- -->
 
-<!-- <img src="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Developer Portals: Discover & Integrate API Schemas with Port](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)
 
@@ -29,7 +29,7 @@ Let me explain.xxx
 
 **[Full article >>](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)**
 
---- -->
+---
 
 <img src="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
