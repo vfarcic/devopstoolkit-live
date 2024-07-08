@@ -11,7 +11,7 @@ title = ""
 
 **GitOps is amazing**, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. **GitOps broke CI/CD processes**, and we need to fix that.
 
-Let me explain.xxx
+Let me explain.
 
 **[Full article >>](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)**
 
@@ -19,7 +19,7 @@ Let me explain.xxx
 
 <img src="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
-## [Mastering Developer Portals: Discover & Integrate API Schemas with Port](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)
+## [If Dockerfile and Makefile Had a Baby... Earthly and Earthfile](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)
 
 **Makefile** walks into a bar and notices **Dockerfile** sitting alone. She joins him, they talk, they flirt...
 
