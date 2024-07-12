@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://localhost:1313/index.html</link>
-    <description>Latest Posts Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.&#xA;If our processes use more memory and CPU than what they need, they are wasting money or “stealing” those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck.</description>
+    <description>Latest Posts If Dockerfile and Makefile Had a Baby… Earthly and Earthfile Makefile walks into a bar and notices Dockerfile sitting alone. She joins him, they talk, they flirt…&#xA;The rest of that story has been censored. You’ll have to fill in the gaps using your imagination.&#xA;…a baby was born, and that baby was named Earthfile.&#xA;Full article »&#xA;Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2024 16:00:00 +0000</lastBuildDate>
@@ -77,6 +77,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/cloud/index.html</guid>
       <description>Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with SteampipeRight now, I am connected to a PostgreSQL database and you are thinking that is boring. Who wants to see me querying a database?&#xA;Well… Wait until you see what I can query from such a database.</description>
+    </item>
+    <item>
+      <title>Terminals</title>
+      <link>http://localhost:1313/terminal/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terminal/index.html</guid>
+      <description>From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.&#xA;One of the easiest ways to improve productivity is by having a good Shell prompt.&#xA;I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.&#xA;Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.</description>
     </item>
     <item>
       <title>About The DeveOps Toolkit</title>

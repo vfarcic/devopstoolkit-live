@@ -1,6 +1,6 @@
 +++
 title = "Sponsor DevOps Toolkit"
-weight = 110
+weight = 300
 hidden = false
 +++
 

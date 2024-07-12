@@ -5,6 +5,31 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [From Boring to Productive: Customize Your Shell Prompt with Starship](/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship)
+
+What I'm about to say might sound silly, but I'm going to say it anyway.
+
+One of the easiest ways to improve productivity is by having a **good Shell prompt**.
+
+I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
+
+> Do NOT try to execute the commands in this section. We'll go through the setup and details in the next sections. This is only the preview of what's comming.
+
+```
+dotfiles-demo 
+➜ 
+```
+
+That means that, most of the time, the only information shown in my prompt is the current directory which, in this case, is `dotfiles-demo`. It is a boring prompt, by design.
+
+However, let's see what happens if...
+
+**[Full article >>](/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship)**
+
+--- -->
+
 <!-- <img src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [GitOps Broke CI/CD! Here is How to Fix It With Argo Events](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)

@@ -5,26 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content="How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and CrossplaneToday I want to talk about secrets.
-Don’t go away! I know that for many secrets is either boring or you think you already know everything there is to know about managing secrets. I will not talk about obvious “secret stuff”. Instead, I want to try to answer some less often asked yet important questions. “How do we make secrets easy and irrelevant to users?">
+    <meta name="description" content="From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.
+One of the easiest ways to improve productivity is by having a good Shell prompt.
+I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
+Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Security">
-    <meta name="twitter:description" content="How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and CrossplaneToday I want to talk about secrets.
-Don’t go away! I know that for many secrets is either boring or you think you already know everything there is to know about managing secrets. I will not talk about obvious “secret stuff”. Instead, I want to try to answer some less often asked yet important questions. “How do we make secrets easy and irrelevant to users?">
-    <meta property="og:url" content="http://localhost:1313/security/index.html">
-    <meta property="og:title" content="Security">
-    <meta property="og:description" content="How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and CrossplaneToday I want to talk about secrets.
-Don’t go away! I know that for many secrets is either boring or you think you already know everything there is to know about managing secrets. I will not talk about obvious “secret stuff”. Instead, I want to try to answer some less often asked yet important questions. “How do we make secrets easy and irrelevant to users?">
+    <meta name="twitter:title" content="Terminals">
+    <meta name="twitter:description" content="From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.
+One of the easiest ways to improve productivity is by having a good Shell prompt.
+I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
+Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.">
+    <meta property="og:url" content="http://localhost:1313/terminal/index.html">
+    <meta property="og:title" content="Terminals">
+    <meta property="og:description" content="From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.
+One of the easiest ways to improve productivity is by having a good Shell prompt.
+I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
+Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Security">
-    <meta itemprop="description" content="How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and CrossplaneToday I want to talk about secrets.
-Don’t go away! I know that for many secrets is either boring or you think you already know everything there is to know about managing secrets. I will not talk about obvious “secret stuff”. Instead, I want to try to answer some less often asked yet important questions. “How do we make secrets easy and irrelevant to users?">
-    <meta itemprop="dateModified" content="2024-03-18T16:00:00+00:00">
-    <meta itemprop="wordCount" content="103">
-    <title>Security</title>
-    <link href="/security/index.xml" rel="alternate" type="application/rss+xml" title="Security">
+    <meta itemprop="name" content="Terminals">
+    <meta itemprop="description" content="From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.
+One of the easiest ways to improve productivity is by having a good Shell prompt.
+I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
+Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.">
+    <meta itemprop="dateModified" content="2023-07-22T16:00:00+00:00">
+    <meta itemprop="wordCount" content="126">
+    <title>Terminals</title>
+    <link href="/terminal/index.xml" rel="alternate" type="application/rss+xml" title="Terminals">
     <link href="/css/fontawesome-all.min.css?1720795715" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720795715" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css?1720795715" rel="stylesheet">
     <link href="/css/auto-complete.css?1720795715" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720795715" rel="stylesheet"></noscript>
@@ -75,7 +83,7 @@ Don’t go away! I know that for many secrets is either boring or you think you 
 
 
   </head>
-  <body class="mobile-support html" data-url="/security/index.html">
+  <body class="mobile-support html" data-url="/terminal/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -92,12 +100,12 @@ Don’t go away! I know that for many secrets is either boring or you think you 
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Security</span><meta itemprop="position" content="1"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Terminals</span><meta itemprop="position" content="1"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/development-environments/nix/index.html" title="Nix for Everyone: Unleash Devbox for Simplified Development (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" title="Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/security/eso-crossplane/index.html" title="How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" title="From Boring to Productive: Customize Your Shell Prompt with Starship (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -117,14 +125,20 @@ Don’t go away! I know that for many secrets is either boring or you think you 
             <header class="headline">
             </header>
 
-<h1 id="security">Security</h1>
+<h1 id="terminals">Terminals</h1>
 
 
 <div class="children children-h2 children-sort-date">
 	
-<h2><a href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></h2><p><p>Today I want to talk about secrets.</p>
-<p>Don&rsquo;t go away! I know that for many secrets is either boring or you think you already know everything there is to know about managing secrets. I will not talk about obvious &ldquo;secret stuff&rdquo;. Instead, I want to try to answer some less often asked yet important questions. &ldquo;<strong>How do we make secrets easy and irrelevant to users?</strong>&rdquo; &ldquo;<strong>How do we propagate secrets without making them exposed?</strong>&rdquo; &ldquo;<strong>How do we generate secrets in one place but use them in another safely?</strong>&rdquo;</p>
-<p>&hellip;and a few others.</p></p>
+<h2><a href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></h2><p><p>What I&rsquo;m about to say might sound silly, but I&rsquo;m going to say it anyway.</p>
+<p>One of the easiest ways to improve productivity is by having a <strong>good Shell prompt</strong>.</p>
+<p>I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.</p>
+<blockquote>
+<p>Do NOT try to execute the commands in this section. We&rsquo;ll go through the setup and details in the next sections. This is only the preview of what&rsquo;s comming.</p>
+</blockquote>
+<div class="highlight wrap-code"><pre tabindex="0"><code>dotfiles-demo 
+➜ </code></pre></div><p>That means that, most of the time, the only information shown in my prompt is the current directory which, in this case, is <code>dotfiles-demo</code>. It is a boring prompt, by design.</p>
+<p>However, let&rsquo;s see what happens if&hellip;</p></p>
 </div>
 
             <footer class="footline">
@@ -160,7 +174,7 @@ Don’t go away! I know that for many secrets is either boring or you think you 
           <li data-nav-id="/app-management/pkl/index.html" class=""><a class="padding" href="/app-management/pkl/index.html">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</a></li></ul></li>
           <li data-nav-id="/development-environments/index.html" class=""><a class="padding" href="/development-environments/index.html">Development Environments</a><ul id="R-subsections-b40bb3dd3715504862627d465ed722c6" class="morespace collapsible-menu">
           <li data-nav-id="/development-environments/nix/index.html" class=""><a class="padding" href="/development-environments/nix/index.html">Nix for Everyone: Unleash Devbox for Simplified Development</a></li></ul></li>
-          <li data-nav-id="/security/index.html" class="active parent "><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
+          <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
           <li data-nav-id="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" class=""><a class="padding" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html">If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</a></li>
@@ -174,7 +188,7 @@ Don’t go away! I know that for many secrets is either boring or you think you 
           <li data-nav-id="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html" class=""><a class="padding" href="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html">Unleashing WebAssembly in Kubernetes with Kwasm</a></li></ul></li>
           <li data-nav-id="/cloud/index.html" class=""><a class="padding" href="/cloud/index.html">Cloud</a><ul id="R-subsections-04db32118cfbb6755505814035576930" class="morespace collapsible-menu">
           <li data-nav-id="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" class=""><a class="padding" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html">Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe</a></li></ul></li>
-          <li data-nav-id="/terminal/index.html" class=""><a class="padding" href="/terminal/index.html">Terminals</a><ul id="R-subsections-487e4f01eb2fcd73ad92a1f1221e4869" class="morespace collapsible-menu">
+          <li data-nav-id="/terminal/index.html" class="active parent "><a class="padding" href="/terminal/index.html">Terminals</a><ul id="R-subsections-487e4f01eb2fcd73ad92a1f1221e4869" class="morespace collapsible-menu">
           <li data-nav-id="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" class=""><a class="padding" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
@@ -192,7 +206,7 @@ Don’t go away! I know that for many secrets is either boring or you think you 
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/security/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/terminal/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminals</title>
+    <link>http://localhost:1313/terminal/index.html</link>
+    <description>From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.&#xA;One of the easiest ways to improve productivity is by having a good Shell prompt.&#xA;I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.&#xA;Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Jul 2023 16:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Boring to Productive: Customize Your Shell Prompt with Starship</title>
+      <link>http://localhost:1313/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html</link>
+      <pubDate>Sat, 22 Jul 2023 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html</guid>
+      <description>What I’m about to say might sound silly, but I’m going to say it anyway.&#xA;One of the easiest ways to improve productivity is by having a good Shell prompt.&#xA;I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.&#xA;Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections. This is only the preview of what’s comming.&#xA;dotfiles-demo ➜ That means that, most of the time, the only information shown in my prompt is the current directory which, in this case, is dotfiles-demo. It is a boring prompt, by design.&#xA;However, let’s see what happens if…</description>
+    </item>
+  </channel>
+</rss>
