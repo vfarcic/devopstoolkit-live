@@ -30,7 +30,7 @@ However, let's see what happens if...
 
 --- -->
 
-<!-- <img src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [GitOps Broke CI/CD! Here is How to Fix It With Argo Events](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)
 
@@ -40,7 +40,7 @@ Let me explain.
 
 **[Full article >>](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)**
 
---- -->
+---
 
 <img src="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
@@ -105,13 +105,3 @@ Well... Wait until you see what I can query from such a database.
 I am going to show you something you've seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.
 
 **[Full article >>](/wasm/unleashing-webassembly-in-kubernetes-with-kwasm)**
-
----
-
-<img src="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [From Makefile to Justfile (or Taskfile): Recipe Runner Replacement](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)
-
-When I work locally, if I need to create a cluster I just execute `cluster-create`, wait for a few moments, and a local cluster with everything I need is running.
-
-**[Full article >>](/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement)**
