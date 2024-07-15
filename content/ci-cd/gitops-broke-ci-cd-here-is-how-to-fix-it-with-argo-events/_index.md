@@ -1,7 +1,7 @@
 
 +++
 title = 'GitOps Broke CI/CD! Here is How to Fix It With Argo Events'
-date = 2024-07-15T16:00:00+00:00
+date = 2024-07-15T15:00:00+00:00
 draft = false
 +++
 
