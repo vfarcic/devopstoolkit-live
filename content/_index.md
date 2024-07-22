@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [From Boring to Productive: Customize Your Shell Prompt with Starship](/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship)
 
@@ -28,7 +28,7 @@ However, let's see what happens if...
 
 **[Full article >>](/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship)**
 
---- -->
+---
 
 <img src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -95,13 +95,3 @@ Right now, I am connected to a PostgreSQL database and you are thinking that is 
 Well... Wait until you see what I can query from such a database.
 
 **[Full article >>](/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe)**
-
----
-
-<img src="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Unleashing WebAssembly in Kubernetes with Kwasm](/wasm/unleashing-webassembly-in-kubernetes-with-kwasm)
-
-I am going to show you something you've seen many times before. Yet, looks can be deceiving. You will likely come to a wrong conclusion. What I will show is not what it might look like.
-
-**[Full article >>](/wasm/unleashing-webassembly-in-kubernetes-with-kwasm)**
