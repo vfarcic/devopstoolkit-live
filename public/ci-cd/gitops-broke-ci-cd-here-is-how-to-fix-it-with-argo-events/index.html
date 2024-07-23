@@ -8,7 +8,8 @@
     <meta name="description" content="GitOps is amazing, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. GitOps broke CI/CD processes, and we need to fix that.
 Let me explain.">
     <meta name="author" content="Viktor Farcic">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg">
     <meta name="twitter:title" content="GitOps Broke CI/CD! Here is How to Fix It With Argo Events">
     <meta name="twitter:description" content="GitOps is amazing, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. GitOps broke CI/CD processes, and we need to fix that.
 Let me explain.">
@@ -18,25 +19,27 @@ Let me explain.">
 Let me explain.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg">
     <meta itemprop="name" content="GitOps Broke CI/CD! Here is How to Fix It With Argo Events">
     <meta itemprop="description" content="GitOps is amazing, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. GitOps broke CI/CD processes, and we need to fix that.
 Let me explain.">
-    <meta itemprop="datePublished" content="2023-07-15T16:00:00+00:00">
-    <meta itemprop="dateModified" content="2023-07-15T16:00:00+00:00">
+    <meta itemprop="datePublished" content="2024-07-15T15:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-07-15T15:00:00+00:00">
     <meta itemprop="wordCount" content="3557">
+    <meta itemprop="image" content="http://localhost:1313/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg">
     <title>GitOps Broke CI/CD! Here is How to Fix It With Argo Events</title>
     <link href="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.xml" rel="alternate" type="application/rss+xml" title="GitOps Broke CI/CD! Here is How to Fix It With Argo Events">
-    <link href="/css/fontawesome-all.min.css?1720142775" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720142775" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1720142775" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720142775" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720142775" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1720142775" rel="stylesheet">
-    <link href="/css/fonts.css?1720142775" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720142775" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1720142775" rel="stylesheet">
-    <link href="/css/theme-dot.css?1720142775" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1720142775" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1720142775" rel="stylesheet">
-    <link href="/css/print.css?1720142775" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1720142775"></script>
+    <link href="/css/fontawesome-all.min.css?1721771712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721771712" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721771712" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721771712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721771712" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721771712" rel="stylesheet">
+    <link href="/css/fonts.css?1721771712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721771712" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721771712" rel="stylesheet">
+    <link href="/css/theme-dot.css?1721771712" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1721771712" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721771712" rel="stylesheet">
+    <link href="/css/print.css?1721771712" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1721771712"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -106,9 +109,9 @@ Let me explain.">
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">GitOps Broke CI/CD! Here is How to Fix It With Argo Events</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" title="Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/ci-cd/index.html" title="CI/CD (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/infrastructure-as-code/index.html" title="Infrastructure-as-Code (IaC) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" title="If Dockerfile and Makefile Had a Baby... Earthly and Earthfile (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -163,12 +166,12 @@ Let me explain.">
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git push</span></span></code></pre></div><p>If we open GitHub Actions&hellip;</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gh repo view --web</span></span></code></pre></div><p>&hellip;we can see that the <code>ci</code> workflow run was executed.</p>
-<p><a href="#R-image-000c1dd210c1a92181988ff7a3b9acf7" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-ci-01.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-000c1dd210c1a92181988ff7a3b9acf7"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-ci-01.png"></a></p>
+<p><a href="#R-image-dd63f2721a94a14053b348dfa0a1f15f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-ci-01.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dd63f2721a94a14053b348dfa0a1f15f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-ci-01.png"></a></p>
 <p>That workflow ended up pushing changes to a manifest and stopped. There was nothing else for it to do since that&rsquo;s where Argo CD kicks in. It detected changes to the repo and synchronized them into the cluster.</p>
 <p>However, a few moments later, a new workflow run was executed even though we did not push anything to any Git repo.</p>
-<p><a href="#R-image-19049801b441f410f89147a0191c841b" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-00.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-19049801b441f410f89147a0191c841b"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-00.png"></a></p>
+<p><a href="#R-image-5cab45a517ded36b772751834a035868" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-00.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5cab45a517ded36b772751834a035868"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-00.png"></a></p>
 <p>How did that happen? What executed that workflow run? How did it know that a new release of the application was deployed to the cluster?</p>
 <p>The answer to those and a few other questions is in event based workflows and Argo Events.</p>
 <h2 id="what-is-argo-events">What Is Argo Events?</h2>
@@ -382,8 +385,8 @@ Let me explain.">
 <p>Open the <code>Actions</code> tab and observe that the <code>ci</code> workflow is running.</p>
 </blockquote>
 <p>We can see that the <code>ci</code> workflow was executed.</p>
-<p><a href="#R-image-9b98801c5ba7b1a3ae7624ded36f61c7" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-ci-01.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9b98801c5ba7b1a3ae7624ded36f61c7"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-ci-01.png"></a></p>
+<p><a href="#R-image-e567287bb3fbc52a90a707e752a1d685" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-ci-01.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e567287bb3fbc52a90a707e752a1d685"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-ci-01.png"></a></p>
 <p>While it&rsquo;s running, let&rsquo;s take a quick look at it&rsquo;s definition.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat .github/workflows/ci.yaml</span></span></code></pre></div><p>The output is as follows.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">ci</span>
@@ -447,8 +450,8 @@ silly-demo-5c444b879b-jhrpq   1/1     Running   0          7s</code></pre></div>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gh repo view --web</span></span></code></pre></div><p>&hellip;and opening the <code>Actions</code> tab.</p>
 <p>We can see that a new workflow functional-tests was executed. That&rsquo;s the workflow triggered by Argo Events once it detected that a Deployment was created or updated. That is also the disaster I mentioned earlier.</p>
 <p>Instead of triggering one workflow run that executes functional tests, we got plenty. What we did is pointless. There is no good reason why we would run functional tests many times for a single change, yet, Argo Events did not do anything wrong. As a matter of fact, Argo Events triggered all those workflows correctly.</p>
-<p><a href="#R-image-ff05ed7da8192685106f5405464e53d5" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-01.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ff05ed7da8192685106f5405464e53d5"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-01.png"></a></p>
+<p><a href="#R-image-035f55fa2c71b025c3ec41235591365d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-01.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-035f55fa2c71b025c3ec41235591365d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-01.png"></a></p>
 <p>We said that we&rsquo;d like to trigger a workflow every time a Deployment is created (added) or updated, so that&rsquo;s what Argo Events did, even though it might look like it went beserk.</p>
 <p>You see, it&rsquo;s not only us who are modifying Kubernetes resources. Kubernetes itself is modifying them as well. It adds anotations, statuses, and quite a few other things to resources. Otherwise, without statuses, we would not know what&rsquo;s going on.</p>
 <p>We can blame Deployment itself for not having a clear indication when its children resources are operational. On the other hand, filters offered by Argo Events are terrible so that complicates the situation as well.</p>
@@ -495,8 +498,8 @@ silly-demo-5c444b879b-jhrpq   1/1     Running   0          7s</code></pre></div>
 <p>Few minutes later&hellip;</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gh repo view --web</span></span></code></pre></div><p>If we take a look at the <code>functional-tests</code> workflow runs, we can see that only one was executed.</p>
 <p>Mission accomplished. To quote Borat, one of the biggest phylosophers or our time: &ldquo;<strong>Great success!</strong>&rdquo;</p>
-<p><a href="#R-image-e73ab3dc7dfd61db964de61420ed54ac" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-02.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e73ab3dc7dfd61db964de61420ed54ac"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-02.png"></a></p>
+<p><a href="#R-image-61c157ff6b593fec5624bc20fb62e995" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-02.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-61c157ff6b593fec5624bc20fb62e995"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/gh-actions-02.png"></a></p>
 <p>Here&rsquo;s what happened.</p>
 <h2 id="what-happened">What Happened?</h2>
 <img src="diag-02.png" style="width:70%; float:right; padding: 10px">
@@ -553,10 +556,10 @@ silly-demo-5c444b879b-jhrpq   1/1     Running   0          7s</code></pre></div>
           <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
           <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
           <li data-nav-id="/ci-cd/index.html" class="parent "><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
+          <li data-nav-id="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html" class="active"><a class="padding" href="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html">GitOps Broke CI/CD! Here is How to Fix It With Argo Events</a></li>
           <li data-nav-id="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" class=""><a class="padding" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html">If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</a></li>
           <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
-          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li>
-          <li data-nav-id="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html" class="active"><a class="padding" href="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html">GitOps Broke CI/CD! Here is How to Fix It With Argo Events</a></li></ul></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
           <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
           <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
           <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
@@ -565,6 +568,8 @@ silly-demo-5c444b879b-jhrpq   1/1     Running   0          7s</code></pre></div>
           <li data-nav-id="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html" class=""><a class="padding" href="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html">Unleashing WebAssembly in Kubernetes with Kwasm</a></li></ul></li>
           <li data-nav-id="/cloud/index.html" class=""><a class="padding" href="/cloud/index.html">Cloud</a><ul id="R-subsections-04db32118cfbb6755505814035576930" class="morespace collapsible-menu">
           <li data-nav-id="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" class=""><a class="padding" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html">Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe</a></li></ul></li>
+          <li data-nav-id="/terminal/index.html" class=""><a class="padding" href="/terminal/index.html">Terminals</a><ul id="R-subsections-487e4f01eb2fcd73ad92a1f1221e4869" class="morespace collapsible-menu">
+          <li data-nav-id="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" class=""><a class="padding" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
@@ -619,8 +624,8 @@ silly-demo-5c444b879b-jhrpq   1/1     Running   0          7s</code></pre></div>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1720142775" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1720142775" defer></script>
-    <script src="/js/theme.js?1720142775" defer></script>
+    <script src="/js/clipboard.min.js?1721771712" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721771712" defer></script>
+    <script src="/js/theme.js?1721771712" defer></script>
   </body>
 </html>

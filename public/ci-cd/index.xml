@@ -3,11 +3,18 @@
   <channel>
     <title>CI/CD</title>
     <link>http://localhost:1313/ci-cd/index.html</link>
-    <description>If Dockerfile and Makefile Had a Baby... Earthly and EarthfileMakefile walks into a bar and notices Dockerfile sitting alone. She joins him, they talk, they flirt…&#xA;The rest of that story has been censored. You’ll have to fill in the gaps using your imagination.&#xA;…a baby was born, and that baby was named Earthfile.&#xA;Mastering Kubernetes Testing Kyverno Chainsaw!When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.</description>
+    <description>GitOps Broke CI/CD! Here is How to Fix It With Argo EventsGitOps is amazing, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. GitOps broke CI/CD processes, and we need to fix that.&#xA;Let me explain.&#xA;If Dockerfile and Makefile Had a Baby.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jul 2024 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2024 15:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ci-cd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitOps Broke CI/CD! Here is How to Fix It With Argo Events</title>
+      <link>http://localhost:1313/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html</link>
+      <pubDate>Mon, 15 Jul 2024 15:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html</guid>
+      <description>GitOps is amazing, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. GitOps broke CI/CD processes, and we need to fix that.&#xA;Let me explain.</description>
+    </item>
     <item>
       <title>If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</title>
       <link>http://localhost:1313/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html</link>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transform Your Terminal: 3 Must-Have Zsh Plugins!</title>
+    <link>http://localhost:1313/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html</link>
+    <description>I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.&#xA;Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.&#xA;All in all, Zsh is great and I love it. However, Zsh alone is… well, it’s just a shell. We need to extend it to make it truly great.&#xA;Specifically, there are three must-have plugins. With those we’ll explore today, Zsh gets transformed from “yet another shell” to “I can’t live without it”.&#xA;Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

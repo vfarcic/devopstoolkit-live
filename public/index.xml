@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <link>http://localhost:1313/index.html</link>
-    <description>Latest Posts If Dockerfile and Makefile Had a Baby… Earthly and Earthfile Makefile walks into a bar and notices Dockerfile sitting alone. She joins him, they talk, they flirt…&#xA;The rest of that story has been censored. You’ll have to fill in the gaps using your imagination.&#xA;…a baby was born, and that baby was named Earthfile.&#xA;Full article »&#xA;Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.</description>
+    <description>Latest Posts From Boring to Productive: Customize Your Shell Prompt with Starship What I’m about to say might sound silly, but I’m going to say it anyway.&#xA;One of the easiest ways to improve productivity is by having a good Shell prompt.&#xA;I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.&#xA;Do NOT try to execute the commands in this section.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jul 2024 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2024 16:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes</title>
@@ -48,7 +48,7 @@
       <link>http://localhost:1313/ci-cd/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ci-cd/index.html</guid>
-      <description>If Dockerfile and Makefile Had a Baby... Earthly and EarthfileMakefile walks into a bar and notices Dockerfile sitting alone. She joins him, they talk, they flirt…&#xA;The rest of that story has been censored. You’ll have to fill in the gaps using your imagination.&#xA;…a baby was born, and that baby was named Earthfile.&#xA;Mastering Kubernetes Testing Kyverno Chainsaw!When I work locally, if I need to create a cluster I just execute cluster-create, wait for a few moments, and a local cluster with everything I need is running.</description>
+      <description>GitOps Broke CI/CD! Here is How to Fix It With Argo EventsGitOps is amazing, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. GitOps broke CI/CD processes, and we need to fix that.&#xA;Let me explain.&#xA;If Dockerfile and Makefile Had a Baby.</description>
     </item>
     <item>
       <title>Infrastructure-as-Code (IaC)</title>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.4">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.
+Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.
+All in all, Zsh is great and I love it. However, Zsh alone is… well, it’s just a shell. We need to extend it to make it truly great.
+Specifically, there are three must-have plugins. With those we’ll explore today, Zsh gets transformed from “yet another shell” to “I can’t live without it”.
+Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.">
+    <meta name="author" content="Viktor Farcic">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/terminal/transform-your-terminal-3-must-have-zsh-plugins/thumbnail.jpg">
+    <meta name="twitter:title" content="Transform Your Terminal: 3 Must-Have Zsh Plugins!">
+    <meta name="twitter:description" content="I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.
+Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.
+All in all, Zsh is great and I love it. However, Zsh alone is… well, it’s just a shell. We need to extend it to make it truly great.
+Specifically, there are three must-have plugins. With those we’ll explore today, Zsh gets transformed from “yet another shell” to “I can’t live without it”.
+Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.">
+    <meta property="og:url" content="http://localhost:1313/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html">
+    <meta property="og:title" content="Transform Your Terminal: 3 Must-Have Zsh Plugins!">
+    <meta property="og:description" content="I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.
+Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.
+All in all, Zsh is great and I love it. However, Zsh alone is… well, it’s just a shell. We need to extend it to make it truly great.
+Specifically, there are three must-have plugins. With those we’ll explore today, Zsh gets transformed from “yet another shell” to “I can’t live without it”.
+Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/terminal/transform-your-terminal-3-must-have-zsh-plugins/thumbnail.jpg">
+    <meta itemprop="name" content="Transform Your Terminal: 3 Must-Have Zsh Plugins!">
+    <meta itemprop="description" content="I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.
+Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.
+All in all, Zsh is great and I love it. However, Zsh alone is… well, it’s just a shell. We need to extend it to make it truly great.
+Specifically, there are three must-have plugins. With those we’ll explore today, Zsh gets transformed from “yet another shell” to “I can’t live without it”.
+Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.">
+    <meta itemprop="datePublished" content="2023-07-29T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2023-07-29T16:00:00+00:00">
+    <meta itemprop="wordCount" content="1012">
+    <meta itemprop="image" content="http://localhost:1313/terminal/transform-your-terminal-3-must-have-zsh-plugins/thumbnail.jpg">
+    <title>Transform Your Terminal: 3 Must-Have Zsh Plugins!</title>
+    <link href="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.xml" rel="alternate" type="application/rss+xml" title="Transform Your Terminal: 3 Must-Have Zsh Plugins!">
+    <link href="/css/fontawesome-all.min.css?1721771696" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721771696" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721771696" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721771696" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721771696" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721771696" rel="stylesheet">
+    <link href="/css/fonts.css?1721771696" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721771696" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721771696" rel="stylesheet">
+    <link href="/css/theme-dot.css?1721771696" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1721771696" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721771696" rel="stylesheet">
+    <link href="/css/print.css?1721771696" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1721771696"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'dot' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NXCC9XM9Y"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2NXCC9XM9Y');
+        }
+      </script>
+    
+  
+
+
+  </head>
+  <body class="mobile-support html" data-url="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#zsh-syntax-highlightning-zsh-syntax-highlighting">Zsh Syntax Highlightning (zsh-syntax-highlighting)</a></li>
+    <li><a href="#zsh-autosuggestions-zsh-autosuggestions">Zsh Autosuggestions (zsh-autosuggestions)</a></li>
+    <li><a href="#zsh-history-substring-search-zsh-history-substring-search">Zsh History Substring Search (zsh-history-substring-search)</a></li>
+    <li><a href="#destroy">Destroy</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/terminal/index.html"><span itemprop="name">Terminals</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Transform Your Terminal: 3 Must-Have Zsh Plugins!</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" title="From Boring to Productive: Customize Your Shell Prompt with Starship (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/about/index.html" title="About The DeveOps Toolkit (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="transform-your-terminal-3-must-have-zsh-plugins">Transform Your Terminal: 3 Must-Have Zsh Plugins!</h1>
+
+<p>I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There&rsquo;s <strong>no way I&rsquo;ll ever go back to Bash</strong> and the only other Shell comparable to Zsh is Fish.</p>
+<p>Fish is great, maybe even better than Zsh, but it&rsquo;s <strong>not POSIX compliant</strong> meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.</p>
+<p>All in all, Zsh is great and I love it. However, Zsh alone is&hellip; well, it&rsquo;s <strong>just a shell</strong>. We need to extend it to make it truly great.</p>
+<p>Specifically, there are <strong>three must-have plugins</strong>. With those we&rsquo;ll explore today, Zsh gets transformed from &ldquo;yet another shell&rdquo; to &ldquo;I can&rsquo;t live without it&rdquo;.</p>
+<p>Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.</p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MT7lA2nN-Nc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="setup">Setup</h2>
+<blockquote>
+<p>Install <a href="https://zsh.org" rel="external" target="_blank">zsh</a> if you don&rsquo;t have it already. It is the default shell in macOS (not sure about other operating systems).</p>
+</blockquote>
+<blockquote>
+<p>Install <a href="https://github.com/zsh-users/zsh-autosuggestions" rel="external" target="_blank">https://github.com/zsh-users/zsh-autosuggestions</a></p>
+</blockquote>
+<blockquote>
+<p>Install <a href="https://github.com/zsh-users/zsh-history-substring-search" rel="external" target="_blank">https://github.com/zsh-users/zsh-history-substring-search</a></p>
+</blockquote>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">bindkey &#39;^[[A&#39; history-substring-search-up
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">bindkey &#39;^[[B&#39; history-substring-search-down
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">zstyle &#39;:completion:*&#39; menu yes select
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;</span> | tee -a ~/.zshrc</span></span></code></pre></div><blockquote>
+<p>Install <a href="https://github.com/zsh-users/zsh-syntax-highlighting" rel="external" target="_blank">https://github.com/zsh-users/zsh-syntax-highlighting</a></p>
+</blockquote>
+<blockquote>
+<p>Make sure that Docker is up-and-running.</p>
+</blockquote>
+<h2 id="zsh-syntax-highlightning-zsh-syntax-highlighting">Zsh Syntax Highlightning (zsh-syntax-highlighting)</h2>
+<p>The first must-have plugin is <a href="https://github.com/zsh-users/zsh-syntax-highlighting" rel="external" target="_blank">zsh-syntax-highlighting</a>. It highlights the commands we type in Zsh. This is a must-have plugin because it helps you catch typos and syntax errors before you hit enter. At the same time, it makes commands we type much more readable by applying colors to them.</p>
+<p>If, for example, I type <code>eco</code>&hellip;</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>eco</span></span></code></pre></div><p>&hellip;I can immediately see that there is no such command since it is in red. I made a typo. The correct command is <code>echo</code>.</p>
+<blockquote>
+<p>Unfortunately, I could not show colors in this post so I advice you to follow along in your terminal to see proper outputs.</p>
+</blockquote>
+<p>Now, if I do type the <code>echo</code> command correctly, it turns into green while the text I type is yellow.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;What is this?&#34;</span></span></span></code></pre></div><p>We&rsquo;ll execute a few other commands, not only to show syntax highlighting but also to generate a bit of history for the plugin that follows.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker container ls</span></span></code></pre></div><p>The command is in green, and the arguments in white.</p>
+<p>The same can be said for the following two commands.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker container run --detach --name nginx nginx
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker container run --rm --detach --name alpine alpine sleep <span style="color:#ae81ff">1</span></span></span></code></pre></div><p>Now, you might say that syntax highlightning is not that important, and you&rsquo;d be right. It&rsquo;s not. But it&rsquo;s nice to have.</p>
+<p>The next one is a life-changer.</p>
+<h2 id="zsh-autosuggestions-zsh-autosuggestions">Zsh Autosuggestions (zsh-autosuggestions)</h2>
+<p>The <a href="https://github.com/zsh-users/zsh-autosuggestions" rel="external" target="_blank">zsh-autosuggestions</a> plugin is a must-have. It is a time-saver.</p>
+<p>Take a look at this.</p>
+<p>I can start typing a command like <code>docker</code> and the last command that starts with <code>docker</code> will be suggested to me.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker</span></span></code></pre></div><blockquote>
+<p>Press <code>→</code> to autocomplete <code>docker container run --rm --detach --name alpine alpine sleep 1</code></p>
+</blockquote>
+<p>If that&rsquo;s what I want to run, I can just press the right arrow key to autocomplete the command.</p>
+<p>In some other cases, I might not want to re-run the last command that starts with docker but some other command that also starts with docker.</p>
+<p>In that case, I can just type <code>docker</code>, hold the <code>option</code> key and press the arrow right key twice to reach <code>docker container run</code>.</p>
+<p>Now, that&rsquo;s not the command I want to run either. I do know that the next argument was <code>--detach</code> so I can now start typing <code>--de</code> and&hellip; That&rsquo;s the one I want to run. Now I can press the right arrow key to autocomplete the command.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker</span></span></code></pre></div><blockquote>
+<p>Press <code>option</code> + <code>→</code> twice to reach <code>docker container run</code>, type <code>--de</code>, and press <code>→</code> to autocomplete <code>docker container run --detach --name nginx nginx</code></p>
+</blockquote>
+<p>That command should fail since I&rsquo;m already running a container with the same name. That should not matter. What matters is that with the <strong>zsh-autosuggestions</strong> plugin, I can autocomplete commands in a way that I never could before and that saves me a lot of time and, more importantly, allows my to avoid remembering all the commands and arguments I would need to use.</p>
+<p>However, sometimes I do not remember the first few arguments of a command I should run and I might want to go through history to find it. That&rsquo;s where the third plugin comes in.</p>
+<h2 id="zsh-history-substring-search-zsh-history-substring-search">Zsh History Substring Search (zsh-history-substring-search)</h2>
+<p>Typically, I would execute the <em>history</em> command and pipe the output to grep to find the command I&rsquo;m looking for.</p>
+<p>With <a href="https://github.com/zsh-users/zsh-history-substring-search" rel="external" target="_blank">zsh-history-substring-search</a> finding commands from the history becomes much easier and faster.</p>
+<p>Let&rsquo;s say that I would like to list all the containers and that I bumped my head earlier this morning and forgot the command to do so. I can start typing <code>docker container</code> and press the up arrow key to go through history until I find <code>docker container ls</code> and just press the enter key to run it.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker container</span></span></code></pre></div><blockquote>
+<p>Press ↑ and ↓ to select <code>docker container ls</code>.</p>
+</blockquote>
+<p>That was a silly example. Save from having amnesia, I would never forget the <code>ls</code> argument, so let&rsquo;s try something that I would likely forget. Let&rsquo;s say that I&rsquo;d like to run alpine container that sleeps for a second.</p>
+<p>I can do that by typing <code>docker container run</code> and press arrow up or down keys until I find the command I&rsquo;m looking for, and press the enter key.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker container run</span></span></code></pre></div><blockquote>
+<p>Press ↑ and ↓ to select <code>docker container run --detach --name nginx nginx</code>.</p>
+</blockquote>
+<p>That&rsquo;s it. Those are three <strong>must-have Zsh plugins</strong> that you can install directly on top of Zsh or as part of Oh My Zsh. I stopped using Oh My Zsh a while ago due to performance issues and, simply, because I don&rsquo;t need it any more so I tend to install those plugins directly on top of Zsh.</p>
+<p>If you&rsquo;re interested, I can explain why I abandoned Oh My Zsh in another post. For now, all I will say is&hellip;</p>
+<p>Thanks for watching.
+See you in the next one.
+Cheers.</p>
+<h2 id="destroy">Destroy</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker container rm nginx --force</span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="/dot-narrow-yellow-bg.png"/></a>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/index.html" class=""><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class=""><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li>
+          <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
+          <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
+          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
+          <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html" class=""><a class="padding" href="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html">Mastering Developer Portals: Discover &amp; Integrate API Schemas with Port</a></li>
+          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
+          <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
+          <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li>
+          <li data-nav-id="/app-management/pkl/index.html" class=""><a class="padding" href="/app-management/pkl/index.html">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</a></li></ul></li>
+          <li data-nav-id="/development-environments/index.html" class=""><a class="padding" href="/development-environments/index.html">Development Environments</a><ul id="R-subsections-b40bb3dd3715504862627d465ed722c6" class="morespace collapsible-menu">
+          <li data-nav-id="/development-environments/nix/index.html" class=""><a class="padding" href="/development-environments/nix/index.html">Nix for Everyone: Unleash Devbox for Simplified Development</a></li></ul></li>
+          <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
+          <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
+          <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
+          <li data-nav-id="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html" class=""><a class="padding" href="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html">GitOps Broke CI/CD! Here is How to Fix It With Argo Events</a></li>
+          <li data-nav-id="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" class=""><a class="padding" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html">If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</a></li>
+          <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
+          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
+          <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
+          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
+          <li data-nav-id="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" class=""><a class="padding" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></li></ul></li>
+          <li data-nav-id="/wasm/index.html" class=""><a class="padding" href="/wasm/index.html">WebAssembly (WASM)</a><ul id="R-subsections-b0ea8ce9b33b696880b6f35f6467d614" class="morespace collapsible-menu">
+          <li data-nav-id="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html" class=""><a class="padding" href="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html">Unleashing WebAssembly in Kubernetes with Kwasm</a></li></ul></li>
+          <li data-nav-id="/cloud/index.html" class=""><a class="padding" href="/cloud/index.html">Cloud</a><ul id="R-subsections-04db32118cfbb6755505814035576930" class="morespace collapsible-menu">
+          <li data-nav-id="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" class=""><a class="padding" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html">Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe</a></li></ul></li>
+          <li data-nav-id="/terminal/index.html" class="parent "><a class="padding" href="/terminal/index.html">Terminals</a><ul id="R-subsections-487e4f01eb2fcd73ad92a1f1221e4869" class="morespace collapsible-menu">
+          <li data-nav-id="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" class=""><a class="padding" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></li>
+          <li data-nav-id="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html" class="active"><a class="padding" href="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html">Transform Your Terminal: 3 Must-Have Zsh Plugins!</a></li></ul></li>
+          <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
+          <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-dot" value="dot" selected>Dot</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1721771696" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721771696" defer></script>
+    <script src="/js/theme.js?1721771696" defer></script>
+  </body>
+</html>

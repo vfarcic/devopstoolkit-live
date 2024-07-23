@@ -5,6 +5,24 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/terminal/transform-your-terminal-3-must-have-zsh-plugins/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Transform Your Terminal: 3 Must-Have Zsh Plugins!](/terminal/transform-your-terminal-3-must-have-zsh-plugins)
+
+I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There's **no way I'll ever go back to Bash** and the only other Shell comparable to Zsh is Fish.
+
+Fish is great, maybe even better than Zsh, but it's **not POSIX compliant** meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.
+
+All in all, Zsh is great and I love it. However, Zsh alone is... well, it's **just a shell**. We need to extend it to make it truly great.
+
+Specifically, there are **three must-have plugins**. With those we'll explore today, Zsh gets transformed from "yet another shell" to "I can't live without it".
+
+Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.
+
+**[Full article >>](/terminal/transform-your-terminal-3-must-have-zsh-plugins)**
+
+--- -->
+
 <img src="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [From Boring to Productive: Customize Your Shell Prompt with Starship](/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship)
