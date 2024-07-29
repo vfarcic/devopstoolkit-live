@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/terminal/transform-your-terminal-3-must-have-zsh-plugins/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/terminal/transform-your-terminal-3-must-have-zsh-plugins/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Transform Your Terminal: 3 Must-Have Zsh Plugins!](/terminal/transform-your-terminal-3-must-have-zsh-plugins)
 
@@ -21,7 +21,7 @@ Here it goes. Here are the three must-have Zsh plugins that will transform the w
 
 **[Full article >>](/terminal/transform-your-terminal-3-must-have-zsh-plugins)**
 
---- -->
+---
 
 <img src="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -101,15 +101,3 @@ I am so **dissaspointed with developer portal consoles** for ignoring the fact t
 Hence, I spent months complaining about it and... I got it.
 
 **[Full article >>](/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port)**
-
----
-
-<img src="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe](/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe)
-
-Right now, I am connected to a PostgreSQL database and you are thinking that is boring. Who wants to see me querying a database?
-
-Well... Wait until you see what I can query from such a database.
-
-**[Full article >>](/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe)**

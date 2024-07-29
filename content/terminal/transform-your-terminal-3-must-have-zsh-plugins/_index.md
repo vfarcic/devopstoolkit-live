@@ -1,7 +1,7 @@
 
 +++
 title = 'Transform Your Terminal: 3 Must-Have Zsh Plugins!'
-date = 2024-07-29T16:00:00+00:00
+date = 2024-07-29T15:00:00+00:00
 draft = false
 +++
 
