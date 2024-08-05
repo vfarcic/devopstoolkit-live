@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Why I Can Not Live Without These 10 CLIs!</title>
+    <link>http://localhost:1313/terminal/why-i-can-not-live-without-these-10-clis/index.html</link>
+    <description>Today we’ll explore ten CLI tools without which my life would be meaningless. Well… Maybe not meaningless, but certainly much less productive and harder.&#xA;So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/terminal/why-i-can-not-live-without-these-10-clis/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

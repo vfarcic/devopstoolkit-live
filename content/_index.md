@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<img src="/terminal/why-i-can-not-live-without-these-10-clis/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [10 CLIs I Can Not Live Without!](/terminal/why-i-can-not-live-without-these-10-clis)
+
+Today we'll explore **ten CLI tools** without which my life would be meaningless. Well... Maybe not meaningless, but certainly much less productive and harder.
+
+So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.
+
+**[Full article >>](/terminal/why-i-can-not-live-without-these-10-clis)**
+
+---
+
 <img src="/terminal/transform-your-terminal-3-must-have-zsh-plugins/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Transform Your Terminal: 3 Must-Have Zsh Plugins!](/terminal/transform-your-terminal-3-must-have-zsh-plugins)
@@ -89,15 +101,3 @@ Hence, the goal is to assign just the right amount of resources to processes. No
 * **Who scales?**
 
 **[Full article >>](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)**
-
----
-
-<img src="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Mastering Developer Portals: Discover & Integrate API Schemas with Port](/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port)
-
-I am so **dissaspointed with developer portal consoles** for ignoring the fact that almost **everything is discoverable through APIs**. Why should I design forms and fields in Backstage if Backstage should be able to ask an API for a schema? Even if that schema is not exactly what I need and I might have to remove parts of it, that's still easier and better than starting from scratch. It's a waste of time to do the same thing over and over again. We should define what we have, expose that through an API, and all other tools should just "discover" it. Just as that's true for, let's say, `kubectl`, it should be true for graphical user interfaces.
-
-Hence, I spent months complaining about it and... I got it.
-
-**[Full article >>](/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port)**

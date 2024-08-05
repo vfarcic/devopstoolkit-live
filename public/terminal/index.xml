@@ -3,17 +3,31 @@
   <channel>
     <title>Terminals</title>
     <link>http://localhost:1313/terminal/index.html</link>
-    <description>From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.&#xA;One of the easiest ways to improve productivity is by having a good Shell prompt.&#xA;I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.&#xA;Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.</description>
+    <description>Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.&#xA;Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2024 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2024 15:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transform Your Terminal: 3 Must-Have Zsh Plugins!</title>
+      <link>http://localhost:1313/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html</link>
+      <pubDate>Mon, 29 Jul 2024 15:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html</guid>
+      <description>I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.&#xA;Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.&#xA;All in all, Zsh is great and I love it. However, Zsh alone is… well, it’s just a shell. We need to extend it to make it truly great.&#xA;Specifically, there are three must-have plugins. With those we’ll explore today, Zsh gets transformed from “yet another shell” to “I can’t live without it”.&#xA;Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.</description>
+    </item>
     <item>
       <title>From Boring to Productive: Customize Your Shell Prompt with Starship</title>
       <link>http://localhost:1313/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html</link>
       <pubDate>Mon, 22 Jul 2024 16:00:00 +0000</pubDate>
       <guid>http://localhost:1313/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html</guid>
       <description>What I’m about to say might sound silly, but I’m going to say it anyway.&#xA;One of the easiest ways to improve productivity is by having a good Shell prompt.&#xA;I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.&#xA;Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections. This is only the preview of what’s comming.&#xA;dotfiles-demo ➜ That means that, most of the time, the only information shown in my prompt is the current directory which, in this case, is dotfiles-demo. It is a boring prompt, by design.&#xA;However, let’s see what happens if…</description>
+    </item>
+    <item>
+      <title>Why I Can Not Live Without These 10 CLIs!</title>
+      <link>http://localhost:1313/terminal/why-i-can-not-live-without-these-10-clis/index.html</link>
+      <pubDate>Sat, 05 Aug 2023 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terminal/why-i-can-not-live-without-these-10-clis/index.html</guid>
+      <description>Today we’ll explore ten CLI tools without which my life would be meaningless. Well… Maybe not meaningless, but certainly much less productive and harder.&#xA;So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.</description>
     </item>
   </channel>
 </rss>

@@ -5,45 +5,37 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.125.4">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content="From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.
-One of the easiest ways to improve productivity is by having a good Shell prompt.
-I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
-Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.">
+    <meta name="description" content="Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.
+Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere.">
     <meta name="author" content="Viktor Farcic">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Terminals">
-    <meta name="twitter:description" content="From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.
-One of the easiest ways to improve productivity is by having a good Shell prompt.
-I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
-Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.">
+    <meta name="twitter:description" content="Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.
+Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere.">
     <meta property="og:url" content="http://localhost:1313/terminal/index.html">
     <meta property="og:title" content="Terminals">
-    <meta property="og:description" content="From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.
-One of the easiest ways to improve productivity is by having a good Shell prompt.
-I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
-Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.">
+    <meta property="og:description" content="Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.
+Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="Terminals">
-    <meta itemprop="description" content="From Boring to Productive: Customize Your Shell Prompt with StarshipWhat I’m about to say might sound silly, but I’m going to say it anyway.
-One of the easiest ways to improve productivity is by having a good Shell prompt.
-I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
-Do NOT try to execute the commands in this section. We’ll go through the setup and details in the next sections.">
-    <meta itemprop="dateModified" content="2024-07-29T16:00:00+00:00">
-    <meta itemprop="wordCount" content="126">
+    <meta itemprop="description" content="Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.
+Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere.">
+    <meta itemprop="dateModified" content="2024-07-29T15:00:00+00:00">
+    <meta itemprop="wordCount" content="347">
     <title>Terminals</title>
     <link href="/terminal/index.xml" rel="alternate" type="application/rss+xml" title="Terminals">
-    <link href="/css/fontawesome-all.min.css?1721771712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721771712" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721771712" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721771712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721771712" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721771712" rel="stylesheet">
-    <link href="/css/fonts.css?1721771712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721771712" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721771712" rel="stylesheet">
-    <link href="/css/theme-dot.css?1721771712" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721771712" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721771712" rel="stylesheet">
-    <link href="/css/print.css?1721771712" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721771712"></script>
+    <link href="/css/fontawesome-all.min.css?1722869100" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722869100" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722869100" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722869100" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722869100" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722869100" rel="stylesheet">
+    <link href="/css/fonts.css?1722869100" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722869100" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722869100" rel="stylesheet">
+    <link href="/css/theme-dot.css?1722869100" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1722869100" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722869100" rel="stylesheet">
+    <link href="/css/print.css?1722869100" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1722869100"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -105,7 +97,7 @@ Do NOT try to execute the commands in this section. We’ll go through the setup
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" title="Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" title="From Boring to Productive: Customize Your Shell Prompt with Starship (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html" title="Transform Your Terminal: 3 Must-Have Zsh Plugins! (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -130,6 +122,11 @@ Do NOT try to execute the commands in this section. We’ll go through the setup
 
 <div class="children children-h2 children-sort-date">
 	
+<h2><a href="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html">Transform Your Terminal: 3 Must-Have Zsh Plugins!</a></h2><p><p>I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There&rsquo;s <strong>no way I&rsquo;ll ever go back to Bash</strong> and the only other Shell comparable to Zsh is Fish.</p>
+<p>Fish is great, maybe even better than Zsh, but it&rsquo;s <strong>not POSIX compliant</strong> meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.</p>
+<p>All in all, Zsh is great and I love it. However, Zsh alone is&hellip; well, it&rsquo;s <strong>just a shell</strong>. We need to extend it to make it truly great.</p>
+<p>Specifically, there are <strong>three must-have plugins</strong>. With those we&rsquo;ll explore today, Zsh gets transformed from &ldquo;yet another shell&rdquo; to &ldquo;I can&rsquo;t live without it&rdquo;.</p>
+<p>Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.</p></p>
 <h2><a href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></h2><p><p>What I&rsquo;m about to say might sound silly, but I&rsquo;m going to say it anyway.</p>
 <p>One of the easiest ways to improve productivity is by having a <strong>good Shell prompt</strong>.</p>
 <p>I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.</p>
@@ -139,6 +136,8 @@ Do NOT try to execute the commands in this section. We’ll go through the setup
 <div class="highlight wrap-code"><pre tabindex="0"><code>dotfiles-demo 
 ➜ </code></pre></div><p>That means that, most of the time, the only information shown in my prompt is the current directory which, in this case, is <code>dotfiles-demo</code>. It is a boring prompt, by design.</p>
 <p>However, let&rsquo;s see what happens if&hellip;</p></p>
+<h2><a href="/terminal/why-i-can-not-live-without-these-10-clis/index.html">Why I Can Not Live Without These 10 CLIs!</a></h2><p><p>Today we&rsquo;ll explore <strong>ten CLI tools</strong> without which my life would be meaningless. Well&hellip; Maybe not meaningless, but certainly much less productive and harder.</p>
+<p>So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.</p></p>
 </div>
 
             <footer class="footline">
@@ -190,7 +189,9 @@ Do NOT try to execute the commands in this section. We’ll go through the setup
           <li data-nav-id="/cloud/index.html" class=""><a class="padding" href="/cloud/index.html">Cloud</a><ul id="R-subsections-04db32118cfbb6755505814035576930" class="morespace collapsible-menu">
           <li data-nav-id="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" class=""><a class="padding" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html">Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe</a></li></ul></li>
           <li data-nav-id="/terminal/index.html" class="active parent "><a class="padding" href="/terminal/index.html">Terminals</a><ul id="R-subsections-487e4f01eb2fcd73ad92a1f1221e4869" class="morespace collapsible-menu">
-          <li data-nav-id="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" class=""><a class="padding" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></li></ul></li>
+          <li data-nav-id="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html" class=""><a class="padding" href="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html">Transform Your Terminal: 3 Must-Have Zsh Plugins!</a></li>
+          <li data-nav-id="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" class=""><a class="padding" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></li>
+          <li data-nav-id="/terminal/why-i-can-not-live-without-these-10-clis/index.html" class=""><a class="padding" href="/terminal/why-i-can-not-live-without-these-10-clis/index.html">Why I Can Not Live Without These 10 CLIs!</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
@@ -245,8 +246,8 @@ Do NOT try to execute the commands in this section. We’ll go through the setup
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721771712" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721771712" defer></script>
-    <script src="/js/theme.js?1721771712" defer></script>
+    <script src="/js/clipboard.min.js?1722869100" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722869100" defer></script>
+    <script src="/js/theme.js?1722869100" defer></script>
   </body>
 </html>
