@@ -6,7 +6,7 @@
     <description>Latest Posts 10 CLIs I Can Not Live Without! Today we’ll explore ten CLI tools without which my life would be meaningless. Well… Maybe not meaningless, but certainly much less productive and harder.&#xA;So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.&#xA;Full article »&#xA;Transform Your Terminal: 3 Must-Have Zsh Plugins! I use Zsh as my shell. It is the default shell in macOS and available in any other operating system.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2024 15:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2024 16:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes</title>
@@ -83,7 +83,7 @@
       <link>http://localhost:1313/terminal/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/terminal/index.html</guid>
-      <description>Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There’s no way I’ll ever go back to Bash and the only other Shell comparable to Zsh is Fish.&#xA;Fish is great, maybe even better than Zsh, but it’s not POSIX compliant meaning that some of the commands I would use in Fish might not work elsewhere.</description>
+      <description>10 CLIs I Can Not Live Without!Today we’ll explore ten CLI tools without which my life would be meaningless. Well… Maybe not meaningless, but certainly much less productive and harder.&#xA;So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.&#xA;Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system.</description>
     </item>
     <item>
       <title>About The DeveOps Toolkit</title>
