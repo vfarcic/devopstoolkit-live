@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Master Your New Laptop Setup: Tools, Configs, and Secrets!</title>
+    <link>http://localhost:1313/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.html</link>
+    <description>This is a new machine. I just got it. It has nothing on it beyond what’s available out-of-the box.&#xA;Actually, that’s not true. The only thing I did was to clone a Git repo. That’s it. That’s all I have on this machine, for now.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
