@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/thumbnail.png" style="width:50%; float:right; padding: 10px">
+<img src="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Master Your New Laptop Setup: Tools, Configs, and Secrets!](/terminal/master-your-new-laptop-setup-tools-configs-and-secrets)
 
@@ -15,7 +15,7 @@ Actually, that's not true. The only thing I did was to clone a Git repo. That's 
 
 **[Full article >>](/terminal/master-your-new-laptop-setup-tools-configs-and-secrets)**
 
---- -->
+---
 
 <img src="/terminal/why-i-can-not-live-without-these-10-clis/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
