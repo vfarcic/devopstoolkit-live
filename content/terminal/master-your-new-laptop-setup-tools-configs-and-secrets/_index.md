@@ -1,7 +1,7 @@
 
 +++
 title = 'Master Your New Laptop Setup: Tools, Configs, and Secrets!'
-date = 2024-08-12T16:00:00+00:00
+date = 2024-08-12T15:00:00+00:00
 draft = false
 +++
 
