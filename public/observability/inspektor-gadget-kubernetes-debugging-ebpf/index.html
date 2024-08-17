@@ -29,17 +29,17 @@
     <meta itemprop="image" content="http://localhost:1313/observability/inspektor-gadget-kubernetes-debugging-ebpf/thumbnail.png">
     <title>Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</title>
     <link href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.xml" rel="alternate" type="application/rss+xml" title="Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget">
-    <link href="/css/fontawesome-all.min.css?1723154619" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723154619" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723154619" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723154619" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723154619" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723154619" rel="stylesheet">
-    <link href="/css/fonts.css?1723154619" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723154619" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723154619" rel="stylesheet">
-    <link href="/css/theme-dot.css?1723154619" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1723154619" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723154619" rel="stylesheet">
-    <link href="/css/print.css?1723154619" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723154619"></script>
+    <link href="/css/fontawesome-all.min.css?1723922759" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723922759" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723922759" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723922759" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723922759" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723922759" rel="stylesheet">
+    <link href="/css/fonts.css?1723922759" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723922759" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723922759" rel="stylesheet">
+    <link href="/css/theme-dot.css?1723922759" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1723922759" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723922759" rel="stylesheet">
+    <link href="/css/print.css?1723922759" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723922759"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -151,12 +151,12 @@ tcp4       0      0  10.20.1.111.54134      mad07s09-in-f3.1.https ESTABLISHED
 <div class="highlight wrap-code"><pre tabindex="0"><code>vfarcic 54770 0.0  0.0 410755984 5360   ?? S&lt; Thu08PM 0:00.03 /Applications/...
 vfarcic  1403 0.0  0.0 443745824 1824   ?? S  15Mar24 0:01.61 /Applications...
 vfarcic 83185 0.0  0.0 410072768  912 s070 R+ 10:15PM 0:00.00 grep --color=...</code></pre></div><p>&hellip;that outputs all active processes.</p>
-<p><a href="#R-image-6414e0ebb43f8aee7150b1b996dbee84" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/prometheus.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6414e0ebb43f8aee7150b1b996dbee84"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/prometheus.png?height=15vw&classes=inline"></a>
-<a href="#R-image-096315572b429f358f50266c0da32192" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/grafana.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-096315572b429f358f50266c0da32192"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/grafana.png?height=15vw&classes=inline"></a>
-<a href="#R-image-c95d14b1905d6df39d3d02fc8c7c8a00" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/loki.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c95d14b1905d6df39d3d02fc8c7c8a00"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/loki.png?height=15vw&classes=inline"></a></p>
+<p><a href="#R-image-14262575631baff1806f69ffd4d02b95" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/prometheus.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-14262575631baff1806f69ffd4d02b95"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/prometheus.png?height=15vw&classes=inline"></a>
+<a href="#R-image-97133e1fc9a5bbf6e69468da0facafe6" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/grafana.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-97133e1fc9a5bbf6e69468da0facafe6"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/grafana.png?height=15vw&classes=inline"></a>
+<a href="#R-image-7b24a65aa96da12612faad71abfaffc7" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/loki.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b24a65aa96da12612faad71abfaffc7"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/loki.png?height=15vw&classes=inline"></a></p>
 <p>In other words, sometimes I miss the ability to inspect what&rsquo;s going on in a cluster without going into tools like Prometheus, Grafana, Loki, and others. I miss the simplicity of micro-CLI commands.</p>
 <p>Now, to be clear, I can do a lot with <code>kubectl</code> alone. I can list all the Pods or any other type of resources. I can see events, I can see logs, and many other things. However, they are at a higher level than, for example, <code>ps</code> that lists processes.</p>
 <p>That is understandable since <code>kubectl</code> knows what Kubernetes API knows, and that&rsquo;s great, but if I would like to dive deeper and see what&rsquo;s happening at lower levels, I would need to enter into one of the nodes and start digging in. That&rsquo;s a bad idea for many reasons. To begin with, there can be many nodes in a cluster and I have no intention going through each of the separately. As a matter of fact, I often do not even have SSH access to individual nodes. Why would I?</p>
@@ -226,12 +226,12 @@ Creating CustomResourceDefinition/traces.gadget.kinvolk.io...
 Waiting for gadget pod(s) to be ready...
 1/1 gadget pod(s) ready
 Retrieving Gadget Catalog...
-Inspektor Gadget successfully deployed</code></pre></div><p><a href="#R-image-8f76ff61b946bc9defdb34876a091e5e" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/argo-cd.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f76ff61b946bc9defdb34876a091e5e"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/argo-cd.png?height=10vw&classes=inline"></a>
-<a href="#R-image-f894cd6fab2bbeb0e2ad150a5cc16b9e" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/flux.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f894cd6fab2bbeb0e2ad150a5cc16b9e"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/flux.png?height=10vw&classes=inline"></a>
-<a href="#R-image-7f631e9e5ce2b8145b88663bbf76cfe5" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/artifact-hub.png?height=7vw&classes=inline" style=" height: 7vw; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f631e9e5ce2b8145b88663bbf76cfe5"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/artifact-hub.png?height=7vw&classes=inline"></a></p>
+Inspektor Gadget successfully deployed</code></pre></div><p><a href="#R-image-e4232424ad5da17938bed9bbfb26b84b" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/argo-cd.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4232424ad5da17938bed9bbfb26b84b"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/argo-cd.png?height=10vw&classes=inline"></a>
+<a href="#R-image-92151ae3d3df28029b05a19db031fea7" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/flux.png?height=10vw&classes=inline" style=" height: 10vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-92151ae3d3df28029b05a19db031fea7"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/flux.png?height=10vw&classes=inline"></a>
+<a href="#R-image-b103f7f0ac448230b779d5b65c41c652" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/artifact-hub.png?height=7vw&classes=inline" style=" height: 7vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b103f7f0ac448230b779d5b65c41c652"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/artifact-hub.png?height=7vw&classes=inline"></a></p>
 <p>It&rsquo;s nice that a tool can be deployed with a single command, when using a demo like this one. But, when it comes to a serious usage, I would expect it to be able to output manifests so that I could store them in Git and synchronize them with Argo CD, Flux, or whichever other GitOps tool you might have chosen by mistake. It could also be a Helm chart and, if you search for it the ArtifactHub, you&rsquo;ll find it. So, you might say &ldquo;Problem solved. Helm charts work with GitOps tools.&rdquo; That would be true. However, that Helm chart is not mentioned anywhere in the docs. It&rsquo;s not in the installation instructions nor anywhere else so I can only assume that chart is a result of some whichcraft, or that the community does not care about it, or that they don&rsquo;t think anyone should use it. Otherwise, it would be mentioned at least once in the docs. Right?</p>
 <p>Anyways&hellip; Let&rsquo;s move on and take a look at what we can do with the kubectl addon.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl gadget --help</span></span></code></pre></div><p>The output is as follows.</p>
@@ -514,9 +514,12 @@ kind-c…plane a-team      pinge…mj8tp pinger      X 11433   sill… 6  r/::ff
           <li data-nav-id="/cloud/index.html" class=""><a class="padding" href="/cloud/index.html">Cloud</a><ul id="R-subsections-04db32118cfbb6755505814035576930" class="morespace collapsible-menu">
           <li data-nav-id="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" class=""><a class="padding" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html">Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe</a></li></ul></li>
           <li data-nav-id="/terminal/index.html" class=""><a class="padding" href="/terminal/index.html">Terminals</a><ul id="R-subsections-487e4f01eb2fcd73ad92a1f1221e4869" class="morespace collapsible-menu">
+          <li data-nav-id="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.html" class=""><a class="padding" href="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.html">Master Your New Laptop Setup: Tools, Configs, and Secrets!</a></li>
           <li data-nav-id="/terminal/why-i-can-not-live-without-these-10-clis/index.html" class=""><a class="padding" href="/terminal/why-i-can-not-live-without-these-10-clis/index.html">10 CLIs I Can Not Live Without!</a></li>
           <li data-nav-id="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html" class=""><a class="padding" href="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html">Transform Your Terminal: 3 Must-Have Zsh Plugins!</a></li>
           <li data-nav-id="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" class=""><a class="padding" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></li></ul></li>
+          <li data-nav-id="/misc/index.html" class=""><a class="padding" href="/misc/index.html">Miscelaneous</a><ul id="R-subsections-0a1f7eaf2b0a93eaa6748b7594755ae4" class="morespace collapsible-menu">
+          <li data-nav-id="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html" class=""><a class="padding" href="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html">The Dark Side of Open Source: Are We All Just Selfish?</a></li></ul></li>
           <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
           <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
           </ul>
@@ -571,8 +574,8 @@ kind-c…plane a-team      pinge…mj8tp pinger      X 11433   sill… 6  r/::ff
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723154619" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723154619" defer></script>
-    <script src="/js/theme.js?1723154619" defer></script>
+    <script src="/js/clipboard.min.js?1723922759" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723922759" defer></script>
+    <script src="/js/theme.js?1723922759" defer></script>
   </body>
 </html>

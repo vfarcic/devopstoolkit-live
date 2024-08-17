@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <link>http://localhost:1313/index.html</link>
-    <description>Latest Posts 10 CLIs I Can Not Live Without! Today we’ll explore ten CLI tools without which my life would be meaningless. Well… Maybe not meaningless, but certainly much less productive and harder.&#xA;So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.&#xA;Full article »&#xA;Transform Your Terminal: 3 Must-Have Zsh Plugins! I use Zsh as my shell. It is the default shell in macOS and available in any other operating system.</description>
+    <description>Latest Posts Master Your New Laptop Setup: Tools, Configs, and Secrets! This is a new machine. I just got it. It has nothing on it beyond what’s available out-of-the box.&#xA;Actually, that’s not true. The only thing I did was to clone a Git repo. That’s it. That’s all I have on this machine, for now.&#xA;Full article »&#xA;10 CLIs I Can Not Live Without! Today we’ll explore ten CLI tools without which my life would be meaningless.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Aug 2024 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2024 15:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes</title>
@@ -83,7 +83,14 @@
       <link>http://localhost:1313/terminal/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/terminal/index.html</guid>
-      <description>10 CLIs I Can Not Live Without!Today we’ll explore ten CLI tools without which my life would be meaningless. Well… Maybe not meaningless, but certainly much less productive and harder.&#xA;So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.&#xA;Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system.</description>
+      <description>Master Your New Laptop Setup: Tools, Configs, and Secrets!This is a new machine. I just got it. It has nothing on it beyond what’s available out-of-the box.&#xA;Actually, that’s not true. The only thing I did was to clone a Git repo. That’s it. That’s all I have on this machine, for now.&#xA;10 CLIs I Can Not Live Without!Today we’ll explore ten CLI tools without which my life would be meaningless.</description>
+    </item>
+    <item>
+      <title>Miscelaneous</title>
+      <link>http://localhost:1313/misc/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/misc/index.html</guid>
+      <description>The Dark Side of Open Source: Are We All Just Selfish?There’s a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. “Damn MongoDB for changing their license!” “AWS is evil for taking advantage of Elastic!” “Env0 is taking advantage of HashiCorp!</description>
     </item>
     <item>
       <title>About The DeveOps Toolkit</title>

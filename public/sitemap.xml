@@ -42,13 +42,21 @@
   </url>
   <url>
     <loc>http://localhost:1313/terminal/index.html</loc>
-    <lastmod>2024-08-12T16:00:00+00:00</lastmod>
+    <lastmod>2024-08-12T15:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/misc/index.html</loc>
+    <lastmod>2023-08-19T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/about/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/sponsor/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.html</loc>
+    <lastmod>2024-08-12T15:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/terminal/why-i-can-not-live-without-these-10-clis/index.html</loc>
@@ -137,6 +145,10 @@
   <url>
     <loc>http://localhost:1313/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html</loc>
     <lastmod>2024-03-04T16:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html</loc>
+    <lastmod>2023-08-19T16:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>

@@ -5,6 +5,17 @@ title = ""
 
 # Latest Posts
 
+<!-- 
+<img src="/misc/the-dark-side-of-open-source-are-we-all-just-selfish?/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [The Dark Side of Open Source: Are We All Just Selfish?!](/misc/the-dark-side-of-open-source-are-we-all-just-selfish?)
+
+There's a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. "**Damn MongoDB for changing their license!**" "**AWS is evil for taking advantage of Elastic!**" "**Env0 is taking advantage of HashiCorp!**" "**F\*\*K HashiCorp!**" "**Long live Elastic!**"
+
+**[Full article >>](/misc/the-dark-side-of-open-source-are-we-all-just-selfish?)**
+
+---
+ -->
 <img src="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Master Your New Laptop Setup: Tools, Configs, and Secrets!](/terminal/master-your-new-laptop-setup-tools-configs-and-secrets)
@@ -95,21 +106,3 @@ Let me explain.
 ...a baby was born, and that baby was named **Earthfile**.
 
 **[Full article >>](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)**
-
----
-
-<img src="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Scaling Explained Through Kubernetes HPA, VPA, KEDA & Cluster Autoscaler](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)
-
-Scaling is probably one of the most important aspects of computing, and a common cause of bankrupcy.
-
-If our processes use more memory and CPU than what they need, they are wasting money or "stealing" those resources from others thus making them less efficient. On the other hand,if we give processes less memory and CPU than what they need, their performance will be affected negatively making user experience suck. And that's the good outcome. Much worse situation is that underpowered processes might crash with "out of memory" and other similar exceptions.
-
-Hence, the goal is to assign just the right amount of resources to processes. Not too much, not to few, but just right. We do that through scaling, and we need to answer three questions.
-
-* **What do we scale?**
-* **Where do we scale?**
-* **Who scales?**
-
-**[Full article >>](/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler)**

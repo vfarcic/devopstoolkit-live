@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.4">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="There’s a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. “Damn MongoDB for changing their license!” “AWS is evil for taking advantage of Elastic!” “Env0 is taking advantage of HashiCorp!” “F**K HashiCorp!” “Long live Elastic!”">
+    <meta name="author" content="Viktor Farcic">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/misc/the-dark-side-of-open-source-are-we-all-just-selfish/thumbnail.jpg">
+    <meta name="twitter:title" content="The Dark Side of Open Source: Are We All Just Selfish?">
+    <meta name="twitter:description" content="There’s a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. “Damn MongoDB for changing their license!” “AWS is evil for taking advantage of Elastic!” “Env0 is taking advantage of HashiCorp!” “F**K HashiCorp!” “Long live Elastic!”">
+    <meta property="og:url" content="http://localhost:1313/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html">
+    <meta property="og:title" content="The Dark Side of Open Source: Are We All Just Selfish?">
+    <meta property="og:description" content="There’s a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. “Damn MongoDB for changing their license!” “AWS is evil for taking advantage of Elastic!” “Env0 is taking advantage of HashiCorp!” “F**K HashiCorp!” “Long live Elastic!”">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/misc/the-dark-side-of-open-source-are-we-all-just-selfish/thumbnail.jpg">
+    <meta itemprop="name" content="The Dark Side of Open Source: Are We All Just Selfish?">
+    <meta itemprop="description" content="There’s a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. “Damn MongoDB for changing their license!” “AWS is evil for taking advantage of Elastic!” “Env0 is taking advantage of HashiCorp!” “F**K HashiCorp!” “Long live Elastic!”">
+    <meta itemprop="datePublished" content="2023-08-19T16:00:00+00:00">
+    <meta itemprop="dateModified" content="2023-08-19T16:00:00+00:00">
+    <meta itemprop="wordCount" content="3207">
+    <meta itemprop="image" content="http://localhost:1313/misc/the-dark-side-of-open-source-are-we-all-just-selfish/thumbnail.jpg">
+    <title>The Dark Side of Open Source: Are We All Just Selfish?</title>
+    <link href="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.xml" rel="alternate" type="application/rss+xml" title="The Dark Side of Open Source: Are We All Just Selfish?">
+    <link href="/css/fontawesome-all.min.css?1723922777" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723922777" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723922777" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723922777" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723922777" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723922777" rel="stylesheet">
+    <link href="/css/fonts.css?1723922777" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723922777" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723922777" rel="stylesheet">
+    <link href="/css/theme-dot.css?1723922777" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1723922777" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723922777" rel="stylesheet">
+    <link href="/css/print.css?1723922777" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723922777"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'dot' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NXCC9XM9Y"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2NXCC9XM9Y');
+        }
+      </script>
+    
+  
+
+
+  </head>
+  <body class="mobile-support html" data-url="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/misc/index.html"><span itemprop="name">Miscelaneous</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">The Dark Side of Open Source: Are We All Just Selfish?</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/misc/index.html" title="Miscelaneous (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/about/index.html" title="About The DeveOps Toolkit (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="the-dark-side-of-open-source-are-we-all-just-selfish">The Dark Side of Open Source: Are We All Just Selfish?</h1>
+
+<p>There&rsquo;s a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. &ldquo;<strong>Damn MongoDB for changing their license!</strong>&rdquo; &ldquo;<strong>AWS is evil for taking advantage of Elastic!</strong>&rdquo; &ldquo;<strong>Env0 is taking advantage of HashiCorp!</strong>&rdquo; &ldquo;<strong>F**K HashiCorp!</strong>&rdquo; &ldquo;<strong>Long live Elastic!</strong>&rdquo;</p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4l_kK90khNA?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>Just as &ldquo;normal&rdquo; people are often split between their aligance to a political party and will be behind it no matter what that party does, software engineers tend to be split between <strong>open source purists</strong> and whatever the other side is called.</p>
+<p>The truth is actually fairly simple. Most software engineers <strong>take advantage of open source one way or another</strong> and they do that for very selfish reasons. You, yes you are probably taking advantage of open source and maintainers of open source projects. It&rsquo;s not that only companies are &ldquo;selfish&rdquo;, most of us, individuals are selfish as well.</p>
+<p>The reality is that most of us are using or working on open source projects for very egoistic reasons. We are all in it for <strong>money</strong>, and that&rsquo;s okay, most of the time.</p>
+<p>Let me explain.</p>
+<p>Many think that open source is all about anyone being able to use projects to their benefit <strong>for free</strong> and about people freely contributing to projects in their <strong>free time</strong>. While that might be the case for some projects, more often than not, especially when bigger projects are concerned, that is not the case.</p>
+<p>Open source is, first and foremost, a <strong>go-to market strategy</strong>. A company invests cash, often from investors, to start an open source project. That investment is spent on paying full-time maintainers to work on the project because, surprise surprise, people cannot or do not want to work on a project full time without being paid. Full-time dedication requires influx of money and that influx is an investment. Someone invests in a project and that someone wants something in return.</p>
+<p>By now, you are probably screaming at your monitor thinking that you are screaming at me. You are probably saying that there is an open source project that is not motivated by money, that there is a project where everyone working on it is doing it in their free time, and where there are no expectations other than &ldquo;We are nice people, we are doing this out of goodness of our hearts, and <strong>we do not expect anything in return</strong>.&rdquo;</p>
+<p>There are such projects, but they are often small and they can continue thriving without dedicated maintainers, without investment, and without asking for anything in return. Those are exceptions. Most open source projects are very expensive to maintain and require dedicated engineers. You know&hellip; Those that need to earn their living as well.</p>
+<p>Take Kubernetes for example. On the first look, it might seem like everyone working on it is a volunteer, and that is indeed the case. As far as I know, no one is forced to contribute to Kubernetes. What matters, however, is that most of the people working on it are being <strong>paid to work on it</strong>. Some are literally being paid to work on Kubernetes, while others are having a permission from their company to work on Kubernetes during their office hours. That company is investing money in open source by paying people to work on something other than whatever that company needs them to work at.</p>
+<p>Now, I am not saying that no one contributes to Kubernetes without any compensation but, rather, that many do and that without those people the project would not exist in the form it exists today. It would not have the dedication needed to be what it is today.</p>
+<p>In any case&hellip; What matters is that Google, Microsoft, AWS and a bunch of other companies, big and small, are paying people to work on Kubernetes. They have an interest to do that, and that&rsquo;s okay. There is nothing wrong having an interest to invest time and money into something. As long that that interest is mutual, as is, most of the time, the case with Kubernetes, we have people with similar interests willing to work together to accomplish something that is <strong>benefitial to everyone</strong>. Everyone in need of Kubernetes can use Kubernetes for free. The same goes for Linux and endless other projects.</p>
+<p>Kubernetes is, however, an exception, just as Linux is an exception. Both are so big that <strong>many companies have common interest</strong> to contribute to it. The important note here is that I said many, NOT one company.</p>
+<p>Those interests can have many different forms. One company&rsquo;s interest could be sale of additional features on top of a project. That would be, in case of Linux, RedHat, SUSE, Canonical, and many others. In some other cases, that could be consulting or support. There is no one better to help you with implementation of a project but people who work on that project every single day. It could also be marketing, employee retention, or many other reasons. The important thing to note is that most of the people and companies that contribute to open source projects have interests to do so, and that by itself is not necessarily bad.</p>
+<p>However, everything I explained so far is related to what&rsquo;s happening with projects once they are already out there and for this story to make sense, we need to go back and talk about the beginnings.</p>
+<p><strong>Why start an open source project?</strong></p>
+<p>Now, to be clear, from the start, I&rsquo;m excluding from this story small projects like, for example, NodeJS libraries. I&rsquo;m talking about mid to large size projects that require investments to thrive.</p>
+<p>Why do companies start such projects in the first place? Why do they invest into something only to give it away for free?</p>
+<p>There are quite a few reasons why someone starts an open source project. The most common one is <strong>go-to market</strong> strategy. Today, it is very difficult for a company to get the adoption and market penetration with closed-source software. It&rsquo;s not impossible though. It&rsquo;s just hard, very hard, and it depends on the type of the problem a project tries to solve. Still, in order for a company to sell software, it needs adoption of that software and to get adoption, it often needs to be open source.</p>
+<p>Here&rsquo;s a question. <strong>Do you think that Terraform would be as popular as it is without it being open source?</strong> <strong>Would Jenkins, Elastic Search, MongoDB, or PostgreSQL be as widely used if they did not start as open source?</strong> <strong>Would most of the servers run Linux if Linus Torwalds did not choose to make it open source from the very beginning?</strong> <strong>Would you use Kubernetes if it was yet another service limited only to Google Cloud?</strong></p>
+<p>The answer to all those questions is &ldquo;<strong>most likely not</strong>&rdquo;. Without giving software for free as open source, most companies would not stand a chance and almost everything would be in the hands of massively big companies like Google, Amazon, and Microsoft. With a small number of exceptions, companies are <strong>forced</strong> to start as open source. Today, those exceptions are mostly limited to SaaS-only projects.</p>
+<p>All in all, the most common reason for the inception of an open source project is the go-to market strategy. If a company is successful, people will adopt the project and, at some later stage, that company will have the opportunity to sell services for that project, or to sell additional, often enterprise, features, or to offer it as a managed service, or something else. Today, adoption is often a prerequisite for sales. Adoption does not guarantee sales, but without the adoption it is close to impossible to sell anything. Again, that&rsquo;s not always the case. There are always exceptions, but I&rsquo;m ignoring them, for now.</p>
+<p>We have plenty of examples of companies that became relatively successful with that strategy. HashiCorp grew to a decent size company thanks to open source, thanks to very wide adoption of their projects like Terraform, Vault, and a few others. The same can be said for Elastic. It is a mid-size company thanks to open source ElasticSearch. Then there is MongoDB, Redis, and many others. The number of those who failed is infinitely bigger, yet many of those who succeeded can thank open source for that.</p>
+<p>Hence, we have open source as a go-to market strategy where companies invest heavily in something that can be used for free in hope of gaining return on that investment later through enterprise sales, consulting, support, or whichever other method they can think of.</p>
+<p>There&rsquo;s nothing inherently wrong with that. We all benefit. Companies ultimately get a return of their investment while everyone else can choose whether to use open source for free or pay for additional features or services. That&rsquo;s the cost that is often paid by big enterprises rather than individual users or smaller companies. <strong>Everyone uses open source but bigger companies pay for it</strong>, one way or another.</p>
+<p>That&rsquo;s, at least, the idea. However, what happens if a company behind an open source project starts being successful and does not need open source any more? What happens when other companies try to monetize on that same project? Well&hellip; That&rsquo;s when we see changes to licenses like those we saw with projects created by Elastic, MongoDB, HashiCorp, and others.</p>
+<p>The reasons to change the license vary from one project to another but, more often than not, they can be described as either &ldquo;<strong>we got the adoption, we don&rsquo;t need open source any more</strong>&rdquo; or &ldquo;<strong>a much bigger company is threatening us</strong>&rdquo;.</p>
+<p>Now, I cannot say for certain which project that changed the license falls into which category and I will not try to speculate by naming names. What I can say is that AWS and other massive companies tend to threaten those who based their business on open source. If AWS, Google, or Azure offer that project as a service, that will inevitably reduce the income or the potential growth of a company behind that project. So, the company that started an open source project is under threat and it is only natural that such a company will change the license so that AWS or any other bigger company cannot monetize on that project and, by doing that, affect the growth of the company behind the project.</p>
+<p>However, that is problematic on quite a few levels. To begin with, AWS or whomever starts to offer that project as a service likely did not contribute as much to the project as the company behind it. Still, that is the nature of open source. I might not contribute to Linux but some other project yet I expect to be able to use Linux as the operating system where my project is running and, by doing that, gain some benefits. No business can contribute to all the projects they use.</p>
+<p>A more important problem is that changing the license so that &ldquo;bigger guys&rdquo; cannot use it also affects smaller companies that might have contributed to it or not, but want to offer some services that use that project directly or indirectly. Depending on the new license, that might affect contributors from other companies or private individuals that invested in that project with their own contributions.</p>
+<p>What I&rsquo;m trying to say is that it is very hard, if not impossible to change the license so that only companies bigger than yours cannot use it any more, so both big and small players are affected.</p>
+<p>Still, you can say &ldquo;<strong>AWS is evil, that project should change the license</strong>&rdquo;, but there is still the question of forks. Anyone can fork any open source project so AWS or anyone else is free to do that as well, and that&rsquo;s exactly what happened with, let&rsquo;s say ElasticSearch, Terraform, and quite a few others. As a result, AWS or whomever was supposed to be prevented from using the project continues using it and now we have the effort split into two or more forks. The only outcome is the waste of time that results in slower pace of the advancement of the project. That is, as it often happens, until the original or the fork or both eventually die.</p>
+<p>Hence, one might come to a logical conclusion that starting an open source project was a bad idea in the first place, but that would also be wrong. As I already mentioned, without open source there would be no adoption and without adoption there would be no business that keeps the project going.</p>
+<p>So, without open source there would be no Elastic, no HashiCorp, and no MongoDB, yet now that those companies grew to a certain size due the success of those projects, they are threatened by others who also want to monetize on it. We want all the good things that come with opensource to help us grow our business but we do not want anyone else making business with it. That&rsquo;s a bit hypocritical, isn&rsquo;t it?</p>
+<p>That leads me to the second big reason companies change their license. Sometimes, they are not threatened by bigger companies but simply they reached the needed adoption and now they do not need it to be open source any more. It helped them create the business and now that everyone needs it, that business can grow faster if the license is changed so that competition is squashed, so that companies need to pay more for it, so that&hellip; You get the point. It is <strong>we reached the adoption, we don&rsquo;t need it to be open source any more</strong> type of the conclusion. At least one company admitted that in public and I&rsquo;ll leave it up to you to guess which one it is.</p>
+<p>In reality, the problem is very different than what is presented. The real problem is that <strong>no open source project should be owned by a single company</strong>. If ElasticSearch, MongoDB, or Terraform were in a foundation, the situation would be different.</p>
+<p>To begin with, projects in foundations tend to have more than one company contributing to them, especially if those projects get wider adoption. The reason is relatively simple. It is very risky for someone to contribute to an open source project owned by a single company since it would be at mercy of that company. If, for example, I make a pull request with a feature I need but that pull request goes against the readmap of the company behind that project, that PR is likely to be rejected. Even if it gets accepted, I am investing time and money into a project owned by someone else. The fact that a project is open source does not mean that no one owns it. Hence, it is risky to invest in projects owned by some other company so such projects often continue being maintained only by companies that own them. That&rsquo;s one of the reasons why such companies feel that others are taking advantage of them. Others do not contribute yet there is a possibility that they will create a business based on it. It&rsquo;s a difficult situation with companies or even individuals being discouraged to contribute yet, due to the nature of open source, they can become competition.</p>
+<p>Projects in foundations operate in a very different way. They are owned by a foundation so no single company can unilaterally decide what to do with it. Now, to be clear, a company might convince the foundation to do something that is not in the interest of the project or its users or the competitors. Still, it cannot be a unilateral decisions. You might have started a project but the moment it is moved to a foundation you do NOT own it. As a result, others are more incentivized to find interest in such projects and invest in them so we get <strong>more diverse contributions</strong>, especially from dedicated maintainers. That&rsquo;s, for example, what we can observe with Linux or Kubernetes. Those are massive projects with a wide range of companies that have vested interests in them and those interests are, in big part, created by the relative neutrality of the project. Some of those companies might have bigger influence than others, mostly due to the amount of investments they make, yet not a single one owns it.</p>
+<p><a href="#R-image-0823edf9b9df1e504093070339d7f2b4" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/cncf.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0823edf9b9df1e504093070339d7f2b4"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/cncf.png?height=15vw&classes=inline"></a>
+<a href="#R-image-b5ca5137d96a3731ef6355b625bca983" class="lightbox-link"><img class="noborder inline lazy lightbox noshadow figure-image" loading="lazy" src="/logo/apache-software-foundation.png?height=15vw&classes=inline" style=" height: 15vw; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b5ca5137d96a3731ef6355b625bca983"><img class="noborder inline lazy lightbox noshadow lightbox-image" loading="lazy" src="/logo/apache-software-foundation.png?height=15vw&classes=inline"></a></p>
+<p>Due to recent changes to some projects, I hope that people will start taking a closer look at the ownership. I hope that people will understand that projects that belong to foundations like CNCF or Apache are more reliable and less prone to upheavals than those owned by a single company.</p>
+<p>Now, let&rsquo;s get back to you. I&rsquo;m not letting you off the hook either.</p>
+<p>You might be benefiting from open source without giving anything back, without contributing, and without paying for it. You might be earning money while using open source for free.</p>
+<p>While that behavior might raise some criticism, I&rsquo;ll say &ldquo;<strong>that&rsquo;s okay</strong>&rdquo;. That&rsquo;s what open source is for. Anyone can benefit from it, no matter whether we give something back or not. However, if we are not actively involved in a project, we don&rsquo;t have a moral right to demand anything from it. If a serious vulnerability is discovered in a project you use for free, you do not have a moral right to demand it to be fixed. Bear in mind that I said &ldquo;moral&rdquo;. You can demand a fix, but no one is forced to do it for you. You can always create a pull request yourself and convert yourself from a user or a company that only benefits from it to someone who also gives back. You can <strong>fix your problems yourself</strong> and you can add features that are missing yourself. Alternatively, you can pay someone to do it for you. That&rsquo;s how many projects are financed. Or&hellip; you can just wait and pray to your deity of choice that someone else will do it.</p>
+<p>The problem is that companies use open source to power solutions that they sell, yet they expect certain guarantees from those projects. That&rsquo;s greedy. You are free to use Linux on your servers and you are free to setup Kubernetes on those servers and you can use free libraries in your code. That&rsquo;s fine. Just don&rsquo;t complain when your needs are not fully met with those projects yet you do not want to contribute back. Open source means that you are <strong>free to use anything</strong>, yet you are <strong>not entitled to demand anything</strong>.</p>
+<p>If you want to do the right thing both for yourself and for your business, <strong>choose projects in foundations</strong> rather than those owned by a single company. Get involved in projects or try to finance them by purchasing enterprise versions and support, or by giving donations. Open source is not like big bang. Open source is not created out of nothing. Open source projects are investments that need to see returns in some way or another. If, for no other reason, then because dedicated maintainers need to eat as well. If you earn from using something that is free, it is only natural that you give something back. That&rsquo;s symbiosis that allows both you and those projects to thrive.</p>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="/dot-narrow-yellow-bg.png"/></a>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/index.html" class=""><a class="padding" href="/kubernetes/index.html">Kubernetes</a><ul id="R-subsections-8254d660fdb6facefc4c74985669b8f4" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html" class=""><a class="padding" href="/kubernetes/scaling-explained-through-kubernetes-hpa-vpa-keda--cluster-autoscaler/index.html">Scaling Explained Through Kubernetes HPA, VPA, KEDA &amp; Cluster Autoscaler</a></li>
+          <li data-nav-id="/kubernetes/services-ingress-cluster-api/index.html" class=""><a class="padding" href="/kubernetes/services-ingress-cluster-api/index.html">Mastering Kubernetes: Dive into Service and Network APIs</a></li>
+          <li data-nav-id="/kubernetes/clusterpedia/index.html" class=""><a class="padding" href="/kubernetes/clusterpedia/index.html">Single Pane of Glass for Kubernetes Clusters with Clusterpedia</a></li>
+          <li data-nav-id="/kubernetes/workloads/index.html" class=""><a class="padding" href="/kubernetes/workloads/index.html">Mastering Kubernetes: Dive into Workloads APIs</a></li>
+          <li data-nav-id="/kubernetes/chainsaw/index.html" class=""><a class="padding" href="/kubernetes/chainsaw/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li></ul></li>
+          <li data-nav-id="/internal-developer-platforms/index.html" class=""><a class="padding" href="/internal-developer-platforms/index.html">Internal Developer Platforms</a><ul id="R-subsections-cf60b5d17e7b06cb9919bd0e19164658" class="morespace collapsible-menu">
+          <li data-nav-id="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html" class=""><a class="padding" href="/internal-developer-platforms/mastering-developer-portals-discover--integrate-api-schemas-with-port/index.html">Mastering Developer Portals: Discover &amp; Integrate API Schemas with Port</a></li>
+          <li data-nav-id="/internal-developer-platforms/platform-engineering-menu/index.html" class=""><a class="padding" href="/internal-developer-platforms/platform-engineering-menu/index.html">How Platform Engineering Compares to Running a Restaurant</a></li></ul></li>
+          <li data-nav-id="/app-management/index.html" class=""><a class="padding" href="/app-management/index.html">Application Management</a><ul id="R-subsections-acc2f76ee49e6b63b99cd477d8cb8b6d" class="morespace collapsible-menu">
+          <li data-nav-id="/app-management/kcl/index.html" class=""><a class="padding" href="/app-management/kcl/index.html">Exploring KCL: Configuration and Data Structure Language; CUE and Pkl Replacement?</a></li>
+          <li data-nav-id="/app-management/pkl/index.html" class=""><a class="padding" href="/app-management/pkl/index.html">Is Pkl the Ultimate Data Format? Unveiling the Challenger to YAML, JSON, and CUE</a></li></ul></li>
+          <li data-nav-id="/development-environments/index.html" class=""><a class="padding" href="/development-environments/index.html">Development Environments</a><ul id="R-subsections-b40bb3dd3715504862627d465ed722c6" class="morespace collapsible-menu">
+          <li data-nav-id="/development-environments/nix/index.html" class=""><a class="padding" href="/development-environments/nix/index.html">Nix for Everyone: Unleash Devbox for Simplified Development</a></li></ul></li>
+          <li data-nav-id="/security/index.html" class=""><a class="padding" href="/security/index.html">Security</a><ul id="R-subsections-c5de21032b29c68377970042d4aea500" class="morespace collapsible-menu">
+          <li data-nav-id="/security/eso-crossplane/index.html" class=""><a class="padding" href="/security/eso-crossplane/index.html">How to Propagate Secrets Everywhere with External Secrets Operator (ESO) and Crossplane</a></li></ul></li>
+          <li data-nav-id="/ci-cd/index.html" class=""><a class="padding" href="/ci-cd/index.html">CI/CD</a><ul id="R-subsections-40535477fc00cad44ebee71dd34d26b1" class="morespace collapsible-menu">
+          <li data-nav-id="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html" class=""><a class="padding" href="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/index.html">GitOps Broke CI/CD! Here is How to Fix It With Argo Events</a></li>
+          <li data-nav-id="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html" class=""><a class="padding" href="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/index.html">If Dockerfile and Makefile Had a Baby... Earthly and Earthfile</a></li>
+          <li data-nav-id="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html" class=""><a class="padding" href="/ci-cd/from-makefile-to-justfile-or-taskfile-recipe-runner-replacement/index.html">Mastering Kubernetes Testing Kyverno Chainsaw!</a></li>
+          <li data-nav-id="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html" class=""><a class="padding" href="/ci-cd/say-goodbye-to-makefile-use-taskfile-to-manage-tasks-in-ci-cd-pipelines-and-locally/index.html">Say Goodbye to Makefile - Use Taskfile to Manage Tasks in CI/CD Pipelines and Locally</a></li></ul></li>
+          <li data-nav-id="/infrastructure-as-code/index.html" class=""><a class="padding" href="/infrastructure-as-code/index.html">Infrastructure-as-Code (IaC)</a><ul id="R-subsections-63fd9b6112be1a402112d4e0bc5eabbc" class="morespace collapsible-menu">
+          <li data-nav-id="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html" class=""><a class="padding" href="/infrastructure-as-code/ansible-vs-terraform-vs-crossplane/index.html">Terraform vs. Crossplane vs. Ansible - Rivals or Allies?</a></li></ul></li>
+          <li data-nav-id="/observability/index.html" class=""><a class="padding" href="/observability/index.html">Observability</a><ul id="R-subsections-c8a379ef3c08db46130a08907982a264" class="morespace collapsible-menu">
+          <li data-nav-id="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html" class=""><a class="padding" href="/observability/inspektor-gadget-kubernetes-debugging-ebpf/index.html">Mastering Kubernetes Debugging: Leveraging eBPF with Inspektor Gadget</a></li></ul></li>
+          <li data-nav-id="/wasm/index.html" class=""><a class="padding" href="/wasm/index.html">WebAssembly (WASM)</a><ul id="R-subsections-b0ea8ce9b33b696880b6f35f6467d614" class="morespace collapsible-menu">
+          <li data-nav-id="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html" class=""><a class="padding" href="/wasm/unleashing-webassembly-in-kubernetes-with-kwasm/index.html">Unleashing WebAssembly in Kubernetes with Kwasm</a></li></ul></li>
+          <li data-nav-id="/cloud/index.html" class=""><a class="padding" href="/cloud/index.html">Cloud</a><ul id="R-subsections-04db32118cfbb6755505814035576930" class="morespace collapsible-menu">
+          <li data-nav-id="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html" class=""><a class="padding" href="/cloud/single-pane-of-glass-for-everything-aws-azure-gcp-kubernetes-with-steampipe/index.html">Single Pane of Glass for Everything (AWS, Azure, GCP, Kubernetes, ...) with Steampipe</a></li></ul></li>
+          <li data-nav-id="/terminal/index.html" class=""><a class="padding" href="/terminal/index.html">Terminals</a><ul id="R-subsections-487e4f01eb2fcd73ad92a1f1221e4869" class="morespace collapsible-menu">
+          <li data-nav-id="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.html" class=""><a class="padding" href="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.html">Master Your New Laptop Setup: Tools, Configs, and Secrets!</a></li>
+          <li data-nav-id="/terminal/why-i-can-not-live-without-these-10-clis/index.html" class=""><a class="padding" href="/terminal/why-i-can-not-live-without-these-10-clis/index.html">10 CLIs I Can Not Live Without!</a></li>
+          <li data-nav-id="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html" class=""><a class="padding" href="/terminal/transform-your-terminal-3-must-have-zsh-plugins/index.html">Transform Your Terminal: 3 Must-Have Zsh Plugins!</a></li>
+          <li data-nav-id="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html" class=""><a class="padding" href="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/index.html">From Boring to Productive: Customize Your Shell Prompt with Starship</a></li></ul></li>
+          <li data-nav-id="/misc/index.html" class="parent "><a class="padding" href="/misc/index.html">Miscelaneous</a><ul id="R-subsections-0a1f7eaf2b0a93eaa6748b7594755ae4" class="morespace collapsible-menu">
+          <li data-nav-id="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html" class="active"><a class="padding" href="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html">The Dark Side of Open Source: Are We All Just Selfish?</a></li></ul></li>
+          <li data-nav-id="/about/index.html" class=""><a class="padding" href="/about/index.html">About The DeveOps Toolkit</a></li>
+          <li data-nav-id="/sponsor/index.html" class=""><a class="padding" href="/sponsor/index.html">Sponsor DevOps Toolkit</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-dot" value="dot" selected>Dot</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1723922777" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723922777" defer></script>
+    <script src="/js/theme.js?1723922777" defer></script>
+  </body>
+</html>

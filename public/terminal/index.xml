@@ -3,11 +3,18 @@
   <channel>
     <title>Terminals</title>
     <link>http://localhost:1313/terminal/index.html</link>
-    <description>10 CLIs I Can Not Live Without!Today we’ll explore ten CLI tools without which my life would be meaningless. Well… Maybe not meaningless, but certainly much less productive and harder.&#xA;So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.&#xA;Transform Your Terminal: 3 Must-Have Zsh Plugins!I use Zsh as my shell. It is the default shell in macOS and available in any other operating system.</description>
+    <description>Master Your New Laptop Setup: Tools, Configs, and Secrets!This is a new machine. I just got it. It has nothing on it beyond what’s available out-of-the box.&#xA;Actually, that’s not true. The only thing I did was to clone a Git repo. That’s it. That’s all I have on this machine, for now.&#xA;10 CLIs I Can Not Live Without!Today we’ll explore ten CLI tools without which my life would be meaningless.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2024 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2024 15:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Master Your New Laptop Setup: Tools, Configs, and Secrets!</title>
+      <link>http://localhost:1313/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.html</link>
+      <pubDate>Mon, 12 Aug 2024 15:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/index.html</guid>
+      <description>This is a new machine. I just got it. It has nothing on it beyond what’s available out-of-the box.&#xA;Actually, that’s not true. The only thing I did was to clone a Git repo. That’s it. That’s all I have on this machine, for now.</description>
+    </item>
     <item>
       <title>10 CLIs I Can Not Live Without!</title>
       <link>http://localhost:1313/terminal/why-i-can-not-live-without-these-10-clis/index.html</link>

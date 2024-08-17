@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Dark Side of Open Source: Are We All Just Selfish?</title>
+    <link>http://localhost:1313/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.html</link>
+    <description>There’s a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. “Damn MongoDB for changing their license!” “AWS is evil for taking advantage of Elastic!” “Env0 is taking advantage of HashiCorp!” “F**K HashiCorp!” “Long live Elastic!”</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/misc/the-dark-side-of-open-source-are-we-all-just-selfish/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
