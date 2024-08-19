@@ -6,13 +6,13 @@ title = ""
 # Latest Posts
 
 
-<img src="/misc/the-dark-side-of-open-source-are-we-all-just-selfish?/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
-## [The Dark Side of Open Source: Are We All Just Selfish?!](/misc/the-dark-side-of-open-source-are-we-all-just-selfish?)
+## [The Dark Side of Open Source: Are We All Just Selfish?!](/misc/the-dark-side-of-open-source-are-we-all-just-selfish)
 
 There's a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. "**Damn MongoDB for changing their license!**" "**AWS is evil for taking advantage of Elastic!**" "**Env0 is taking advantage of HashiCorp!**" "**F\*\*K HashiCorp!**" "**Long live Elastic!**"
 
-**[Full article >>](/misc/the-dark-side-of-open-source-are-we-all-just-selfish?)**
+**[Full article >>](/misc/the-dark-side-of-open-source-are-we-all-just-selfish)**
 
 ---
 
