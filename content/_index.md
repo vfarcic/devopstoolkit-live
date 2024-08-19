@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- 
+
 <img src="/misc/the-dark-side-of-open-source-are-we-all-just-selfish?/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [The Dark Side of Open Source: Are We All Just Selfish?!](/misc/the-dark-side-of-open-source-are-we-all-just-selfish?)
@@ -15,7 +15,7 @@ There's a lot of talk about open source and about some companies, big and small,
 **[Full article >>](/misc/the-dark-side-of-open-source-are-we-all-just-selfish?)**
 
 ---
- -->
+
 <img src="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/thumbnail.png" style="width:50%; float:right; padding: 10px">
 
 ## [Master Your New Laptop Setup: Tools, Configs, and Secrets!](/terminal/master-your-new-laptop-setup-tools-configs-and-secrets)
@@ -92,17 +92,3 @@ However, let's see what happens if...
 Let me explain.
 
 **[Full article >>](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)**
-
----
-
-<img src="/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [If Dockerfile and Makefile Had a Baby... Earthly and Earthfile](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)
-
-**Makefile** walks into a bar and notices **Dockerfile** sitting alone. She joins him, they talk, they flirt...
-
-> The rest of that story has been censored. You'll have to fill in the gaps using your imagination.
-
-...a baby was born, and that baby was named **Earthfile**.
-
-**[Full article >>](/ci-cd/if-dockerfile-and-makefile-had-a-baby-earthly-and-earthfile)**
