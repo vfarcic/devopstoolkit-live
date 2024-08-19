@@ -1,7 +1,7 @@
 
 +++
 title = 'The Dark Side of Open Source: Are We All Just Selfish?'
-date = 2024-08-19T16:00:00+00:00
+date = 2024-08-18T16:00:00+00:00
 draft = false
 +++
 
