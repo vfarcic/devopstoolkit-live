@@ -5,10 +5,19 @@ title = ""
 
 # Latest Posts
 
+<img src="/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Automate Everything: How One Manifest Powers Your Entire DevOps Pipeline](/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline)
+
+Today I want to get back to the first steps when developer platforms are concerned. I want to enable developers to start a new project.
+
+**[Full article >>](/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline)**
+
+---
 
 <img src="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
-## [The Dark Side of Open Source: Are We All Just Selfish?!](/misc/the-dark-side-of-open-source-are-we-all-just-selfish)
+## [The Dark Side of Open Source: Are We All Just Selfish?](/misc/the-dark-side-of-open-source-are-we-all-just-selfish)
 
 There's a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. "**Damn MongoDB for changing their license!**" "**AWS is evil for taking advantage of Elastic!**" "**Env0 is taking advantage of HashiCorp!**" "**F\*\*K HashiCorp!**" "**Long live Elastic!**"
 
@@ -80,15 +89,3 @@ That means that, most of the time, the only information shown in my prompt is th
 However, let's see what happens if...
 
 **[Full article >>](/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship)**
-
----
-
-<img src="/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
-
-## [GitOps Broke CI/CD! Here is How to Fix It With Argo Events](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)
-
-**GitOps is amazing**, especially for those using Kubernetes. Yet, GitOps poses significant problems when it comes to execution of tasks that should be performed after deployments. For example, we cannot run functional tests through workflows or pipelines like GitHub Actions or Jenkins. **GitOps broke CI/CD processes**, and we need to fix that.
-
-Let me explain.
-
-**[Full article >>](/ci-cd/gitops-broke-ci-cd-here-is-how-to-fix-it-with-argo-events)**
