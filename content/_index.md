@@ -5,6 +5,28 @@ title = ""
 
 # Latest Posts
 
+<img src="/terminal/master-terminal-multiplexing-with-zellij-in-minutes/thumbnail-02.png" style="width:50%; float:right; padding: 10px">
+
+## [Master Terminal Multiplexing with Zellij in Minutes!](/terminal/master-terminal-multiplexing-with-zellij-in-minutes)
+
+Let me show you something exciting, something that makes me much more productive.
+
+I am going to execute command `zellij`, specify a name of the session (`crossplane-kubernetes`), and a layout (`test-layout.kdl`), and...
+
+```sh
+zellij --session crossplane-kubernetes --layout test-layout.kdl
+```
+
+BOOM!
+
+![](terminal/master-terminal-multiplexing-with-zellij-in-minutes/zellij-preview.png)
+
+There's everything I need, nicely split into tabs and panes.
+
+**[Full article >>](/terminal/master-terminal-multiplexing-with-zellij-in-minutes)**
+
+---
+
 <img src="/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Automate Everything: How One Manifest Powers Your Entire DevOps Pipeline](/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline)
@@ -64,28 +86,3 @@ Specifically, there are **three must-have plugins**. With those we'll explore to
 Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.
 
 **[Full article >>](/terminal/transform-your-terminal-3-must-have-zsh-plugins)**
-
----
-
-<img src="/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
-
-## [From Boring to Productive: Customize Your Shell Prompt with Starship](/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship)
-
-What I'm about to say might sound silly, but I'm going to say it anyway.
-
-One of the easiest ways to improve productivity is by having a **good Shell prompt**.
-
-I, for example, tend to have a minimal prompt that shows only the pending actions I need to perform.
-
-> Do NOT try to execute the commands in this section. We'll go through the setup and details in the next sections. This is only the preview of what's comming.
-
-```
-dotfiles-demo 
-➜ 
-```
-
-That means that, most of the time, the only information shown in my prompt is the current directory which, in this case, is `dotfiles-demo`. It is a boring prompt, by design.
-
-However, let's see what happens if...
-
-**[Full article >>](/terminal/from-boring-to-productive-customize-your-shell-prompt-with-starship)**
