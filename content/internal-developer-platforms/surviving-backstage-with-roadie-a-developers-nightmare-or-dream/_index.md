@@ -1,7 +1,7 @@
 
 +++
 title = 'Surviving Backstage with Roadie: A Developer Nightmare or Dream?'
-date = 2024-09-09T16:00:00+00:00
+date = 2024-09-09T15:00:00+00:00
 draft = false
 +++
 
