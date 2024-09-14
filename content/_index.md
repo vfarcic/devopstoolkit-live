@@ -5,6 +5,43 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/containers/stop-losing-requests-learn-graceful-shutdown-techniques/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Stop Losing Requests! Learn Graceful Shutdown Techniques](/containers/stop-losing-requests-learn-graceful-shutdown-techniques)
+
+Look at this.
+
+I will send a request to the application,...
+
+```sh
+curl "http://silly-demo.127.0.0.1.nip.io/fibonacci?number=50"
+```
+
+...and simulate failure or upgrade or any similar action by deleting the Pod where the application is running.
+
+```sh
+kubectl --namespace a-team delete pod \
+    --selector app.kubernetes.io/name=silly-demo
+```
+
+The output of the `curl` command is as follows.
+
+```
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+```
+
+Since we initiated the delete process before the server returned a response we got `502 Bad Gateway` message. The application was deleted before it could respond and I, the user of that application, failed to get what I was looking for. That's horrible experience that could have been improved by enabling the application to shut down gracefully.
+
+**[Full article >>](/containers/stop-losing-requests-learn-graceful-shutdown-techniques)**
+
+--- -->
+
 <img src="/internal-developer-platforms/surviving-backstage-with-roadie-a-developers-nightmare-or-dream/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Surviving Backstage with Roadie: A Developer's Nightmare or Dream?](/internal-developer-platforms/surviving-backstage-with-roadie-a-developers-nightmare-or-dream)
@@ -82,21 +119,3 @@ Today we'll explore **ten CLI tools** without which my life would be meaningless
 So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.
 
 **[Full article >>](/terminal/why-i-can-not-live-without-these-10-clis)**
-
----
-
-<img src="/terminal/transform-your-terminal-3-must-have-zsh-plugins/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Transform Your Terminal: 3 Must-Have Zsh Plugins!](/terminal/transform-your-terminal-3-must-have-zsh-plugins)
-
-I use Zsh as my shell. It is the default shell in macOS and available in any other operating system. There's **no way I'll ever go back to Bash** and the only other Shell comparable to Zsh is Fish.
-
-Fish is great, maybe even better than Zsh, but it's **not POSIX compliant** meaning that some of the commands I would use in Fish might not work elsewhere. Zsh, on the other hand, is POSIX compliant meaning that whatever I do in it would work in any other Shell, except Fish. Compatibility wins.
-
-All in all, Zsh is great and I love it. However, Zsh alone is... well, it's **just a shell**. We need to extend it to make it truly great.
-
-Specifically, there are **three must-have plugins**. With those we'll explore today, Zsh gets transformed from "yet another shell" to "I can't live without it".
-
-Here it goes. Here are the three must-have Zsh plugins that will transform the way you work.
-
-**[Full article >>](/terminal/transform-your-terminal-3-must-have-zsh-plugins)**
