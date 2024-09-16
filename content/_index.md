@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/containers/stop-losing-requests-learn-graceful-shutdown-techniques/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/containers/stop-losing-requests-learn-graceful-shutdown-techniques/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Stop Losing Requests! Learn Graceful Shutdown Techniques](/containers/stop-losing-requests-learn-graceful-shutdown-techniques)
 
@@ -40,7 +40,7 @@ Since we initiated the delete process before the server returned a response we g
 
 **[Full article >>](/containers/stop-losing-requests-learn-graceful-shutdown-techniques)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/surviving-backstage-with-roadie-a-developers-nightmare-or-dream/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -107,15 +107,3 @@ This is a new machine. I just got it. It has nothing on it beyond what's availab
 Actually, that's not true. The only thing I did was to clone a Git repo. That's it. That's all I have on this machine, for now.
 
 **[Full article >>](/terminal/master-your-new-laptop-setup-tools-configs-and-secrets)**
-
----
-
-<img src="/terminal/why-i-can-not-live-without-these-10-clis/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
-
-## [10 CLIs I Can Not Live Without!](/terminal/why-i-can-not-live-without-these-10-clis)
-
-Today we'll explore **ten CLI tools** without which my life would be meaningless. Well... Maybe not meaningless, but certainly much less productive and harder.
-
-So, without further ado, those are tend CLIs I use on a daily basis, and you should use them as well.
-
-**[Full article >>](/terminal/why-i-can-not-live-without-these-10-clis)**
