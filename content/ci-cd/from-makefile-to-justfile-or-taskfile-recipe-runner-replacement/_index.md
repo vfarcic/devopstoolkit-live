@@ -1,5 +1,5 @@
 +++
-title = 'Mastering Kubernetes Testing Kyverno Chainsaw!'
+title = 'From Makefile to Justfile (or Taskfile): Recipe Runner Replacement'
 date = 2024-06-03T16:00:00+00:00
 draft = false
 +++
