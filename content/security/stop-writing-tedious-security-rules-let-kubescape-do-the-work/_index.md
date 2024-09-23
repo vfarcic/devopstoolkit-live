@@ -1,7 +1,7 @@
 
 +++
 title = 'Stop Writing Tedious Security Rules! Let Kubescape Do the Work'
-date = 2024-09-23T16:00:00+00:00
+date = 2024-09-22T16:00:00+00:00
 draft = false
 +++
 

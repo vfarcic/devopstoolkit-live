@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/security/stop-writing-tedious-security-rules-let-kubescape-do-the-work/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/security/stop-writing-tedious-security-rules-let-kubescape-do-the-work/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Stop Writing Tedious Security Rules! Let Kubescape Do the Work](/security/stop-writing-tedious-security-rules-let-kubescape-do-the-work)
 
@@ -13,7 +13,7 @@ Implementation and maintenance of security is **tedious**, especially when runti
 
 **[Full article >>](/security/stop-writing-tedious-security-rules-let-kubescape-do-the-work)**
 
---- -->
+---
 
 <img src="/containers/stop-losing-requests-learn-graceful-shutdown-techniques/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -105,15 +105,3 @@ Today I want to get back to the first steps when developer platforms are concern
 There's a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. "**Damn MongoDB for changing their license!**" "**AWS is evil for taking advantage of Elastic!**" "**Env0 is taking advantage of HashiCorp!**" "**F\*\*K HashiCorp!**" "**Long live Elastic!**"
 
 **[Full article >>](/misc/the-dark-side-of-open-source-are-we-all-just-selfish)**
-
----
-
-<img src="/terminal/master-your-new-laptop-setup-tools-configs-and-secrets/thumbnail.png" style="width:50%; float:right; padding: 10px">
-
-## [Master Your New Laptop Setup: Tools, Configs, and Secrets!](/terminal/master-your-new-laptop-setup-tools-configs-and-secrets)
-
-This is a new machine. I just got it. It has nothing on it beyond what's available out-of-the box.
-
-Actually, that's not true. The only thing I did was to clone a Git repo. That's it. That's all I have on this machine, for now.
-
-**[Full article >>](/terminal/master-your-new-laptop-setup-tools-configs-and-secrets)**
