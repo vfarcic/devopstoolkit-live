@@ -9,7 +9,7 @@ Implementation and maintenance of security is **tedious**, especially when runti
 
 <!--more-->
 
-{{< youtube EYET9aXnv9c >}}
+{{< youtube xilNX_mh6vE >}}
 
 There's a better way; a better approach. Instead of us trying to figure out what are all the things our applications should and shouldn't be allowed to do, we can have **a process that learns "normal" behavior of an app** and assume that everything outside the ordinary is... bad.
 
