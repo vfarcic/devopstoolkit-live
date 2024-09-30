@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/terminal/discover-the-future-of-shells-with-nushell/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/terminal/discover-the-future-of-shells-with-nushell/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [The Future of Shells with Nushell! Shell + Data + Programming Language](/terminal/discover-the-future-of-shells-with-nushell)
 
@@ -13,7 +13,7 @@ Implementation and maintenance of terminal is **tedious**, especially when runti
 
 **[Full article >>](/terminal/discover-the-future-of-shells-with-nushell)**
 
---- -->
+---
 
 <img src="/security/stop-writing-tedious-security-rules-let-kubescape-do-the-work/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -105,13 +105,3 @@ There's everything I need, nicely split into tabs and panes.
 Today I want to get back to the first steps when developer platforms are concerned. I want to enable developers to start a new project.
 
 **[Full article >>](/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline)**
-
----
-
-<img src="/misc/the-dark-side-of-open-source-are-we-all-just-selfish/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [The Dark Side of Open Source: Are We All Just Selfish?](/misc/the-dark-side-of-open-source-are-we-all-just-selfish)
-
-There's a lot of talk about open source and about some companies, big and small, taking advantage of it, and about some other companies changing licenses of their projects to be less permissive. Those conversations often end up with people yelling at each other. "**Damn MongoDB for changing their license!**" "**AWS is evil for taking advantage of Elastic!**" "**Env0 is taking advantage of HashiCorp!**" "**F\*\*K HashiCorp!**" "**Long live Elastic!**"
-
-**[Full article >>](/misc/the-dark-side-of-open-source-are-we-all-just-selfish)**

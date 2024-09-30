@@ -1,7 +1,7 @@
 
 +++
 title = 'The Future of Shells with Nushell! Shell + Data + Programming Language'
-date = 2024-09-30T15:00:00+00:00
+date = 2024-09-29T16:00:00+00:00
 draft = false
 +++
 
