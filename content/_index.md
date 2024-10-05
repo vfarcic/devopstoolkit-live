@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Unlock the Power of GPUs in Kubernetes for AI Workloads](/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads)
+
+Here's a question. Where do we run AI models? Everyone knows the answer to that one. We run them in **servers with GPUs**. GPUs are much more efficient at processing AI models or, to be more precise, at inference.
+
+Here's another question. How do we manage models across those servers? The answer to that question is... Kubernetes.
+
+**[Full article >>](/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads)**
+
+--- -->
+
 <img src="/terminal/discover-the-future-of-shells-with-nushell/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [The Future of Shells with Nushell! Shell + Data + Programming Language](/terminal/discover-the-future-of-shells-with-nushell)

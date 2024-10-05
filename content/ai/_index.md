@@ -1,6 +1,6 @@
 +++
-title = "Miscelaneous"
-weight = 140
+title = "Artificail Intelligence (AI)"
+weight = 130
 hidden = false
 +++
 
