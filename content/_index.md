@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Unlock the Power of GPUs in Kubernetes for AI Workloads](/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads)
 
@@ -15,7 +15,7 @@ Here's another question. How do we manage models across those servers? The answe
 
 **[Full article >>](/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads)**
 
---- -->
+---
 
 <img src="/terminal/discover-the-future-of-shells-with-nushell/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -107,13 +107,3 @@ BOOM!
 There's everything I need, nicely split into tabs and panes.
 
 **[Full article >>](/terminal/master-terminal-multiplexing-with-zellij-in-minutes)**
-
----
-
-<img src="/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Automate Everything: How One Manifest Powers Your Entire DevOps Pipeline](/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline)
-
-Today I want to get back to the first steps when developer platforms are concerned. I want to enable developers to start a new project.
-
-**[Full article >>](/internal-developer-platforms/automate-everything-how-one-manifest-powers-your-entire-devops-pipeline)**
