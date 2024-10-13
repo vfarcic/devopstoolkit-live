@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Unlock the Power of GPUs in Kubernetes for AI Workloads](/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal)
+
+Today we're going to explore Backstage from newbee perspective. We'll see what it is, what it's main components are, and how to set it up. We'll go from nothing to an operational portal in development mode. Unlike other similar tools that often require us to simply configure and run them, with Backstage we have to get the source code, develop or configure what we need, and run it on our laptop to see the result. Later on, once we're happy with what we did we might explore how to package it all up, run it in production, and do whatever else needs to be done.
+
+Let's start from the beginning.
+
+**[Full article >>](/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal)**
+
+--- -->
+
 <img src="/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Unlock the Power of GPUs in Kubernetes for AI Workloads](/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads)
