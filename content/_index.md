@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Unlock the Power of GPUs in Kubernetes for AI Workloads](/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal)
 
@@ -15,7 +15,7 @@ Let's start from the beginning.
 
 **[Full article >>](/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal)**
 
---- -->
+---
 
 <img src="/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -97,25 +97,3 @@ It's a tool that I recognize as being **one of the most impactful tools** which,
 Did you guess what that tool is?
 
 **[Full article >>](/internal-developer-platforms/surviving-backstage-with-roadie-a-developers-nightmare-or-dream)**
-
----
-
-<img src="/terminal/master-terminal-multiplexing-with-zellij-in-minutes/thumbnail-02.png" style="width:50%; float:right; padding: 10px">
-
-## [Master Terminal Multiplexing with Zellij in Minutes!](/terminal/master-terminal-multiplexing-with-zellij-in-minutes)
-
-Let me show you something exciting, something that makes me much more productive.
-
-I am going to execute command `zellij`, specify a name of the session (`crossplane-kubernetes`), and a layout (`test-layout.kdl`), and...
-
-```sh
-zellij --session crossplane-kubernetes --layout test-layout.kdl
-```
-
-BOOM!
-
-![](terminal/master-terminal-multiplexing-with-zellij-in-minutes/zellij-preview.png)
-
-There's everything I need, nicely split into tabs and panes.
-
-**[Full article >>](/terminal/master-terminal-multiplexing-with-zellij-in-minutes)**
