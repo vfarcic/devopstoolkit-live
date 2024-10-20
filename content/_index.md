@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Internal Developer Platform Day 2 Operations Solved with Kubernetes and Crossplane](/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane)
+
+I did it. No! We did it. Actually, that's not correct either. Someone else did it. Doesn't matter who did it. What matters is that one of, in my opinion, big problems has been solved. Developers can now not only create, update, and remove their applications and infrastructure, but they can also get to know **what's happening with the resources they are managing**.
+
+**[Full article >>](/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane)**
+
+--- -->
+
 <img src="/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Getting Started with Backstage: From Zero to Operational Dev Portal](/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal)
