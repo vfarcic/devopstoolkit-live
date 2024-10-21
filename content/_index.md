@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Internal Developer Platform Day 2 Operations Solved with Kubernetes and Crossplane](/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane)
 
@@ -13,7 +13,7 @@ I did it. No! We did it. Actually, that's not correct either. Someone else did i
 
 **[Full article >>](/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -93,17 +93,3 @@ The output of the `curl` command is as follows.
 Since we initiated the delete process before the server returned a response we got `502 Bad Gateway` message. The application was deleted before it could respond and I, the user of that application, failed to get what I was looking for. That's horrible experience that could have been improved by enabling the application to shut down gracefully.
 
 **[Full article >>](/containers/stop-losing-requests-learn-graceful-shutdown-techniques)**
-
----
-
-<img src="/internal-developer-platforms/surviving-backstage-with-roadie-a-developers-nightmare-or-dream/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Surviving Backstage with Roadie: A Developer's Nightmare or Dream?](/internal-developer-platforms/surviving-backstage-with-roadie-a-developers-nightmare-or-dream)
-
-Today I want to talk about **potentially the most important tool in your toolbox**. I want to talk about a tool that might **enable everyone** in your organization **to be more productive and self-sufficient**. Yet, the tool I want to talk about might win an award for the **least user-friendly**, **hardest to maintain**, and, generally speaking, a tool that might cause you to have **nightmares** and spend a small fortune on a psychologist.
-
-It's a tool that I recognize as being **one of the most impactful tools** which, honestly, I do not like at all, yet most of those who use it swear by it.
-
-Did you guess what that tool is?
-
-**[Full article >>](/internal-developer-platforms/surviving-backstage-with-roadie-a-developers-nightmare-or-dream)**
