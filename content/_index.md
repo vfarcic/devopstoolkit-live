@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<img src="/ci-cd/ci-vs-cd-vs-gitops-vs-state-management-whats-the-real-difference/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+<!-- <img src="/ci-cd/ci-vs-cd-vs-gitops-vs-state-management-whats-the-real-difference/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [CI vs. CD vs. GitOps vs. State Management: What is the Real Difference?](/ci-cd/ci-vs-cd-vs-gitops-vs-state-management-whats-the-real-difference)
 
@@ -13,7 +13,7 @@ Today I want to answer a set of questions I get fairly often. People ask me to c
 
 **[Full article >>](/ci-cd/ci-vs-cd-vs-gitops-vs-state-management-whats-the-real-difference)**
 
----
+--- -->
 
 <img src="/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 

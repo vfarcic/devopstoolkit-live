@@ -1,7 +1,7 @@
 
 +++
 title = 'CI vs. CD vs. GitOps vs. State Management: What is the Real Difference?'
-date = 2023-10-28T16:00:00+00:00
+date = 2024-10-28T00:00:00+00:00
 draft = false
 +++
 
