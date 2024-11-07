@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [From Docker to Kubernetes: Running Backstage in Production!](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)
+
+Backstage is great, or not, depending how you look at it. In any case, the important thing to note is that the only thing we're getting is source code. Since it's written in TypeScript, we can run it by executing `yarn` this and that or `node` this and something else. While that's probably okay while developing it, it is silly when running it in production or anywhere else other than our laptops. It's **not 1999** any more. Today we package almost everything into container images and, from there on, you might be runnning it in Docker while I scream at you trying to explain why Docker is not a good idea for anything that should run in production. More likely, you are running your applications in Kubernetes, or as Azure Container Apps, or through Google Cloud Run, or anywhere else. What matters is that **OCI images are the standard**, no matter whether we run something as containers or anything else.
+
+**[Full article >>](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)**
+
+--- -->
+
 <img src="/internal-developer-platforms/from-docker-to-kubernetes-running-backstage-in-production/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [From Docker to Kubernetes: Running Backstage in Production!](/internal-developer-platforms/from-docker-to-kubernetes-running-backstage-in-production)
