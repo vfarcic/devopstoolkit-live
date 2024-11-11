@@ -7,9 +7,9 @@ title = ""
 
 <img src="/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
-## [From Docker to Kubernetes: Running Backstage in Production!](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)
+## [Testing in Production! Progressive Delivery with Canary Deployments Explained!](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)
 
-Backstage is great, or not, depending how you look at it. In any case, the important thing to note is that the only thing we're getting is source code. Since it's written in TypeScript, we can run it by executing `yarn` this and that or `node` this and something else. While that's probably okay while developing it, it is silly when running it in production or anywhere else other than our laptops. It's **not 1999** any more. Today we package almost everything into container images and, from there on, you might be runnning it in Docker while I scream at you trying to explain why Docker is not a good idea for anything that should run in production. More likely, you are running your applications in Kubernetes, or as Azure Container Apps, or through Google Cloud Run, or anywhere else. What matters is that **OCI images are the standard**, no matter whether we run something as containers or anything else.
+Today I will make an outrageous claim. Ready? Here it goes... The only testing that truly matters is **testing in production**. The only way to truly verify that a release is working as expected is to run it in production with "real" users and "real" workload. Testing a release before it reaches production is helpful and I am certainly not going to tell you to stop writing and running your unit tests, and functional tests, and integration tests, and whichever other type of testing you might normally do. What I am going to tell you is that you have to test your releases in production. Confirmation that "real" **users got what they expected** is the only thing that truly matters.
 
 **[Full article >>](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)**
 
