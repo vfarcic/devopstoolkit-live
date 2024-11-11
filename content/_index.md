@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [From Docker to Kubernetes: Running Backstage in Production!](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)
 
@@ -13,7 +13,7 @@ Backstage is great, or not, depending how you look at it. In any case, the impor
 
 **[Full article >>](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/from-docker-to-kubernetes-running-backstage-in-production/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -66,13 +66,3 @@ Here's a question. Where do we run AI models? Everyone knows the answer to that 
 Here's another question. How do we manage models across those servers? The answer to that question is... Kubernetes.
 
 **[Full article >>](/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads)**
-
----
-
-<img src="/terminal/discover-the-future-of-shells-with-nushell/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [The Future of Shells with Nushell! Shell + Data + Programming Language](/terminal/discover-the-future-of-shells-with-nushell)
-
-Implementation and maintenance of terminal is **tedious**, especially when runtime portion of it is concerned. For example, if we'd like to be notified when a potential breach is happening, we'll likely use a tool like [Falco](https://www.google.com/search?q=falco+terminal&sourceid=chrome&ie=UTF-8). It's a great tool. It's potentially one of the best if not the best tool of it's kind. It allows us to define an infinite number of rules that, when one of them is met, will fire notifications. That's the problem though. We have to define all those rules or, at least, accept a significant number of rules that are available out of the box. Essentially, we need to predict everything that should not be allowed to happen or, if we prefer the other way around, everything that is allowed. That is tedious and you are likely going to end up frustrated at best, in an asylum at worst. After all, **who can predict all the bad things that might happen?** and who is fully aware of all high and low level calls that applications are making? I certainly can't.
-
-**[Full article >>](/terminal/discover-the-future-of-shells-with-nushell)**
