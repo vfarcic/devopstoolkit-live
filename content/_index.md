@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/crossplane/save-hours-with-devex-for-crossplane/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Save Hours with DevEx for Crossplane](/crossplane/save-hours-with-devex-for-crossplane)
+
+Take a look at this.
+
+I'll just say "let there be an XRD" and...
+
+**[Full article >>](/crossplane/save-hours-with-devex-for-crossplane)**
+
+--- -->
+
 <img src="/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Testing in Production! Progressive Delivery with Canary Deployments Explained!](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)

@@ -1,6 +1,6 @@
 +++
-title = "Artificial Intelligence (AI)"
-weight = 130
+title = "Crossplane"
+weight = 140
 hidden = false
 +++
 
