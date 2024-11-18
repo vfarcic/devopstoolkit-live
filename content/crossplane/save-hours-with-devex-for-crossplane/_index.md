@@ -13,8 +13,6 @@ I'll just say "let there be an XRD" and...
 
 {{< youtube SoJjiHrVkow >}}
 
-## Intro
-
 > Do not try to run the commands in this section. They are only a preview of what we'll explore in this post. Full instructions are available starting from the Setup section.
 
 ```sh
