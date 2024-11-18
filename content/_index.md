@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/crossplane/save-hours-with-devex-for-crossplane/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/crossplane/save-hours-with-devex-for-crossplane/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Save Hours with DevEx for Crossplane](/crossplane/save-hours-with-devex-for-crossplane)
 
@@ -15,7 +15,7 @@ I'll just say "let there be an XRD" and...
 
 **[Full article >>](/crossplane/save-hours-with-devex-for-crossplane)**
 
---- -->
+---
 
 <img src="/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -66,15 +66,3 @@ Today we're going to explore Backstage from newbee perspective. We'll see what i
 Let's start from the beginning.
 
 **[Full article >>](/internal-developer-platforms/getting-started-with-backstage-from-zero-to-operational-dev-portal)**
-
----
-
-<img src="/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Unlock the Power of GPUs in Kubernetes for AI Workloads](/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads)
-
-Here's a question. Where do we run AI models? Everyone knows the answer to that one. We run them in **servers with GPUs**. GPUs are much more efficient at processing AI models or, to be more precise, at inference.
-
-Here's another question. How do we manage models across those servers? The answer to that question is... Kubernetes.
-
-**[Full article >>](/ai/unlock-the-power-of-gpus-in-kubernetes-for-ai-workloads)**
