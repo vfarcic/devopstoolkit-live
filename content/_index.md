@@ -5,6 +5,38 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Say Goodbye to Direct Communication! Event-Driven Pub/Sub With NATS](/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats)
+
+Imagine a world where **everyone minds their own business**. A world where no one tells anyone what to do and where no one is forcing anyone to do something. A world where everyone is focused only and exclusively on **their own tasks** and nothing else. A world where we work in complete isolation yet a world where everything is done more officiently.
+
+In such a world, each of us would do a task and, when finished, announce to the world that we are done. After that, we would pick another task from the pile that corresponds to our specific skilset instead of being told what to do.
+
+The process would be very simple and apply to everyone. Pick a task, do it, say that you are done, repeat.
+
+Now, that might not be the world we would like to live in, but that might be a perfect world for processes. That might be just the way we should organize our applications.
+
+**[Full article >>](/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats)**
+
+--- -->
+
+<!-- <img src="/ci-cd/argo-cd-gitops-promotions-with-kargo-by-akuity-a-brilliant-idea-with-flawed-execution/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Argo CD GitOps Promotions with Kargo (by Akuity): A Brilliant Idea with Flawed Execution?](/ci-cd/argo-cd-gitops-promotions-with-kargo-by-akuity-a-brilliant-idea-with-flawed-execution)
+
+Most of the time, I split projects into "**it provides value**" and "**it's not good enough**". However, every once in a while a project comes along that produces both types of impressions.
+
+There are projects that show a lot of potential. Projects that might represent some important steps toward a better way to manage or operate systems. Yet, those same projects might be showing the vision rather than being something we should adopt today.
+
+Such a vision could be huge like, for example, **Kubernetes which was horrible** when it was first released and, at that time, I did not recommend it to anyone. Yet, its vision proved to be a valid one for all of us to pursue. The end result is what we have today. Almost everyone is using or, at least, planning to use Kubernetes in some capacity or another. It started as a vision that took a while to materialize.
+
+There are examples of projects that have much smaller scope, yet also started as "this is not good enough today but we can see where that might take us". One of such projects is, in my opinion, Kargo by Akuity. I think that it has a lot of potential. It might be an important step forward in decoupling our workflows. It might be just what we need to orchestrate promotions of releases managed by GitOps or, to be more precise, Argo CD. The idea behind it is great, yet, I am not sure that there are enough compeling reasons to use it today. It's great. It truly is. Yet... Something might be missing.
+
+**[Full article >>](/ci-cd/argo-cd-gitops-promotions-with-kargo-by-akuity-a-brilliant-idea-with-flawed-execution)**
+
+--- -->
+
 <img src="/crossplane/save-hours-with-devex-for-crossplane/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Save Hours with DevEx for Crossplane](/crossplane/save-hours-with-devex-for-crossplane)

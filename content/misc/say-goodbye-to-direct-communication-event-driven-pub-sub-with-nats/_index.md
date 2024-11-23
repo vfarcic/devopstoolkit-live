@@ -1,7 +1,7 @@
 
 +++
 title = 'Say Goodbye to Direct Communication! Event-Driven Pub/Sub With NATS'
-date = 2023-12-02T16:00:00+00:00
+date = 2024-12-02T01:00:00+00:00
 draft = false
 +++
 
