@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Say Goodbye to Direct Communication! Event-Driven Pub/Sub With NATS](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)
+
+Imagine a world where **everyone minds their own business**. A world where no one tells anyone what to do and where no one is forcing anyone to do something. A world where everyone is focused only and exclusively on **their own tasks** and nothing else. A world where we work in complete isolation yet a world where everything is done more officiently.
+
+In such a world, each of us would do a task and, when finished, announce to the world that we are done. After that, we would pick another task from the pile that corresponds to our specific skilset instead of being told what to do.
+
+The process would be very simple and apply to everyone. Pick a task, do it, say that you are done, repeat.
+
+Now, that might not be the world we would like to live in, but that might be a perfect world for processes. That might be just the way we should organize our applications.
+
+**[Full article >>](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)**
+
+--- -->
+
 <!-- <img src="/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Say Goodbye to Direct Communication! Event-Driven Pub/Sub With NATS](/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats)
