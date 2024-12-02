@@ -21,7 +21,7 @@ Now, that might not be the world we would like to live in, but that might be a p
 
 --- -->
 
-<!-- <img src="/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Say Goodbye to Direct Communication! Event-Driven Pub/Sub With NATS](/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats)
 
@@ -35,7 +35,7 @@ Now, that might not be the world we would like to live in, but that might be a p
 
 **[Full article >>](/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats)**
 
---- -->
+---
 
 <img src="/ci-cd/argo-cd-gitops-promotions-with-kargo-by-akuity-a-brilliant-idea-with-flawed-execution/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -92,13 +92,3 @@ Backstage is great, or not, depending how you look at it. In any case, the impor
 Today I want to answer a set of questions I get fairly often. People ask me to compare GitOps with CI/CD or to explain the difference between CI and CD. At other times, I hear people talk about those terms with confidence, yet often with missunderstanding of what those are. To make things more complicated, tools tend to have missguided names that often make the situation even more complicated. So, today's session will explain the differences between Continuous Integration or CI, Continuous Delivery or CD, and GitOps. We'll add state management to the mix and we'll go not only through processes and activities related to those terms, but also try to demistify the tools in those areas. As a bonus, we'll add visualization challenges. Who knows? We might come to the conclusion that we are doing it all wrong or that our expectations are unrealistic.
 
 **[Full article >>](/ci-cd/ci-vs-cd-vs-gitops-vs-state-management-whats-the-real-difference)**
-
----
-
-<img src="/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Internal Developer Platform Day 2 Operations Solved with Kubernetes and Crossplane](/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane)
-
-I did it. No! We did it. Actually, that's not correct either. Someone else did it. Doesn't matter who did it. What matters is that one of, in my opinion, big problems has been solved. Developers can now not only create, update, and remove their applications and infrastructure, but they can also get to know **what's happening with the resources they are managing**.
-
-**[Full article >>](/internal-developer-platforms/internal-developer-platform-day-2-operations-solved-with-kubernetes-and-crossplane)**
