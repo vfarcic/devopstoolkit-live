@@ -5,6 +5,28 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Your Cluster Is Not Safe: The Dark Side of Backups](/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups)
+
+We all want to feel safe. That's why we create backups. We want to know that our systems will survive no mather what happens.
+
+The feeling of safety is very very important, and I need to appologise in advance for what I'm about to say.
+
+You are **NOT safe**. If the disaster happens, you might not be able to survive it.
+
+Here's why.
+
+**Backups alone are not enough!**; especially if its only one type of a backup.
+
+When the day of reckoning comes, **you will NOT be saved!**
+
+Let me prove that to you.
+
+**[Full article >>](/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups)**
+
+--- -->
+
 <!-- <img src="/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Say Goodbye to Direct Communication! Event-Driven Pub/Sub With NATS](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)
