@@ -29,15 +29,11 @@ Let me prove that to you.
 
 <img src="/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
-## [Say Goodbye to Direct Communication! Event-Driven Pub/Sub With NATS](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)
+## [Master Kubernetes Backups with Velero: Step-by-Step Guide](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)
 
-Imagine a world where **everyone minds their own business**. A world where no one tells anyone what to do and where no one is forcing anyone to do something. A world where everyone is focused only and exclusively on **their own tasks** and nothing else. A world where we work in complete isolation yet a world where everything is done more officiently.
+Do you think your Kubernetes clusters are safe and able to withstand anything and everything?
 
-In such a world, each of us would do a task and, when finished, announce to the world that we are done. After that, we would pick another task from the pile that corresponds to our specific skilset instead of being told what to do.
-
-The process would be very simple and apply to everyone. Pick a task, do it, say that you are done, repeat.
-
-Now, that might not be the world we would like to live in, but that might be a perfect world for processes. That might be just the way we should organize our applications.
+Truth be told, Kuberentes is **very resilient**. It was designed to be highly available and fault tollerant. You hopefully know all that and, if you do, you probably also know that nothing is 100% resilient. Bad things happen. Unexpected things happen, and we should be **prepared for anything and everything**. Backups are a part of that preparation. We are or, at least, we should be creating them regularly in hope that we'll never have to restore any of them. Yet, we might be in a situation when restoring a backup is our last option, especially in cases when a cluster is completely gone and the only option left is to create a new one and restore a backup which, hopefully, should result in the new cluster running the same resources, having the same data, showing the same logs, and everything else that we had in the old cluster that is now dead.
 
 **[Full article >>](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)**
 
