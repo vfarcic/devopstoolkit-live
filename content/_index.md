@@ -27,7 +27,7 @@ Let me prove that to you.
 
 --- -->
 
-<!-- <img src="/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Say Goodbye to Direct Communication! Event-Driven Pub/Sub With NATS](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)
 
@@ -41,7 +41,7 @@ Now, that might not be the world we would like to live in, but that might be a p
 
 **[Full article >>](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)**
 
---- -->
+---
 
 <img src="/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -104,13 +104,3 @@ Today I will make an outrageous claim. Ready? Here it goes... The only testing t
 Backstage is great, or not, depending how you look at it. In any case, the important thing to note is that the only thing we're getting is source code. Since it's written in TypeScript, we can run it by executing `yarn` this and that or `node` this and something else. While that's probably okay while developing it, it is silly when running it in production or anywhere else other than our laptops. It's **not 1999** any more. Today we package almost everything into container images and, from there on, you might be runnning it in Docker while I scream at you trying to explain why Docker is not a good idea for anything that should run in production. More likely, you are running your applications in Kubernetes, or as Azure Container Apps, or through Google Cloud Run, or anywhere else. What matters is that **OCI images are the standard**, no matter whether we run something as containers or anything else.
 
 **[Full article >>](/internal-developer-platforms/from-docker-to-kubernetes-running-backstage-in-production)**
-
----
-
-<img src="/ci-cd/ci-vs-cd-vs-gitops-vs-state-management-whats-the-real-difference/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
-
-## [CI vs. CD vs. GitOps vs. State Management: What is the Real Difference?](/ci-cd/ci-vs-cd-vs-gitops-vs-state-management-whats-the-real-difference)
-
-Today I want to answer a set of questions I get fairly often. People ask me to compare GitOps with CI/CD or to explain the difference between CI and CD. At other times, I hear people talk about those terms with confidence, yet often with missunderstanding of what those are. To make things more complicated, tools tend to have missguided names that often make the situation even more complicated. So, today's session will explain the differences between Continuous Integration or CI, Continuous Delivery or CD, and GitOps. We'll add state management to the mix and we'll go not only through processes and activities related to those terms, but also try to demistify the tools in those areas. As a bonus, we'll add visualization challenges. Who knows? We might come to the conclusion that we are doing it all wrong or that our expectations are unrealistic.
-
-**[Full article >>](/ci-cd/ci-vs-cd-vs-gitops-vs-state-management-whats-the-real-difference)**
