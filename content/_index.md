@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Your Cluster Is Not Safe: The Dark Side of Backups](/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups)
 
@@ -25,7 +25,7 @@ Let me prove that to you.
 
 **[Full article >>](/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups)**
 
---- -->
+---
 
 <img src="/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
