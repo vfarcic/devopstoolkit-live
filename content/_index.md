@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Your Cluster Is Not Safe: The Dark Side of Backups](/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets)
+
+Today we'll go through Kubernetes volumes. We'll explore local volumes like emptyDir, CSI Drivers, Storage Classes, Persistent Volumes and Persistent Volume Claims, ConfigMaps, and Secrets. It does not matter what you do in Kubernetes, **volumes are unavoidable**. You will use them, so you need to understand what they're used for, when to use them, and how to use them.
+
+**[Full article >>](/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets)**
+
+--- -->
+
 <img src="/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Your Cluster Is Not Safe: The Dark Side of Backups](/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups)
