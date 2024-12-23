@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Your Cluster Is Not Safe: The Dark Side of Backups](/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets)
 
@@ -13,7 +13,7 @@ Today we'll go through Kubernetes volumes. We'll explore local volumes like empt
 
 **[Full article >>](/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets)**
 
---- -->
+---
 
 <img src="/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -90,23 +90,3 @@ Take a look at this.
 I'll just say "let there be an XRD" and...
 
 **[Full article >>](/crossplane/save-hours-with-devex-for-crossplane)**
-
----
-
-<img src="/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Testing in Production! Progressive Delivery with Canary Deployments Explained!](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)
-
-Today I will make an outrageous claim. Ready? Here it goes... The only testing that truly matters is **testing in production**. The only way to truly verify that a release is working as expected is to run it in production with "real" users and "real" workload. Testing a release before it reaches production is helpful and I am certainly not going to tell you to stop writing and running your unit tests, and functional tests, and integration tests, and whichever other type of testing you might normally do. What I am going to tell you is that you have to test your releases in production. Confirmation that "real" **users got what they expected** is the only thing that truly matters.
-
-**[Full article >>](/observability/testing-in-production-progressive-delivery-with-canary-deployments-explained)**
-
----
-
-<img src="/internal-developer-platforms/from-docker-to-kubernetes-running-backstage-in-production/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
-
-## [From Docker to Kubernetes: Running Backstage in Production!](/internal-developer-platforms/from-docker-to-kubernetes-running-backstage-in-production)
-
-Backstage is great, or not, depending how you look at it. In any case, the important thing to note is that the only thing we're getting is source code. Since it's written in TypeScript, we can run it by executing `yarn` this and that or `node` this and something else. While that's probably okay while developing it, it is silly when running it in production or anywhere else other than our laptops. It's **not 1999** any more. Today we package almost everything into container images and, from there on, you might be runnning it in Docker while I scream at you trying to explain why Docker is not a good idea for anything that should run in production. More likely, you are running your applications in Kubernetes, or as Azure Container Apps, or through Google Cloud Run, or anywhere else. What matters is that **OCI images are the standard**, no matter whether we run something as containers or anything else.
-
-**[Full article >>](/internal-developer-platforms/from-docker-to-kubernetes-running-backstage-in-production)**
