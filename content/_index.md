@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Is This the End of Crossplane? Compose Kubernetes Resources with kro](/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro)
+
+Whomever is building developer platforms is bound to come to the conclusion that there is **a need to compose resources and expose those compositions through APIs**. If a developer needs a database, they should be able to specify what that database should be without having to deal with subnets, VPCs, internet gateways, and other lower-level components that are required, but are not important for the vast majority of people who just want a database. We are likely to come to a similar conclusion if, for example, a developer wants to run an application. That developer might want to specify a container image, a port, and a host without having to worry about Kubernetes Deployments, Services, Ingresses, Scalers, VirtualServices, and other lower-level Kubernetes types of objects.
+
+**[Full article >>](/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro)**
+
+--- -->
+
 <img src="/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Mastering Kubernetes: Volumes (emptyDir, CSI Drivers, Storage Classes, Persistent Volumes and Persistent Volume Claims, ConfigMaps, and Secrets)](/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets)
