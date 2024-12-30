@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Is This the End of Crossplane? Compose Kubernetes Resources with kro](/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro)
 
@@ -13,7 +13,7 @@ Whomever is building developer platforms is bound to come to the conclusion that
 
 **[Full article >>](/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro)**
 
---- -->
+---
 
 <img src="/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -88,15 +88,3 @@ Such a vision could be huge like, for example, **Kubernetes which was horrible**
 There are examples of projects that have much smaller scope, yet also started as "this is not good enough today but we can see where that might take us". One of such projects is, in my opinion, Kargo by Akuity. I think that it has a lot of potential. It might be an important step forward in decoupling our workflows. It might be just what we need to orchestrate promotions of releases managed by GitOps or, to be more precise, Argo CD. The idea behind it is great, yet, I am not sure that there are enough compeling reasons to use it today. It's great. It truly is. Yet... Something might be missing.
 
 **[Full article >>](/ci-cd/argo-cd-gitops-promotions-with-kargo-by-akuity-a-brilliant-idea-with-flawed-execution)**
-
----
-
-<img src="/crossplane/save-hours-with-devex-for-crossplane/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Save Hours with DevEx for Crossplane](/crossplane/save-hours-with-devex-for-crossplane)
-
-Take a look at this.
-
-I'll just say "let there be an XRD" and...
-
-**[Full article >>](/crossplane/save-hours-with-devex-for-crossplane)**
