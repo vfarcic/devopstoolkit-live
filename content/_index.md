@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/misc/top-10-devops-tools-you-must-use-in-2025/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/misc/top-10-devops-tools-you-must-use-in-2025/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Top 10 DevOps Tools You MUST Use in 2025!](/misc/top-10-devops-tools-you-must-use-in-2025)
 
@@ -19,7 +19,7 @@ I'm lying. This is not the list of the best tools but, rather, the list of the t
 
 **[Full article >>](/misc/top-10-devops-tools-you-must-use-in-2025)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -88,19 +88,3 @@ The process would be very simple and apply to everyone. Pick a task, do it, say 
 Now, that might not be the world we would like to live in, but that might be a perfect world for processes. That might be just the way we should organize our applications.
 
 **[Full article >>](/misc/say-goodbye-to-direct-communication-event-driven-pub-sub-with-nats)**
-
----
-
-<img src="/ci-cd/argo-cd-gitops-promotions-with-kargo-by-akuity-a-brilliant-idea-with-flawed-execution/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Argo CD GitOps Promotions with Kargo (by Akuity): A Brilliant Idea with Flawed Execution?](/ci-cd/argo-cd-gitops-promotions-with-kargo-by-akuity-a-brilliant-idea-with-flawed-execution)
-
-Most of the time, I split projects into "**it provides value**" and "**it's not good enough**". However, every once in a while a project comes along that produces both types of impressions.
-
-There are projects that show a lot of potential. Projects that might represent some important steps toward a better way to manage or operate systems. Yet, those same projects might be showing the vision rather than being something we should adopt today.
-
-Such a vision could be huge like, for example, **Kubernetes which was horrible** when it was first released and, at that time, I did not recommend it to anyone. Yet, its vision proved to be a valid one for all of us to pursue. The end result is what we have today. Almost everyone is using or, at least, planning to use Kubernetes in some capacity or another. It started as a vision that took a while to materialize.
-
-There are examples of projects that have much smaller scope, yet also started as "this is not good enough today but we can see where that might take us". One of such projects is, in my opinion, Kargo by Akuity. I think that it has a lot of potential. It might be an important step forward in decoupling our workflows. It might be just what we need to orchestrate promotions of releases managed by GitOps or, to be more precise, Argo CD. The idea behind it is great, yet, I am not sure that there are enough compeling reasons to use it today. It's great. It truly is. Yet... Something might be missing.
-
-**[Full article >>](/ci-cd/argo-cd-gitops-promotions-with-kargo-by-akuity-a-brilliant-idea-with-flawed-execution)**
