@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/misc/top-10-devops-tools-you-must-use-in-2025/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Top 10 DevOps Tools You MUST Use in 2025!](/misc/top-10-devops-tools-you-must-use-in-2025)
+
+Today is the day I announce which tools I recommend using in 2025.
+
+This is the list of the best of the best.
+
+Creme de la creme.
+
+I'm lying. This is not the list of the best tools but, rather, the list of the tools that made impact in 2024, the tools that matured enough that I recommend as permanent tools in your toolbelt. It's the list of tools that proved their worth and should be adopted in 2025. Some of them are the best in their respective category, while others made a significant shift in the way we work that I believe deserve to be in the spotlight. Some are small, while others are massive. Some are widely known while others are obscure.
+
+**[Full article >>](/misc/top-10-devops-tools-you-must-use-in-2025)**
+
+--- -->
+
 <img src="/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Is This the End of Crossplane? Compose Kubernetes Resources with kro](/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro)
