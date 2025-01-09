@@ -493,7 +493,7 @@ There are two important parts to be aware of when defining Compositions. There i
 
 ```sh
 up composition generate apis/xsqls/definition.yaml \
-    --path apis/xsqls/aws.yaml
+    --path xsqls/aws.yaml
 ```
 
 The output is as follows.
