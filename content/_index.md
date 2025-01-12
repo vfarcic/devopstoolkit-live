@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+
+## [How to Create Custom CLIs That Make Your DevOps Life Easier - Nushell](/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell)
+
+When building user interfaces for developer platforms or, frankly, for anything else, we tend to **focus mostly on Web UIs**. That's why there is a surge in popularity of portals like Backstage, Port, and many others. Still, user interfaces can have many other forms and, more often than not, a single one is not enough. The truth is that some forms are more appropriate for some tasks while others for other tasks.
+
+**[Full article >>](/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell)**
+
+--- -->
+
 <img src="/misc/top-10-devops-tools-you-must-use-in-2025/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Top 10 DevOps Tools You MUST Use in 2025!](/misc/top-10-devops-tools-you-must-use-in-2025)
