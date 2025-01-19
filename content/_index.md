@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Full Application Setup in Internal Developer Platform (IDP) with Crossplane](/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane)
+
+What if I tell you that fifty of so lines of YAML will get you everything you might need to work on an application. What if everything includes **Git repo**, **branches**, **pull requests**, **CI workflows**, **scripts** needed both for local development and CI, **Dockerfile**, a bunch of **Kubernetes resources** and quite a few other things you might need. What if everything is really everything and, at the same time, tailor-made for **your specific needs**?
+
+**[Full article >>](/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane)**
+
+--- -->
+
 <img src="/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [How to Create Custom CLIs That Make Your DevOps Life Easier - Nushell](/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell)
