@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Full Application Setup in Internal Developer Platform (IDP) with Crossplane](/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane)
 
@@ -13,7 +13,7 @@ What if I tell you that fifty of so lines of YAML will get you everything you mi
 
 **[Full article >>](/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane)**
 
---- -->
+---
 
 <img src="/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
