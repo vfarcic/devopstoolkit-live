@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+
+## [From UX to API: Mastering Platform Validations with Kubernetes Validating Admission Policies](/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies)
+
+**Validations** are extremely important when building Internal Developer Platforms, or any platforms for that matter. They serve two primary purposes. They help us ensure that user's requests are valid before they are processed by the platform and they make user experience better. The problem, however, is that people mix those two all the time. One is ensuring that something is **valid** and the other is improving **user experience** without guaranteering validity of the requests. The first group are "real" policies while the other is just UX.
+
+**[Full article >>](/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies)**
+
+--- -->
+
 <img src="/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Full Application Setup in Internal Developer Platform (IDP) with Crossplane](/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane)
