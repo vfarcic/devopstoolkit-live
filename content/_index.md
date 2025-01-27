@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [From UX to API: Mastering Platform Validations with Kubernetes Validating Admission Policies](/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies)
 
@@ -13,7 +13,7 @@ title = ""
 
 **[Full article >>](/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -68,37 +68,3 @@ Whomever is building developer platforms is bound to come to the conclusion that
 Today we'll go through Kubernetes volumes. We'll explore local volumes like emptyDir, CSI Drivers, Storage Classes, Persistent Volumes and Persistent Volume Claims, ConfigMaps, and Secrets. It does not matter what you do in Kubernetes, **volumes are unavoidable**. You will use them, so you need to understand what they're used for, when to use them, and how to use them.
 
 **[Full article >>](/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets)**
-
----
-
-<img src="/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Your Cluster Is Not Safe: The Dark Side of Backups](/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups)
-
-We all want to feel safe. That's why we create backups. We want to know that our systems will survive no mather what happens.
-
-The feeling of safety is very very important, and I need to appologise in advance for what I'm about to say.
-
-You are **NOT safe**. If the disaster happens, you might not be able to survive it.
-
-Here's why.
-
-**Backups alone are not enough!**; especially if its only one type of a backup.
-
-When the day of reckoning comes, **you will NOT be saved!**
-
-Let me prove that to you.
-
-**[Full article >>](/kubernetes/your-cluster-isnt-safe-the-dark-side-of-backups)**
-
----
-
-<img src="/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Master Kubernetes Backups with Velero: Step-by-Step Guide](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)
-
-Do you think your Kubernetes clusters are safe and able to withstand anything and everything?
-
-Truth be told, Kuberentes is **very resilient**. It was designed to be highly available and fault tollerant. You hopefully know all that and, if you do, you probably also know that nothing is 100% resilient. Bad things happen. Unexpected things happen, and we should be **prepared for anything and everything**. Backups are a part of that preparation. We are or, at least, we should be creating them regularly in hope that we'll never have to restore any of them. Yet, we might be in a situation when restoring a backup is our last option, especially in cases when a cluster is completely gone and the only option left is to create a new one and restore a backup which, hopefully, should result in the new cluster running the same resources, having the same data, showing the same logs, and everything else that we had in the old cluster that is now dead.
-
-**[Full article >>](/kubernetes/master-kubernetes-backups-with-velero-step-by-step-guide)**
