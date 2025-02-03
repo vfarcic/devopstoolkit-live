@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Why I Changed My Mind About Backstage? A Brutally Honest Opinion](/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion)
 
@@ -15,7 +15,7 @@ Now, however, my impressions about Backstage changed. Actually, that's not true.
 
 **[Full article >>](/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -70,13 +70,3 @@ I'm lying. This is not the list of the best tools but, rather, the list of the t
 Whomever is building developer platforms is bound to come to the conclusion that there is **a need to compose resources and expose those compositions through APIs**. If a developer needs a database, they should be able to specify what that database should be without having to deal with subnets, VPCs, internet gateways, and other lower-level components that are required, but are not important for the vast majority of people who just want a database. We are likely to come to a similar conclusion if, for example, a developer wants to run an application. That developer might want to specify a container image, a port, and a host without having to worry about Kubernetes Deployments, Services, Ingresses, Scalers, VirtualServices, and other lower-level Kubernetes types of objects.
 
 **[Full article >>](/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro)**
-
----
-
-<img src="/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Mastering Kubernetes: Volumes (emptyDir, CSI Drivers, Storage Classes, Persistent Volumes and Persistent Volume Claims, ConfigMaps, and Secrets)](/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets)
-
-Today we'll go through Kubernetes volumes. We'll explore local volumes like emptyDir, CSI Drivers, Storage Classes, Persistent Volumes and Persistent Volume Claims, ConfigMaps, and Secrets. It does not matter what you do in Kubernetes, **volumes are unavoidable**. You will use them, so you need to understand what they're used for, when to use them, and how to use them.
-
-**[Full article >>](/kubernetes/mastering-kubernetes-volumes-emptydir-csi-drivers-storage-classes-persistent-volumes-and-persistent-volume-claims-configmaps-and-secrets)**
