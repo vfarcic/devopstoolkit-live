@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Why I Changed My Mind About Backstage? A Brutally Honest Opinion](/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion)
+
+I was **very negative towards Backstage**. Some of the architectural choices are, in my opinion, bad. The way to install plugins is just silly. The quality of most of the plugins is very low. The need to rebuild container image every time we make a change is something I thought we will never see again. And so on and so forth.
+
+Now, however, my impressions about Backstage changed. Actually, that's not true. I still stand behind everything I said about it. What changed is the additional impression. Now **I think I get it.** Now I think I understand why Backstage makes sense, why it is one of the most contributed project and why it might make sense to adopt it even though it's bad.
+
+**[Full article >>](/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion)**
+
+--- -->
+
 <img src="/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [From UX to API: Mastering Platform Validations with Kubernetes Validating Admission Policies](/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies)
