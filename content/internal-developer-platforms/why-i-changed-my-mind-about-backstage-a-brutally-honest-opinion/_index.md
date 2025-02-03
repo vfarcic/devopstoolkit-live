@@ -11,7 +11,7 @@ Now, however, my impressions about Backstage changed. Actually, that's not true.
 
 <!--more-->
 
-{{< youtube QyQjfMqViqc >}}
+{{< youtube qi7eH6dZJOk >}}
 
 That additional impression can be attributed to Scott Rosenberg. He showed me what can be done relatively fast and that helped me see Backstage in the same light as Kubernetes. Even though both are very different, both might share the same trajectory. Backstage might be going down the same path and experiencing **the same phases as Kubernetes** did a while ago. 
 
