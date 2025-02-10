@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [From Zero to Fully Operational Developer Platform in 5 Steps!](/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps)
+
+Internal Developer Platforms or IDPs are **not hard to create**. Anyone can do it, as long as that someone knows **everything about everything**.
+
+Today I'll show you **everything** you should know **about developer platforms**. We'll go through all the principles behind them, through all the components they should have, and I'll even show you how to build one. This will be a tutorial on how to build a platform in **4 mandatory and 1 optional step**.
+
+At the end of today's journey, we'll have a **fully operational IDP** with everything you might need. Most likely...
+
+**[Full article >>](/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps)**
+
+--- -->
+
 <img src="/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Why I Changed My Mind About Backstage? A Brutally Honest Opinion](/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion)
