@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [From Zero to Fully Operational Developer Platform in 5 Steps!](/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps)
 
@@ -17,7 +17,7 @@ At the end of today's journey, we'll have a **fully operational IDP** with every
 
 **[Full article >>](/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -74,13 +74,3 @@ Creme de la creme.
 I'm lying. This is not the list of the best tools but, rather, the list of the tools that made impact in 2024, the tools that matured enough that I recommend as permanent tools in your toolbelt. It's the list of tools that proved their worth and should be adopted in 2025. Some of them are the best in their respective category, while others made a significant shift in the way we work that I believe deserve to be in the spotlight. Some are small, while others are massive. Some are widely known while others are obscure.
 
 **[Full article >>](/misc/top-10-devops-tools-you-must-use-in-2025)**
-
----
-
-<img src="/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Is This the End of Crossplane? Compose Kubernetes Resources with kro](/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro)
-
-Whomever is building developer platforms is bound to come to the conclusion that there is **a need to compose resources and expose those compositions through APIs**. If a developer needs a database, they should be able to specify what that database should be without having to deal with subnets, VPCs, internet gateways, and other lower-level components that are required, but are not important for the vast majority of people who just want a database. We are likely to come to a similar conclusion if, for example, a developer wants to run an application. That developer might want to specify a container image, a port, and a host without having to worry about Kubernetes Deployments, Services, Ingresses, Scalers, VirtualServices, and other lower-level Kubernetes types of objects.
-
-**[Full article >>](/internal-developer-platforms/is-this-the-end-of-crossplane-compose-kubernetes-resources-with-kro)**
