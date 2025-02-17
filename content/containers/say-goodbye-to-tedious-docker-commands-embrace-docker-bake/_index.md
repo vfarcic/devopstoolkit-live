@@ -1,7 +1,7 @@
 
 +++
 title = 'Say Goodbye to Tedious Docker Commands: Embrace Docker to Bake Images'
-date = 2025-02-17T15:00:00+00:00
+date = 2025-02-17T12:00:00+00:00
 draft = false
 +++
 
