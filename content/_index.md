@@ -5,6 +5,27 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Past, Present, and Future of Internal Developer Platforms](/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms)
+
+Can you guess which tool I used to build my first Internal Developer Platform?
+
+Let me give you a few tips before you try to guess.
+
+1. It performed most of the **tasks people needed** to do, like deployments of applications, execution of tests, and creation of new and management of existing servers and databases.
+2. It was very **easy to use**.
+3. It had a **graphical user interface** but it could be used without it through an API or a CLI.
+4. It had **nothing to do with Kubernetes, or containers, or Cloud**.
+5. The tool used to create it was one of the **most popular** tools back then, and is still one of the most widely tools used in enterprises.
+6. Almost **no one used that platform** after the initial excitement dried out.
+
+Which tool do you think I used? Which tool fits that description?
+
+**[Full article >>](/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms)**
+
+--- -->
+
 <img src="/containers/say-goodbye-to-tedious-docker-commands-embrace-docker-bake/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Say Goodbye to Tedious Docker Commands: Embrace Docker to Bake Images](/containers/say-goodbye-to-tedious-docker-commands-embrace-docker-bake)
