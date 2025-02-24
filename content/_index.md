@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Past, Present, and Future of Internal Developer Platforms](/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms)
 
@@ -24,7 +24,7 @@ Which tool do you think I used? Which tool fits that description?
 
 **[Full article >>](/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms)**
 
---- -->
+---
 
 <img src="/containers/say-goodbye-to-tedious-docker-commands-embrace-docker-bake/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -87,13 +87,3 @@ Now, however, my impressions about Backstage changed. Actually, that's not true.
 What if I tell you that fifty of so lines of YAML will get you everything you might need to work on an application. What if everything includes **Git repo**, **branches**, **pull requests**, **CI workflows**, **scripts** needed both for local development and CI, **Dockerfile**, a bunch of **Kubernetes resources** and quite a few other things you might need. What if everything is really everything and, at the same time, tailor-made for **your specific needs**?
 
 **[Full article >>](/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane)**
-
----
-
-<img src="/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
-
-## [How to Create Custom CLIs That Make Your DevOps Life Easier - Nushell](/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell)
-
-When building user interfaces for developer platforms or, frankly, for anything else, we tend to **focus mostly on Web UIs**. That's why there is a surge in popularity of portals like Backstage, Port, and many others. Still, user interfaces can have many other forms and, more often than not, a single one is not enough. The truth is that some forms are more appropriate for some tasks while others for other tasks.
-
-**[Full article >>](/terminal/how-to-create-custom-clis-that-make-your-devops-life-easier---nushell)**
