@@ -5,6 +5,24 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/db/neon---never-share-databases-again/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Neon - Never Share Databases Again!](/db/neon---never-share-databases-again)
+
+Take a look at this.
+
+<img src="/db/neon---never-share-databases-again/gha.png" style="width:40%; float:left; padding: 10px">
+
+That is GitHub actions run that executed hopefully typical tasks anyone is executing every time a pull request is opened. It run unit tests, it build a container image and pushed it to a registry, it update manifests so that, later on Argo CD or Flux can deploy the new release to production when that PR is merged to mainline. But, before that happens, it created an ephemeral Kubernetes cluster and run integration tests to confirm that everything works as expected.
+
+I hope that's what everyone is doing and, if that's not the case, please let me know in the comments and I'll do my best to make a video about the whole process.
+
+There is one "special" part of that workflow run that I did not yet mention. There is something that hadly anyone does, yet something very important.
+
+**[Full article >>](/db/neon---never-share-databases-again)**
+
+--- -->
+
 <img src="/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Past, Present, and Future of Internal Developer Platforms](/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms)

@@ -2,7 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.10.5/.schema/devbox.schema.json",
   "packages": [
     "hugo@0.125.4",
-    "dart-sass@1.75.0"
+    "dart-sass@1.75.0",
+    "git@2.47.2"
   ],
   "shell": {
     "init_hook": [],
