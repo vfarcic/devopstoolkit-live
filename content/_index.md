@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Why Most Kubernetes Dashboards Are Failing You (and What Is The Future)](/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future)
+
+Most **Kubernetes dashboards got it wrong**. Most did not understand the **limitations of Kubernetes API** and, as a result, act as glorified file explorers rather than tools that help us find what we're looking for, especially when dealing with large scale.
+
+Today we are going to explore the **mistakes** Kubernetes dashboards are making and try to figure out how they might be able to get onto the right path, even though that might require some drastic changes in their design.
+
+By the end of today's story you should see what we need to **navigate**, **search**, **debug**, and do whatever we might need to do in Kubernetes clusters. We'll feel like we are using Google Search rather than navigating through Kubernetes resources in a similar way we are traversing files and directories.
+
+**[Full article >>](/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future)**
+
+--- -->
+
 <!-- <img src="/db/neon---never-share-databases-again/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Neon - Never Share Databases Again!](/db/neon---never-share-databases-again)
