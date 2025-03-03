@@ -19,7 +19,7 @@ By the end of today's story you should see what we need to **navigate**, **searc
 
 --- -->
 
-<!-- <img src="/db/neon---never-share-databases-again/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/db/neon---never-share-databases-again/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Neon - Never Share Databases Again!](/db/neon---never-share-databases-again)
 
@@ -35,7 +35,7 @@ There is one "special" part of that workflow run that I did not yet mention. The
 
 **[Full article >>](/db/neon---never-share-databases-again)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -109,13 +109,3 @@ Now, however, my impressions about Backstage changed. Actually, that's not true.
 **Validations** are extremely important when building Internal Developer Platforms, or any platforms for that matter. They serve two primary purposes. They help us ensure that user's requests are valid before they are processed by the platform and they make user experience better. The problem, however, is that people mix those two all the time. One is ensuring that something is **valid** and the other is improving **user experience** without guaranteering validity of the requests. The first group are "real" policies while the other is just UX.
 
 **[Full article >>](/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies)**
-
----
-
-<img src="/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Full Application Setup in Internal Developer Platform (IDP) with Crossplane](/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane)
-
-What if I tell you that fifty of so lines of YAML will get you everything you might need to work on an application. What if everything includes **Git repo**, **branches**, **pull requests**, **CI workflows**, **scripts** needed both for local development and CI, **Dockerfile**, a bunch of **Kubernetes resources** and quite a few other things you might need. What if everything is really everything and, at the same time, tailor-made for **your specific needs**?
-
-**[Full article >>](/internal-developer-platforms/full-application-setup-in-internal-developer-platform-idp-with-crossplane)**
