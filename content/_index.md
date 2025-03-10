@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Why Most Kubernetes Dashboards Are Failing You (and What Is The Future)](/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future)
 
@@ -17,7 +17,7 @@ By the end of today's story you should see what we need to **navigate**, **searc
 
 **[Full article >>](/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future)**
 
---- -->
+---
 
 <img src="/db/neon---never-share-databases-again/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
