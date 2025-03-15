@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+
+## [KubeVela & OAM: The Resurrection of Simplified App Management?](/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management)
+
+Imagine that you are building an Internal Developer Platform.
+
+What would be a good user experience if, for example, one would like to deploy and manage a backend application without spending five years trying to understand all the details about Kubernetes?
+
+**[Full article >>](/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management)**
+
+--- -->
+
 <img src="/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Why Most Kubernetes Dashboards Are Failing You (and What Is The Future)](/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future)
