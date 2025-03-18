@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Remote Environments with Dev Containers and Devpod: Are They Worth It?](/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it)
+
+Today we are going to explore running remote ephemeral development environments. We are going to see (potentially) the best solution you should (probably) NOT use. If that sounds confusing, you're not alone. 
+
+We'll explore the Development Containers spec as well as Devpod as an implementation of that spec. Together, they provide a way to run ephemeral development environments.
+
+There is a hidden reason for going through those. I have serious doubts about the story behind remote environments, at least in a specific form, and I want to discuss what we really want them for. But, to do that, we need to go through a few practical examples to be on the same page before I go off the beaten path and start questioning it all.
+
+Buckle up. You're in for a ride that starts with some important questions that turn into excitement and finish... Well... I do not yet know how it will finish.
+
+**[Full article >>](/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it)**
+
+--- -->
+
 <!-- <img src="/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [KubeVela & OAM: The Resurrection of Simplified App Management?](/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management)
