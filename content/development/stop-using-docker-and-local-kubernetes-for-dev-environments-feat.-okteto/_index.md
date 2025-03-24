@@ -1,7 +1,7 @@
 
 +++
 title = 'Stop Using Docker and Local Kubernetes for Dev Environments! (feat. Okteto)'
-date = 2024-04-07T16:00:00+00:00
+date = 2025-04-07T15:00:00+00:00
 draft = false
 +++
 
@@ -134,8 +134,6 @@ sfarcic             Active   17m
 staging             Active   17m
 vfarcic             Active   17m
 ```
-
-TODO: Diagram: diag-01 (part 2) (put the output of the previous command on one side and the diagram to the other).
 
 There is `atlas-operator` used to manage the schema of the database, `contour` Ingress which handles incomming external traffic, Crossplane Compositions (`crossplane-system`) which provides abstractions for the applications and the databases, and `external-secrets` that push and pull secrets to and from a secret store. The database itself is running in AWS and managed through Crossplane Compositions.
 
