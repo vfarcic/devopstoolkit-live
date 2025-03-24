@@ -21,7 +21,7 @@ Buckle up. You're in for a ride that starts with some important questions that t
 
 --- -->
 
-<!-- <img src="/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [KubeVela & OAM: The Resurrection of Simplified App Management?](/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management)
 
@@ -31,7 +31,7 @@ What would be a good user experience if, for example, one would like to deploy a
 
 **[Full article >>](/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management)**
 
---- -->
+---
 
 <img src="/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -115,25 +115,3 @@ Today I'll show you **everything** you should know **about developer platforms**
 At the end of today's journey, we'll have a **fully operational IDP** with everything you might need. Most likely...
 
 **[Full article >>](/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps)**
-
----
-
-<img src="/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Why I Changed My Mind About Backstage? A Brutally Honest Opinion](/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion)
-
-I was **very negative towards Backstage**. Some of the architectural choices are, in my opinion, bad. The way to install plugins is just silly. The quality of most of the plugins is very low. The need to rebuild container image every time we make a change is something I thought we will never see again. And so on and so forth.
-
-Now, however, my impressions about Backstage changed. Actually, that's not true. I still stand behind everything I said about it. What changed is the additional impression. Now **I think I get it.** Now I think I understand why Backstage makes sense, why it is one of the most contributed project and why it might make sense to adopt it even though it's bad.
-
-**[Full article >>](/internal-developer-platforms/why-i-changed-my-mind-about-backstage-a-brutally-honest-opinion)**
-
----
-
-<img src="/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
-
-## [From UX to API: Mastering Platform Validations with Kubernetes Validating Admission Policies](/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies)
-
-**Validations** are extremely important when building Internal Developer Platforms, or any platforms for that matter. They serve two primary purposes. They help us ensure that user's requests are valid before they are processed by the platform and they make user experience better. The problem, however, is that people mix those two all the time. One is ensuring that something is **valid** and the other is improving **user experience** without guaranteering validity of the requests. The first group are "real" policies while the other is just UX.
-
-**[Full article >>](/internal-developer-platforms/from-ux-to-api-mastering-platform-validations-with-kubernetes-validating-admission-policies)**
