@@ -32,6 +32,7 @@ We'll see the **changes to Crossplane Composition schemas**, a shift to **Namesp
 **[Full article >>](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)**
 
 ---
+-->
 
 <img src="/internal-developer-platforms/debunking-myths-and-simplifying-compositions-with-crossplane-v2/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -47,7 +48,7 @@ So, debunk one missconception and show one improvement with both of those being 
 
 **[Full article >>](/internal-developer-platforms/debunking-myths-and-simplifying-compositions-with-crossplane-v2)**
 
---- -->
+---
 
 <img src="/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -129,17 +130,3 @@ How many commands do we need to execute and how many arguments should each of th
 That simple example already shows that building and pushing container images can be hard and tedious. The good news is that there is a better way. There is a declarative way to do all that.
 
 **[Full article >>](/containers/say-goodbye-to-tedious-docker-commands-embrace-docker-bake)**
-
----
-
-<img src="/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [From Zero to Fully Operational Developer Platform in 5 Steps!](/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps)
-
-Internal Developer Platforms or IDPs are **not hard to create**. Anyone can do it, as long as that someone knows **everything about everything**.
-
-Today I'll show you **everything** you should know **about developer platforms**. We'll go through all the principles behind them, through all the components they should have, and I'll even show you how to build one. This will be a tutorial on how to build a platform in **4 mandatory and 1 optional step**.
-
-At the end of today's journey, we'll have a **fully operational IDP** with everything you might need. Most likely...
-
-**[Full article >>](/internal-developer-platforms/from-zero-to-fully-operational-developer-platform-in-5-steps)**
