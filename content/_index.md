@@ -21,6 +21,34 @@ Buckle up. You're in for a ride that starts with some important questions that t
 
 --- -->
 
+<!-- <img src="/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Debunking Myths and Simplifying Compositions with Crossplane v2](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)
+
+**Crossplane v2** is here with some very cool features that I want to go through.
+
+We'll see the **changes to Crossplane Composition schemas**, a shift to **Namespace-scoped resources**, **direct composition of any resources** without the need to rely only on Crossplane Managed resources, **new API versions**, **removal of deprecated features**, and more.
+
+**[Full article >>](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)**
+
+---
+
+<img src="/internal-developer-platforms/debunking-myths-and-simplifying-compositions-with-crossplane-v2/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Debunking Myths and Simplifying Compositions with Crossplane v2](/internal-developer-platforms/debunking-myths-and-simplifying-compositions-with-crossplane-v2)
+
+"**Crossplane is too complicated!**" "**Crossplane is only for infrastructure!** I need something else for applications."
+
+I hear those and other similar statement very often so I decided to clarify a few things and, hopefully, eliminate some missconceptions.
+
+To be more precise, today I want to debunk one missconception about Crossplane and, at the same time, show how Crossplane addressed one semi-legitimate complaint in the recent v2 release.
+
+So, debunk one missconception and show one improvement with both of those being intertwined.
+
+**[Full article >>](/internal-developer-platforms/debunking-myths-and-simplifying-compositions-with-crossplane-v2)**
+
+--- -->
+
 <img src="/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [KubeVela & OAM: The Resurrection of Simplified App Management?](/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management)

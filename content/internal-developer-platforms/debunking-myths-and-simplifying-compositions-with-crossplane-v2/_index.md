@@ -5,16 +5,6 @@ date = 2025-03-31T16:00:00+00:00
 draft = false
 +++
 
-FIXME:
-
-<!--more-->
-
-{{< youtube FIXME: >}}
-
-## Intro
-
-TODO: Volume is now lower
-
 "**Crossplane is too complicated!**" "**Crossplane is only for infrastructure!** I need something else for applications."
 
 I hear those and other similar statement very often so I decided to clarify a few things and, hopefully, eliminate some missconceptions.
@@ -22,6 +12,10 @@ I hear those and other similar statement very often so I decided to clarify a fe
 To be more precise, today I want to debunk one missconception about Crossplane and, at the same time, show how Crossplane addressed one semi-legitimate complaint in the recent v2 release.
 
 So, debunk one missconception and show one improvement with both of those being intertwined.
+
+<!--more-->
+
+{{< youtube ZQEVPnS3eeo >}}
 
 "What is the missconception?" you might ask.
 
@@ -141,13 +135,9 @@ silly-demo            silly-demo.127.0.0.1.nip.io            True     True    ap
 silly-demo-frontend   silly-demo-frontend.127.0.0.1.nip.io   True     False   app-frontend   4s
 ```
 
-TODO: Thumbnail: tutorial.jpg
-
 Today's subject, however, is not about explaining how Crossplane Compositions work. You can watch the [Crossplane Tutorial](https://youtube.com/playlist?list=PLyicRj904Z99i8U5JaNW5X3AyBvfQz-16) if you're not familiar with it. Instead, I want to show you a few new things released in v2 and debunk some myths about Crossplane.
 
 Here's the first one.
-
-TODO: Ignore screen coming up...
 
 ```sh
 kubectl tree --namespace a-team app silly-demo-frontend
@@ -488,8 +478,6 @@ Now, don't be depressed if KCL looks offputting. I love it, but it might not be 
 I hope that I debunked some missconceptions and shed some light on one of the Crossplane v2 features that should make authoring Compositions easier.
 
 Let's summarize
-
-TODO: Bullets: NOT only about infrastructure, NOT only Managed Resources, Easy, Any language
 
 Crossplane Compositions are **NOT only about infrastructure**. We can use them to compose anything, be it infrastructure, applications, or anything else.
 
