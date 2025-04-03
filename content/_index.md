@@ -23,7 +23,7 @@ Buckle up. You're in for a ride that starts with some important questions that t
 
 <img src="/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
-## [Debunking Myths and Simplifying Compositions with Crossplane v2](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)
+## [Crossplane v2: Simplified Compositions, Namespace-Scoped Resources, and More!](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)
 
 **Crossplane v2** is here with some very cool features that I want to go through.
 
