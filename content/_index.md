@@ -21,7 +21,7 @@ Buckle up. You're in for a ride that starts with some important questions that t
 
 --- -->
 
-<!-- <img src="/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Debunking Myths and Simplifying Compositions with Crossplane v2](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)
 
@@ -32,7 +32,6 @@ We'll see the **changes to Crossplane Composition schemas**, a shift to **Namesp
 **[Full article >>](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)**
 
 ---
--->
 
 <img src="/internal-developer-platforms/debunking-myths-and-simplifying-compositions-with-crossplane-v2/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
