@@ -111,21 +111,3 @@ Let me give you a few tips before you try to guess.
 Which tool do you think I used? Which tool fits that description?
 
 **[Full article >>](/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms)**
-
----
-
-<img src="/containers/say-goodbye-to-tedious-docker-commands-embrace-docker-bake/thumbnail-01.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Say Goodbye to Tedious Docker Commands: Embrace Docker to Bake Images](/containers/say-goodbye-to-tedious-docker-commands-embrace-docker-bake)
-
-Building and pushing container image with Docker is **easy**. Right? We define a Dockerfile and we execute a command like `docker image build ...`. Docker file is easy to define and the rest is just a CLI command. How hard can it be?
-
-Well... It can be hard or, at least, **tedious**.
-
-Imagine that we have to build images for **multiple platforms**, that each of those images should be released both as a **specific version** but also as **latest**. Then add to that the situation that we need to build **more than one image**, let's say a backend and a frontend.
-
-How many commands do we need to execute and how many arguments should each of those commands have? Can we remember all those arguments and are we willing to execute a bunch of commands?
-
-That simple example already shows that building and pushing container images can be hard and tedious. The good news is that there is a better way. There is a declarative way to do all that.
-
-**[Full article >>](/containers/say-goodbye-to-tedious-docker-commands-embrace-docker-bake)**
