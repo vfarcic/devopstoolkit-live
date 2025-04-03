@@ -20,7 +20,7 @@ I'm so excited that I will skip the typical pep-talk and jump right into it.
 ## Setup
 
 ```sh
-git clone https://github.com/vfarcic/crossplane-app
+git clone https://github.com/vfarcic/crossplane-sql
 
 cd crossplane-sql
 
