@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Remote Environments with Dev Containers and Devpod: Are They Worth It?](/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it)
 
@@ -19,7 +19,7 @@ Buckle up. You're in for a ride that starts with some important questions that t
 
 **[Full article >>](/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it)**
 
---- -->
+---
 
 <img src="/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
