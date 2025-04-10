@@ -1,7 +1,7 @@
 
 +++
 title = 'Stop Using Docker and Local Kubernetes for Dev Environments! (feat. Okteto)'
-date = 2025-04-07T15:00:00+00:00
+date = 2025-04-14T15:00:00+00:00
 draft = false
 +++
 

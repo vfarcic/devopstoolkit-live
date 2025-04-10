@@ -5,6 +5,36 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/development/mirrord-magic-write-code-locally-see-it-remotely/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Mirrord Magic: Write Code Locally, See It Remotely!](/development/mirrord-magic-write-code-locally-see-it-remotely)
+
+Imagine this scenario.
+
+There is a frontend application that talks to a backend which uses a database.
+
+I am working on the code of that backend application.
+
+I neither have nor care about the code of the frontend app and I do not have the database running locally. All I want is to write the code of that backend application and see the outcome of my work, either directly or through the frontend (the one that I am not running) and I want that local code to be connected to the database (which I am also not running).
+
+**[Full article >>](/development/mirrord-magic-write-code-locally-see-it-remotely)**
+
+---
+
+<img src="/development/stop-using-docker-and-local-kubernetes-for-dev-environments-feat-okteto/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Stop Using Docker and Local Kubernetes for Dev Environments! (feat. Okteto)](/development/stop-using-docker-and-local-kubernetes-for-dev-environments-feat-okteto)
+
+You are developing something. Everybody is, no matter whether that something is a user-facing application, infrastructure, or anything else.
+
+While developing, you are trying to set up a development environment, probably locally since that's where your code is. You are likely trying to do all that using Docker or a local Kubernetes cluster like KinD.
+
+If that's what you're doing, I'm here to tell you that you're doing it wrong.
+
+**[Full article >>](/development/stop-using-docker-and-local-kubernetes-for-dev-environments-feat-okteto)**
+
+--- -->
+
 <img src="/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Remote Environments with Dev Containers and Devpod: Are They Worth It?](/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it)
@@ -90,24 +120,3 @@ I hope that's what everyone is doing and, if that's not the case, please let me 
 There is one "special" part of that workflow run that I did not yet mention. There is something that hadly anyone does, yet something very important.
 
 **[Full article >>](/db/neon---never-share-databases-again)**
-
----
-
-<img src="/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Past, Present, and Future of Internal Developer Platforms](/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms)
-
-Can you guess which tool I used to build my first Internal Developer Platform?
-
-Let me give you a few tips before you try to guess.
-
-1. It performed most of the **tasks people needed** to do, like deployments of applications, execution of tests, and creation of new and management of existing servers and databases.
-2. It was very **easy to use**.
-3. It had a **graphical user interface** but it could be used without it through an API or a CLI.
-4. It had **nothing to do with Kubernetes, or containers, or Cloud**.
-5. The tool used to create it was one of the **most popular** tools back then, and is still one of the most widely tools used in enterprises.
-6. Almost **no one used that platform** after the initial excitement dried out.
-
-Which tool do you think I used? Which tool fits that description?
-
-**[Full article >>](/internal-developer-platforms/past-present-and-future-of-internal-developer-platforms)**
