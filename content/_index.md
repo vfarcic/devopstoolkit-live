@@ -19,7 +19,7 @@ I neither have nor care about the code of the frontend app and I do not have the
 
 **[Full article >>](/development/mirrord-magic-write-code-locally-see-it-remotely)**
 
----
+--- -->
 
 <img src="/development/stop-using-docker-and-local-kubernetes-for-dev-environments-feat-okteto/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -33,7 +33,7 @@ If that's what you're doing, I'm here to tell you that you're doing it wrong.
 
 **[Full article >>](/development/stop-using-docker-and-local-kubernetes-for-dev-environments-feat-okteto)**
 
---- -->
+---
 
 <img src="/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
