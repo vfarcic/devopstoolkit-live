@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/development/mirrord-magic-write-code-locally-see-it-remotely/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/development/mirrord-magic-write-code-locally-see-it-remotely/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Mirrord Magic: Write Code Locally, See It Remotely!](/development/mirrord-magic-write-code-locally-see-it-remotely)
 
@@ -19,7 +19,7 @@ I neither have nor care about the code of the frontend app and I do not have the
 
 **[Full article >>](/development/mirrord-magic-write-code-locally-see-it-remotely)**
 
---- -->
+---
 
 <img src="/development/stop-using-docker-and-local-kubernetes-for-dev-environments-feat-okteto/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -102,21 +102,3 @@ Today we are going to explore the **mistakes** Kubernetes dashboards are making 
 By the end of today's story you should see what we need to **navigate**, **search**, **debug**, and do whatever we might need to do in Kubernetes clusters. We'll feel like we are using Google Search rather than navigating through Kubernetes resources in a similar way we are traversing files and directories.
 
 **[Full article >>](/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future)**
-
----
-
-<img src="/db/neon---never-share-databases-again/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Neon - Never Share Databases Again!](/db/neon---never-share-databases-again)
-
-Take a look at this.
-
-<img src="/db/neon---never-share-databases-again/gha.png" style="width:40%; float:left; padding: 10px">
-
-That is GitHub actions run that executed hopefully typical tasks anyone is executing every time a pull request is opened. It run unit tests, it build a container image and pushed it to a registry, it update manifests so that, later on Argo CD or Flux can deploy the new release to production when that PR is merged to mainline. But, before that happens, it created an ephemeral Kubernetes cluster and run integration tests to confirm that everything works as expected.
-
-I hope that's what everyone is doing and, if that's not the case, please let me know in the comments and I'll do my best to make a video about the whole process.
-
-There is one "special" part of that workflow run that I did not yet mention. There is something that hadly anyone does, yet something very important.
-
-**[Full article >>](/db/neon---never-share-databases-again)**
