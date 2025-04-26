@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Kro vs Helm: Is It Time to Ditch Helm Charts?](/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts)
+
+During recent months I saw a lot of conversation and questions sparked by the release of kro, like the one in the picture. Many of them are related to comparison with Helm. Some people think that kro is, more or less, doing **the same** work as Helm. Others think that it is a **different syntax** that accomplishes the same result as Helm. Some are asking whether kro is a **replacement** for Helm.
+
+There's hardly a day that I don't see a blog post or a Slack conversation or a question in Reddit around that subject.
+
+I want to answer those questions today.
+
+**[Full article >>](/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts)**
+
+--- -->
+
 <img src="/development/mirrord-magic-write-code-locally-see-it-remotely/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Mirrord Magic: Write Code Locally, See It Remotely!](/development/mirrord-magic-write-code-locally-see-it-remotely)
