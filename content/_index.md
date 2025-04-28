@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Kro vs Helm: Is It Time to Ditch Helm Charts?](/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts)
 
@@ -17,7 +17,7 @@ I want to answer those questions today.
 
 **[Full article >>](/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts)**
 
---- -->
+---
 
 <img src="/development/mirrord-magic-write-code-locally-see-it-remotely/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
