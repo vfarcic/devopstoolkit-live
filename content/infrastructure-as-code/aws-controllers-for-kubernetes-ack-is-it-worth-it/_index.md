@@ -1,7 +1,7 @@
 
 +++
 title = 'AWS Controllers for Kubernetes (ACK): Is It Worth It?'
-date = 2024-05-05T16:00:00+00:00
+date = 2025-05-05T16:00:00+00:00
 draft = false
 +++
 
