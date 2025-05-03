@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [AWS Controllers for Kubernetes (ACK): Is It Worth It?](/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it)
+
+It's not a secret that I believe in Kubernetes and that I think that it is much more than a "**thingy where we run containers**". It is an extensible API with controllers that can manage any type of resources. It is a **control plane** for everything.
+
+That's why, a while ago, I was very excited when AWS Controllers for Kubernetes (ACK) project was born. It allows us to extend Kubernetes with Custom Resource Definitions and controllers that allow us to manage AWS resources through Kubernetes.
+
+**[Full article >>](/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it)**
+
+--- -->
+
 <img src="/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Kro vs Helm: Is It Time to Ditch Helm Charts?](/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts)
@@ -90,29 +102,3 @@ To be more precise, today I want to debunk one missconception about Crossplane a
 So, debunk one missconception and show one improvement with both of those being intertwined.
 
 **[Full article >>](/internal-developer-platforms/debunking-myths-and-simplifying-compositions-with-crossplane-v2)**
-
----
-
-<img src="/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management/thumbnail-03.jpg" style="width:50%; float:right; padding: 10px">
-
-## [KubeVela & OAM: The Resurrection of Simplified App Management?](/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management)
-
-Imagine that you are building an Internal Developer Platform.
-
-What would be a good user experience if, for example, one would like to deploy and manage a backend application without spending five years trying to understand all the details about Kubernetes?
-
-**[Full article >>](/internal-developer-platforms/kubevela-oam-the-resurrection-of-simplified-app-management)**
-
----
-
-<img src="/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future/thumbnail-02.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Why Most Kubernetes Dashboards Are Failing You (and What Is The Future)](/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future)
-
-Most **Kubernetes dashboards got it wrong**. Most did not understand the **limitations of Kubernetes API** and, as a result, act as glorified file explorers rather than tools that help us find what we're looking for, especially when dealing with large scale.
-
-Today we are going to explore the **mistakes** Kubernetes dashboards are making and try to figure out how they might be able to get onto the right path, even though that might require some drastic changes in their design.
-
-By the end of today's story you should see what we need to **navigate**, **search**, **debug**, and do whatever we might need to do in Kubernetes clusters. We'll feel like we are using Google Search rather than navigating through Kubernetes resources in a similar way we are traversing files and directories.
-
-**[Full article >>](/kubernetes/why-most-kubernetes-dashboards-are-failing-you-and-whats-the-future)**
