@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [AWS Controllers for Kubernetes (ACK): Is It Worth It?](/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it)
 
@@ -15,7 +15,7 @@ That's why, a while ago, I was very excited when AWS Controllers for Kubernetes 
 
 **[Full article >>](/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it)**
 
---- -->
+---
 
 <img src="/kubernetes/kro-vs-helm-is-it-time-to-ditch-helm-charts/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
