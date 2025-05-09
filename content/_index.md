@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<img src="/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<!-- <img src="/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Claude Code: AI Agent for DevOps, SRE, and Platform Engineering](/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering)
 
@@ -17,7 +17,7 @@ Ready?
 
 **[Full article >>](/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering)**
 
----
+--- -->
 
 <img src="/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
