@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<img src="/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Claude Code: AI Agent for DevOps, SRE, and Platform Engineering](/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering)
+
+If you are a software engineer, you are probably already using an AI agent like [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.com), [Windsurf](https://windsurf.com), [Cline](https://cline.bot/) or something similar. If you are, you probably have an opinion which one of those is the best one out there. Or you might have been dissapointed with the results AI agents provide and chose to use none of them.
+
+Today I'll tell you which one is **the best AI agent** for any type of software engineers, especially for those focused on operations. If you call yourself DevOps, or SRE, or Platform Engineer, you'll find out which one you should use.
+
+Ready?
+
+**[Full article >>](/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering)**
+
+---
+
 <img src="/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [AWS Controllers for Kubernetes (ACK): Is It Worth It?](/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it)
