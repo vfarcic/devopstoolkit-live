@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<!-- <img src="/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+
+## [Outdated AI Responses? Context7 Solves LLMs' Biggest Flaw](/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw)
+
+**LLMs are always behind**. They do not contain up to date information and examples for programming languages, libraries, tools, and whatever else we, software engineers, are using. Depending on the date an LLM was created, it might be days, weeks, or months behind. As such, examples will be using older libraries, outdated APIs, and deprecated versions of the tools.
+
+Moreover, since LLMs are, in a way, databases of the whole Internet, they might give us code examples taken from places other than, for example, oficial documentation. They might give us generic answers that do not match versions we're working with.
+
+We are going to fix that today in a very simple, yet effective way. We are going to **teach our agents how to get up to date information** they might need to come to the right conclusion and perform correct actions.
+
+By the end of this post, the likelyhood of your AI agent doing the right thing will increase exponentially.
+
+**[Full article >>](/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw)**
+
+--- -->
+
 <img src="/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Claude Code: AI Agent for DevOps, SRE, and Platform Engineering](/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering)
