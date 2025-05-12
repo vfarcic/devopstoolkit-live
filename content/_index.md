@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <img src="/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Claude Code: AI Agent for DevOps, SRE, and Platform Engineering](/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering)
 
@@ -17,7 +17,7 @@ Ready?
 
 **[Full article >>](/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering)**
 
---- -->
+---
 
 <img src="/infrastructure-as-code/aws-controllers-for-kubernetes-ack-is-it-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
@@ -88,15 +88,3 @@ There is a hidden reason for going through those. I have serious doubts about th
 Buckle up. You're in for a ride that starts with some important questions that turn into excitement and finish... Well... I do not yet know how it will finish.
 
 **[Full article >>](/development/remote-environments-with-dev-containers-and-devpod-are-they-worth-it)**
-
----
-
-<img src="/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
-
-## [Crossplane v2: Simplified Compositions, Namespace-Scoped Resources, and More!](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)
-
-**Crossplane v2** is here with some very cool features that I want to go through.
-
-We'll see the **changes to Crossplane Composition schemas**, a shift to **Namespace-scoped resources**, **direct composition of any resources** without the need to rely only on Crossplane Managed resources, **new API versions**, **removal of deprecated features**, and more.
-
-**[Full article >>](/crossplane/crossplane-v2-simplified-compositions-namespace-scoped-resources-and-more)**
