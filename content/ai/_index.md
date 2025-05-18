@@ -1,6 +1,6 @@
 +++
 title = "Artificial Intelligence (AI)"
-weight = 130
+weight = 30
 hidden = false
 +++
 

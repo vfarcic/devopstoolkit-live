@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant"><img src="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [The Missing Link: How MCP Servers Supercharge Your AI Coding Assistant](/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant)
+
+We got Large Language Models (LLMs), but they were **not enough**. Then we got AI agents, but they were not enough either. Now we got Model Context Protocol (MCP).
+
+Is that it? Is that what was needed to **make AI for software engineers truly useful?**
+
+Let's see.
+
+**[Full article >>](/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant)**
+
+--- -->
+
 <!-- <img src="/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Outdated AI Responses? Context7 Solves LLMs' Biggest Flaw](/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw)
