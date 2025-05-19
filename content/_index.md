@@ -19,7 +19,7 @@ Let's see.
 
 --- -->
 
-<!-- <img src="/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
+<img src="/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
 ## [Outdated AI Responses? Context7 Solves LLMs' Biggest Flaw](/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw)
 
@@ -33,7 +33,7 @@ By the end of this post, the likelyhood of your AI agent doing the right thing w
 
 **[Full article >>](/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw)**
 
---- -->
+---
 
 <img src="/ai/claude-code-ai-agent-for-devops-sre-and-platform-engineering/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
