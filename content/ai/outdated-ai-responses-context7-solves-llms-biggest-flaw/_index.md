@@ -15,7 +15,7 @@ By the end of this post, the likelyhood of your AI agent doing the right thing w
 
 <!--more-->
 
-{{< youtube F0MLnVgk4as >}}
+{{< youtube DeZ-gw_aop0 >}}
 
 ## Setup
 
