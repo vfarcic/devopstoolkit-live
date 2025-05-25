@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms"><img src="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Forget CLIs and GUIs: AI is the New Interface for Developer Platforms](/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms)
+
+Most of the time, we, software engineers, are using AI to write code or get commands we might need to performs some operations. Today I want to do something different. I want to use AI to create user interface for an Internal Developer Platform.
+
+Instead of telling users which button to click or which YAML to write or which command to execute, I want them to **interact with the platform through AI**.
+
+**[Full article >>](/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms)**
+
+--- -->
+
 <!-- <a href="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant"><img src="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [The Missing Link: How MCP Servers Supercharge Your AI Coding Assistant](/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant)
