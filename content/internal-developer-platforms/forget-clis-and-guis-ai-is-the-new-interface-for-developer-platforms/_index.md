@@ -11,7 +11,7 @@ Instead of telling users which button to click or which YAML to write or which c
 
 <!--more-->
 
-{{< youtube 3Pq0kI1aUsM >}}
+{{< youtube ApjnCa-a2xI >}}
 
 Now, to be clear, I don't want them to ask common questions like "how to create an application in Kubernetes?" or "what the status of something is" or "how to delete some resources?". I want them to interact with the platform I built. I want AI to help them while being limited to the capabilities of that platform. I want AI to be very specific while still being very easy for anyone to use it.
 
