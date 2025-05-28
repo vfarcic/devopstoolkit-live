@@ -17,7 +17,7 @@ Instead of telling users which button to click or which YAML to write or which c
 
 --- -->
 
-<!-- <a href="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant"><img src="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant"><img src="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [The Missing Link: How MCP Servers Supercharge Your AI Coding Assistant](/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant)
 
@@ -29,7 +29,7 @@ Let's see.
 
 **[Full article >>](/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant)**
 
---- -->
+---
 
 <img src="/ai/outdated-ai-responses-context7-solves-llms-biggest-flaw/thumbnail.jpg" style="width:50%; float:right; padding: 10px">
 
