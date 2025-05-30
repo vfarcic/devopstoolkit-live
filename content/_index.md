@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster"><img src="/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [From Shame to Fame: How I Fixed My Lazy Vibe Coding Habits with Taskmaster](/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster)
+
+**AI does not work**, or, to be more precise, works poorly when trying to accomplish larger tasks that require many steps.
+
+Imagine that we have a Product Requirements Document, or a PRD, that requires some major development, or a major refactoring. We might have spent hours or even days defining that PRD, and even more time defining all the tasks such a PRD should contain. Once we have it all set, we can start writing the code that implements that PRD, and that is likely to take even more time.
+
+That situation presents one problem and one opportunity for improvement.
+
+**[Full article >>](/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster)**
+
+--- -->
+
 <!-- <a href="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms"><img src="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Forget CLIs and GUIs: AI is the New Interface for Developer Platforms](/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms)
