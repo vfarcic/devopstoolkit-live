@@ -19,7 +19,7 @@ That situation presents one problem and one opportunity for improvement.
 
 --- -->
 
-<!-- <a href="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms"><img src="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms"><img src="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Forget CLIs and GUIs: AI is the New Interface for Developer Platforms](/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms)
 
@@ -29,7 +29,7 @@ Instead of telling users which button to click or which YAML to write or which c
 
 **[Full article >>](/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms)**
 
---- -->
+---
 
 <a href="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant"><img src="/ai/the-missing-link-how-mcp-servers-supercharge-your-ai-coding-assistant/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
