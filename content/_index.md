@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai"><img src="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+
+## [Kubernetes AI: The Good, The Bad, and The Disappointing (kubectl-ai)](/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai)
+
+I will make an assumption by saying that you work, in some capacity or another, with **Kubernetes** and that you are interested in making management of your clusters much easier, better, and faster with **AI**. If that's the case, I have a treat for you. We'll explore how to do just that. We'll take a look at an AI agent specialized in management of Kubernetes clusters. An agent that comes from the company that made Kubernetes. An agent that is open source. An agent that has the potential to be one of the most important tools in your toolbelt.
+
+**[Full article >>](/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai)**
+
+--- -->
+
 <a href="/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster"><img src="/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [From Shame to Fame: How I Fixed My Lazy Vibe Coding Habits with Taskmaster](/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster)
