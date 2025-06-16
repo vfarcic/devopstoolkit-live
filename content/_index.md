@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai"><img src="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai"><img src="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Kubernetes AI: The Good, The Bad, and The Disappointing (kubectl-ai)](/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai)
 
@@ -13,7 +13,7 @@ I will make an assumption by saying that you work, in some capacity or another, 
 
 **[Full article >>](/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai)**
 
---- -->
+---
 
 <a href="/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster"><img src="/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
