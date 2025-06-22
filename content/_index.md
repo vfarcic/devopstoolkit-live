@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever"><img src="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [My Workflow With AI: How I Code, Test, and Deploy Faster Than Ever](/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever)
+
+Today I want you share my **development workflow with AI**. I want to share how I start working on a new feature, how I manage product requirement documents, or PRDs, how I write code and test it, and how I move through the development lifecycle. The way I approach all that today is very different from the way I did all that in the past. There is a whole team working on each feature, with me being **the only human** involved.
+
+**[Full article >>](/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever)**
+
+--- -->
+
 <a href="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai"><img src="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Kubernetes AI: The Good, The Bad, and The Disappointing (kubectl-ai)](/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai)
