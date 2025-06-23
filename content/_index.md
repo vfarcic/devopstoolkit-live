@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever"><img src="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever"><img src="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [My Workflow With AI: How I Code, Test, and Deploy Faster Than Ever](/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever)
 
@@ -13,7 +13,7 @@ Today I want you share my **development workflow with AI**. I want to share how 
 
 **[Full article >>](/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever)**
 
---- -->
+---
 
 <a href="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai"><img src="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
