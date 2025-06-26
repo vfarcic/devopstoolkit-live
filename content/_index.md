@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested"><img src="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested/thumbnail-01.png" style="width:50%; float:right; padding: 10px"></a>
+
+## [Better Code Reviews with AI? GitHub Copilot and Qodo Merge Tested](/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested)
+
+Second opinions are important. We get them them from doctors, as well as from software engineers. We want "stuff" to be reviewed and we want feedback. Today, however, we will not talk about second opinions and suggestions from doctors and software engineers. We'll talk about **one AI reviewing work of another AI**, with us being managers of both.
+
+Today we'll explore the possibilities of using a few AI agents to do code review. We'll see how they integrate into **pull requests in GitHub**, whether they can find issues in code written by a different AI in an IDE, and how we can incorporate those reviews into our development workflow.
+
+**[Full article >>](/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested)**
+
+--- -->
+
 <a href="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever"><img src="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [My Workflow With AI: How I Code, Test, and Deploy Faster Than Ever](/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever)
