@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested"><img src="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested/thumbnail-01.png" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested"><img src="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested/thumbnail-01.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Better Code Reviews with AI? GitHub Copilot and Qodo Merge Tested](/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested)
 
@@ -15,7 +15,7 @@ Today we'll explore the possibilities of using a few AI agents to do code review
 
 **[Full article >>](/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested)**
 
---- -->
+---
 
 <a href="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever"><img src="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
