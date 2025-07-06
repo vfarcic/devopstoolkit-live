@@ -1,7 +1,7 @@
 
 +++
 title = 'Vibe Coding Explained: AI Coding Best Practices'
-date = 2024-07-07T16:00:00+00:00
+date = 2025-07-07T15:00:00+00:00
 draft = false
 +++
 
