@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/vibe-coding-explained-ai-coding-best-practices"><img src="/ai/vibe-coding-explained-ai-coding-best-practices/thumbnail-02.png" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/vibe-coding-explained-ai-coding-best-practices"><img src="/ai/vibe-coding-explained-ai-coding-best-practices/thumbnail-02.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Vibe Coding Explained: AI Coding Best Practices](/ai/vibe-coding-explained-ai-coding-best-practices)
 
@@ -21,7 +21,7 @@ So, today I want to share my best practices for vibe coding. They are mine. They
 
 **[Full article >>](/ai/vibe-coding-explained-ai-coding-best-practices)**
 
---- -->
+---
 
 <a href="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested"><img src="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested/thumbnail-01.png" style="width:50%; float:right; padding: 10px"></a>
 
