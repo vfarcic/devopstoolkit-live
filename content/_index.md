@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job"><img src="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI vs Developer: Can GitHub Copilot or Claude Replace My Job?](/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job)
+
+I just gave two AI agents the same complex coding task. One completely failed. The other... honestly shocked me.
+
+But here's the twist: I'm not sure if I want the better one to succeed. Because if these autonomous coding agents can really implement full features from scratch, write tests, and handle edge cases like an experienced developer... well, we might all be looking for new careers sooner than we think.
+
+Today, I'm putting GitHub Copilot's new coding agent head-to-head with Claude's autonomous agent. Same PRD, same requirements, zero hand-holding. And the results? Let's just say one of these agents just changed everything I thought I knew about AI coding.
+
+**[Full article >>](/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job)**
+
+--- -->
+
 <a href="/ai/vibe-coding-explained-ai-coding-best-practices"><img src="/ai/vibe-coding-explained-ai-coding-best-practices/thumbnail-02.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Vibe Coding Explained: AI Coding Best Practices](/ai/vibe-coding-explained-ai-coding-best-practices)
