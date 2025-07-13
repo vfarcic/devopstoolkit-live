@@ -1,7 +1,7 @@
 
 +++
 title = 'AI vs Developer: Can GitHub Copilot or Claude Replace My Job?'
-date = 2024-07-14T16:00:00+00:00
+date = 2025-07-14T16:00:00+00:00
 draft = false
 +++
 
