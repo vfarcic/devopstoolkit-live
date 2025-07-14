@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job"><img src="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job"><img src="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI vs Developer: Can GitHub Copilot or Claude Replace My Job?](/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job)
 
@@ -17,7 +17,7 @@ Today, I'm putting GitHub Copilot's new coding agent head-to-head with Claude's 
 
 **[Full article >>](/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job)**
 
---- -->
+---
 
 <a href="/ai/vibe-coding-explained-ai-coding-best-practices"><img src="/ai/vibe-coding-explained-ai-coding-best-practices/thumbnail-02.png" style="width:50%; float:right; padding: 10px"></a>
 
@@ -80,15 +80,3 @@ Imagine that we have a Product Requirements Document, or a PRD, that requires so
 That situation presents one problem and one opportunity for improvement.
 
 **[Full article >>](/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster)**
-
----
-
-<a href="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms"><img src="/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Forget CLIs and GUIs: AI is the New Interface for Developer Platforms](/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms)
-
-Most of the time, we, software engineers, are using AI to write code or get commands we might need to performs some operations. Today I want to do something different. I want to use AI to create user interface for an Internal Developer Platform.
-
-Instead of telling users which button to click or which YAML to write or which command to execute, I want them to **interact with the platform through AI**.
-
-**[Full article >>](/internal-developer-platforms/forget-clis-and-guis-ai-is-the-new-interface-for-developer-platforms)**
