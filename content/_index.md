@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything"><img src="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything/thumbnail-01-small.png" style="width:50%; float:right; padding: 10px"></a>
+
+## [The End of Infrastructure-as-Code: AI Changes Everything](/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything)
+
+Here's something that might shock you: every Infrastructure-as-Code tool you're using today will be **dead** in upcoming years. Terraform, Pulumi; all of them. And the killer? AI agents that don't need the abstractions we've built our entire industry around.
+
+I know this sounds crazy. You're probably thinking, "But we just invested years learning these tools!" Here's the thing though - AI agents **don't operate** like humans. They don't get overwhelmed by complexity in the same way we do. They don't need user-friendly abstractions. And that changes everything.
+
+By the end of this video, you'll see exactly why the tools we consider essential today are actually **obstacles** for AI agents, and what's coming to replace them. But first, let me show you how we got here...
+
+**[Full article >>](/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything)**
+
+--- -->
+
 <a href="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job"><img src="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI vs Developer: Can GitHub Copilot or Claude Replace My Job?](/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job)
