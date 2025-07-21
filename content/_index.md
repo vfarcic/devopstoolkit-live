@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything"><img src="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything/thumbnail-01-small.png" style="width:50%; float:right; padding: 10px"></a>
+<a href="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything"><img src="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything/thumbnail-01-small.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [The End of Infrastructure-as-Code: AI Changes Everything](/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything)
 
@@ -17,7 +17,7 @@ By the end of this video, you'll see exactly why the tools we consider essential
 
 **[Full article >>](/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything)**
 
---- -->
+---
 
 <a href="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job"><img src="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
@@ -80,17 +80,3 @@ Today I want you share my **development workflow with AI**. I want to share how 
 I will make an assumption by saying that you work, in some capacity or another, with **Kubernetes** and that you are interested in making management of your clusters much easier, better, and faster with **AI**. If that's the case, I have a treat for you. We'll explore how to do just that. We'll take a look at an AI agent specialized in management of Kubernetes clusters. An agent that comes from the company that made Kubernetes. An agent that is open source. An agent that has the potential to be one of the most important tools in your toolbelt.
 
 **[Full article >>](/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai)**
-
----
-
-<a href="/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster"><img src="/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [From Shame to Fame: How I Fixed My Lazy Vibe Coding Habits with Taskmaster](/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster)
-
-**AI does not work**, or, to be more precise, works poorly when trying to accomplish larger tasks that require many steps.
-
-Imagine that we have a Product Requirements Document, or a PRD, that requires some major development, or a major refactoring. We might have spent hours or even days defining that PRD, and even more time defining all the tasks such a PRD should contain. Once we have it all set, we can start writing the code that implements that PRD, and that is likely to take even more time.
-
-That situation presents one problem and one opportunity for improvement.
-
-**[Full article >>](/ai/from-shame-to-fame-how-i-fixed-my-lazy-vibe-coding-habits-with-taskmaster)**
