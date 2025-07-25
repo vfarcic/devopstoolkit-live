@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future"><img src="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future/thumbnail-02-small.png" style="width:50%; float:right; padding: 10px"></a>
+
+## [Can AI Replace Your Terraform Modules? Infrastructure's New Future](/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future)
+
+My AI agent just **failed** to create a database. It forgot the resource group, messed up the credentials, and made three attempts before getting it right.
+
+But here's the plot twist: That's the **best** thing that could have happened.
+
+Today, I'm going to show you why AI agents might make your carefully crafted golden paths **obsolete**. Why those Terraform modules or similar abstractions you spent months building might be holding AI back, and why letting AI fail and learn might be the future of infrastructure management.
+
+**[Full article >>](/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future)**
+
+--- -->
+
 <a href="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything"><img src="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything/thumbnail-01-small.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [The End of Infrastructure-as-Code: AI Changes Everything](/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything)
