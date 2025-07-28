@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future"><img src="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future/thumbnail-02-small.png" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future"><img src="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future/thumbnail-02-small.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Can AI Replace Your Terraform Modules? Infrastructure's New Future](/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future)
 
@@ -17,7 +17,7 @@ Today, I'm going to show you why AI agents might make your carefully crafted gol
 
 **[Full article >>](/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future)**
 
---- -->
+---
 
 <a href="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything"><img src="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything/thumbnail-01-small.png" style="width:50%; float:right; padding: 10px"></a>
 
