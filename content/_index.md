@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<a href="/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration"><img src="/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Meets Kubernetes: Simplifying Developer and Ops Collaboration](/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration)
+
+Platform engineers face a tough challenge: **developers know what they need**, but they don't understand complex infrastructure. Platform engineers understand infrastructure, but they struggle to anticipate every developer requirement. The result? **Internal Developer Platforms** that miss the mark and platforms that require endless iterations to make them useful.
+
+But what if there was a **third collaborator** that could bridge this gap? AI has vast technical knowledge but doesn't know your company's specific rules and constraints. However, when you combine developer intent, platform engineering expertise, and AI's technical knowledge, something powerful emerges.
+
+I'm about to show you a working system that demonstrates this three-way collaboration. We'll watch developers express their needs in natural language, see AI translate those into deployments using platform engineering building blocks, and then I'll reveal the architecture that makes this possible.
+
+**[Full article >>](/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration)**
+
+---
+
 <a href="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future"><img src="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future/thumbnail-02-small.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Can AI Replace Your Terraform Modules? Infrastructure's New Future](/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future)
