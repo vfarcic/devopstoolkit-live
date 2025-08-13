@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/ai-will-replace-coders---but-not-the-way-you-think"><img src="/ai/ai-will-replace-coders---but-not-the-way-you-think/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Will Replace Coders - But Not the Way You Think](/ai/ai-will-replace-coders---but-not-the-way-you-think)
+
+I've been in tech for over three decades, and **I've never seen developers this scared**. Not during the dot-com crash. Not during outsourcing waves. Not even during the layoffs. This time it's different because the threat isn't coming from other humans. It's coming from AI that can already write code faster than us. And here's what should really worry you: we're on a trajectory where soon it might write better code too.
+
+But here's what pisses me off: **Everyone's panicking about the wrong thing**. They're worried AI will take their jobs because it can write code. That's like a chef worrying about losing their job because someone invented a better knife. You're missing the point entirely.
+
+In this post, I'm going to tell you what your job actually is, why most developers have been doing it wrong for years, and how AI is about to expose that brutal reality. But I'll also show you exactly how to adapt, because those who get this right won't just survive. They'll thrive. And the questions I keep hearing prove that most people don't get it yet.
+
+**[Full article >>](/ai/ai-will-replace-coders---but-not-the-way-you-think)**
+
+--- -->
+
 <a href="/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration"><img src="/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Meets Kubernetes: Simplifying Developer and Ops Collaboration](/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration)
@@ -88,23 +102,3 @@ Second opinions are important. We get them them from doctors, as well as from so
 Today we'll explore the possibilities of using a few AI agents to do code review. We'll see how they integrate into **pull requests in GitHub**, whether they can find issues in code written by a different AI in an IDE, and how we can incorporate those reviews into our development workflow.
 
 **[Full article >>](/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested)**
-
----
-
-<a href="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever"><img src="/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [My Workflow With AI: How I Code, Test, and Deploy Faster Than Ever](/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever)
-
-Today I want you share my **development workflow with AI**. I want to share how I start working on a new feature, how I manage product requirement documents, or PRDs, how I write code and test it, and how I move through the development lifecycle. The way I approach all that today is very different from the way I did all that in the past. There is a whole team working on each feature, with me being **the only human** involved.
-
-**[Full article >>](/ai/my-workflow-with-ai-how-i-code-test-and-deploy-faster-than-ever)**
-
----
-
-<a href="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai"><img src="/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
-
-## [Kubernetes AI: The Good, The Bad, and The Disappointing (kubectl-ai)](/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai)
-
-I will make an assumption by saying that you work, in some capacity or another, with **Kubernetes** and that you are interested in making management of your clusters much easier, better, and faster with **AI**. If that's the case, I have a treat for you. We'll explore how to do just that. We'll take a look at an AI agent specialized in management of Kubernetes clusters. An agent that comes from the company that made Kubernetes. An agent that is open source. An agent that has the potential to be one of the most important tools in your toolbelt.
-
-**[Full article >>](/ai/kubernetes-ai-the-good-the-bad-and-the-disappointing-kubectl-ai)**
