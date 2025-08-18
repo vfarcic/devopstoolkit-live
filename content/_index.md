@@ -19,7 +19,7 @@ We'll start by understanding why context is everything in AI, then I'll show you
 
 --- -->
 
-<!-- <a href="/ai/ai-will-replace-coders---but-not-the-way-you-think"><img src="/ai/ai-will-replace-coders---but-not-the-way-you-think/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/ai-will-replace-coders---but-not-the-way-you-think"><img src="/ai/ai-will-replace-coders---but-not-the-way-you-think/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Will Replace Coders - But Not the Way You Think](/ai/ai-will-replace-coders---but-not-the-way-you-think)
 
@@ -31,7 +31,7 @@ In this post, I'm going to tell you what your job actually is, why most develope
 
 **[Full article >>](/ai/ai-will-replace-coders---but-not-the-way-you-think)**
 
---- -->
+---
 
 <a href="/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration"><img src="/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -104,15 +104,3 @@ Vibe Coding is, in a way, still coding. We generate instructions for machines an
 So, today I want to share my best practices for vibe coding. They are mine. They work well for me, and I am very curious to hear your thoughts.
 
 **[Full article >>](/ai/vibe-coding-explained-ai-coding-best-practices)**
-
----
-
-<a href="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested"><img src="/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested/thumbnail-01.png" style="width:50%; float:right; padding: 10px"></a>
-
-## [Better Code Reviews with AI? GitHub Copilot and Qodo Merge Tested](/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested)
-
-Second opinions are important. We get them them from doctors, as well as from software engineers. We want "stuff" to be reviewed and we want feedback. Today, however, we will not talk about second opinions and suggestions from doctors and software engineers. We'll talk about **one AI reviewing work of another AI**, with us being managers of both.
-
-Today we'll explore the possibilities of using a few AI agents to do code review. We'll see how they integrate into **pull requests in GitHub**, whether they can find issues in code written by a different AI in an IDE, and how we can incorporate those reviews into our development workflow.
-
-**[Full article >>](/ai/better-code-reviews-with-ai-github-copilot-and-qodo-merge-tested)**
