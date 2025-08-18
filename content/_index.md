@@ -19,6 +19,7 @@ We'll start by understanding why context is everything in AI, then I'll show you
 
 --- -->
 
+
 <a href="/ai/ai-will-replace-coders---but-not-the-way-you-think"><img src="/ai/ai-will-replace-coders---but-not-the-way-you-think/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Will Replace Coders - But Not the Way You Think](/ai/ai-will-replace-coders---but-not-the-way-you-think)
