@@ -19,7 +19,7 @@ Or you're in ops, and it gets even worse. You asked about your backup policies, 
 
 --- -->
 
-<!-- <a href="/ai/stop-wasting-time-turn-ai-prompts-into-production-code"><img src="/ai/stop-wasting-time-turn-ai-prompts-into-production-code/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/stop-wasting-time-turn-ai-prompts-into-production-code"><img src="/ai/stop-wasting-time-turn-ai-prompts-into-production-code/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Wasting Time: Turn AI Prompts Into Production Code](/ai/stop-wasting-time-turn-ai-prompts-into-production-code)
 
@@ -31,7 +31,7 @@ We'll start by understanding why context is everything in AI, then I'll show you
 
 **[Full article >>](/ai/stop-wasting-time-turn-ai-prompts-into-production-code)**
 
---- -->
+---
 
 <a href="/ai/ai-will-replace-coders---but-not-the-way-you-think"><img src="/ai/ai-will-replace-coders---but-not-the-way-you-think/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -100,21 +100,3 @@ But here's the twist: I'm not sure if I want the better one to succeed. Because 
 Today, I'm putting GitHub Copilot's new coding agent head-to-head with Claude's autonomous agent. Same PRD, same requirements, zero hand-holding. And the results? Let's just say one of these agents just changed everything I thought I knew about AI coding.
 
 **[Full article >>](/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job)**
-
----
-
-<a href="/ai/vibe-coding-explained-ai-coding-best-practices"><img src="/ai/vibe-coding-explained-ai-coding-best-practices/thumbnail-02.png" style="width:50%; float:right; padding: 10px"></a>
-
-## [Vibe Coding Explained: AI Coding Best Practices](/ai/vibe-coding-explained-ai-coding-best-practices)
-
-**Vibe coding** is probably the hottest trend right now in the software industry. Instead of manually writing every line of code, we can now describe what we need in plain language and let AI agents generate code, run tests, perform some, if not all, SDLC operations, and whatever else we might need.
-
-That's great since it means that now it is socially acceptable to talk to your computer. "Hello, precious. Can you write a Web app based on the OpenAI schema defined over there?" "Please be so kind as to fix this issue for me and make a patch release." "Would you mind working on that problem for a while longer?"
-
-There's even a button now in VS Code that enables us to literally talk to AI through a microphone.
-
-Vibe Coding is, in a way, still coding. We generate instructions for machines and those instructions are interpreted into binary code. The major difference is in the language we use. With "normal" coding, we do not become proficient just by writing code. We become proficient once we learn the rules, understand best practices, and practice (a lot). It's the same with Vibe Coding. The more we practice it and the better we understand the rules, the more proficient we become.
-
-So, today I want to share my best practices for vibe coding. They are mine. They work well for me, and I am very curious to hear your thoughts.
-
-**[Full article >>](/ai/vibe-coding-explained-ai-coding-best-practices)**
