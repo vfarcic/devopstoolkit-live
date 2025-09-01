@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/stop-blaming-ai-vector-dbs-rag-game-changer"><img src="/ai/stop-blaming-ai-vector-dbs-rag-game-changer/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/stop-blaming-ai-vector-dbs-rag-game-changer"><img src="/ai/stop-blaming-ai-vector-dbs-rag-game-changer/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Blaming AI: Vector DBs + RAG = Game Changer](/ai/stop-blaming-ai-vector-dbs-rag-game-changer)
 
@@ -17,7 +17,7 @@ Or you're in ops, and it gets even worse. You asked about your backup policies, 
 
 **[Full article >>](/ai/stop-blaming-ai-vector-dbs-rag-game-changer)**
 
---- -->
+---
 
 <a href="/ai/stop-wasting-time-turn-ai-prompts-into-production-code"><img src="/ai/stop-wasting-time-turn-ai-prompts-into-production-code/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -86,17 +86,3 @@ I know this sounds crazy. You're probably thinking, "But we just invested years 
 By the end of this video, you'll see exactly why the tools we consider essential today are actually **obstacles** for AI agents, and what's coming to replace them. But first, let me show you how we got here...
 
 **[Full article >>](/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything)**
-
----
-
-<a href="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job"><img src="/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI vs Developer: Can GitHub Copilot or Claude Replace My Job?](/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job)
-
-I just gave two AI agents the same complex coding task. One completely failed. The other... honestly shocked me.
-
-But here's the twist: I'm not sure if I want the better one to succeed. Because if these autonomous coding agents can really implement full features from scratch, write tests, and handle edge cases like an experienced developer... well, we might all be looking for new careers sooner than we think.
-
-Today, I'm putting GitHub Copilot's new coding agent head-to-head with Claude's autonomous agent. Same PRD, same requirements, zero hand-holding. And the results? Let's just say one of these agents just changed everything I thought I knew about AI coding.
-
-**[Full article >>](/ai/ai-vs-developer-can-github-copilot-or-claude-replace-my-job)**
