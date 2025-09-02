@@ -16,3 +16,9 @@ unsafe= true
 [services]
   [services.googleAnalytics]
     ID = 'G-2NXCC9XM9Y'
+  [services.rss]
+    limit = 20
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html", "rss"]
