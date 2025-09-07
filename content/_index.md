@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it"><img src="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Why Kubernetes Discovery Sucks for AI (And How Vector DBs Fix It)](/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it)
+
+Kubernetes API is **brilliant for execution**. Once you know exactly which resources to deploy and how they work together, it handles everything flawlessly. Controllers reconcile state, resources get created, and your applications and infrastructure run perfectly.
+
+But it **sucks big time for discovery**. When you need to figure out what's actually possible in your cluster, the API becomes a complete nightmare. You're stuck sifting through hundreds of cryptically named resource types, hoping to stumble across something that might solve your problem.
+
+Even AI struggles with this. Ask it to "create a PostgreSQL database with schema management in AWS," and it either gives you a complex multi-resource approach or completely misses the simple solution that actually exists. The problem isn't missing information. **The problem is that the information is impossible to find**.
+
+Today, I'll show you how **semantic search with vector databases** can finally solve this discovery nightmare. By the end of this video, you'll see how AI can instantly find the perfect resources using natural language, even when the exact keywords don't match.
+
+**[Full article >>](/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it)**
+
+--- -->
+
 <a href="/ai/stop-blaming-ai-vector-dbs-rag-game-changer"><img src="/ai/stop-blaming-ai-vector-dbs-rag-game-changer/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Blaming AI: Vector DBs + RAG = Game Changer](/ai/stop-blaming-ai-vector-dbs-rag-game-changer)
