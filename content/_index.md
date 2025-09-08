@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it"><img src="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it"><img src="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Kubernetes Discovery Sucks for AI (And How Vector DBs Fix It)](/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it)
 
@@ -19,7 +19,7 @@ Today, I'll show you how **semantic search with vector databases** can finally s
 
 **[Full article >>](/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it)**
 
---- -->
+---
 
 <a href="/ai/stop-blaming-ai-vector-dbs-rag-game-changer"><img src="/ai/stop-blaming-ai-vector-dbs-rag-game-changer/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -88,17 +88,3 @@ But here's the plot twist: That's the **best** thing that could have happened.
 Today, I'm going to show you why AI agents might make your carefully crafted golden paths **obsolete**. Why those Terraform modules or similar abstractions you spent months building might be holding AI back, and why letting AI fail and learn might be the future of infrastructure management.
 
 **[Full article >>](/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future)**
-
----
-
-<a href="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything"><img src="/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything/thumbnail-01-small.png" style="width:50%; float:right; padding: 10px"></a>
-
-## [The End of Infrastructure-as-Code: AI Changes Everything](/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything)
-
-Here's something that might shock you: every Infrastructure-as-Code tool you're using today will be **dead** in upcoming years. Terraform, Pulumi; all of them. And the killer? AI agents that don't need the abstractions we've built our entire industry around.
-
-I know this sounds crazy. You're probably thinking, "But we just invested years learning these tools!" Here's the thing though - AI agents **don't operate** like humans. They don't get overwhelmed by complexity in the same way we do. They don't need user-friendly abstractions. And that changes everything.
-
-By the end of this video, you'll see exactly why the tools we consider essential today are actually **obstacles** for AI agents, and what's coming to replace them. But first, let me show you how we got here...
-
-**[Full article >>](/infrastructure-as-code/the-end-of-infrastructure-as-code-ai-changes-everything)**
