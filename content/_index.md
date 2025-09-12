@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code"><img src="/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Terminal Agents: Codex vs. Crush vs. OpenCode vs. Cursor CLI vs. Claude Code](/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code)
+
+I love Claude Code. But I hate being locked into Anthropic models. What if I want to use GPT5? Or Llama? Or whatever comes out next week? So I went on a quest to find a good terminal-based coding agent that actually works with different models.
+
+The perfect test case? GPT5. Everyone's hyping it as the best coding model ever created. If a terminal agent claims to be model-agnostic, it should work brilliantly with GPT5, right? So I tested every terminal-based agent I could find: Codex from OpenAI themselves, Charm Crush, OpenCode, Cursor CLI.
+
+What I discovered might surprise you. By the end of this video, you'll understand exactly what's wrong with today's terminal agents, why model flexibility is harder than it seems, and whether any of these tools can actually compete with Claude Code. Let's find out.
+
+**[Full article >>](/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code)**
+
+--- -->
+
 <a href="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it"><img src="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Kubernetes Discovery Sucks for AI (And How Vector DBs Fix It)](/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it)
