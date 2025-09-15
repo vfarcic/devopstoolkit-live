@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code"><img src="/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code"><img src="/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Terminal Agents: Codex vs. Crush vs. OpenCode vs. Cursor CLI vs. Claude Code](/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code)
 
@@ -17,7 +17,7 @@ What I discovered might surprise you. By the end of this video, you'll understan
 
 **[Full article >>](/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code)**
 
---- -->
+---
 
 <a href="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it"><img src="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -88,17 +88,3 @@ But what if there was a **third collaborator** that could bridge this gap? AI ha
 I'm about to show you a working system that demonstrates this three-way collaboration. We'll watch developers express their needs in natural language, see AI translate those into deployments using platform engineering building blocks, and then I'll reveal the architecture that makes this possible.
 
 **[Full article >>](/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration)**
-
----
-
-<a href="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future"><img src="/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future/thumbnail-02-small.png" style="width:50%; float:right; padding: 10px"></a>
-
-## [Can AI Replace Your Terraform Modules? Infrastructure's New Future](/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future)
-
-My AI agent just **failed** to create a database. It forgot the resource group, messed up the credentials, and made three attempts before getting it right.
-
-But here's the plot twist: That's the **best** thing that could have happened.
-
-Today, I'm going to show you why AI agents might make your carefully crafted golden paths **obsolete**. Why those Terraform modules or similar abstractions you spent months building might be holding AI back, and why letting AI fail and learn might be the future of infrastructure management.
-
-**[Full article >>](/ai/can-ai-replace-your-terraform-modules-infrastructures-new-future)**
