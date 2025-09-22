@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/teaching-ai-your-company-policies-vector-search-enforcement"><img src="/ai/teaching-ai-your-company-policies-vector-search-enforcement/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/teaching-ai-your-company-policies-vector-search-enforcement"><img src="/ai/teaching-ai-your-company-policies-vector-search-enforcement/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Teaching AI Your Company Policies: Vector Search + Enforcement](/ai/teaching-ai-your-company-policies-vector-search-enforcement)
 
@@ -15,7 +15,7 @@ A real policy is a business rule, a guideline, a principle. It's "Never use `lat
 
 **[Full article >>](/ai/teaching-ai-your-company-policies-vector-search-enforcement)**
 
---- -->
+---
 
 <a href="/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code"><img src="/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -86,17 +86,3 @@ But here's what pisses me off: **Everyone's panicking about the wrong thing**. T
 In this post, I'm going to tell you what your job actually is, why most developers have been doing it wrong for years, and how AI is about to expose that brutal reality. But I'll also show you exactly how to adapt, because those who get this right won't just survive. They'll thrive. And the questions I keep hearing prove that most people don't get it yet.
 
 **[Full article >>](/ai/ai-will-replace-coders---but-not-the-way-you-think)**
-
----
-
-<a href="/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration"><img src="/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Meets Kubernetes: Simplifying Developer and Ops Collaboration](/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration)
-
-Platform engineers face a tough challenge: **developers know what they need**, but they don't understand complex infrastructure. Platform engineers understand infrastructure, but they struggle to anticipate every developer requirement. The result? **Internal Developer Platforms** that miss the mark and platforms that require endless iterations to make them useful.
-
-But what if there was a **third collaborator** that could bridge this gap? AI has vast technical knowledge but doesn't know your company's specific rules and constraints. However, when you combine developer intent, platform engineering expertise, and AI's technical knowledge, something powerful emerges.
-
-I'm about to show you a working system that demonstrates this three-way collaboration. We'll watch developers express their needs in natural language, see AI translate those into deployments using platform engineering building blocks, and then I'll reveal the architecture that makes this possible.
-
-**[Full article >>](/app-management/ai-meets-kubernetes-simplifying-developer-and-ops-collaboration)**

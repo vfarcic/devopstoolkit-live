@@ -1,7 +1,7 @@
 
 +++
 title = 'Teaching AI Your Company Policies: Vector Search + Enforcement'
-date = 2024-09-22T16:00:00+00:00
+date = 2024-09-22T15:00:00+00:00
 draft = false
 +++
 
