@@ -5,6 +5,18 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands"><img src="/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Tamed Chaotic AI Coding with Simple Workflow Commands](/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands)
+
+You know what's absolutely maddening about working with AI coding agents? They're brilliant one moment, then completely fucking chaotic the next. They'll write perfect code for your database layer, then completely forget about it three prompts later when you're working on the API. They jump from task to task like rabbits on crack, losing context and making decisions that seem smart in isolation but are completely insane when you look at the bigger picture.
+
+Here's the thing: if you're like most developers, you've probably tried to wrangle AI agents with existing tools, and you've probably been disappointed. Maybe you've used Jira or Linear to track what the AI should work on, or tried some of the newer AI-specific task management tools. The problem is that most of these tools either don't work well with AI agents, or the ones that do provide workflows that just don't fit how I actually think about building software.
+
+**[Full article >>](/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands)**
+
+--- -->
+
 <a href="/ai/teaching-ai-your-company-policies-vector-search-enforcement"><img src="/ai/teaching-ai-your-company-policies-vector-search-enforcement/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Teaching AI Your Company Policies: Vector Search + Enforcement](/ai/teaching-ai-your-company-policies-vector-search-enforcement)
