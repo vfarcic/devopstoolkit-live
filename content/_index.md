@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands"><img src="/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands"><img src="/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Tamed Chaotic AI Coding with Simple Workflow Commands](/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands)
 
@@ -15,7 +15,7 @@ Here's the thing: if you're like most developers, you've probably tried to wrang
 
 **[Full article >>](/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands)**
 
---- -->
+---
 
 <a href="/ai/teaching-ai-your-company-policies-vector-search-enforcement"><img src="/ai/teaching-ai-your-company-policies-vector-search-enforcement/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -84,17 +84,3 @@ Here's what nobody tells you about AI prompts: they're not just instructions. Th
 We'll start by understanding why context is everything in AI, then I'll show you the evolution of a real prompt from 5 words to 500, and finally reveal how MCP changes the entire game for prompt distribution. Let's dive in.
 
 **[Full article >>](/ai/stop-wasting-time-turn-ai-prompts-into-production-code)**
-
----
-
-<a href="/ai/ai-will-replace-coders---but-not-the-way-you-think"><img src="/ai/ai-will-replace-coders---but-not-the-way-you-think/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Will Replace Coders - But Not the Way You Think](/ai/ai-will-replace-coders---but-not-the-way-you-think)
-
-I've been in tech for over three decades, and **I've never seen developers this scared**. Not during the dot-com crash. Not during outsourcing waves. Not even during the layoffs. This time it's different because the threat isn't coming from other humans. It's coming from AI that can already write code faster than us. And here's what should really worry you: we're on a trajectory where soon it might write better code too.
-
-But here's what pisses me off: **Everyone's panicking about the wrong thing**. They're worried AI will take their jobs because it can write code. That's like a chef worrying about losing their job because someone invented a better knife. You're missing the point entirely.
-
-In this post, I'm going to tell you what your job actually is, why most developers have been doing it wrong for years, and how AI is about to expose that brutal reality. But I'll also show you exactly how to adapt, because those who get this right won't just survive. They'll thrive. And the questions I keep hearing prove that most people don't get it yet.
-
-**[Full article >>](/ai/ai-will-replace-coders---but-not-the-way-you-think)**
