@@ -1,7 +1,7 @@
 
 +++
 title = 'How I Tamed Chaotic AI Coding with Simple Workflow Commands'
-date = 2025-09-29T16:00:00+00:00
+date = 2025-09-29T15:00:00+00:00
 draft = false
 +++
 
