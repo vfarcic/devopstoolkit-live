@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it"><img src="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Why Your Infrastructure AI Sucks (And How to Fix It)](/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it)
+
+Here's the harsh reality: your AI agent is **completely useless** for infrastructure management, and you probably don't even realize it yet.
+
+You've probably tried throwing ChatGPT or Claude at your DevOps problems, thinking AI will magically solve your infrastructure challenges. Maybe you got some generic responses that looked helpful on the surface. But when you actually tried to implement those suggestions, you discovered the painful truth - the AI has no clue about your environment, your standards, or your constraints.
+
+Most organizations are making the same critical mistake: they're treating AI like a search engine instead of building it into their platform properly. They ask vague questions, get generic answers, and wonder why their "AI transformation" isn't working.
+
+**[Full article >>](/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it)**
+
+--- -->
+
 <a href="/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work"><img src="/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Kubernetes Controllers Deep Dive: How They Really Work](/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work)
@@ -84,17 +98,3 @@ Maybe you're a developer who asked it about your codebase, and it confidently ex
 Or you're in ops, and it gets even worse. You asked about your backup policies, and it invented procedures you've never implemented. You requested help with a Kubernetes deployment, and it suggested configurations that violate every security standard you have. You wanted it to troubleshoot a production issue, and it gave you generic advice that would take down your entire cluster.
 
 **[Full article >>](/ai/stop-blaming-ai-vector-dbs-rag-game-changer)**
-
----
-
-<a href="/ai/stop-wasting-time-turn-ai-prompts-into-production-code"><img src="/ai/stop-wasting-time-turn-ai-prompts-into-production-code/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Stop Wasting Time: Turn AI Prompts Into Production Code](/ai/stop-wasting-time-turn-ai-prompts-into-production-code)
-
-I spent three hours writing the perfect prompt. Three. Damn. Hours. And you know what? The AI still screwed it up. Not because the AI was bad, but because I was doing it completely wrong. I was treating prompts like throwaway commands when I should have been treating them like **production code**.
-
-Here's what nobody tells you about AI prompts: they're not just instructions. They're **your team's collective knowledge**, encoded in a way that AI can execute. And if you're not treating them as first-class citizens in your codebase, you're wasting everyone's time. Today, I'm going to show you how to turn your prompts into a shared asset that evolves with your team, deploys like any other code, and actually makes AI useful instead of frustrating.
-
-We'll start by understanding why context is everything in AI, then I'll show you the evolution of a real prompt from 5 words to 500, and finally reveal how MCP changes the entire game for prompt distribution. Let's dive in.
-
-**[Full article >>](/ai/stop-wasting-time-turn-ai-prompts-into-production-code)**
