@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it"><img src="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it"><img src="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Your Infrastructure AI Sucks (And How to Fix It)](/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it)
 
@@ -17,7 +17,7 @@ Most organizations are making the same critical mistake: they're treating AI lik
 
 **[Full article >>](/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it)**
 
---- -->
+---
 
 <a href="/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work"><img src="/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -84,17 +84,3 @@ Even AI struggles with this. Ask it to "create a PostgreSQL database with schema
 Today, I'll show you how **semantic search with vector databases** can finally solve this discovery nightmare. By the end of this video, you'll see how AI can instantly find the perfect resources using natural language, even when the exact keywords don't match.
 
 **[Full article >>](/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it)**
-
----
-
-<a href="/ai/stop-blaming-ai-vector-dbs-rag-game-changer"><img src="/ai/stop-blaming-ai-vector-dbs-rag-game-changer/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Stop Blaming AI: Vector DBs + RAG = Game Changer](/ai/stop-blaming-ai-vector-dbs-rag-game-changer)
-
-Let me guess. You tried AI, it hallucinated something completely wrong, and now you're back to doing everything manually while complaining that "AI doesn't work."
-
-Maybe you're a developer who asked it about your codebase, and it confidently explained functions that don't exist. Or suggested using deprecated APIs your team abandoned two years ago. Perhaps it recommended architectural patterns that directly contradict your team's decisions.
-
-Or you're in ops, and it gets even worse. You asked about your backup policies, and it invented procedures you've never implemented. You requested help with a Kubernetes deployment, and it suggested configurations that violate every security standard you have. You wanted it to troubleshoot a production issue, and it gave you generic advice that would take down your entire cluster.
-
-**[Full article >>](/ai/stop-blaming-ai-vector-dbs-rag-game-changer)**

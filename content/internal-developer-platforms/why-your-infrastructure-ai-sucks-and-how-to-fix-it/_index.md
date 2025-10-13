@@ -1,7 +1,7 @@
 
 +++
 title = 'Why Your Infrastructure AI Sucks (And How to Fix It)'
-date = 2025-10-13T16:00:00+00:00
+date = 2025-10-13T15:00:00+00:00
 draft = false
 +++
 
