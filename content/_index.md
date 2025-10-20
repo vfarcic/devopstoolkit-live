@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/mcp-server-deployment-guide-from-local-to-production"><img src="/ai/mcp-server-deployment-guide-from-local-to-production/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [MCP Server Deployment Guide: From Local To Production](/ai/mcp-server-deployment-guide-from-local-to-production)
+
+Everyone's using MCP servers these days. They're connecting AI agents to databases, Kubernetes clusters, GitHub repos, cloud resources, you name it. MCP is becoming the standard way to give AI tools access to external systems. But here's the question: how should you actually run these MCP servers?
+
+The documentation typically shows you one way: running it locally with NPX. But is that secure? Is it scalable? Can your team share it? What about production? There are actually multiple deployment options, each with different trade-offs.
+
+So here's what we're going to do: I'll show you **four different ways** to deploy MCP servers, from the dead simple to the enterprise-ready. We'll look at local execution with NPX, Docker containers, Kubernetes deployments, and operator-managed resources. Plus, I'll cover a few notable cloud platforms like Fly.io, Cloudflare Workers, and AWS Lambda. For each approach, I'll show you exactly how it works, what problems it solves, and what new problems it creates.
+
+**[Full article >>](/ai/mcp-server-deployment-guide-from-local-to-production)**
+
+---
+
 <a href="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it"><img src="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Your Infrastructure AI Sucks (And How to Fix It)](/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it)
@@ -68,19 +82,3 @@ The perfect test case? GPT5. Everyone's hyping it as the best coding model ever 
 What I discovered might surprise you. By the end of this video, you'll understand exactly what's wrong with today's terminal agents, why model flexibility is harder than it seems, and whether any of these tools can actually compete with Claude Code. Let's find out.
 
 **[Full article >>](/ai/terminal-agents-codex-vs-crush-vs-opencode-vs-cursor-cli-vs-claude-code)**
-
----
-
-<a href="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it"><img src="/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Why Kubernetes Discovery Sucks for AI (And How Vector DBs Fix It)](/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it)
-
-Kubernetes API is **brilliant for execution**. Once you know exactly which resources to deploy and how they work together, it handles everything flawlessly. Controllers reconcile state, resources get created, and your applications and infrastructure run perfectly.
-
-But it **sucks big time for discovery**. When you need to figure out what's actually possible in your cluster, the API becomes a complete nightmare. You're stuck sifting through hundreds of cryptically named resource types, hoping to stumble across something that might solve your problem.
-
-Even AI struggles with this. Ask it to "create a PostgreSQL database with schema management in AWS," and it either gives you a complex multi-resource approach or completely misses the simple solution that actually exists. The problem isn't missing information. **The problem is that the information is impossible to find**.
-
-Today, I'll show you how **semantic search with vector databases** can finally solve this discovery nightmare. By the end of this video, you'll see how AI can instantly find the perfect resources using natural language, even when the exact keywords don't match.
-
-**[Full article >>](/kubernetes/why-kubernetes-discovery-sucks-for-ai-and-how-vector-dbs-fix-it)**
