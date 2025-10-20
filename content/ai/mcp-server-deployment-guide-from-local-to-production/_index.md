@@ -1,7 +1,7 @@
 
 +++
 title = 'MCP Server Deployment Guide: From Local To Production'
-date = 2024-10-20T16:00:00+00:00
+date = 2025-10-20T16:00:00+00:00
 draft = false
 +++
 
