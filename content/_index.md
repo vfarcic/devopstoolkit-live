@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation"><img src="/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Self-Healing Kubernetes: When to Use AI vs Traditional Automation](/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation)
+
+It's 2 AM Saturday. You're sleeping when your phone rings. You wake up ready to answer with "go to hell you prick," but then you see it's PagerDuty. Pods are crashing in production. You drag yourself to your laptop, still half-asleep, and start digging. Events. Logs. Metrics. Configurations. Forty minutes later, you've found it: an out-of-memory condition. The fix takes thirty seconds. A simple memory limit adjustment. Something that could have been detected and fixed automatically while you slept.
+
+This doesn't have to be your reality. Here's what you'll learn: how to build automation that watches Kubernetes events, analyzes problems, and remediates issues before they ruin your weekend. We'll cover when traditional automation works, when AI adds value, and how to progressively mature your incident response from manual firefighting to intelligent self-healing systems.
+
+The foundation is understanding events themselves.
+
+**[Full article >>](/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation)**
+
+--- -->
+
 <a href="/ai/mcp-server-deployment-guide-from-local-to-production"><img src="/ai/mcp-server-deployment-guide-from-local-to-production/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [MCP Server Deployment Guide: From Local To Production](/ai/mcp-server-deployment-guide-from-local-to-production)
