@@ -5,6 +5,24 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/best-ai-models-for-devops--sre-real-world-agent-testing"><img src="/ai/best-ai-models-for-devops--sre-real-world-agent-testing/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Best AI Models for DevOps & SRE: Real-World Agent Testing](/ai/best-ai-models-for-devops--sre-real-world-agent-testing)
+
+You're a software engineer. Maybe you're doing DevOps, SRE, platform engineering, or infrastructure work. You're using large language models, or at least you should be. But which ones? How do you know which model to pick?
+
+I was in the same situation. I made choices based on gut feelings, benchmark scores that didn't mean anything in production, and marketing claims. I thought I should change that.
+
+So I ran ten models from Google, Anthropic, OpenAI, xAI, DeepSeek, and Mistral through real agent workflows. Kubernetes operations. Cluster analysis. Policy generation. Systematic troubleshooting. Production scenarios with actual timeout constraints. And the results were shocking compared to what benchmarks and marketing promised.
+
+Seventy percent of models couldn't finish their work in reasonable time. A model that costs 120 dollars per million output tokens failed more evaluations than it passed. Premium "reasoning" models timed out on tasks that cheaper models handled easily. Models everyone's talking about couldn't deliver reliable results. And the cheapest model? It delivered better value than options costing twenty times more.
+
+By the end of this article, you'll know exactly which models actually work for engineering and operations tasks, which ones are unreliable, which ones burn your money without delivering results, and which ones can't do what they're supposed to do.
+
+**[Full article >>](/ai/best-ai-models-for-devops--sre-real-world-agent-testing)**
+
+--- -->
+
 <a href="/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation"><img src="/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Self-Healing Kubernetes: When to Use AI vs Traditional Automation](/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation)
