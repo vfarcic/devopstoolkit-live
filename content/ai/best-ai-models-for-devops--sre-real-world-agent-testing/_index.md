@@ -1,7 +1,7 @@
 
 +++
 title = 'Best AI Models for DevOps & SRE: Real-World Agent Testing'
-date = 2024-11-03T16:00:00+00:00
+date = 2025-11-03T16:00:00+00:00
 draft = false
 +++
 
