@@ -19,7 +19,7 @@ So how the hell does it work? How does your intent turn into actual results? Tha
 
 --- -->
 
-<!-- <a href="/ai/best-ai-models-for-devops--sre-real-world-agent-testing"><img src="/ai/best-ai-models-for-devops--sre-real-world-agent-testing/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/best-ai-models-for-devops--sre-real-world-agent-testing"><img src="/ai/best-ai-models-for-devops--sre-real-world-agent-testing/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Best AI Models for DevOps & SRE: Real-World Agent Testing](/ai/best-ai-models-for-devops--sre-real-world-agent-testing)
 
@@ -35,7 +35,7 @@ By the end of this article, you'll know exactly which models actually work for e
 
 **[Full article >>](/ai/best-ai-models-for-devops--sre-real-world-agent-testing)**
 
---- -->
+---
 
 <a href="/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation"><img src="/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -102,15 +102,3 @@ You know what's absolutely maddening about working with AI coding agents? They'r
 Here's the thing: if you're like most developers, you've probably tried to wrangle AI agents with existing tools, and you've probably been disappointed. Maybe you've used Jira or Linear to track what the AI should work on, or tried some of the newer AI-specific task management tools. The problem is that most of these tools either don't work well with AI agents, or the ones that do provide workflows that just don't fit how I actually think about building software.
 
 **[Full article >>](/development/how-i-tamed-chaotic-ai-coding-with-simple-workflow-commands)**
-
----
-
-<a href="/ai/teaching-ai-your-company-policies-vector-search-enforcement"><img src="/ai/teaching-ai-your-company-policies-vector-search-enforcement/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Teaching AI Your Company Policies: Vector Search + Enforcement](/ai/teaching-ai-your-company-policies-vector-search-enforcement)
-
-Let's start with a fundamental question that most people think they know the answer to, but really don't. **What are policies?** You probably think you know. Hell, you might even have dozens of them implemented in your clusters right now. But here's the thing: most of what you call policies aren't actually policies at all.
-
-A real policy is a business rule, a guideline, a principle. It's "Never use `latest` as an image tag because it makes rollbacks impossible and debugging a nightmare." It's "Databases in Google Cloud must always run in the `us-east1` region, those in Azure must run in `eastus`, and AWS databases go into `us-east-1`." These are policies. They're the rules we've established about how things should be done, why they should be done that way, and what happens when they're not.
-
-**[Full article >>](/ai/teaching-ai-your-company-policies-vector-search-enforcement)**
