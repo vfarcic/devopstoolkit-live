@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/ai-agent-architecture-explained-llms-context-tool-execution"><img src="/ai/ai-agent-architecture-explained-llms-context-tool-execution/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Agent Architecture Explained: LLMs, Context & Tool Execution](/ai/ai-agent-architecture-explained-llms-context-tool-execution)
+
+You type "Create a PostgreSQL database in AWS" into Claude Code or Cursor, hit enter, and boom - it just works. Database created, configured, running. Like magic.
+
+But it's not magic. Behind that simple request is an intricate dance between you, an orchestrator called an agent, and a massive language model. Most people think the AI is doing everything. They're wrong. The AI can't touch your files, can't run commands, can't do anything on its own.
+
+So how the hell does it work? How does your intent turn into actual results? That's what we're going to break down. The real architecture. The three key players. And why understanding this matters if you're using these tools every day.
+
+**[Full article >>](/ai/ai-agent-architecture-explained-llms-context-tool-execution)**
+
+--- -->
+
 <!-- <a href="/ai/best-ai-models-for-devops--sre-real-world-agent-testing"><img src="/ai/best-ai-models-for-devops--sre-real-world-agent-testing/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Best AI Models for DevOps & SRE: Real-World Agent Testing](/ai/best-ai-models-for-devops--sre-real-world-agent-testing)
