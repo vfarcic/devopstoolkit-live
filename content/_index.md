@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/ai-agent-architecture-explained-llms-context-tool-execution"><img src="/ai/ai-agent-architecture-explained-llms-context-tool-execution/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/ai-agent-architecture-explained-llms-context-tool-execution"><img src="/ai/ai-agent-architecture-explained-llms-context-tool-execution/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agent Architecture Explained: LLMs, Context & Tool Execution](/ai/ai-agent-architecture-explained-llms-context-tool-execution)
 
@@ -17,7 +17,7 @@ So how the hell does it work? How does your intent turn into actual results? Tha
 
 **[Full article >>](/ai/ai-agent-architecture-explained-llms-context-tool-execution)**
 
---- -->
+---
 
 <a href="/ai/best-ai-models-for-devops--sre-real-world-agent-testing"><img src="/ai/best-ai-models-for-devops--sre-real-world-agent-testing/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
