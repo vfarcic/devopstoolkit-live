@@ -19,7 +19,7 @@ But here's what most people don't realize: all of this chaos is preventable. Git
 
 --- -->
 
-<!-- <a href="/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025"><img src="/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025"><img src="/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI vs Manual: Kubernetes Troubleshooting Showdown 2025](/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025)
 
@@ -31,7 +31,7 @@ I'm going to show you exactly how to do this with Kubernetes. First, we'll walk 
 
 **[Full article >>](/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025)**
 
---- -->
+---
 
 <a href="/ai/ai-agent-architecture-explained-llms-context-tool-execution"><img src="/ai/ai-agent-architecture-explained-llms-context-tool-execution/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -104,17 +104,3 @@ You've probably tried throwing ChatGPT or Claude at your DevOps problems, thinki
 Most organizations are making the same critical mistake: they're treating AI like a search engine instead of building it into their platform properly. They ask vague questions, get generic answers, and wonder why their "AI transformation" isn't working.
 
 **[Full article >>](/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it)**
-
----
-
-<a href="/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work"><img src="/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Kubernetes Controllers Deep Dive: How They Really Work](/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work)
-
-Here's something that might surprise you: **most people using Kubernetes don't actually understand how it works**. They know how to write YAML files and run `kubectl apply`, but when things go wrong - and they always do - they're completely lost. Why? Because they don't understand controllers.
-
-Controllers are the beating heart of Kubernetes. They're what make your pods automatically restart when they crash, what scale your applications up and down, and what make custom resources feel like native parts of the platform. Without understanding controllers, you're just throwing YAML at the wall and hoping it sticks.
-
-In this video, we're going deep into how controllers actually work - not just the basic concept, but the real mechanics. We'll explore how they consume and emit events, how they coordinate with each other, and why understanding this will make you infinitely better at building and debugging Kubernetes systems. Whether you're just using Kubernetes or building your own controllers, this knowledge will transform how you think about the platform.
-
-**[Full article >>](/kubernetes/kubernetes-controllers-deep-dive-how-they-really-work)**
