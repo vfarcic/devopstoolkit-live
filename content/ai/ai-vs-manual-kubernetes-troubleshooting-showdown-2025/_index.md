@@ -1,7 +1,7 @@
 
 +++
 title = 'AI vs Manual: Kubernetes Troubleshooting Showdown 2025'
-date = 2025-11-16T16:00:00+00:00
+date = 2025-11-17T15:00:00+00:00
 draft = false
 +++
 
