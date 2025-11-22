@@ -19,6 +19,16 @@ But here's what most people don't realize: all of this chaos is preventable. Git
 
 --- -->
 
+<!-- <a href="/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second"><img src="/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Gemini 3 Is Fast But Gaslights You at 128 Tokens/Second](/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second)
+
+Gemini 3 is fast. Really fast. But speed means nothing when the AI confidently tells you it fixed a bug it never touched, or insists a file is updated when it's completely unchanged. That's not laziness. That's gaslighting at 128 tokens per second.
+
+**[Full article >>](/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second)**
+
+--- -->
+
 <a href="/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025"><img src="/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI vs Manual: Kubernetes Troubleshooting Showdown 2025](/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025)
