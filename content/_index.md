@@ -19,6 +19,20 @@ But here's what most people don't realize: all of this chaos is preventable. Git
 
 --- -->
 
+<a href="/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it"><img src="/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Deploy AI Agents and MCPs to K8s: Is kagent and kmcp Worth It?](/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it)
+
+What if you could manage AI agents with kubectl? **kagent** lets you define AI agents as custom resources, give them tools, and run them in your cluster. **kmcp** deploys MCP servers to Kubernetes using simple manifests. Both promise to bring AI agents into the cloud-native world you already know.
+
+The idea sounds compelling. Create agents with YAML, connect them to MCP servers, let them talk to each other through the A2A protocol. All running in Kubernetes, managed like any other resource. It's the kind of integration that platform engineers dream about.
+
+But there's a gap between promise and reality. We're going to deploy both tools to a Kubernetes cluster, create agents, connect them to MCP servers, and see what actually happens when you try to use them. We'll find out if this is the future of AI in Kubernetes, or if we're solving problems that don't need solving.
+
+**[Full article >>](/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it)**
+
+---
+
 <a href="/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second"><img src="/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Gemini 3 Is Fast But Gaslights You at 128 Tokens/Second](/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second)
