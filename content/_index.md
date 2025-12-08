@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/development/top-10-github-project-setup-tricks-you-must-use-in-2025"><img src="/development/top-10-github-project-setup-tricks-you-must-use-in-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/development/top-10-github-project-setup-tricks-you-must-use-in-2025"><img src="/development/top-10-github-project-setup-tricks-you-must-use-in-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Top 10 GitHub Project Setup Tricks You MUST Use in 2025!](/development/top-10-github-project-setup-tricks-you-must-use-in-2025)
 
@@ -17,7 +17,7 @@ But here's what most people don't realize: all of this chaos is preventable. Git
 
 **[Full article >>](/development/top-10-github-project-setup-tricks-you-must-use-in-2025)**
 
---- -->
+---
 
 <a href="/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it"><img src="/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 

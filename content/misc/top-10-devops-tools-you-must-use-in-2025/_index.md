@@ -15,7 +15,7 @@ I'm lying. This is not the list of the best tools but, rather, the list of the t
 
 <!--more-->
 
-{{< youtube 4N_MWAQEzWg >}}
+{{< youtube gYl3moYa4iI >}}
 
 So, the best of 2025 is more like "the best of the new tools and services or those that matured anough to be used in 2025".
 
