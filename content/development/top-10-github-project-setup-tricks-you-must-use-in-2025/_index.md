@@ -13,7 +13,7 @@ But here's what most people don't realize: all of this chaos is preventable. Git
 
 <!--more-->
 
-{{< youtube guCT5T4alPU >}}
+{{< youtube gYl3moYa4iI >}}
 
 Today, I'm going to show you how to transform a chaotic repository into a well-organized project with clear processes, automated workflows, and proper documentation. We'll cover issue templates that force people to provide useful information, PR templates that make code review actually possible, automated dependency updates, security scanning, and all the governance files that make collaboration smooth.
 
