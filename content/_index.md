@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial"><img src="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Distributed Tracing Explained: OpenTelemetry & Jaeger Tutorial](/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial)
+
+Your users are complaining that your application is slow. Sometimes it takes 8 seconds to respond, other times 2 seconds. But when you check your metrics, everything looks fine. Average response times are acceptable. All services report healthy. Your dashboards are green.
+
+So either your users are idiots, or you're not capable of capturing what's actually happening with their requests. Now, I tend to assume users are right. Which means I'd have to call you... Well... I'm not going to do that. Instead, I'm going to show you why you can't see what's really happening.
+
+Here's what you're about to learn. You'll see exactly how to track requests as they flow through dozens of microservices, identify which specific operation is causing delays, and understand why your traditional observability tools are lying to you. By the end of this video, you'll know how to implement distributed tracing that actually shows you what's happening in your system.
+
+Let's start with why this problem exists in the first place.
+
+**[Full article >>](/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial)**
+
+--- -->
+
 <a href="/development/top-10-github-project-setup-tricks-you-must-use-in-2025"><img src="/development/top-10-github-project-setup-tricks-you-must-use-in-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Top 10 GitHub Project Setup Tricks You MUST Use in 2025!](/development/top-10-github-project-setup-tricks-you-must-use-in-2025)
@@ -86,45 +102,3 @@ Seventy percent of models couldn't finish their work in reasonable time. A model
 By the end of this article, you'll know exactly which models actually work for engineering and operations tasks, which ones are unreliable, which ones burn your money without delivering results, and which ones can't do what they're supposed to do.
 
 **[Full article >>](/ai/best-ai-models-for-devops--sre-real-world-agent-testing)**
-
----
-
-<a href="/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation"><img src="/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Self-Healing Kubernetes: When to Use AI vs Traditional Automation](/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation)
-
-It's 2 AM Saturday. You're sleeping when your phone rings. You wake up ready to answer with "go to hell you prick," but then you see it's PagerDuty. Pods are crashing in production. You drag yourself to your laptop, still half-asleep, and start digging. Events. Logs. Metrics. Configurations. Forty minutes later, you've found it: an out-of-memory condition. The fix takes thirty seconds. A simple memory limit adjustment. Something that could have been detected and fixed automatically while you slept.
-
-This doesn't have to be your reality. Here's what you'll learn: how to build automation that watches Kubernetes events, analyzes problems, and remediates issues before they ruin your weekend. We'll cover when traditional automation works, when AI adds value, and how to progressively mature your incident response from manual firefighting to intelligent self-healing systems.
-
-The foundation is understanding events themselves.
-
-**[Full article >>](/kubernetes/self-healing-kubernetes-when-to-use-ai-vs-traditional-automation)**
-
----
-
-<a href="/ai/mcp-server-deployment-guide-from-local-to-production"><img src="/ai/mcp-server-deployment-guide-from-local-to-production/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [MCP Server Deployment Guide: From Local To Production](/ai/mcp-server-deployment-guide-from-local-to-production)
-
-Everyone's using MCP servers these days. They're connecting AI agents to databases, Kubernetes clusters, GitHub repos, cloud resources, you name it. MCP is becoming the standard way to give AI tools access to external systems. But here's the question: how should you actually run these MCP servers?
-
-The documentation typically shows you one way: running it locally with NPX. But is that secure? Is it scalable? Can your team share it? What about production? There are actually multiple deployment options, each with different trade-offs.
-
-So here's what we're going to do: I'll show you **four different ways** to deploy MCP servers, from the dead simple to the enterprise-ready. We'll look at local execution with NPX, Docker containers, Kubernetes deployments, and operator-managed resources. Plus, I'll cover a few notable cloud platforms like Fly.io, Cloudflare Workers, and AWS Lambda. For each approach, I'll show you exactly how it works, what problems it solves, and what new problems it creates.
-
-**[Full article >>](/ai/mcp-server-deployment-guide-from-local-to-production)**
-
----
-
-<a href="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it"><img src="/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Why Your Infrastructure AI Sucks (And How to Fix It)](/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it)
-
-Here's the harsh reality: your AI agent is **completely useless** for infrastructure management, and you probably don't even realize it yet.
-
-You've probably tried throwing ChatGPT or Claude at your DevOps problems, thinking AI will magically solve your infrastructure challenges. Maybe you got some generic responses that looked helpful on the surface. But when you actually tried to implement those suggestions, you discovered the painful truth - the AI has no clue about your environment, your standards, or your constraints.
-
-Most organizations are making the same critical mistake: they're treating AI like a search engine instead of building it into their platform properly. They ask vague questions, get generic answers, and wonder why their "AI transformation" isn't working.
-
-**[Full article >>](/internal-developer-platforms/why-your-infrastructure-ai-sucks-and-how-to-fix-it)**
