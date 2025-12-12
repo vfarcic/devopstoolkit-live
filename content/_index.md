@@ -5,6 +5,16 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out"><img src="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Stop Sitting on the Bench! Why AI Resisters Are Getting Kicked Out](/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out)
+
+Today we're going to talk about something completely different. It's about betting, not software engineering. Or is it? I guess we'll find out.
+
+**[Full article >>](/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out)**
+
+--- -->
+
 <!-- <a href="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial"><img src="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Distributed Tracing Explained: OpenTelemetry & Jaeger Tutorial](/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial)
