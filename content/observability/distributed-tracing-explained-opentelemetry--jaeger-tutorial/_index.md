@@ -1,7 +1,7 @@
 
 +++
 title = 'Distributed Tracing Explained: OpenTelemetry & Jaeger Tutorial'
-date = 2025-12-17T21:00:00+00:00
+date = 2025-12-17T20:00:00+00:00
 draft = false
 +++
 
