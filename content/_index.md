@@ -15,7 +15,7 @@ Today we're going to talk about something completely different. It's about betti
 
 --- -->
 
-<!-- <a href="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial"><img src="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial"><img src="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Distributed Tracing Explained: OpenTelemetry & Jaeger Tutorial](/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial)
 
@@ -29,7 +29,7 @@ Let's start with why this problem exists in the first place.
 
 **[Full article >>](/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial)**
 
---- -->
+---
 
 <a href="/development/top-10-github-project-setup-tricks-you-must-use-in-2025"><img src="/development/top-10-github-project-setup-tricks-you-must-use-in-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
