@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out"><img src="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out"><img src="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Sitting on the Bench! Why AI Resisters Are Getting Kicked Out](/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out)
 
@@ -13,7 +13,7 @@ Today we're going to talk about something completely different. It's about betti
 
 **[Full article >>](/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out)**
 
---- -->
+---
 
 <a href="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial"><img src="/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -80,35 +80,3 @@ There is. What if AI could detect the issue, analyze the root cause, suggest a f
 I'm going to show you exactly how to do this with Kubernetes. First, we'll walk through the manual troubleshooting process so you understand what we're automating. Then I'll show you an AI-powered solution using Claude Code and the Model Context Protocol that handles detection, analysis, remediation, and validation. Finally, we'll look under the hood at how the system actually works.
 
 **[Full article >>](/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025)**
-
----
-
-<a href="/ai/ai-agent-architecture-explained-llms-context-tool-execution"><img src="/ai/ai-agent-architecture-explained-llms-context-tool-execution/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Agent Architecture Explained: LLMs, Context & Tool Execution](/ai/ai-agent-architecture-explained-llms-context-tool-execution)
-
-You type "Create a PostgreSQL database in AWS" into Claude Code or Cursor, hit enter, and boom - it just works. Database created, configured, running. Like magic.
-
-But it's not magic. Behind that simple request is an intricate dance between you, an orchestrator called an agent, and a massive language model. Most people think the AI is doing everything. They're wrong. The AI can't touch your files, can't run commands, can't do anything on its own.
-
-So how the hell does it work? How does your intent turn into actual results? That's what we're going to break down. The real architecture. The three key players. And why understanding this matters if you're using these tools every day.
-
-**[Full article >>](/ai/ai-agent-architecture-explained-llms-context-tool-execution)**
-
----
-
-<a href="/ai/best-ai-models-for-devops--sre-real-world-agent-testing"><img src="/ai/best-ai-models-for-devops--sre-real-world-agent-testing/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Best AI Models for DevOps & SRE: Real-World Agent Testing](/ai/best-ai-models-for-devops--sre-real-world-agent-testing)
-
-You're a software engineer. Maybe you're doing DevOps, SRE, platform engineering, or infrastructure work. You're using large language models, or at least you should be. But which ones? How do you know which model to pick?
-
-I was in the same situation. I made choices based on gut feelings, benchmark scores that didn't mean anything in production, and marketing claims. I thought I should change that.
-
-So I ran ten models from Google, Anthropic, OpenAI, xAI, DeepSeek, and Mistral through real agent workflows. Kubernetes operations. Cluster analysis. Policy generation. Systematic troubleshooting. Production scenarios with actual timeout constraints. And the results were shocking compared to what benchmarks and marketing promised.
-
-Seventy percent of models couldn't finish their work in reasonable time. A model that costs 120 dollars per million output tokens failed more evaluations than it passed. Premium "reasoning" models timed out on tasks that cheaper models handled easily. Models everyone's talking about couldn't deliver reliable results. And the cheapest model? It delivered better value than options costing twenty times more.
-
-By the end of this article, you'll know exactly which models actually work for engineering and operations tasks, which ones are unreliable, which ones burn your money without delivering results, and which ones can't do what they're supposed to do.
-
-**[Full article >>](/ai/best-ai-models-for-devops--sre-real-world-agent-testing)**
