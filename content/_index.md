@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<!--<a href="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you"><img src="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Stop Sitting on the Bench! Why AI Resisters Are Getting Kicked Out](/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you)
+
+Ever wonder why Kubernetes has a command called `get all` that doesn't actually retrieve all your resources? Try it yourself and you'll find it conveniently forgets about Ingresses, PersistentVolumeClaims, and potentially many other resource types.
+
+Worse yet, even when you manually list everything in a namespace, you're left staring at a pile of objects with no idea how they fit together. There's no built-in way to say "these five resources form a complete system" or to check if that system is healthy.
+
+Turns out, this is a real problem when navigating clusters and trying to understand what's actually running. So I created a Custom Resource Definition that wraps related resources into logical groups with status, context, and relationships.
+
+In this video, I'll walk you through the problem, explore how Kubernetes ownership and ownerReferences work, and demonstrate a better approach using CRDs.
+
+**[Full article >>](/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you)**
+
+----->
+
 <a href="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out"><img src="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Sitting on the Bench! Why AI Resisters Are Getting Kicked Out](/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out)
