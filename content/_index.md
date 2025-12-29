@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!--<a href="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you"><img src="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you"><img src="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Sitting on the Bench! Why AI Resisters Are Getting Kicked Out](/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you)
 
@@ -19,7 +19,7 @@ In this video, I'll walk you through the problem, explore how Kubernetes ownersh
 
 **[Full article >>](/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you)**
 
------>
+---
 
 <a href="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out"><img src="/ai/stop-sitting-on-the-bench-why-ai-resisters-are-getting-kicked-out/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -82,17 +82,3 @@ But there's a gap between promise and reality. We're going to deploy both tools 
 Gemini 3 is fast. Really fast. But speed means nothing when the AI confidently tells you it fixed a bug it never touched, or insists a file is updated when it's completely unchanged. That's not laziness. That's gaslighting at 128 tokens per second.
 
 **[Full article >>](/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second)**
-
----
-
-<a href="/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025"><img src="/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI vs Manual: Kubernetes Troubleshooting Showdown 2025](/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025)
-
-It's 3 AM. Your phone buzzes. Production is down. A Pod won't start. You run `kubectl events`, wade through hundreds of normal events to find the one warning that matters, describe the Pod, check the ReplicaSet, trace back to the Deployment, realize a PersistentVolumeClaim is missing, write the YAML, apply it, validate the fix. Thirty minutes later, you're back in bed, wondering if there's a better way.
-
-There is. What if AI could detect the issue, analyze the root cause, suggest a fix, and validate that it worked? What if all four phases happened automatically, or at least with your approval, while you stayed in bed?
-
-I'm going to show you exactly how to do this with Kubernetes. First, we'll walk through the manual troubleshooting process so you understand what we're automating. Then I'll show you an AI-powered solution using Claude Code and the Model Context Protocol that handles detection, analysis, remediation, and validation. Finally, we'll look under the hood at how the system actually works.
-
-**[Full article >>](/ai/ai-vs-manual-kubernetes-troubleshooting-showdown-2025)**
