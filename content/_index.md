@@ -7,7 +7,7 @@ title = ""
 
 <a href="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you"><img src="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
-## [Stop Sitting on the Bench! Why AI Resisters Are Getting Kicked Out](/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you)
+## [Stop Trusting kubectl get all! Here Is What It Hides From You](/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you)
 
 Ever wonder why Kubernetes has a command called `get all` that doesn't actually retrieve all your resources? Try it yourself and you'll find it conveniently forgets about Ingresses, PersistentVolumeClaims, and potentially many other resource types.
 
