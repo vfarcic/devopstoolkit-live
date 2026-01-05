@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!--<a href="/misc/top-10-devops-tools-you-must-use-in-2026"><img src="/misc/top-10-devops-tools-you-must-use-in-2026/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/misc/top-10-devops-tools-you-must-use-in-2026"><img src="/misc/top-10-devops-tools-you-must-use-in-2026/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Trusting kubectl get all! Here Is What It Hides From You](/misc/top-10-devops-tools-you-must-use-in-2026)
 
@@ -19,7 +19,7 @@ In this video, I'll walk you through the problem, explore how Kubernetes ownersh
 
 **[Full article >>](/misc/top-10-devops-tools-you-must-use-in-2026)**
 
------>
+---
 
 <a href="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you"><img src="/kubernetes/stop-trusting-kubectl-get-all-heres-what-it-hides-from-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -88,13 +88,3 @@ The idea sounds compelling. Create agents with YAML, connect them to MCP servers
 But there's a gap between promise and reality. We're going to deploy both tools to a Kubernetes cluster, create agents, connect them to MCP servers, and see what actually happens when you try to use them. We'll find out if this is the future of AI in Kubernetes, or if we're solving problems that don't need solving.
 
 **[Full article >>](/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it)**
-
----
-
-<a href="/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second"><img src="/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Gemini 3 Is Fast But Gaslights You at 128 Tokens/Second](/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second)
-
-Gemini 3 is fast. Really fast. But speed means nothing when the AI confidently tells you it fixed a bug it never touched, or insists a file is updated when it's completely unchanged. That's not laziness. That's gaslighting at 128 tokens per second.
-
-**[Full article >>](/ai/gemini-3-is-fast-but-gaslights-you-at-128-tokens-second)**
