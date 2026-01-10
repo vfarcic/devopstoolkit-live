@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review"><img src="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [API Gateways Explained: Why Your Services Are a Mess (Zuplo Review)](/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review)
+
+Every API you expose to the world needs the same things. Authentication. Rate limiting. Documentation. Analytics. And if you're building AI-powered applications, add cost tracking and provider failover to that list.
+
+You could implement all of this in every single service you build. Or you could centralize it in an API gateway.
+
+Today we're exploring what API gateways actually are, when you need them, and when you don't. We'll look at how they fit into different architectures, from traditional VMs to Kubernetes to serverless. And we'll take this opportunity to explore Zuplo as a possible solution for your API gateway needs.
+
+**[Full article >>](/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review)**
+
+--- -->
+
 <a href="/misc/top-10-devops-tools-you-must-use-in-2026"><img src="/misc/top-10-devops-tools-you-must-use-in-2026/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Top 10 DevOps Tools You MUST Use in 2026](/misc/top-10-devops-tools-you-must-use-in-2026)
