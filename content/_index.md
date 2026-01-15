@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review"><img src="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review"><img src="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [API Gateways Explained: Why Your Services Are a Mess (Zuplo Review)](/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review)
 
@@ -17,7 +17,7 @@ Today we're exploring what API gateways actually are, when you need them, and wh
 
 **[Full article >>](/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review)**
 
---- -->
+---
 
 <a href="/misc/top-10-devops-tools-you-must-use-in-2026"><img src="/misc/top-10-devops-tools-you-must-use-in-2026/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -88,17 +88,3 @@ Here's the reality: whether you're maintaining an open source project, building 
 But here's what most people don't realize: all of this chaos is preventable. GitHub has built-in tools for issue templates, pull request templates, automated workflows, and community governance. The problem is that setting all of this up manually takes hours, and most people either don't know these tools exist or don't bother configuring them properly.
 
 **[Full article >>](/development/top-10-github-project-setup-tricks-you-must-use-in-2025)**
-
----
-
-<a href="/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it"><img src="/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Deploy AI Agents and MCPs to K8s: Is kagent and kmcp Worth It?](/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it)
-
-What if you could manage AI agents with kubectl? **kagent** lets you define AI agents as custom resources, give them tools, and run them in your cluster. **kmcp** deploys MCP servers to Kubernetes using simple manifests. Both promise to bring AI agents into the cloud-native world you already know.
-
-The idea sounds compelling. Create agents with YAML, connect them to MCP servers, let them talk to each other through the A2A protocol. All running in Kubernetes, managed like any other resource. It's the kind of integration that platform engineers dream about.
-
-But there's a gap between promise and reality. We're going to deploy both tools to a Kubernetes cluster, create agents, connect them to MCP servers, and see what actually happens when you try to use them. We'll find out if this is the future of AI in Kubernetes, or if we're solving problems that don't need solving.
-
-**[Full article >>](/kubernetes/deploy-ai-agents-and-mcps-to-k8s-is-kagent-and-kmcp-worth-it)**
