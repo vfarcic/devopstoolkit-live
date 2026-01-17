@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/containers/my-production-dockerfile-rules-how-i-build-docker-images"><img src="/containers/my-production-dockerfile-rules-how-i-build-docker-images/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [My Production Dockerfile Rules: How I Build Docker Images](/containers/my-production-dockerfile-rules-how-i-build-docker-images)
+
+Most Dockerfiles I see in production are security nightmares waiting to happen. Running as root. Using `:latest` tags. Copying entire directories including secrets. And the images? Bloated with debugging tools that attackers love.
+
+Here's the thing. Writing a good Dockerfile isn't hard. It's just that nobody taught you the rules. Today, I'm going to show you every best practice you need to build production-ready containers. We'll cover image selection, build optimization, security hardening, and maintainability. And at the end, I'll show you how AI can apply all these rules automatically.
+
+Let's start with the foundation: choosing the right base image.
+
+**[Full article >>](/containers/my-production-dockerfile-rules-how-i-build-docker-images)**
+
+--- -->
+
 <a href="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review"><img src="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [API Gateways Explained: Why Your Services Are a Mess (Zuplo Review)](/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review)
