@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/containers/my-production-dockerfile-rules-how-i-build-docker-images"><img src="/containers/my-production-dockerfile-rules-how-i-build-docker-images/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/containers/my-production-dockerfile-rules-how-i-build-docker-images"><img src="/containers/my-production-dockerfile-rules-how-i-build-docker-images/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [My Production Dockerfile Rules: How I Build Docker Images](/containers/my-production-dockerfile-rules-how-i-build-docker-images)
 
@@ -17,7 +17,7 @@ Let's start with the foundation: choosing the right base image.
 
 **[Full article >>](/containers/my-production-dockerfile-rules-how-i-build-docker-images)**
 
---- -->
+---
 
 <a href="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review"><img src="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -88,17 +88,3 @@ Here's what you're about to learn. You'll see exactly how to track requests as t
 Let's start with why this problem exists in the first place.
 
 **[Full article >>](/observability/distributed-tracing-explained-opentelemetry--jaeger-tutorial)**
-
----
-
-<a href="/development/top-10-github-project-setup-tricks-you-must-use-in-2025"><img src="/development/top-10-github-project-setup-tricks-you-must-use-in-2025/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Top 10 GitHub Project Setup Tricks You MUST Use in 2025!](/development/top-10-github-project-setup-tricks-you-must-use-in-2025)
-
-Have you ever seen a GitHub issue that just said "it's broken" with zero context? Or reviewed a pull request where you had no idea what changed or why? How many hours have you wasted chasing down information that should have been provided upfront?
-
-Here's the reality: whether you're maintaining an open source project, building internal tools, or managing commercial software, you face the same problem. People file vague bug reports. Contributors submit PRs without explaining their changes. Dependencies fall months behind. Security issues pile up. And you're stuck playing detective instead of building features.
-
-But here's what most people don't realize: all of this chaos is preventable. GitHub has built-in tools for issue templates, pull request templates, automated workflows, and community governance. The problem is that setting all of this up manually takes hours, and most people either don't know these tools exist or don't bother configuring them properly.
-
-**[Full article >>](/development/top-10-github-project-setup-tricks-you-must-use-in-2025)**
