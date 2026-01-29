@@ -1,7 +1,7 @@
 
 +++
 title = 'Stop Setting Up Developer Portals Manually! (feat. Port MCP)'
-date = 2026-02-05T13:30:00+00:00
+date = 2026-01-29T13:30:00+00:00
 draft = false
 +++
 
