@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes"><img src="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Agent Debugging Setup: OpenTelemetry + Jaeger in Kubernetes](/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes)
+
+I sent two requests to the same AI agent, the same endpoint, doing similar work. One took 10 seconds with 10 operations. The other took over a minute with 42 operations. Same agent. **Completely different behavior.**
+
+That's the problem with agentic systems. The LLM decides the path. It chooses which tools to call, how many times to loop, what data to fetch. Every request can fan out differently. You can't predict it. And if you can't see what's happening, you can't debug it, optimize it, or trust it.
+
+The good news? We already solved this problem for distributed systems. OpenTelemetry tracing. And it works for AI agents too.
+
+**[Full article >>](/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes)**
+
+--- -->
+
 <a href="/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp"><img src="/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Setting Up Developer Portals Manually! (feat. Port MCP)](/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp)
