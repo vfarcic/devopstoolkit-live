@@ -30,3 +30,54 @@ Only videos about projects, products, or services we find interesting are eligib
 ## Contact
 
 If you are interested in sponsoring the channel, please set up a [meeting](https://calendar.app.google/gDXN62s8dLGx3FpR8) with us and we'll go into details and answer any questions you might have.
+
+<!-- SPONSOR_ANALYTICS_START -->
+## Channel Analytics
+
+*Last updated: February 3, 2026.*
+
+### Overview (All Time)
+
+| Metric | Value |
+|--------|-------|
+| Subscribers | 93,900 |
+| Total Views | 5,570,368 |
+| Videos | 491 |
+
+### Audience Demographics (Last 90 Days)
+
+```mermaid
+xychart-beta horizontal
+    title "Age Distribution"
+    x-axis [18-24, 25-34, 35-44, 45-54, 55-64, 65+]
+    y-axis "Percentage" 0 --> 40
+    bar [6.4, 34.4, 35.6, 18.2, 4.8, 0.5]
+```
+
+```mermaid
+pie showData title Gender Distribution
+    "Female" : 2.8
+    "Male" : 97.1
+```
+
+### Geographic Distribution (Last 90 Days)
+
+```mermaid
+xychart-beta horizontal
+    title "Top Countries by Views"
+    x-axis [United States, India, Germany, United Kingdom, Canada, Poland, IL, France, Brazil, Netherlands]
+    y-axis "Percentage" 0 --> 40
+    bar [30.5, 22.0, 11.6, 7.5, 5.3, 5.1, 5.1, 4.6, 4.3, 4.0]
+```
+
+### Engagement (Last 90 Days, Regular Videos Only)
+
+| Metric | Value |
+|--------|-------|
+| Avg Watch Time | 5m 34s |
+| Likes | 3,794 |
+| Comments | 215 |
+| Shares | 2,165 |
+| Engagement Rate | 2.31% |
+
+<!-- SPONSOR_ANALYTICS_END -->
