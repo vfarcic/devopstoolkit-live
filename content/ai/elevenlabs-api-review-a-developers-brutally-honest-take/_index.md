@@ -1,7 +1,7 @@
 
 +++
 title = "ElevenLabs API Review: A Developer's Brutally Honest Take"
-date = 2025-02-09T16:00:00+00:00
+date = 2026-02-09T15:00:00+00:00
 draft = false
 +++
 
