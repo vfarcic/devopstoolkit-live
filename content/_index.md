@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/elevenlabs-api-review-a-developers-brutally-honest-take"><img src="/ai/elevenlabs-api-review-a-developers-brutally-honest-take/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/elevenlabs-api-review-a-developers-brutally-honest-take"><img src="/ai/elevenlabs-api-review-a-developers-brutally-honest-take/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [ElevenLabs API Review: A Developer's Brutally Honest Take](/ai/elevenlabs-api-review-a-developers-brutally-honest-take)
 
@@ -19,7 +19,7 @@ That sounds just about right for this channel. I guess I deal with too many lang
 
 **[Full article >>](/ai/elevenlabs-api-review-a-developers-brutally-honest-take)**
 
---- -->
+---
 
 <a href="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes"><img src="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
