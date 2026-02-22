@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it"><img src="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it"><img src="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Kubernetes Querying Is Broken and How I Fixed It](/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it)
 
@@ -17,7 +17,7 @@ I'll show you how to sync Kubernetes metadata into a Vector database, enabling b
 
 **[Full article >>](/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it)**
 
---- -->
+---
 
 <a href="/ai/elevenlabs-api-review-a-developers-brutally-honest-take"><img src="/ai/elevenlabs-api-review-a-developers-brutally-honest-take/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -94,19 +94,3 @@ You could implement all of this in every single service you build. Or you could 
 Today we're exploring what API gateways actually are, when you need them, and when you don't. We'll look at how they fit into different architectures, from traditional VMs to Kubernetes to serverless. And we'll take this opportunity to explore Zuplo as a possible solution for your API gateway needs.
 
 **[Full article >>](/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review)**
-
----
-
-<a href="/misc/top-10-devops-tools-you-must-use-in-2026"><img src="/misc/top-10-devops-tools-you-must-use-in-2026/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Top 10 DevOps Tools You MUST Use in 2026](/misc/top-10-devops-tools-you-must-use-in-2026)
-
-2025 was the year agentic AI went from interesting experiment to daily reality. AI agents stopped being autocomplete tools and started understanding entire codebases, refactoring across files, writing tests, debugging their own mistakes, managing infrastructure, and handling operational tasks. For many developers and ops engineers, the way they work fundamentally changed.
-
-2026 is the year to take this seriously. Not just for application developers, but for DevOps engineers, SREs, and platform teams. The tools are mature enough now. The productivity gains are real. If you're not integrating AI agents into your workflow, you're leaving significant value on the table.
-
-But here's the thing: agentic AI doesn't replace everything else. You still need solid foundations. Internal developer platforms, testing frameworks, scripting languages, development environments. These tools still matter. What's changed is that AI now intersects with all of them.
-
-So this year's recommendations cover both: the AI tools that emerged in 2025 and the non-AI tools that remain essential. I spent 2025 testing all of them in real projects, real workflows, real problems. Not quick demos.
-
-**[Full article >>](/misc/top-10-devops-tools-you-must-use-in-2026)**
