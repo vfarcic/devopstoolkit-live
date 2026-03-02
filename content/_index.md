@@ -5,6 +5,26 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="/ai/why-self-hosting-ai-models-is-a-bad-idea"><img src="/ai/why-self-hosting-ai-models-is-a-bad-idea/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Why Self-Hosting AI Models Is a Bad Idea](/ai/why-self-hosting-ai-models-is-a-bad-idea)
+
+Open weight LLM models are bullshit.
+
+Now, before you write an angry comment telling me I'm just another person who hates open source, let me be clear. Open weight is NOT open source. The licenses are screwed and can change for worse at any time. You can't use the truly powerful models unless you have money to burn. And you definitely can't build a sustainable business on them.
+
+That is, if you want models that actually compete with the best. Not the toys that are fun to play with but aren't the real deal.
+
+Did those statements just put me on top of your hate list? Are you already typing a furious response? Good.
+
+I get it though. You think using AI is expensive. You want to save money, so you have a brilliant idea: self-host free models. Right?
+
+Stick around because I'm going to show you the actual math. And by the end of this video, you might realize that the "open" in open weight is costing you more than the "closed" alternatives ever would.
+
+**[Full article >>](/ai/why-self-hosting-ai-models-is-a-bad-idea)**
+
+--- -->
+
 <a href="/ai/commands-vs-mcp-vs-skills-what-i-use"><img src="/ai/commands-vs-mcp-vs-skills-what-i-use/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Commands vs MCP vs Skills (What I Use)](/ai/commands-vs-mcp-vs-skills-what-i-use)
