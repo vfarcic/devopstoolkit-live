@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/why-self-hosting-ai-models-is-a-bad-idea"><img src="/ai/why-self-hosting-ai-models-is-a-bad-idea/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/why-self-hosting-ai-models-is-a-bad-idea"><img src="/ai/why-self-hosting-ai-models-is-a-bad-idea/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Self-Hosting AI Models Is a Bad Idea](/ai/why-self-hosting-ai-models-is-a-bad-idea)
 
@@ -23,7 +23,7 @@ Stick around because I'm going to show you the actual math. And by the end of th
 
 **[Full article >>](/ai/why-self-hosting-ai-models-is-a-bad-idea)**
 
---- -->
+---
 
 <a href="/ai/commands-vs-mcp-vs-skills-what-i-use"><img src="/ai/commands-vs-mcp-vs-skills-what-i-use/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
