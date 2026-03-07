@@ -1,23 +1,19 @@
 
 +++
 title = 'Stop Designing UIs for AI - Let the LLM Decide What You See'
-date = 2026-03-09T16:00:00+00:00
+date = 2025-03-09T16:00:00+00:00
 draft = false
 +++
-
-FIXME:
-
-<!--more-->
-
-{{< youtube czffWAXTy2Y >}}
-
-## Intro
 
 Have you ever asked an AI agent a complex question and gotten back a wall of ASCII tables, Markdown headers, and bullet points crammed into a terminal? You squint at it, scroll up and down, and think "there has to be a better way to see this." There is. But it requires rethinking how we build UIs entirely.
 
 Traditional interfaces are designed by humans for predictable data. AI outputs are neither predictable nor structured the same way twice. So how do we visualize something when we don't know what it is until the moment it appears?
 
 Today I'll show you two approaches to solving this: one that ships rendering code from the server, and one that lets AI decide how data should be displayed. By the end, you'll understand why the future of UIs might not be designed by us at all.
+
+<!--more-->
+
+{{< youtube czffWAXTy2Y >}}
 
 ## Setup
 
@@ -67,13 +63,9 @@ claude --mcp-config .mcp-kubernetes.json
 
 ## Why Traditional UIs Fail AI
 
-TODO: Logo: https://grafana.com
-
 Traditionally, we design user interfaces to be **static visualizations** with **dynamic data**. Think about **Grafana**. The dashboards themselves are predefined. Someone decided what charts to show, where to place them, and how they connect to data sources. The data flowing through those dashboards changes constantly, but the structure never does.
 
 > Open http://grafana.127.0.0.1.nip.io in a browser. Use `admin` as the username and the value of the `GRAFANA_PASSWORD` environment variable as password.
-
-TODO: Screen: screen-01
 
 We can see a Grafana dashboard showing Kubernetes cluster metrics. CPU utilization, memory usage, quotas per namespace, all laid out in panels that someone configured ahead of time.
 
@@ -89,16 +81,11 @@ This time, we talk to it and it responds in a way that we can digest that respon
 
 Markdown got us to a point. It's better than plain text since LLMs can organize and format data with headers, tables, and lists. Yet, it is arguably the simplest and most limiting format except for pure text.
 
-TODO: Logo: https://cursor.com
-TODO: Logo: https://code.visualstudio.com
-
 Now, not all agents are terminals. Some, like **Cursor** and **VS Code** with Copilot, are full GUI applications. They could, in theory, render much richer visualizations than Markdown. But the question remains: who decides what to render and how?
 
 So how do we visualize outputs from AI? We don't know what the user's intent is. We might have specialized agents for querying a cluster, for remediation, for creation of solutions. Yet, we don't know what the user will type, what the intent is, and we don't know what the LLM will respond.
 
 Let me show you what I mean. I'm going to ask a coding agent a fairly complex question about all the resources running in a Kubernetes cluster, their purpose, and how they relate to each other.
-
-TODO: Screen: screen-02 - Show the initial intent (the text below), fast forward through AI thinking about it, and show the final output.
 
 [user]
 ```text
@@ -115,30 +102,30 @@ What are all dot-ai and related resources, what is their purpose, and what are r
 
   ---
   Core Components (Deployments)
-  ┌────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │          Resource          │                                                       Purpose                                                        │
-  ├────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ dot-ai                     │ Main API/MCP server — orchestrates AI reasoning, routes tool calls to plugins, manages sessions                      │
-  ├────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ dot-ai-ui                  │ Web UI — provides a browser-based interface for interacting with dot-ai                                              │
-  ├────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ dot-ai-controller-manager  │ Kubernetes controller — watches and reconciles custom resources (Solution, CapabilityScanConfig, ResourceSyncConfig) │
-  ├────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ dot-ai-stack-agentic-tools │ Plugin service — contains the actual tool implementations (kubectl, vector search, etc.) that the MCP server calls   │
-  └────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  ┌────────────────────────────┬────────────────────────────────────────────────────────────┐
+  │          Resource          │                         Purpose                            │
+  ├────────────────────────────┼────────────────────────────────────────────────────────────┤
+  │ dot-ai                     │ Main API/MCP server — orchestrates AI reasoning, routes... │
+  ├────────────────────────────┼────────────────────────────────────────────────────────────┤
+  │ dot-ai-ui                  │ Web UI — provides a browser-based interface for...         │
+  ├────────────────────────────┼────────────────────────────────────────────────────────────┤
+  │ dot-ai-controller-manager  │ Kubernetes controller — watches and reconciles custom...   │
+  ├────────────────────────────┼────────────────────────────────────────────────────────────┤
+  │ dot-ai-stack-agentic-tools │ Plugin service — contains the actual tool...               │
+  └────────────────────────────┴────────────────────────────────────────────────────────────┘
   Data Layer (StatefulSet)
-  ┌──────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │               Resource               │                                                             Purpose                                                              │
-  ├──────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ dot-ai-stack-qdrant (Qdrant v1.15.5) │ Vector database — stores embeddings for knowledge base, capability scans, and semantic search. Has persistent storage via a PVC. │
-  └──────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  ┌──────────────────────────────────────┬──────────────────────────────────────────────────┐
+  │               Resource               │                        Purpose                   │
+  ├──────────────────────────────────────┼──────────────────────────────────────────────────┤
+  │ dot-ai-stack-qdrant (Qdrant v1.15.5) │ Vector database — stores embeddings for...       │
+  └──────────────────────────────────────┴──────────────────────────────────────────────────┘
   ---
   Relationships / Data Flow
 
   User (Claude Code / Cursor / Browser)
           │
           ▼
-     ┌─────────┐     ┌────────────┐
+     ┌──────────┐     ┌────────────┐
      │  dot-ai  │◄───►│  dot-ai-ui │
      │ (MCP API)│     │  (Web UI)  │
      └────┬─────┘     └────────────┘
@@ -226,23 +213,15 @@ With AI, we're always in that "can't predict" situation. Every response is poten
 
 ## MCP Apps: Server-Side Rendering
 
-TODO: Logo: https://modelcontextprotocol.io
-
 Since some level of uniformity, especially when it comes to design, is required, LLMs are not free to literally decide what a browser should render. That's what **[MCP Apps](https://modelcontextprotocol.io/docs/extensions/apps)** try to accomplish.
 
 Here's how MCP Apps work. A (1) user types a request into a (3) GUI host, whether that's a browser, Cursor, VS Code, or any other application that supports iFrames. That (2) intent reaches the AI, which decides to (4) call an MCP tool registered by an (5) MCP server. The server has a UI resource associated with that tool: a full HTML page with JavaScript and CSS bundled into it. So it ships that (6) HTML/JS/CSS bundle back to the GUI host, which (7) renders it inside a (8) sandboxed iFrame. From there, the iFrame and the server (9) communicate back and forth through messages. The app can call server tools, push data back to the AI, and even inject messages into the chat. It's designed to work with any agent and be rendered on any UI.
 
 Here's the thing though. In MCP Apps, the AI doesn't actually generate the visualization. A server developer builds the full web app at development time. The AI merely decides when to show it and passes some arguments. The visualization code lives on the server side and gets shipped to the client as an HTML bundle.
 
-TODO: Logo: https://cursor.com
-TODO: Logo: https://code.visualstudio.com
-TODO: Logo: https://claude.ai
-
 That gives you unlimited rendering flexibility. Any web technology works. GUI-based agents like **Cursor** and **VS Code** can render these since they support iFrames. But the result is still a collection of independent mini web apps, each with its own look and feel, crammed into a chat panel. Every server author is building a separate mini web app, each looking and behaving differently. There's no guaranteed consistency across different tools. CLI agents like **Claude Code** can't render them at all. And running third-party HTML and JavaScript inside your application, even sandboxed, is a fundamentally different security proposition than just parsing data.
 
 MCP Apps optimize for universality. Any agent, any UI. That might be the best we can get given those constraints. But I don't think the concept works well when we have specialized agents and want them to provide visualizations in a specific UI.
-
-TODO: Diagram: diag-01.mp4
 
 ```mermaid
 graph LR
@@ -261,8 +240,6 @@ graph LR
 ## AI-Driven Data Rendering
 
 I feel that we need a different approach. What if, instead of shipping visualization code from the server, we keep the visualization code on the client side and let AI return only data?
-
-TODO: Screen: screen-03 - Show the query text, fast-forward through thinking, and show the tabs in the output as in the narration below.
 
 Let me show you what that looks like. I'm going to ask the exact same question, but this time through a Web UI connected to the same agent.
 
@@ -294,8 +271,6 @@ Here is the flow. A (1) user types a query into the (2) Web UI. The UI sends tha
 
 The LLM decides what to show and how to show it while the UI acts dumb and just displays what it was told to display. There is no logic in the UI. There is no intelligence. There are no predefined paths. There is only data rendering.
 
-TODO: Diagram: diag-02.mp4
-
 ```mermaid
 graph LR
     A["(1) User"] -->|"(3) Query"| B["(2) Web UI"]
@@ -322,15 +297,9 @@ Today, agents already return structured data instead of text. Tomorrow, that dat
 
 We will not keep making all the UI decisions in advance. Instead, LLMs will assemble how something should look like. They'll decide which components to use, how to lay them out, what interactions users should be able to make, and what the next logical step is. A query about cluster health might come back as a diagram with expandable nodes. A query about cost might come back as a chart with filters. The same agent, the same UI, but a completely different experience each time because the data demanded it. That's not a limitation. That's the whole point.
 
-TODO: Logo: https://a2ui.org
-TODO: Logo: https://github.com/openai
-TODO: Logo: https://vercel.com
-
 And the industry is already moving in this direction. Google's **A2UI**, OpenAI's **Open-JSON-UI**, and Vercel's **json-render** are all converging on the same principle: agents output declarative JSON describing what to display, and clients render it using their own component libraries. None of them are production-ready yet for specialized use cases, and the space is heavily fragmented. But the pattern they all agree on, data-only output with type discrimination, validates that this is where we're headed.
 
 Here's the thing though. With AI coding agents, building a custom solution like what I showed you today takes hours, not weeks. The cost of rolling your own component library is so low now that adopting an immature third-party spec, with all its limitations and vendor risk, is hard to justify. At least until a real standard emerges.
-
-TODO: Logo: https://devopstoolkit.ai
 
 What we saw today was [DevOps AI Toolkit](https://devopstoolkit.ai/). I tried to implement the principles we discussed to demonstrate what we can, or should, do. Fork it. Star it. Try it out. Or just use it as a reference for building your own. If you do, it would mean a lot. Every star and fork helps the project grow and keeps me motivated to keep pushing it forward.
 
