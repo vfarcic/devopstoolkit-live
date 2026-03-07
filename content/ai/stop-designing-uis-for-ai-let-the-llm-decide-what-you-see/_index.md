@@ -1,7 +1,7 @@
 
 +++
 title = 'Stop Designing UIs for AI - Let the LLM Decide What You See'
-date = 2025-03-09T16:00:00+00:00
+date = 2026-03-09T15:00:00+00:00
 draft = false
 +++
 
