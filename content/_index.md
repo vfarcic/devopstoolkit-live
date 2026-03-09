@@ -5,7 +5,7 @@ title = ""
 
 # Latest Posts
 
-<!-- <a href="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see"><img src="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see"><img src="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Designing UIs for AI - Let the LLM Decide What You See](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)
 
@@ -17,7 +17,7 @@ Today I'll show you two approaches to solving this: one that ships rendering cod
 
 **[Full article >>](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)**
 
---- -->
+---
 
 <a href="/ai/why-self-hosting-ai-models-is-a-bad-idea"><img src="/ai/why-self-hosting-ai-models-is-a-bad-idea/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
