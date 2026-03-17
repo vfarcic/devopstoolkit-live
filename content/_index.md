@@ -5,6 +5,21 @@ title = ""
 
 # Latest Posts
 
+<!-- <a href="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix"><img src="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Coding Agents Are Blind to Your Company Knowledge (Here's the Fix)](ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix)
+
+AI coding agents are incredibly capable. They can write code, generate configurations, and solve complex problems. But they have a blind spot. They only know what is publicly available. They have no idea how your company actually does things. Your internal standards, your custom abstractions, your architecture decisions, your policies. None of that exists in any AI model's training data.
+
+So what happens? Developers use AI, get perfectly reasonable output, and then spend time fixing it to match how things are actually done in their organization.
+
+Today I am going to show you how to close that gap. We will start with the most common approaches people try, see why they fall short, and then build a proper solution using a RAG pipeline that gives AI access to your entire company knowledge base. The example we will use is Kubernetes deployments, but the concept applies to anything: coding standards, security policies, architecture patterns, onboarding docs, you name it.
+
+**[Full article >>](ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix)**
+
+--- -->
+
+
 <a href="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see"><img src="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Designing UIs for AI - Let the LLM Decide What You See](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)
@@ -18,6 +33,7 @@ Today I'll show you two approaches to solving this: one that ships rendering cod
 **[Full article >>](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)**
 
 ---
+
 
 <a href="/ai/why-self-hosting-ai-models-is-a-bad-idea"><img src="/ai/why-self-hosting-ai-models-is-a-bad-idea/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -39,6 +55,7 @@ Stick around because I'm going to show you the actual math. And by the end of th
 
 ---
 
+
 <a href="/ai/commands-vs-mcp-vs-skills-what-i-use"><img src="/ai/commands-vs-mcp-vs-skills-what-i-use/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Commands vs MCP vs Skills (What I Use)](/ai/commands-vs-mcp-vs-skills-what-i-use)
@@ -50,6 +67,7 @@ So let's cut through the noise. I'll show you what each of these actually does, 
 **[Full article >>](/ai/commands-vs-mcp-vs-skills-what-i-use)**
 
 ---
+
 
 <a href="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it"><img src="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -64,6 +82,7 @@ I'll show you how to sync Kubernetes metadata into a Vector database, enabling b
 **[Full article >>](/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it)**
 
 ---
+
 
 <a href="/ai/elevenlabs-api-review-a-developers-brutally-honest-take"><img src="/ai/elevenlabs-api-review-a-developers-brutally-honest-take/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -81,6 +100,7 @@ That sounds just about right for this channel. I guess I deal with too many lang
 
 ---
 
+
 <a href="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes"><img src="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agent Debugging Setup: OpenTelemetry + Jaeger in Kubernetes](/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes)
@@ -94,6 +114,7 @@ The good news? We already solved this problem for distributed systems. OpenTelem
 **[Full article >>](/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes)**
 
 ---
+
 
 <a href="/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp"><img src="/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -115,6 +136,7 @@ Let me show you. We'll start from the platform builder's perspective, then switc
 
 ---
 
+
 <a href="/containers/my-production-dockerfile-rules-how-i-build-docker-images"><img src="/containers/my-production-dockerfile-rules-how-i-build-docker-images/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [My Production Dockerfile Rules: How I Build Docker Images](/containers/my-production-dockerfile-rules-how-i-build-docker-images)
@@ -128,6 +150,7 @@ Let's start with the foundation: choosing the right base image.
 **[Full article >>](/containers/my-production-dockerfile-rules-how-i-build-docker-images)**
 
 ---
+
 
 <a href="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review"><img src="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
