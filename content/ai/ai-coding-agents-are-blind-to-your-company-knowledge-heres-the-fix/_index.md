@@ -1,17 +1,13 @@
 
 +++
 title = "AI Coding Agents Are Blind to Your Company Knowledge (Here's the Fix)"
-date = 2026-03-19T14:30:00+00:00
+date = 2025-03-19T14:30:00+00:00
 draft = false
 +++
-
-TODO: Short (id: short1) (start)
 
 AI coding agents are incredibly capable. They can write code, generate configurations, and solve complex problems. But they have a blind spot. They only know what is publicly available. They have no idea how your company actually does things. Your internal standards, your custom abstractions, your architecture decisions, your policies. None of that exists in any AI model's training data.
 
 So what happens? Developers use AI, get perfectly reasonable output, and then spend time fixing it to match how things are actually done in their organization.
-
-TODO: Short (id: short1) (end)
 
 Today I am going to show you how to close that gap. We will start with the most common approaches people try, see why they fall short, and then build a proper solution using a RAG pipeline that gives AI access to your entire company knowledge base. The example we will use is Kubernetes deployments, but the concept applies to anything: coding standards, security policies, architecture patterns, onboarding docs, you name it.
 
