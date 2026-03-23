@@ -1,7 +1,7 @@
 
 +++
 title = "Building Inference-as-a-Service on Kubernetes"
-date = 2026-03-23T16:00:00+00:00
+date = 2026-03-23T15:00:00+00:00
 draft = false
 +++
 
