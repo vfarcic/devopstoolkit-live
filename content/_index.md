@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<a href="/kubernetes/building-inference-as-a-service-on-kubernetes"><img src="/kubernetes/building-inference-as-a-service-on-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Building Inference-as-a-Service on Kubernetes](/kubernetes/building-inference-as-a-service-on-kubernetes)
+
+
+Every prompt you send to ChatGPT, Claude, or Gemini runs on someone else's GPUs. Your data, your code, your company's secrets, all flowing through infrastructure you don't control. For most people, that's fine. But if you're in healthcare, finance, government, or anywhere that compliance actually matters, "fine" isn't good enough.
+
+Here's the thing. Running AI models on your own infrastructure sounds like it should be straightforward. It's not. GPUs are brutally expensive. Get the setup wrong and you're burning hundreds of thousands of dollars on mistakes. Get it right, and you have **Inference-as-a-Service** that any team in your company can use, with your data never leaving your network.
+
+In this video, we're going to build exactly that. A self-hosted inference platform on Kubernetes, from cluster provisioning to serving your first model. By the end, you'll have a working setup where anyone in your organization can deploy a model with a single custom resource. No GPU expertise required.
+
+**[Full article >>](/kubernetes/building-inference-as-a-service-on-kubernetes)**
+
+---
+
+
 <a href="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix"><img src="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Coding Agents Are Blind to Your Company Knowledge (Here's the Fix)](ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix)
@@ -20,6 +36,7 @@ Today I am going to show you how to close that gap. We will start with the most 
 ---
 
 
+
 <a href="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see"><img src="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Designing UIs for AI - Let the LLM Decide What You See](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)
@@ -33,6 +50,7 @@ Today I'll show you two approaches to solving this: one that ships rendering cod
 **[Full article >>](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)**
 
 ---
+
 
 
 <a href="/ai/why-self-hosting-ai-models-is-a-bad-idea"><img src="/ai/why-self-hosting-ai-models-is-a-bad-idea/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -56,6 +74,7 @@ Stick around because I'm going to show you the actual math. And by the end of th
 ---
 
 
+
 <a href="/ai/commands-vs-mcp-vs-skills-what-i-use"><img src="/ai/commands-vs-mcp-vs-skills-what-i-use/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Commands vs MCP vs Skills (What I Use)](/ai/commands-vs-mcp-vs-skills-what-i-use)
@@ -67,6 +86,7 @@ So let's cut through the noise. I'll show you what each of these actually does, 
 **[Full article >>](/ai/commands-vs-mcp-vs-skills-what-i-use)**
 
 ---
+
 
 
 <a href="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it"><img src="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -82,6 +102,7 @@ I'll show you how to sync Kubernetes metadata into a Vector database, enabling b
 **[Full article >>](/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it)**
 
 ---
+
 
 
 <a href="/ai/elevenlabs-api-review-a-developers-brutally-honest-take"><img src="/ai/elevenlabs-api-review-a-developers-brutally-honest-take/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -101,6 +122,7 @@ That sounds just about right for this channel. I guess I deal with too many lang
 ---
 
 
+
 <a href="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes"><img src="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agent Debugging Setup: OpenTelemetry + Jaeger in Kubernetes](/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes)
@@ -114,6 +136,7 @@ The good news? We already solved this problem for distributed systems. OpenTelem
 **[Full article >>](/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes)**
 
 ---
+
 
 
 <a href="/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp"><img src="/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -137,6 +160,7 @@ Let me show you. We'll start from the platform builder's perspective, then switc
 ---
 
 
+
 <a href="/containers/my-production-dockerfile-rules-how-i-build-docker-images"><img src="/containers/my-production-dockerfile-rules-how-i-build-docker-images/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [My Production Dockerfile Rules: How I Build Docker Images](/containers/my-production-dockerfile-rules-how-i-build-docker-images)
@@ -150,6 +174,7 @@ Let's start with the foundation: choosing the right base image.
 **[Full article >>](/containers/my-production-dockerfile-rules-how-i-build-docker-images)**
 
 ---
+
 
 
 <a href="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review"><img src="/development/api-gateways-explained-why-your-services-are-a-mess-zuplo-review/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
