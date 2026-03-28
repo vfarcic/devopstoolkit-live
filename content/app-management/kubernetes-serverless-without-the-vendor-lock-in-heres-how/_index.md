@@ -1,7 +1,7 @@
 
 +++
 title = "Kubernetes Serverless Without the Vendor Lock-In (Here's How)"
-date = 2026-04-03T08:15:00+00:00
+date = 2026-03-30T15:00:00+00:00
 draft = false
 +++
 
