@@ -5,6 +5,23 @@ title = ""
 
 # Latest Posts
 
+<a href="/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how"><img src="/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Kubernetes Serverless Without the Vendor Lock-In (Here's How)](/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how)
+
+Traffic is never constant. Maybe your app gets hammered during business hours and barely touched at night. Maybe it's steady all day but spikes unpredictably. Maybe there are 15 minutes a day when nobody's using it at all. The point is, **a fixed number of replicas is always wrong**. You're either wasting resources or under-provisioned.
+
+
+What you actually want is an app that scales with demand. More replicas when traffic goes up. Fewer when it drops. And in the extreme case, zero replicas when there's no traffic at all. Now, scaling to zero is easy. Just set the replica count to zero and you're done. The hard part is coming back up without losing any requests. If someone sends a request and nothing is running, that request needs to be held, not dropped.
+
+
+
+That's what we're building today. Not with [Knative](https://knative.dev). Not with [AWS Lambda](https://aws.amazon.com/lambda). Just standard Kubernetes with a few smart components wired together. We'll start with a single static replica, add Prometheus-based autoscaling, and then push it all the way to true scale-to-zero with **zero lost requests**.
+
+**[Full article >>](/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how)**
+
+---
+
 <a href="/kubernetes/building-inference-as-a-service-on-kubernetes"><img src="/kubernetes/building-inference-as-a-service-on-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Building Inference-as-a-Service on Kubernetes](/kubernetes/building-inference-as-a-service-on-kubernetes)
@@ -141,17 +158,3 @@ Or... maybe it does.
 Let me show you. We'll start from the platform builder's perspective, then switch to how platform users can interact with it. 
 
 **[Full article >>](/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp)**
-
----
-
-<a href="/containers/my-production-dockerfile-rules-how-i-build-docker-images"><img src="/containers/my-production-dockerfile-rules-how-i-build-docker-images/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [My Production Dockerfile Rules: How I Build Docker Images](/containers/my-production-dockerfile-rules-how-i-build-docker-images)
-
-Most Dockerfiles I see in production are security nightmares waiting to happen. Running as root. Using `:latest` tags. Copying entire directories including secrets. And the images? Bloated with debugging tools that attackers love.
-
-Here's the thing. Writing a good Dockerfile isn't hard. It's just that nobody taught you the rules. Today, I'm going to show you every best practice you need to build production-ready containers. We'll cover image selection, build optimization, security hardening, and maintainability. And at the end, I'll show you how AI can apply all these rules automatically.
-
-Let's start with the foundation: choosing the right base image.
-
-**[Full article >>](/containers/my-production-dockerfile-rules-how-i-build-docker-images)**
