@@ -1,7 +1,7 @@
 
 +++
 title = "AI Just Killed the Software Engineer (And Created Something Better)"
-date = 2026-04-13T16:00:00+00:00
+date = 2025-04-13T16:00:00+00:00
 draft = false
 +++
 
