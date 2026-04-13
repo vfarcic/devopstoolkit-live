@@ -5,6 +5,29 @@ title = ""
 
 # Latest Posts
 
+<a href="/development/ai-just-killed-the-software-engineer-and-created-something-better/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Just Killed the Software Engineer (And Created Something Better)](/development/ai-just-killed-the-software-engineer-and-created-something-better)
+
+The software engineering profession is being rewritten right now. Not slowly. Not in some distant future. Right now. And most companies are responding to it in exactly the wrong way.
+
+This video is going to cover a lot of ground, so let me tell you upfront what you are getting into.
+
+We will start with the numbers. Hard data on what AI is already doing to productivity, revenue, and the way code gets written. Then we will get into the human side of this, because behind those numbers are real people going through an identity crisis, and I do not think enough people are talking about that honestly.
+
+From there, we will dig into what actually changes about how software gets built. New development cycles, spec-first workflows, how much autonomy you give AI agents, and why context engineering is the single biggest factor most teams are ignoring.
+
+Then comes the part that makes people uncomfortable. How you restructure your company. Org design, team composition, pod models, platform teams, which roles expand, which ones shrink, and what happens to junior developers when nobody is hiring them anymore.
+
+We will wrap up with concrete steps you can take Monday morning. No vague advice. Specific moves.
+
+This is based on my personal experiences, on working with and talking to a lot of companies, seeing what works and what does not, and doing a lot of analysis. Let's get into it.
+
+**[Full article >>](/development/ai-just-killed-the-software-engineer-and-created-something-better)**
+
+---
+
+
 <a href="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint"><img src="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built Custom AI Agents for My Team (Here's the Complete Blueprint)](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)
@@ -16,6 +39,7 @@ In this video, I'll walk you through the complete architecture for building your
 **[Full article >>](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)**
 
 ---
+
 
 
 <a href="/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how"><img src="/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -36,6 +60,7 @@ That's what we're building today. Not with [Knative](https://knative.dev). Not w
 ---
 
 
+
 <a href="/kubernetes/building-inference-as-a-service-on-kubernetes"><img src="/kubernetes/building-inference-as-a-service-on-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Building Inference-as-a-Service on Kubernetes](/kubernetes/building-inference-as-a-service-on-kubernetes)
@@ -50,6 +75,7 @@ In this video, we're going to build exactly that. A self-hosted inference platfo
 **[Full article >>](/kubernetes/building-inference-as-a-service-on-kubernetes)**
 
 ---
+
 
 
 <a href="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix"><img src="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -67,6 +93,7 @@ Today I am going to show you how to close that gap. We will start with the most 
 ---
 
 
+
 <a href="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see"><img src="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Designing UIs for AI - Let the LLM Decide What You See](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)
@@ -80,6 +107,7 @@ Today I'll show you two approaches to solving this: one that ships rendering cod
 **[Full article >>](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)**
 
 ---
+
 
 
 <a href="/ai/why-self-hosting-ai-models-is-a-bad-idea"><img src="/ai/why-self-hosting-ai-models-is-a-bad-idea/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -103,6 +131,7 @@ Stick around because I'm going to show you the actual math. And by the end of th
 ---
 
 
+
 <a href="/ai/commands-vs-mcp-vs-skills-what-i-use"><img src="/ai/commands-vs-mcp-vs-skills-what-i-use/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Commands vs MCP vs Skills (What I Use)](/ai/commands-vs-mcp-vs-skills-what-i-use)
@@ -114,6 +143,7 @@ So let's cut through the noise. I'll show you what each of these actually does, 
 **[Full article >>](/ai/commands-vs-mcp-vs-skills-what-i-use)**
 
 ---
+
 
 
 <a href="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it"><img src="/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -129,6 +159,7 @@ I'll show you how to sync Kubernetes metadata into a Vector database, enabling b
 **[Full article >>](/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it)**
 
 ---
+
 
 
 <a href="/ai/elevenlabs-api-review-a-developers-brutally-honest-take"><img src="/ai/elevenlabs-api-review-a-developers-brutally-honest-take/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -147,20 +178,6 @@ That sounds just about right for this channel. I guess I deal with too many lang
 
 ---
 
-
-<a href="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes"><img src="/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Agent Debugging Setup: OpenTelemetry + Jaeger in Kubernetes](/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes)
-
-I sent two requests to the same AI agent, the same endpoint, doing similar work. One took 10 seconds with 10 operations. The other took over a minute with 42 operations. Same agent. **Completely different behavior.**
-
-That's the problem with agentic systems. The LLM decides the path. It chooses which tools to call, how many times to loop, what data to fetch. Every request can fan out differently. You can't predict it. And if you can't see what's happening, you can't debug it, optimize it, or trust it.
-
-The good news? We already solved this problem for distributed systems. OpenTelemetry tracing. And it works for AI agents too.
-
-**[Full article >>](/observability/ai-agent-debugging-setup-opentelemetry-jaeger-in-kubernetes)**
-
----
 
 
 <a href="/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp"><img src="/internal-developer-platforms/stop-setting-up-developer-portals-manually-feat-port-mcp/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
