@@ -5,6 +5,15 @@ title = ""
 
 # Latest Posts
 
+<a href="/development/ai-wont-kill-your-job.-your-customers-using-ai-will"><img src="/development/ai-wont-kill-your-job.-your-customers-using-ai-will/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Won't Kill Your Job. Your Customers Using AI Will](/development/ai-wont-kill-your-job.-your-customers-using-ai-will)
+
+**[Full article >>](/development/ai-wont-kill-your-job.-your-customers-using-ai-will)**
+
+---
+
+
 <a href="/development/ai-just-killed-the-software-engineer-and-created-something-better"><img src="/development/ai-just-killed-the-software-engineer-and-created-something-better/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Just Killed the Software Engineer (And Created Something Better)](/development/ai-just-killed-the-software-engineer-and-created-something-better)
@@ -28,6 +37,7 @@ This is based on my personal experiences, on working with and talking to a lot o
 ---
 
 
+
 <a href="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint"><img src="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built Custom AI Agents for My Team (Here's the Complete Blueprint)](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)
@@ -39,6 +49,7 @@ In this video, I'll walk you through the complete architecture for building your
 **[Full article >>](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)**
 
 ---
+
 
 
 
@@ -61,6 +72,7 @@ That's what we're building today. Not with [Knative](https://knative.dev). Not w
 
 
 
+
 <a href="/kubernetes/building-inference-as-a-service-on-kubernetes"><img src="/kubernetes/building-inference-as-a-service-on-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Building Inference-as-a-Service on Kubernetes](/kubernetes/building-inference-as-a-service-on-kubernetes)
@@ -75,6 +87,7 @@ In this video, we're going to build exactly that. A self-hosted inference platfo
 **[Full article >>](/kubernetes/building-inference-as-a-service-on-kubernetes)**
 
 ---
+
 
 
 
@@ -94,6 +107,7 @@ Today I am going to show you how to close that gap. We will start with the most 
 
 
 
+
 <a href="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see"><img src="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Designing UIs for AI - Let the LLM Decide What You See](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)
@@ -107,6 +121,7 @@ Today I'll show you two approaches to solving this: one that ships rendering cod
 **[Full article >>](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)**
 
 ---
+
 
 
 
@@ -132,6 +147,7 @@ Stick around because I'm going to show you the actual math. And by the end of th
 
 
 
+
 <a href="/ai/commands-vs-mcp-vs-skills-what-i-use"><img src="/ai/commands-vs-mcp-vs-skills-what-i-use/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Commands vs MCP vs Skills (What I Use)](/ai/commands-vs-mcp-vs-skills-what-i-use)
@@ -143,6 +159,7 @@ So let's cut through the noise. I'll show you what each of these actually does, 
 **[Full article >>](/ai/commands-vs-mcp-vs-skills-what-i-use)**
 
 ---
+
 
 
 
@@ -159,6 +176,7 @@ I'll show you how to sync Kubernetes metadata into a Vector database, enabling b
 **[Full article >>](/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it)**
 
 ---
+
 
 
 
