@@ -1,21 +1,18 @@
 
 +++
 title = "AI Won't Kill Your Job. Your Customers Using AI Will"
-date = 2026-04-20T16:00:00+00:00
+date = 2026-04-20T15:00:00+00:00
 draft = false
 +++
-
-
-<!--more-->
-
-{{< youtube Z-ZnXPlrZME >}}
 
 Over a trillion dollars in software market cap vanished in a single month. Software companies are laying off thousands. Analysts are calling it the SaaSpocalypse. And yet, software engineering jobs are at multi-year highs. What the hell is going on?
 
 
 If you're a software engineer and you think your job is at risk because of AI, you're right. But probably not for the reasons you think. If you work at a company that *sells* software, yeah, you should be worried. But if you work at a bank, an insurance company, a retailer, a manufacturer, any company that *uses* software rather than selling it, AI might actually make your job more secure than ever. Your company is likely about to build a lot more software than it ever has before.
 
+<!--more-->
 
+{{< youtube Z-ZnXPlrZME >}}
 
 The numbers back this up. JPMorgan Chase boosted its 2026 tech budget to **$19.8 billion**, with $1.2 billion of the increase specifically targeting AI. Walmart is offering tech roles paying up to **$370,000**. Software engineering roles are at multi-year highs globally. The Bureau of Labor Statistics projects software developer jobs growing **15% through 2034**, "much faster than average." Satya Nadella has referenced the Jevons Paradox to argue that as AI gets more efficient, demand for it skyrockets, not shrinks. The demand for engineers is increasingly coming from non-tech companies. Banks, retailers, manufacturers.
 
@@ -41,7 +38,7 @@ Let's go back to that vendor conversation, but imagine it's a couple of years fr
 The vendor says: "We have enterprise features on top of the open source project you're using. We know you need them. You'll pay us $100k a year." You say: "That's too expensive." The vendor asks: "How much would it cost you to build all this yourself?" And this time, you say: "$100k to build it, and $50k a year to maintain it. We'll make it tailor-made for our needs. We'll include all the features we need, including the ones you don't have. They'll work exactly as we need them to work. And we'll skip the ones you're offering that we don't need. I'm not paying you $100k every year for that." The vendor pauses and says: "Thank you for this lovely conversation. We'll try to find someone else to sell to."
 
 
-Now, some people will argue that the bottleneck was never writing code. It's knowing what to build. Andrew Ng has said the bottleneck in AI startups "isn't coding, it's product management." And that's true today. TODO: Short (id: short9) (start)
+Now, some people will argue that the bottleneck was never writing code. It's knowing what to build. Andrew Ng has said the bottleneck in AI startups "isn't coding, it's product management." And that's true today.
 
 Senior developers already spend less than a third of their time actually writing code. AI optimizes the minority of their time. But here's the thing. AI agents are getting better at understanding context, at maintaining codebases, at handling the integration and deployment work that currently eats up most of the effort. That bottleneck is shifting too. 65% of software costs happen after deployment, in maintenance. That's the next frontier. When AI gets good at that, and it will, the build-vs-buy math changes completely.
 
@@ -66,5 +63,3 @@ But here's the uncomfortable truth for most vendors. Most of them don't have moa
 Now, to be fair, this isn't a prediction that all software vendors will die tomorrow. Some are thriving. Palantir's revenue soared 56% year over year. CrowdStrike posted its first positive quarterly GAAP net income. The companies building AI infrastructure and tools are doing great. But they're the exception, not the rule. The broad trend is clear. AI is making software cheaper to build. The trajectory points to it getting dramatically cheaper still. And most vendors built their entire business on one assumption: that building would always be more expensive than buying. That assumption has an expiration date. The only question is how soon.
 
 So, back to where we started. If you're a software engineer and you're worried about AI taking your job, ask yourself one question. Does your company *sell* software, or does it *use* software? If you work at a bank, a retailer, a manufacturer, you're probably fine. You might even be busier than ever. But if you work at a software vendor that sells tools other companies are learning to build for themselves, that's a different conversation. Your job isn't at risk because AI can write code. **Your job is at risk because AI can help your customers write code.**
-
-

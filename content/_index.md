@@ -9,6 +9,10 @@ title = ""
 
 ## [AI Won't Kill Your Job. Your Customers Using AI Will](/development/ai-wont-kill-your-job-your-customers-using-ai-will)
 
+Over a trillion dollars in software market cap vanished in a single month. Software companies are laying off thousands. Analysts are calling it the SaaSpocalypse. And yet, software engineering jobs are at multi-year highs. What the hell is going on?
+
+If you're a software engineer and you think your job is at risk because of AI, you're right. But probably not for the reasons you think. If you work at a company that *sells* software, yeah, you should be worried. But if you work at a bank, an insurance company, a retailer, a manufacturer, any company that *uses* software rather than selling it, AI might actually make your job more secure than ever. Your company is likely about to build a lot more software than it ever has before
+
 **[Full article >>](/development/ai-wont-kill-your-job-your-customers-using-ai-will)**
 
 ---
@@ -174,22 +178,3 @@ This video is about fixing Kubernetes' terrible querying story. The root cause i
 I'll show you how to sync Kubernetes metadata into a Vector database, enabling both traditional queries and semantic search. By the end, you'll be able to run proper database queries AND ask questions in plain English, and get answers that actually make sense. **No more grep pipelines. No more guessing resource names.**
 
 **[Full article >>](/kubernetes/why-kubernetes-querying-is-broken-and-how-i-fixed-it)**
-
----
-
-
-
-
-<a href="/ai/elevenlabs-api-review-a-developers-brutally-honest-take"><img src="/ai/elevenlabs-api-review-a-developers-brutally-honest-take/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [ElevenLabs API Review: A Developer's Brutally Honest Take](/ai/elevenlabs-api-review-a-developers-brutally-honest-take)
-
-I'm a software engineer and I got addicted to AI.
-
-I use it to write code, to operate clusters, to analyze test failures, to pick which pull request I should work on. But here's the thing. I noticed there's so much more we can do with AI. We can use it for almost anything.
-
-Today I want to explore multimedia from a software engineering perspective. Not how to click buttons in some fancy UI. I want to show you how to integrate audio and video APIs into your workflows and applications. And I'll use my own YouTube automation as the example.
-
-That sounds just about right for this channel. I guess I deal with too many languages and sometimes get confused. Speaking of which, that transition you just heard? That wasn't me speaking Spanish or French. That was AI. And by the end of this video, you'll know exactly how to build that yourself.
-
-**[Full article >>](/ai/elevenlabs-api-review-a-developers-brutally-honest-take)**
