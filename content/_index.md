@@ -5,6 +5,21 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question"><img src="/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [MCP Is Burning Your Tokens Before You Ask a Single Question](/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question)
+
+Every MCP tool you connect burns tokens before you even ask a question. Tool names, descriptions, parameter schemas, all of it gets stuffed into your context window on every single turn. Connect a few servers and you've lost thousands of tokens to tools you might never call. That's the reality of the MCP protocol. It's a tax on your agent's intelligence.
+
+Now, don't get me wrong. MCP solves a real problem. It gives us standardized discovery and zero client installation. But there's an alternative that uses a fraction of the context, costs nothing extra to set up, and your agent might already know how to use. It's not perfect either, but I think it's the better choice for most real-world scenarios.
+
+In this video, we're going to put MCP to the test, run some real operations through it, and then explore that alternative side by side. We'll look at where each one wins, where each one falls short, and by the end, you'll have a clear picture of which approach fits your situation.
+
+**[Full article >>](/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question)**
+
+---
+
+
 <a href="/development/ai-wont-kill-your-job-your-customers-using-ai-will"><img src="/development/ai-wont-kill-your-job-your-customers-using-ai-will/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Won't Kill Your Job. Your Customers Using AI Will](/development/ai-wont-kill-your-job-your-customers-using-ai-will)
@@ -16,6 +31,7 @@ If you're a software engineer and you think your job is at risk because of AI, y
 **[Full article >>](/development/ai-wont-kill-your-job-your-customers-using-ai-will)**
 
 ---
+
 
 
 <a href="/development/ai-just-killed-the-software-engineer-and-created-something-better"><img src="/development/ai-just-killed-the-software-engineer-and-created-something-better/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -42,6 +58,7 @@ This is based on my personal experiences, on working with and talking to a lot o
 
 
 
+
 <a href="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint"><img src="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built Custom AI Agents for My Team (Here's the Complete Blueprint)](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)
@@ -53,6 +70,7 @@ In this video, I'll walk you through the complete architecture for building your
 **[Full article >>](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)**
 
 ---
+
 
 
 
@@ -77,6 +95,7 @@ That's what we're building today. Not with [Knative](https://knative.dev). Not w
 
 
 
+
 <a href="/kubernetes/building-inference-as-a-service-on-kubernetes"><img src="/kubernetes/building-inference-as-a-service-on-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Building Inference-as-a-Service on Kubernetes](/kubernetes/building-inference-as-a-service-on-kubernetes)
@@ -91,6 +110,7 @@ In this video, we're going to build exactly that. A self-hosted inference platfo
 **[Full article >>](/kubernetes/building-inference-as-a-service-on-kubernetes)**
 
 ---
+
 
 
 
@@ -112,6 +132,7 @@ Today I am going to show you how to close that gap. We will start with the most 
 
 
 
+
 <a href="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see"><img src="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Designing UIs for AI - Let the LLM Decide What You See](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)
@@ -125,6 +146,7 @@ Today I'll show you two approaches to solving this: one that ships rendering cod
 **[Full article >>](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)**
 
 ---
+
 
 
 
@@ -152,6 +174,7 @@ Stick around because I'm going to show you the actual math. And by the end of th
 
 
 
+
 <a href="/ai/commands-vs-mcp-vs-skills-what-i-use"><img src="/ai/commands-vs-mcp-vs-skills-what-i-use/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Commands vs MCP vs Skills (What I Use)](/ai/commands-vs-mcp-vs-skills-what-i-use)
@@ -163,6 +186,7 @@ So let's cut through the noise. I'll show you what each of these actually does, 
 **[Full article >>](/ai/commands-vs-mcp-vs-skills-what-i-use)**
 
 ---
+
 
 
 
