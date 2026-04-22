@@ -13,7 +13,7 @@ In this video, we're going to put MCP to the test, run some real operations thro
 
 <!--more-->
 
-{{< youtube wXa_mpYJMNE >}}
+{{< youtube TuIZoFyBKIM >}}
 
 ## Setup
 
