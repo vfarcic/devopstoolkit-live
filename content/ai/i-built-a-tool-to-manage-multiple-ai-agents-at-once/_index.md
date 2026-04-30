@@ -1,7 +1,7 @@
 
 +++
 title = "I Built a Tool to Manage Multiple AI Agents at Once"
-date = 2026-05-04T16:00:00+00:00
+date = 2026-05-04T15:00:00+00:00
 draft = false
 +++
 
@@ -17,7 +17,7 @@ In this video, I'll walk through what that shift looks like, lay out the require
 
 > You won't be able to reproduce the setup I'm showcasing since it largely depends on the repos and featuers I was working at a time. Nevertheless, you can follow along and adapt it to your own scenarios.
 
-> [Install Agent Deck](https://agent-deck.devopstoolkit.ai/docs/installation)
+> [Install Agent Deck](https://agent-deck.devopstoolkit.ai/docs/installation/)
 
 ```sh
 dot-agent-deck

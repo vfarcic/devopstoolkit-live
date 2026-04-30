@@ -189,20 +189,3 @@ I get it though. You think using AI is expensive. You want to save money, so you
 Stick around because I'm going to show you the actual math. And by the end of this video, you might realize that the "open" in open weight is costing you more than the "closed" alternatives ever would.
 
 **[Full article >>](/ai/why-self-hosting-ai-models-is-a-bad-idea)**
-
----
-
-
-
-
-
-
-<a href="/ai/commands-vs-mcp-vs-skills-what-i-use"><img src="/ai/commands-vs-mcp-vs-skills-what-i-use/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Commands vs MCP vs Skills (What I Use)](/ai/commands-vs-mcp-vs-skills-what-i-use)
-
-When working with coding agents, we can extend them with Commands, MCP tools, MCP prompts, Skills, subagents, rules, hooks, plugins, memories... It's madness. We seem to be getting something new every week. And every agent does things slightly differently.
-
-So let's cut through the noise. I'll show you what each of these actually does, how they work under the hood, and most importantly, which ones you should actually use and when.
-
-**[Full article >>](/ai/commands-vs-mcp-vs-skills-what-i-use)**
