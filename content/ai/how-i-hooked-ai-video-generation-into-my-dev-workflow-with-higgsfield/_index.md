@@ -1,15 +1,18 @@
 
 +++
 title = "How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)"
-date = 2026-05-11T16:00:00+00:00
+date = 2026-05-11T15:00:00+00:00
 draft = false
 +++
-
 
 Real productivity out of an AI agent starts with where it lives. Agents that run inside your terminal, your IDE, or your desktop beat agents that sit behind a web UI. [Codex](https://github.com/openai/codex), [Cursor](https://cursor.com), [Claude Desktop](https://claude.com). The surface around the model is what decides how much work you actually get out of it.
 
 
 And it's not just code. Calendars, email, web research, summarizing long PDFs, drafting writing. All of it routinely happens inside the same agent session, through MCP connectors that wire the agent into Gmail, Google Calendar, Notion, Slack, and whatever else you've plugged in.
+
+<!--more-->
+
+{{< youtube H8vcbLTBhco >}}
 
 The agent in your terminal is already a general-purpose tool. MCPs hook it into outside services. Skills turn it into a workflow engine you can shape. Code is just one of its workloads. Far from the only one.
 
@@ -26,10 +29,6 @@ And the next workload to slot into that loop, the one this whole video is about,
 
 
 Which brings me to the part I've been holding back. Some of the clips you've been watching haven't even existed before I started writing this script. Even the one you're watching right now.
-
-<!--more-->
-
-{{< youtube H8vcbLTBhco >}}
 
 
 ## AI Video Generation in Claude Code

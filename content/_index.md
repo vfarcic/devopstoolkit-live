@@ -9,32 +9,13 @@ title = ""
 
 ## [How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)
 
-
 Real productivity out of an AI agent starts with where it lives. Agents that run inside your terminal, your IDE, or your desktop beat agents that sit behind a web UI. [Codex](https://github.com/openai/codex), [Cursor](https://cursor.com), [Claude Desktop](https://claude.com). The surface around the model is what decides how much work you actually get out of it.
 
-
 And it's not just code. Calendars, email, web research, summarizing long PDFs, drafting writing. All of it routinely happens inside the same agent session, through MCP connectors that wire the agent into Gmail, Google Calendar, Notion, Slack, and whatever else you've plugged in.
-
-The agent in your terminal is already a general-purpose tool. MCPs hook it into outside services. Skills turn it into a workflow engine you can shape. Code is just one of its workloads. Far from the only one.
-
-
-And the bigger productivity win isn't capability. It's **consolidation**. Think about how a normal day looks. An editor open for code. A separate writing tool. A media service in another tab. A scheduling app. A browser with a dozen more tabs for everything else. All of that splits your attention. All of that splits your context. With an agent sitting in your terminal, all of that work happens in one interface, in one conversation, with one shared context.
-
-There are three concrete reasons consolidation actually works, instead of just sounding nice on a slide. First, the files the agent produces land next to the work you're already doing. Not in some vendor sandbox, not in a downloads folder you'll never open again. They land in the project you have open. Second, the agent has your local context. It knows your git state, the project you're in, the environment you're running in, the files you've been editing. Third, it composes with everything else already on your machine. Other tools, other scripts, other skills you've layered on top. And those three reasons hold for every one of those workloads I just mentioned. Not just code.
-
-And the piece that makes all of this possible is MCP. 
-
-MCPs flip the direction of integration. The old model was that you exported your work to a vendor's website. You opened their app, did the thing inside their tab, copied the result back. The new model is the opposite. You bring the vendor's capability into your loop. The agent calls them. Your files, your context, your conversation, all stay where they are.
-
-And the next workload to slot into that loop, the one this whole video is about, is media.
-
-
-Which brings me to the part I've been holding back. Some of the clips you've been watching haven't even existed before I started writing this script. Even the one you're watching right now.
 
 **[Full article >>](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)**
 
 ---
-
 
 <a href="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once"><img src="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -47,8 +28,6 @@ In this video, I'll walk through what that shift looks like, lay out the require
 **[Full article >>](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)**
 
 ---
-
-
 
 <a href="/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question"><img src="/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -64,9 +43,6 @@ In this video, we're going to put MCP to the test, run some real operations thro
 
 ---
 
-
-
-
 <a href="/development/ai-wont-kill-your-job-your-customers-using-ai-will"><img src="/development/ai-wont-kill-your-job-your-customers-using-ai-will/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Won't Kill Your Job. Your Customers Using AI Will](/development/ai-wont-kill-your-job-your-customers-using-ai-will)
@@ -78,10 +54,6 @@ If you're a software engineer and you think your job is at risk because of AI, y
 **[Full article >>](/development/ai-wont-kill-your-job-your-customers-using-ai-will)**
 
 ---
-
-
-
-
 
 <a href="/development/ai-just-killed-the-software-engineer-and-created-something-better"><img src="/development/ai-just-killed-the-software-engineer-and-created-something-better/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -105,11 +77,6 @@ This is based on my personal experiences, on working with and talking to a lot o
 
 ---
 
-
-
-
-
-
 <a href="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint"><img src="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built Custom AI Agents for My Team (Here's the Complete Blueprint)](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)
@@ -121,12 +88,6 @@ In this video, I'll walk you through the complete architecture for building your
 **[Full article >>](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)**
 
 ---
-
-
-
-
-
-
 
 <a href="/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how"><img src="/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -145,12 +106,6 @@ That's what we're building today. Not with [Knative](https://knative.dev). Not w
 
 ---
 
-
-
-
-
-
-
 <a href="/kubernetes/building-inference-as-a-service-on-kubernetes"><img src="/kubernetes/building-inference-as-a-service-on-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Building Inference-as-a-Service on Kubernetes](/kubernetes/building-inference-as-a-service-on-kubernetes)
@@ -166,12 +121,6 @@ In this video, we're going to build exactly that. A self-hosted inference platfo
 
 ---
 
-
-
-
-
-
-
 <a href="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix"><img src="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Coding Agents Are Blind to Your Company Knowledge (Here's the Fix)](ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix)
@@ -186,12 +135,6 @@ Today I am going to show you how to close that gap. We will start with the most 
 
 ---
 
-
-
-
-
-
-
 <a href="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see"><img src="/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stop Designing UIs for AI - Let the LLM Decide What You See](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)
@@ -205,27 +148,3 @@ Today I'll show you two approaches to solving this: one that ships rendering cod
 **[Full article >>](/ai/stop-designing-uis-for-ai-let-the-llm-decide-what-you-see)**
 
 ---
-
-
-
-
-
-
-
-<a href="/ai/why-self-hosting-ai-models-is-a-bad-idea"><img src="/ai/why-self-hosting-ai-models-is-a-bad-idea/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Why Self-Hosting AI Models Is a Bad Idea](/ai/why-self-hosting-ai-models-is-a-bad-idea)
-
-Open weight LLM models are bullshit.
-
-Now, before you write an angry comment telling me I'm just another person who hates open source, let me be clear. Open weight is NOT open source. The licenses are screwed and can change for worse at any time. You can't use the truly powerful models unless you have money to burn. And you definitely can't build a sustainable business on them.
-
-That is, if you want models that actually compete with the best. Not the toys that are fun to play with but aren't the real deal.
-
-Did those statements just put me on top of your hate list? Are you already typing a furious response? Good.
-
-I get it though. You think using AI is expensive. You want to save money, so you have a brilliant idea: self-host free models. Right?
-
-Stick around because I'm going to show you the actual math. And by the end of this video, you might realize that the "open" in open weight is costing you more than the "closed" alternatives ever would.
-
-**[Full article >>](/ai/why-self-hosting-ai-models-is-a-bad-idea)**
