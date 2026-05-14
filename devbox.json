@@ -9,6 +9,9 @@
     "init_hook": [
       "export PATH=$PATH:$HOME/.npm-global/bin"
     ],
-    "scripts":   {}
+    "scripts":   {
+      "agent":     ["claude --continue"],
+      "agent-new": ["claude"]
+    }
   }
 }
