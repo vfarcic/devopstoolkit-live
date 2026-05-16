@@ -1,7 +1,7 @@
 
 +++
 title = "The 4 Modes of AI Coding (And Why Your Tool Picks Itself)"
-date = 2026-05-18T16:00:00+00:00
+date = 2026-05-18T15:00:00+00:00
 draft = false
 +++
 
