@@ -1,7 +1,7 @@
 
 +++
 title = "How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)"
-date = 2026-05-11T15:00:00+00:00
+date = 2026-05-11T14:00:00+00:00
 draft = false
 +++
 
