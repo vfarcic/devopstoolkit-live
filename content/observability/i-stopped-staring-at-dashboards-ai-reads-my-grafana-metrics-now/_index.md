@@ -1,7 +1,7 @@
 
 +++
 title = "I Stopped Staring at Dashboards. AI Reads My Grafana Metrics Now."
-date = 2026-05-25T16:00:00+00:00
+date = 2026-05-25T15:00:00+00:00
 draft = false
 +++
 
