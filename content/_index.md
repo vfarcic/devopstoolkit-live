@@ -5,6 +5,25 @@ title = ""
 
 # Latest Posts
 
+<a href="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now"><img src="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [I Stopped Staring at Dashboards. AI Reads My Grafana Metrics Now.](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)
+
+
+Something just broke in production. An alert fired. You open Grafana, click through three dashboards trying to find one that matches what's actually happening, and twenty minutes later you're still squinting at panels and switching tabs to grep logs.
+
+That entire workflow is about to disappear.
+
+
+AI agents can now read your metrics, your logs, and your traces directly. They draw conclusions. They build custom dashboards on the spot. They tell you what's wrong while you're still typing the question. And the best part: **you don't have to leave your terminal to do any of it.**
+
+In this video, I'll show you how. We'll start with Grafana Assistant inside the [Grafana](https://grafana.com) UI, then move to [Claude Code](https://claude.com/claude-code) wired up to the Grafana MCP server. By the end, you'll see how to query observability data from a chat prompt, build dashboards fitted to whatever you're investigating, and connect your own agents to live runtime data, all without touching a browser.
+
+**[Full article >>](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)**
+
+---
+
+
 <a href="/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself"><img src="/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [The 4 Modes of AI Coding (And Why Your Tool Picks Itself)](/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself)
@@ -25,6 +44,7 @@ So let me walk you through each mode, how IDE and TUI handle it differently, and
 ---
 
 
+
 <a href="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield"><img src="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)
@@ -38,6 +58,7 @@ And it's not just code. Calendars, email, web research, summarizing long PDFs, d
 ---
 
 
+
 <a href="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once"><img src="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built a Tool to Manage Multiple AI Agents at Once](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)
@@ -49,6 +70,7 @@ In this video, I'll walk through what that shift looks like, lay out the require
 **[Full article >>](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)**
 
 ---
+
 
 
 <a href="/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question"><img src="/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -66,6 +88,7 @@ In this video, we're going to put MCP to the test, run some real operations thro
 ---
 
 
+
 <a href="/development/ai-wont-kill-your-job-your-customers-using-ai-will"><img src="/development/ai-wont-kill-your-job-your-customers-using-ai-will/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Won't Kill Your Job. Your Customers Using AI Will](/development/ai-wont-kill-your-job-your-customers-using-ai-will)
@@ -77,6 +100,7 @@ If you're a software engineer and you think your job is at risk because of AI, y
 **[Full article >>](/development/ai-wont-kill-your-job-your-customers-using-ai-will)**
 
 ---
+
 
 
 <a href="/development/ai-just-killed-the-software-engineer-and-created-something-better"><img src="/development/ai-just-killed-the-software-engineer-and-created-something-better/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -102,6 +126,7 @@ This is based on my personal experiences, on working with and talking to a lot o
 ---
 
 
+
 <a href="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint"><img src="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built Custom AI Agents for My Team (Here's the Complete Blueprint)](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)
@@ -113,6 +138,7 @@ In this video, I'll walk you through the complete architecture for building your
 **[Full article >>](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)**
 
 ---
+
 
 
 <a href="/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how"><img src="/app-management/kubernetes-serverless-without-the-vendor-lock-in-heres-how/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -133,6 +159,7 @@ That's what we're building today. Not with [Knative](https://knative.dev). Not w
 ---
 
 
+
 <a href="/kubernetes/building-inference-as-a-service-on-kubernetes"><img src="/kubernetes/building-inference-as-a-service-on-kubernetes/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Building Inference-as-a-Service on Kubernetes](/kubernetes/building-inference-as-a-service-on-kubernetes)
@@ -145,20 +172,5 @@ Here's the thing. Running AI models on your own infrastructure sounds like it sh
 In this video, we're going to build exactly that. A self-hosted inference platform on Kubernetes, from cluster provisioning to serving your first model. By the end, you'll have a working setup where anyone in your organization can deploy a model with a single custom resource. No GPU expertise required.
 
 **[Full article >>](/kubernetes/building-inference-as-a-service-on-kubernetes)**
-
----
-
-
-<a href="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix"><img src="ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Coding Agents Are Blind to Your Company Knowledge (Here's the Fix)](ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix)
-
-AI coding agents are incredibly capable. They can write code, generate configurations, and solve complex problems. But they have a blind spot. They only know what is publicly available. They have no idea how your company actually does things. Your internal standards, your custom abstractions, your architecture decisions, your policies. None of that exists in any AI model's training data.
-
-So what happens? Developers use AI, get perfectly reasonable output, and then spend time fixing it to match how things are actually done in their organization.
-
-Today I am going to show you how to close that gap. We will start with the most common approaches people try, see why they fall short, and then build a proper solution using a RAG pipeline that gives AI access to your entire company knowledge base. The example we will use is Kubernetes deployments, but the concept applies to anything: coding standards, security policies, architecture patterns, onboarding docs, you name it.
-
-**[Full article >>](ai/ai-coding-agents-are-blind-to-your-company-knowledge-heres-the-fix)**
 
 ---
