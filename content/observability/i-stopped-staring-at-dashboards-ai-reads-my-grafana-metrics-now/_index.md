@@ -731,7 +731,7 @@ The new `Replica Health` row, sitting in the middle of the dashboard. Two big st
 
 That's the demo. Now let me step back and lay out where the Grafana Assistant and the Grafana MCP shine, and where they still have rough edges.
 
-## Grafana AI Observability: My Verdict
+## Grafana Assistant: My Verdict
 
 Now think about what just happened, end to end. I have a generic agent — Claude Code — that knows my whole stack, lives in my terminal, and can fix code, push to Git, talk to my cluster. I gave it access to Grafana through an MCP. From there, it can pull metrics, logs, and traces directly. It can build me a fresh dashboard fitted to whatever I'm investigating right now. It can copy, modify, and prune existing dashboards. And when I want the specialized Grafana Assistant — the one with the deepest Grafana-specific knowledge — I can have my generic agent call that too, through the same MCP, via `ask_assistant`. That combination — **a generic agent I already use, plus direct access to all my data, plus the specialized Grafana Assistant on tap, plus on-demand custom dashboards** — is, for me, the dream come true. I don't have to switch agents. I don't have to leave the terminal. Analysis and remediation live in the same place. And the moment I need to look at something graphically, I get a dashboard built for that exact thing.
 
