@@ -13,6 +13,24 @@ title = ""
 
 ---
 
+<a href="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now"><img src="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [I Stopped Staring at Dashboards. AI Reads My Grafana Metrics Now.](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)
+
+
+Something just broke in production. An alert fired. You open Grafana, click through three dashboards trying to find one that matches what's actually happening, and twenty minutes later you're still squinting at panels and switching tabs to grep logs.
+
+That entire workflow is about to disappear.
+
+
+AI agents can now read your metrics, your logs, and your traces directly. They draw conclusions. They build custom dashboards on the spot. They tell you what's wrong while you're still typing the question. And the best part: **you don't have to leave your terminal to do any of it.**
+
+In this video, I'll show you how. We'll start with Grafana Assistant inside the [Grafana](https://grafana.com) UI, then move to [Claude Code](https://claude.com/claude-code) wired up to the Grafana MCP server. By the end, you'll see how to query observability data from a chat prompt, build dashboards fitted to whatever you're investigating, and connect your own agents to live runtime data, all without touching a browser.
+
+**[Full article >>](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)**
+
+---
+
 
 <a href="/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself"><img src="/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
