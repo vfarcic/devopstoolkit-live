@@ -9,6 +9,8 @@ title = ""
 
 ## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
 
+New models keep dropping all the time, and I want to try them all. I want to see which one is better for which tasks, which one is cheaper, which one is faster. There's [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Google Gemini](https://gemini.google.com), [Moonshot AI](https://moonshot.ai), [xAI](https://x.ai), and the list just keeps growing. I do not want to be locked into one model or one family of models forever. So I got subscriptions to some, I'm paying for API access to others, and then there are models that I would typically have to host myself. I don't want to do that. Even if I did, I neither have the hardware nor the patience for it.
+
 **[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
 
 ---
