@@ -5,6 +5,14 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/how-i-access-every-ai-model-without-the-lock-in"><img src="/ai/how-i-access-every-ai-model-without-the-lock-in/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
+
+**[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
+
+---
+
 <a href="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now"><img src="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Stopped Staring at Dashboards. AI Reads My Grafana Metrics Now.](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)
