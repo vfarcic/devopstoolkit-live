@@ -1,7 +1,7 @@
 
 +++
 title = "Why One AI Agent Is Never Enough"
-date = 2026-06-15T16:00:00+00:00
+date = 2026-06-15T15:00:00+00:00
 draft = false
 +++
 
@@ -34,27 +34,16 @@ dot-agent-deck
 
 Process is the foundation of any good engineering work. It doesn't matter if it's a single developer hacking on a side project, a five-person team, one AI agent, or a fleet of agents. The principle is the same. You need a defined workflow that says who does what, when, and in what order.
 
-Some parts of that workflow should be rigid. If a change touches production, there's a pull 
-
-r
-
-equest. Tests must pass. CI must be green. Those aren't suggestions. Other parts can be flexible. A typo fix in a README doesn't need three reviewers and a steering committee. Use your judgment.
+Some parts of that workflow should be rigid. If a change touches production, there's a pull request. Tests must pass. CI must be green. Those aren't suggestions. Other parts can be flexible. A typo fix in a README doesn't need three reviewers and a steering committee. Use your judgment.
 
 
 Without process, you have chaos. People stepping on each other, code shipping without review, releases breaking because nobody validated them. That's true for human teams, and it's even more true for AI agents, which are very enthusiastic and will happily ship broken code straight to main if you let them.
 
-Orchest
+Orchestration is just that same process, applied to AI agents. Same principle. Different workers.
 
-ration is just that same process, applied to AI agents. Same principle. Different workers.
+The same logic applies to tracking. You need a file. Some kind of document that describes what should be done, what's already been done, what's blocked, and what's coming next. Call it a PRD, a task list, a roadmap, whatever you want. The format matters less than the existence of the thing.
 
-The same logic applies to tracking. You need a file. Some kind of document that describes wh
-
-at should be done, what's already been done, what's blocked, and what's coming next. Call it a PRD, a task list, a roadmap, whatever you want. The format matters less than the existence of the thing.
-
-You'd want that file regardless of how the work gets done. A single developer needs it because memory is finite and a week later they've forgotten what they decided. A team needs it because not everyone i
-
-s in every conversation. A single agent needs it because its context is finite and conversations get compacted away. A fleet of agents needs it the most, because none of them share memory with each other.
-
+You'd want that file regardless of how the work gets done. A single developer needs it because memory is finite and a week later they've forgotten what they decided. A team needs it because not everyone is in every conversation. A single agent needs it because its context is finite and conversations get compacted away. A fleet of agents needs it the most, because none of them share memory with each other.
 
 That file is the source of truth that survives everything. It survives you going on vacation. It survives a teammate joining mid-project. It survives an agent hitting its context limit. As long as the file exists and is kept current, the work can continue.
 
@@ -130,9 +119,7 @@ flowchart TD
 
 There's an important distinction in how the specialists handle context. The coder, reviewer, and auditor always start fresh. New invocation, clean context, focused on whatever task the orchestrator handed them. This is deliberate. If the coder kept context across tasks, it would start carrying around irrelevant baggage from previous work, and the focus would degrade exactly the way a single agent's focus degrades. Fresh context is the whole reason this works.
 
-The releaser is 
-
-the exception. It keeps its context across the release flow. That's because the release is a stateful process. You create a branch, you push, you open a PR, you wait for CI, you handle failures, you merge. All of that has to thread together. If the releaser cleared its context every step, it would lose the PR URL, the branch name, the CI status. Stateful work needs persistent memory.
+The releaser is the exception. It keeps its context across the release flow. That's because the release is a stateful process. You create a branch, you push, you open a PR, you wait for CI, you handle failures, you merge. All of that has to thread together. If the releaser cleared its context every step, it would lose the PR URL, the branch name, the CI status. Stateful work needs persistent memory.
 
 And finally, the loop. The orchestrator does not assume success. If the reviewer or auditor flags something, the orchestrator sends it back to the coder with the specific feedback (7). The coder fixes it. The reviewer and auditor look at the fix. If they're happy, the orchestrator hands off to the releaser (8). The releaser executes the release flow and the change ships as a merged PR (9). The same pattern applies if the release itself runs into trouble. If CI fails (10), the releaser reports the failure, the orchestrator hands the fix to the coder, the coder addresses it, and then the orchestrator tells the releaser to pick up the release from where it stopped. The releaser doesn't restart. It continues.
 
@@ -183,24 +170,7 @@ Here's what came back.
 
 [agent]
 ```text
-[[modes]]
-name = "controller-dev"
-init_command = "devbox shell"
-reactive_panes = 3
-
-[[modes.panes]]
-command = "git status -sb"
-name = "Git Status"
-
-[[modes.rules]]
-pattern = "git (diff|log|show|status|branch)"
-
-[[modes.rules]]
-pattern = "make (test|lint|vet|lint-config|build)"
-
-[[modes.rules]]
-pattern = "kubectl (get|describe|logs|top|api-resources|api-versions|explain|version|cluster-info)"
-
+...
 [[orchestrations]]
 name = "prd-flow"
 
