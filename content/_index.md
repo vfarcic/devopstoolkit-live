@@ -5,6 +5,26 @@ title = ""
 
 # Latest Posts
 
+<a href="/development/why-one-ai-agent-is-never-enough"><img src="/development/why-one-ai-agent-is-never-enough/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Why One AI Agent Is Never Enough](/development/why-one-ai-agent-is-never-enough)
+
+
+When I used to give an AI agent a task, it would finish in one go. Write the code, declare victory, done. Now, with th
+
+e setup I'm about to show you, the same task can take tens of iterations before the work is considered finished. The output is **dramatically better**, and I'm spending **less time** on it, not more.
+
+The reason is that there's no longer a single agent doing the work. There's a team. One agent writes the code. Another reviews it. A third audits it for security. A fourth ships it. They run on different models, with fresh context each time, and they push back on each other until the work actually holds up. I just play games until something genuinely needs me.
+
+In this video, I'll walk through what that pipeline looks like, 
+
+why each role exists, and how I run all of it end-to-end. By the end, you'll have a complete picture of how to set this up yourself, and a slightly uncomfortable realization about what your job becomes when the agents do the coding.
+
+**[Full article >>](/development/why-one-ai-agent-is-never-enough)**
+
+---
+
+
 <a href="/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit"><img src="/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why AI Code Review Goes First (And Humans Go Second) (feat: CodeRabbit)](/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit)
@@ -25,6 +45,7 @@ In this video, I'll show you what's actually breaking and why, the workflow that
 ---
 
 
+
 <a href="/ai/how-i-access-every-ai-model-without-the-lock-in"><img src="/ai/how-i-access-every-ai-model-without-the-lock-in/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
@@ -34,6 +55,7 @@ New models keep dropping all the time, and I want to try them all. I want to see
 **[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
 
 ---
+
 
 
 <a href="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now"><img src="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -53,6 +75,7 @@ In this video, I'll show you how. We'll start with Grafana Assistant inside the 
 **[Full article >>](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)**
 
 ---
+
 
 
 
@@ -78,6 +101,7 @@ So let me walk you through each mode, how IDE and TUI handle it differently, and
 
 
 
+
 <a href="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield"><img src="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)
@@ -93,6 +117,7 @@ And it's not just code. Calendars, email, web research, summarizing long PDFs, d
 
 
 
+
 <a href="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once"><img src="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built a Tool to Manage Multiple AI Agents at Once](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)
@@ -104,6 +129,7 @@ In this video, I'll walk through what that shift looks like, lay out the require
 **[Full article >>](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)**
 
 ---
+
 
 
 
@@ -125,6 +151,7 @@ In this video, we're going to put MCP to the test, run some real operations thro
 
 
 
+
 <a href="/development/ai-wont-kill-your-job-your-customers-using-ai-will"><img src="/development/ai-wont-kill-your-job-your-customers-using-ai-will/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Won't Kill Your Job. Your Customers Using AI Will](/development/ai-wont-kill-your-job-your-customers-using-ai-will)
@@ -136,6 +163,7 @@ If you're a software engineer and you think your job is at risk because of AI, y
 **[Full article >>](/development/ai-wont-kill-your-job-your-customers-using-ai-will)**
 
 ---
+
 
 
 
@@ -159,20 +187,5 @@ We will wrap up with concrete steps you can take Monday morning. No vague advice
 This is based on my personal experiences, on working with and talking to a lot of companies, seeing what works and what does not, and doing a lot of analysis. Let's get into it.
 
 **[Full article >>](/development/ai-just-killed-the-software-engineer-and-created-something-better)**
-
----
-
-
-
-
-<a href="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint"><img src="/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [I Built Custom AI Agents for My Team (Here's the Complete Blueprint)](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)
-
-I've spent the last few months building custom AI agents for internal teams, and I can tell you: the gap between using a general-purpose coding assistant and having an agent that truly understands your company is enormous. We're talking about the difference between an intern who's brilliant but knows nothing about your business, and a senior engineer who's been with you for years.
-
-In this video, I'll walk you through the complete architecture for building your own AI agent. Every component: system context, tools, knowledge retrieval, multi-agent orchestration, security, observability, and cost optimization. By the end, you'll have a blueprint you can actually follow. Not just theory, but the real decisions you'll face and how to make them.
-
-**[Full article >>](/ai/i-built-custom-ai-agents-for-my-team-heres-the-complete-blueprint)**
 
 ---
