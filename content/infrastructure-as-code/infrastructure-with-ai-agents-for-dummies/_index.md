@@ -1,7 +1,7 @@
 
 +++
 title = "Infrastructure with AI Agents for Dummies"
-date = 2026-06-22T16:00:00+00:00
+date = 2026-06-22T15:00:00+00:00
 draft = false
 +++
 
