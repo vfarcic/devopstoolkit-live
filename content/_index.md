@@ -16,6 +16,26 @@ Now, AI is all the rage these days, and for good reason. So of course people are
 
 **[Full article >>](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)**
 
+
+---
+
+<a href="/development/why-one-ai-agent-is-never-enough"><img src="/development/why-one-ai-agent-is-never-enough/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Why One AI Agent Is Never Enough](/development/why-one-ai-agent-is-never-enough)
+
+
+When I used to give an AI agent a task, it would finish in one go. Write the code, declare victory, done. Now, with th
+
+e setup I'm about to show you, the same task can take tens of iterations before the work is considered finished. The output is **dramatically better**, and I'm spending **less time** on it, not more.
+
+The reason is that there's no longer a single agent doing the work. There's a team. One agent writes the code. Another reviews it. A third audits it for security. A fourth ships it. They run on different models, with fresh context each time, and they push back on each other until the work actually holds up. I just play games until something genuinely needs me.
+
+In this video, I'll walk through what that pipeline looks like, 
+
+why each role exists, and how I run all of it end-to-end. By the end, you'll have a complete picture of how to set this up yourself, and a slightly uncomfortable realization about what your job becomes when the agents do the coding.
+
+**[Full article >>](/development/why-one-ai-agent-is-never-enough)**
+
 ---
 
 
@@ -158,28 +178,3 @@ If you're a software engineer and you think your job is at risk because of AI, y
 
 ---
 
-
-
-
-
-<a href="/development/ai-just-killed-the-software-engineer-and-created-something-better"><img src="/development/ai-just-killed-the-software-engineer-and-created-something-better/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Just Killed the Software Engineer (And Created Something Better)](/development/ai-just-killed-the-software-engineer-and-created-something-better)
-
-The software engineering profession is being rewritten right now. Not slowly. Not in some distant future. Right now. And most companies are responding to it in exactly the wrong way.
-
-This video is going to cover a lot of ground, so let me tell you upfront what you are getting into.
-
-We will start with the numbers. Hard data on what AI is already doing to productivity, revenue, and the way code gets written. Then we will get into the human side of this, because behind those numbers are real people going through an identity crisis, and I do not think enough people are talking about that honestly.
-
-From there, we will dig into what actually changes about how software gets built. New development cycles, spec-first workflows, how much autonomy you give AI agents, and why context engineering is the single biggest factor most teams are ignoring.
-
-Then comes the part that makes people uncomfortable. How you restructure your company. Org design, team composition, pod models, platform teams, which roles expand, which ones shrink, and what happens to junior developers when nobody is hiring them anymore.
-
-We will wrap up with concrete steps you can take Monday morning. No vague advice. Specific moves.
-
-This is based on my personal experiences, on working with and talking to a lot of companies, seeing what works and what does not, and doing a lot of analysis. Let's get into it.
-
-**[Full article >>](/development/ai-just-killed-the-software-engineer-and-created-something-better)**
-
----
