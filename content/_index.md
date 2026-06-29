@@ -5,6 +5,29 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup"><img src="/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Built a Server That Runs AI Agents 24/7 (Full Setup)](/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup)
+
+
+If you've started using AI coding agents, you've probably felt the pull to run more than one. To have several going at once, in parallel, each chewing through a different task while you orchestrate the lot. That's the goal we're working toward. But the moment you reach for it, you run into a handful of problems, and solving them is what this whole video is about.
+
+
+The first is **persistence**. These agents run on a machine, and machines sleep, reboot, lose power. The instant that happens, every agent stops dead, and hours of work can vanish with them.
+
+
+The second is **accessibility**. The agents run wherever they run, but we're not always sitting right next to them. You close the laptop at home, you're working from an airport café an hour later, you're over an ocean by nightfall. And through all of it, you still want to reach them, to check in, to redirect them.
+
+Those two are the big ones. There are also a couple of bonus problems, the kind that aren't dealbreakers on their own but quietly make everything worse.
+
+One is **dedication**. If the agents are grinding through builds and tests on the very machine you're trying to work on, everything ends up fighting over the same CPU and RAM. You and your agents, elbowing each other for resources.
+
+The other is **isolation**. Agents execute code. They run commands. They install things, sometimes things you'd never install yourself. Keeping all of that well away from your daily-driver machine limits the blast radius when something inevitably goes sideways.
+
+**[Full article >>](/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup)**
+
+---
+
 <a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
@@ -39,6 +62,7 @@ why each role exists, and how I run all of it end-to-end. By the end, you'll hav
 ---
 
 
+
 <a href="/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit"><img src="/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why AI Code Review Goes First (And Humans Go Second) (feat: CodeRabbit)](/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit)
@@ -60,6 +84,7 @@ In this video, I'll show you what's actually breaking and why, the workflow that
 
 
 
+
 <a href="/ai/how-i-access-every-ai-model-without-the-lock-in"><img src="/ai/how-i-access-every-ai-model-without-the-lock-in/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
@@ -69,6 +94,7 @@ New models keep dropping all the time, and I want to try them all. I want to see
 **[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
 
 ---
+
 
 
 
@@ -89,6 +115,7 @@ In this video, I'll show you how. We'll start with Grafana Assistant inside the 
 **[Full article >>](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)**
 
 ---
+
 
 
 
@@ -116,6 +143,7 @@ So let me walk you through each mode, how IDE and TUI handle it differently, and
 
 
 
+
 <a href="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield"><img src="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)
@@ -132,6 +160,7 @@ And it's not just code. Calendars, email, web research, summarizing long PDFs, d
 
 
 
+
 <a href="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once"><img src="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built a Tool to Manage Multiple AI Agents at Once](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)
@@ -143,6 +172,7 @@ In this video, I'll walk through what that shift looks like, lay out the require
 **[Full article >>](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)**
 
 ---
+
 
 
 
@@ -166,6 +196,7 @@ In this video, we're going to put MCP to the test, run some real operations thro
 
 
 
+
 <a href="/development/ai-wont-kill-your-job-your-customers-using-ai-will"><img src="/development/ai-wont-kill-your-job-your-customers-using-ai-will/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Won't Kill Your Job. Your Customers Using AI Will](/development/ai-wont-kill-your-job-your-customers-using-ai-will)
@@ -177,4 +208,3 @@ If you're a software engineer and you think your job is at risk because of AI, y
 **[Full article >>](/development/ai-wont-kill-your-job-your-customers-using-ai-will)**
 
 ---
-
