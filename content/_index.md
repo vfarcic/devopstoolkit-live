@@ -28,6 +28,19 @@ The other is **isolation**. Agents execute code. They run commands. They install
 
 ---
 
+<a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
+
+
+AI agents are amplifiers. If you're good at your job, agents make you better. You do more great things, faster. But if you're bad at your job, agents amplify that too. Where you used to cause a slow trickle of shit, now you have the means to unleash a full-blown **shitstorm**, at scale, in minutes.
+
+Now, AI is all the rage these days, and for good reason. So of course people are using agents to manage real resources: infrastructure, databases, applications, all of it. The question is what happens when they do. That's what we're looking at today: an agent managing actual cloud resources, what goes wrong, why it goes wrong, and what it takes to make it work properly.
+
+**[Full article >>](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)**
+
+
+---
 
 <a href="/development/why-one-ai-agent-is-never-enough"><img src="/development/why-one-ai-agent-is-never-enough/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
