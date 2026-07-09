@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
+
+
+The first thing I do in the morning is watch videos on YouTube. Still in bed. No time to lose. It might look like I'm being entertained, but I'm actually working. These aren't videos you'd ever want to watch. You'd get bored at best or, more likely, say "what the fuck is this?" if you ever saw one. Yet I find them genuinely engaging, real time-savers, and they've become my morning routine. They tell me more about my day than anything else.
+
+I'll get to what those videos actually are. But first I need to show you how I build software now, because that's the reason they exist. This is about two things. How agentic AI can write genuinely good code. And how I can **review and confirm a whole feature the agents built on their own**, in seconds, without reading a single line of it.
+
+**[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
+
+---
+
+
 <a href="/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup"><img src="/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Built a Server That Runs AI Agents 24/7 (Full Setup)](/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup)
@@ -28,6 +42,7 @@ The other is **isolation**. Agents execute code. They run commands. They install
 
 ---
 
+
 <a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
@@ -41,6 +56,7 @@ Now, AI is all the rage these days, and for good reason. So of course people are
 
 
 ---
+
 
 <a href="/development/why-one-ai-agent-is-never-enough"><img src="/development/why-one-ai-agent-is-never-enough/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
@@ -60,6 +76,7 @@ why each role exists, and how I run all of it end-to-end. By the end, you'll hav
 **[Full article >>](/development/why-one-ai-agent-is-never-enough)**
 
 ---
+
 
 
 
@@ -85,6 +102,7 @@ In this video, I'll show you what's actually breaking and why, the workflow that
 
 
 
+
 <a href="/ai/how-i-access-every-ai-model-without-the-lock-in"><img src="/ai/how-i-access-every-ai-model-without-the-lock-in/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
@@ -94,6 +112,7 @@ New models keep dropping all the time, and I want to try them all. I want to see
 **[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
 
 ---
+
 
 
 
@@ -115,6 +134,7 @@ In this video, I'll show you how. We'll start with Grafana Assistant inside the 
 **[Full article >>](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)**
 
 ---
+
 
 
 
@@ -144,6 +164,7 @@ So let me walk you through each mode, how IDE and TUI handle it differently, and
 
 
 
+
 <a href="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield"><img src="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)
@@ -161,6 +182,7 @@ And it's not just code. Calendars, email, web research, summarizing long PDFs, d
 
 
 
+
 <a href="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once"><img src="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [I Built a Tool to Manage Multiple AI Agents at Once](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)
@@ -170,41 +192,5 @@ Running multiple AI agents in parallel sounds like the ultimate productivity hac
 In this video, I'll walk through what that shift looks like, lay out the requirements for the kind of tool that can actually support it, and then give you a hands-on tour of the one I built after nothing else got it right.
 
 **[Full article >>](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)**
-
----
-
-
-
-
-
-
-<a href="/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question"><img src="/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [MCP Is Burning Your Tokens Before You Ask a Single Question](/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question)
-
-Every MCP tool you connect burns tokens before you even ask a question. Tool names, descriptions, parameter schemas, all of it gets stuffed into your context window on every single turn. Connect a few servers and you've lost thousands of tokens to tools you might never call. That's the reality of the MCP protocol. It's a tax on your agent's intelligence.
-
-Now, don't get me wrong. MCP solves a real problem. It gives us standardized discovery and zero client installation. But there's an alternative that uses a fraction of the context, costs nothing extra to set up, and your agent might already know how to use. It's not perfect either, but I think it's the better choice for most real-world scenarios.
-
-In this video, we're going to put MCP to the test, run some real operations through it, and then explore that alternative side by side. We'll look at where each one wins, where each one falls short, and by the end, you'll have a clear picture of which approach fits your situation.
-
-**[Full article >>](/ai/mcp-is-burning-your-tokens-before-you-ask-a-single-question)**
-
----
-
-
-
-
-
-
-<a href="/development/ai-wont-kill-your-job-your-customers-using-ai-will"><img src="/development/ai-wont-kill-your-job-your-customers-using-ai-will/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Won't Kill Your Job. Your Customers Using AI Will](/development/ai-wont-kill-your-job-your-customers-using-ai-will)
-
-Over a trillion dollars in software market cap vanished in a single month. Software companies are laying off thousands. Analysts are calling it the SaaSpocalypse. And yet, software engineering jobs are at multi-year highs. What the hell is going on?
-
-If you're a software engineer and you think your job is at risk because of AI, you're right. But probably not for the reasons you think. If you work at a company that *sells* software, yeah, you should be worried. But if you work at a bank, an insurance company, a retailer, a manufacturer, any company that *uses* software rather than selling it, AI might actually make your job more secure than ever. Your company is likely about to build a lot more software than it ever has before
-
-**[Full article >>](/development/ai-wont-kill-your-job-your-customers-using-ai-will)**
 
 ---
