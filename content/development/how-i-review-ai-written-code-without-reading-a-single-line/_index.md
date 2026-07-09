@@ -1,7 +1,7 @@
 
 +++
 title = "How I Review AI-Written Code Without Reading a Single Line"
-date = 2026-07-13T16:00:00+00:00
+date = 2026-07-13T15:00:00+00:00
 draft = false
 +++
 
