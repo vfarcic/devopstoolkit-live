@@ -5,6 +5,38 @@ title = ""
 
 # Latest Posts
 
+<a href="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane"><img src="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [One Control Plane for Every GPU Cluster (Modeplane)](/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane)
+
+
+We've been working on something new. A project called Modelplane. It's early, it's rough... but I think it's ready to fly.
+
+But before I show you what it does, let me back up and explain the problem it solves. Because that's really where this whole thing starts.
+
+
+Serving a single model on a single cluster is more or less a solved problem. Pick a serving engine, hand it a GPU, point some traffic at it, and you're done. The hard version is serving models at scale. GPUs are scarce and expensive, and they're scattered all over the place, across regions, across clouds, and across your own on-prem hardware, wherever you could actually get your hands on them. And the models people really care about, the big ones, won't even fit on a single machine. So you don't end up with a cluster. You end up with a whole fleet of GPU clusters.
+
+
+And managing that fleet by hand is miserable. Every cloud provisions clusters differently. Every one of those clusters needs the exact same serving stack installed on it. And on top of all that, you're constantly playing matchmaker, figuring out which model should run on which hardware, across every cluster you've got. Do that for one cluster and it's a chore. Do it for a fleet and it's a full-time job nobody wants.
+
+
+And if you look closely, there are really two very different jobs tangled up in here. On one side, somebody owns the hardware and the fleet. They decide which GPU types are blessed, which clusters exist, and where those clusters run. That's the platform side. On the other side is everyone who actually needs to serve a model. An app developer bolting inference onto a product, a data scientist, a product team, whoever it is. They don't want to think about any of the fleet stuff. They just want to say "give me a GPU with this much memory" and ship. They shouldn't need to know, or care, which clusters or instance types exist underneath. I'll call that side the developers, and I mean software engineers of any kind, not just the machine learning crowd.
+
+
+Blurring those two roles together is exactly where most platforms go wrong. You end up forcing developers to understand infrastructure, or forcing the platform team to babysit every model.
+
+
+This is where Modelplane comes in, and its whole shape is built around keeping those two roles apart. The platform side defines hardware classes and registers clusters. Developers declare what they need. And a scheduler sits in the middle, bridging the two.
+
+
+That split, platform side on one end, developers on the other, is the spine of everything we're about to do. So keep it in the back of your mind as we go, because you'll watch it play out in the manifests, in the way the pieces reference each other, and in who's responsible for what.
+
+**[Full article >>](/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane)**
+
+---
+
+
 <a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
@@ -17,6 +49,7 @@ I'll get to what those videos actually are. But first I need to show you how I b
 **[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
 
 ---
+
 
 
 <a href="/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup"><img src="/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -43,6 +76,7 @@ The other is **isolation**. Agents execute code. They run commands. They install
 ---
 
 
+
 <a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
@@ -56,6 +90,7 @@ Now, AI is all the rage these days, and for good reason. So of course people are
 
 
 ---
+
 
 
 <a href="/development/why-one-ai-agent-is-never-enough"><img src="/development/why-one-ai-agent-is-never-enough/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -76,6 +111,7 @@ why each role exists, and how I run all of it end-to-end. By the end, you'll hav
 **[Full article >>](/development/why-one-ai-agent-is-never-enough)**
 
 ---
+
 
 
 
@@ -103,6 +139,7 @@ In this video, I'll show you what's actually breaking and why, the workflow that
 
 
 
+
 <a href="/ai/how-i-access-every-ai-model-without-the-lock-in"><img src="/ai/how-i-access-every-ai-model-without-the-lock-in/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
@@ -112,6 +149,7 @@ New models keep dropping all the time, and I want to try them all. I want to see
 **[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
 
 ---
+
 
 
 
@@ -134,6 +172,7 @@ In this video, I'll show you how. We'll start with Grafana Assistant inside the 
 **[Full article >>](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)**
 
 ---
+
 
 
 
@@ -165,6 +204,7 @@ So let me walk you through each mode, how IDE and TUI handle it differently, and
 
 
 
+
 <a href="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield"><img src="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)
@@ -174,23 +214,5 @@ Real productivity out of an AI agent starts with where it lives. Agents that run
 And it's not just code. Calendars, email, web research, summarizing long PDFs, drafting writing. All of it routinely happens inside the same agent session, through MCP connectors that wire the agent into Gmail, Google Calendar, Notion, Slack, and whatever else you've plugged in.
 
 **[Full article >>](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)**
-
----
-
-
-
-
-
-
-
-<a href="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once"><img src="/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [I Built a Tool to Manage Multiple AI Agents at Once](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)
-
-Running multiple AI agents in parallel sounds like the ultimate productivity hack. Two agents, five, a dozen, all grinding away on different features at the same time. But making that actually work changes more than you'd expect. Not just the tooling. The way we work changes too.
-
-In this video, I'll walk through what that shift looks like, lay out the requirements for the kind of tool that can actually support it, and then give you a hands-on tour of the one I built after nothing else got it right.
-
-**[Full article >>](/ai/i-built-a-tool-to-manage-multiple-ai-agents-at-once)**
 
 ---
