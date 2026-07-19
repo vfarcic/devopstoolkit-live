@@ -1,7 +1,7 @@
 
 +++
 title = "One Control Plane for Every GPU Cluster (Modeplane)"
-date = 2026-07-20T16:00:00+00:00
+date = 2026-07-20T15:00:00+00:00
 draft = false
 +++
 
@@ -13,6 +13,9 @@ But before I show you what it does, let me back up and explain the problem it so
 
 Serving a single model on a single cluster is more or less a solved problem. Pick a serving engine, hand it a GPU, point some traffic at it, and you're done. The hard version is serving models at scale. GPUs are scarce and expensive, and they're scattered all over the place, across regions, across clouds, and across your own on-prem hardware, wherever you could actually get your hands on them. And the models people really care about, the big ones, won't even fit on a single machine. So you don't end up with a cluster. You end up with a whole fleet of GPU clusters.
 
+<!--more-->
+
+{{< youtube Mc0BM63Pv00 >}}
 
 And managing that fleet by hand is miserable. Every cloud provisions clusters differently. Every one of those clusters needs the exact same serving stack installed on it. And on top of all that, you're constantly playing matchmaker, figuring out which model should run on which hardware, across every cluster you've got. Do that for one cluster and it's a chore. Do it for a fleet and it's a full-time job nobody wants.
 
@@ -27,10 +30,6 @@ This is where Modelplane comes in, and its whole shape is built around keeping t
 
 
 That split, platform side on one end, developers on the other, is the spine of everything we're about to do. So keep it in the back of your mind as we go, because you'll watch it play out in the manifests, in the way the pieces reference each other, and in who's responsible for what.
-
-<!--more-->
-
-{{< youtube Mc0BM63Pv00 >}}
 
 ## Setup
 
