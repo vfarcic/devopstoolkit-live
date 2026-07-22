@@ -1,7 +1,7 @@
 
 +++
 title = "How I Use AI to Test My App Like a Real User with DevAssure"
-date = 2026-07-24T16:00:00+00:00
+date = 2026-07-24T15:00:00+00:00
 draft = false
 +++
 
