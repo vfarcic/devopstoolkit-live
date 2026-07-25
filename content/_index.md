@@ -5,6 +5,21 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
+
+An AI agent doesn't need to get hacked to wreck your day. It just needs to read the wrong thing. A poisoned dependency. A malicious comment buried in a file. A web page it fetches while doing perfectly ordinary work. The moment it reads instructions somebody hid in there, it follows them. With your permissions. Your credentials. On your machine.
+
+And here's the part that changes how you should think about all of this. **There is no patch for prompt injection.** It isn't a bug someone's about to fix. It's how these models work. So the real question was never "how do I stop this from happening." It's "when it happens, how much damage can it actually do?" That's what sandboxing is really about. Not trusting the agent.
+
+So in this video I'll walk through the ways people actually run coding agents. One agent you're watching. One agent you've walked away from. And a whole swarm of them running at once. Each one comes with a different security bill: what you lock down, how hard, and what it costs you to do it. Get it wrong in any of them and the damage is bigger than you think. Get it right and you can walk away from an agent and still sleep at night.
+
+**[Full article >>](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)**
+
+---
+
+
 <a href="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane"><img src="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [One Control Plane for Every GPU Cluster (Modeplane)](/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane)
@@ -22,6 +37,7 @@ Serving a single model on a single cluster is more or less a solved problem. Pic
 ---
 
 
+
 <a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
@@ -34,6 +50,7 @@ I'll get to what those videos actually are. But first I need to show you how I b
 **[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
 
 ---
+
 
 
 
@@ -62,6 +79,7 @@ The other is **isolation**. Agents execute code. They run commands. They install
 
 
 
+
 <a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
@@ -75,6 +93,7 @@ Now, AI is all the rage these days, and for good reason. So of course people are
 
 
 ---
+
 
 
 
@@ -96,6 +115,7 @@ why each role exists, and how I run all of it end-to-end. By the end, you'll hav
 **[Full article >>](/development/why-one-ai-agent-is-never-enough)**
 
 ---
+
 
 
 
@@ -125,6 +145,7 @@ In this video, I'll show you what's actually breaking and why, the workflow that
 
 
 
+
 <a href="/ai/how-i-access-every-ai-model-without-the-lock-in"><img src="/ai/how-i-access-every-ai-model-without-the-lock-in/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
@@ -134,6 +155,7 @@ New models keep dropping all the time, and I want to try them all. I want to see
 **[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
 
 ---
+
 
 
 
@@ -164,6 +186,7 @@ In this video, I'll show you how. We'll start with Grafana Assistant inside the 
 
 
 
+
 <a href="/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself"><img src="/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [The 4 Modes of AI Coding (And Why Your Tool Picks Itself)](/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself)
@@ -180,24 +203,5 @@ Both IDEs and TUIs can operate in all four modes. But each has modes where it is
 So let me walk you through each mode, how IDE and TUI handle it differently, and where each paradigm hits its structural limits.
 
 **[Full article >>](/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself)**
-
----
-
-
-
-
-
-
-
-
-<a href="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield"><img src="/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [How I Hooked AI Video Generation Into My Dev Workflow (with Higgsfield)](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)
-
-Real productivity out of an AI agent starts with where it lives. Agents that run inside your terminal, your IDE, or your desktop beat agents that sit behind a web UI. [Codex](https://github.com/openai/codex), [Cursor](https://cursor.com), [Claude Desktop](https://claude.com). The surface around the model is what decides how much work you actually get out of it.
-
-And it's not just code. Calendars, email, web research, summarizing long PDFs, drafting writing. All of it routinely happens inside the same agent session, through MCP connectors that wire the agent into Gmail, Google Calendar, Notion, Slack, and whatever else you've plugged in.
-
-**[Full article >>](/ai/how-i-hooked-ai-video-generation-into-my-dev-workflow-with-higgsfield)**
 
 ---
