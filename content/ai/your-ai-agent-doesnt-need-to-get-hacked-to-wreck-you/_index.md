@@ -1,7 +1,7 @@
 
 +++
 title = "Your AI Agent Doesn't Need to Get Hacked to Wreck You"
-date = 2026-07-27T16:00:00+00:00
+date = 2026-07-27T15:00:00+00:00
 draft = false
 +++
 
