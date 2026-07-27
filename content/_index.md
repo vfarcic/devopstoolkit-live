@@ -5,6 +5,20 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
+
+An AI agent doesn't need to get hacked to wreck your day. It just needs to read the wrong thing. A poisoned dependency. A malicious comment buried in a file. A web page it fetches while doing perfectly ordinary work. The moment it reads instructions somebody hid in there, it follows them. With your permissions. Your credentials. On your machine.
+
+And here's the part that changes how you should think about all of this. **There is no patch for prompt injection.** It isn't a bug someone's about to fix. It's how these models work. So the real question was never "how do I stop this from happening." It's "when it happens, how much damage can it actually do?" That's what sandboxing is really about. Not trusting the agent.
+
+So in this video I'll walk through the ways people actually run coding agents. One agent you're watching. One agent you've walked away from. And a whole swarm of them running at once. Each one comes with a different security bill: what you lock down, how hard, and what it costs you to do it. Get it wrong in any of them and the damage is bigger than you think. Get it right and you can walk away from an agent and still sleep at night.
+
+**[Full article >>](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)**
+
+---
+
 <a href="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure"><img src="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Use AI to Test My App Like a Real User with DevAssure](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)
