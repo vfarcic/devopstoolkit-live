@@ -19,6 +19,19 @@ So in this video I'll walk through the ways people actually run coding agents. O
 
 ---
 
+<a href="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure"><img src="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Use AI to Test My App Like a Real User with DevAssure](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)
+
+You write an end-to-end test, it passes, everyone's happy. Then someone moves a button or renames a label, and the test goes red. Nothing is actually broken. The test is just brittle. And you end up spending more time un-breaking your tests than you spent writing them. If you've done this for a living, you know exactly the feeling I'm talking about.
+
+
+I've been using a tool called [DevAssure](https://www.devassure.io) that takes a very different swing at that problem, and I like it enough that I want to show you exactly how it fits into the way I work. So let me start with what it actually is.
+
+**[Full article >>](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)**
+
+---
+
 
 <a href="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane"><img src="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
