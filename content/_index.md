@@ -5,6 +5,34 @@ title = ""
 
 # Latest Posts
 
+<a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
+
+
+Let me start with a question. Do you like games? Video games, board games, whatever it is. And would you play them all day if you actually could? I know I would.
+
+
+Here's my problem. I can't. I like games. But I also like money. Money for rent, for food, for more games. And to get that money, I have to get some shit done for the company that pays my bills. That's the deal.
+
+
+So my real dream was never "more games." It's getting the work done without me having to do it, so I can get back to the controller. There's all kinds of work I'd happily hand off, but I want to zoom in on one slice of it: the ops work. Provisioning the infrastructure, wiring the databases together, deploying apps, keeping the whole thing running. That's what I'm trying to get AI agents to do for me. Today.
+
+And that dream is not crazy. It's not just hype. An agent really can do that work. It provisions the clusters, wires up the databases, fixes the broken pipeline, and you get to lean back and pick up the controller.
+
+
+But there's a catch. And right about now, you're probably yelling at the screen. In your head, you're yelling at me. AI is not deterministic! Well, first of all, I can't hear you, so please stop yelling at your monitor. And second, you're right. That agent working for you is non-deterministic. Give it the same task twice and you can get two completely different answers. And it'll do risky things with total confidence, whether it's right or whether it's dead wrong.
+
+
+But sound familiar? Because that's you too. Give the same task to two engineers, or the same engineer on two different days, and you get two different answers, each delivered with the exact same confidence.
+
+The only real difference is that you are so annoyingly slow. You make the occasional mistake. An agent makes a thousand an hour. And it never gets tired.
+
+**[Full article >>](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)**
+
+---
+
+
 <a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
@@ -19,6 +47,7 @@ So in this video I'll walk through the ways people actually run coding agents. O
 
 ---
 
+
 <a href="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure"><img src="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Use AI to Test My App Like a Real User with DevAssure](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)
@@ -31,6 +60,7 @@ I've been using a tool called [DevAssure](https://www.devassure.io) that takes a
 **[Full article >>](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)**
 
 ---
+
 
 
 <a href="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane"><img src="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -51,6 +81,7 @@ Serving a single model on a single cluster is more or less a solved problem. Pic
 
 
 
+
 <a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
@@ -63,6 +94,7 @@ I'll get to what those videos actually are. But first I need to show you how I b
 **[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
 
 ---
+
 
 
 
@@ -93,6 +125,7 @@ The other is **isolation**. Agents execute code. They run commands. They install
 
 
 
+
 <a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
@@ -106,6 +139,7 @@ Now, AI is all the rage these days, and for good reason. So of course people are
 
 
 ---
+
 
 
 
@@ -128,6 +162,7 @@ why each role exists, and how I run all of it end-to-end. By the end, you'll hav
 **[Full article >>](/development/why-one-ai-agent-is-never-enough)**
 
 ---
+
 
 
 
@@ -159,6 +194,7 @@ In this video, I'll show you what's actually breaking and why, the workflow that
 
 
 
+
 <a href="/ai/how-i-access-every-ai-model-without-the-lock-in"><img src="/ai/how-i-access-every-ai-model-without-the-lock-in/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
@@ -166,55 +202,5 @@ In this video, I'll show you what's actually breaking and why, the workflow that
 New models keep dropping all the time, and I want to try them all. I want to see which one is better for which tasks, which one is cheaper, which one is faster. There's [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Google Gemini](https://gemini.google.com), [Moonshot AI](https://moonshot.ai), [xAI](https://x.ai), and the list just keeps growing. I do not want to be locked into one model or one family of models forever. So I got subscriptions to some, I'm paying for API access to others, and then there are models that I would typically have to host myself. I don't want to do that. Even if I did, I neither have the hardware nor the patience for it.
 
 **[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
-
----
-
-
-
-
-
-
-
-<a href="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now"><img src="/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [I Stopped Staring at Dashboards. AI Reads My Grafana Metrics Now.](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)
-
-
-Something just broke in production. An alert fired. You open Grafana, click through three dashboards trying to find one that matches what's actually happening, and twenty minutes later you're still squinting at panels and switching tabs to grep logs.
-
-That entire workflow is about to disappear.
-
-
-AI agents can now read your metrics, your logs, and your traces directly. They draw conclusions. They build custom dashboards on the spot. They tell you what's wrong while you're still typing the question. And the best part: **you don't have to leave your terminal to do any of it.**
-
-In this video, I'll show you how. We'll start with Grafana Assistant inside the [Grafana](https://grafana.com) UI, then move to [Claude Code](https://claude.com/claude-code) wired up to the Grafana MCP server. By the end, you'll see how to query observability data from a chat prompt, build dashboards fitted to whatever you're investigating, and connect your own agents to live runtime data, all without touching a browser.
-
-**[Full article >>](/observability/i-stopped-staring-at-dashboards-ai-reads-my-grafana-metrics-now)**
-
----
-
-
-
-
-
-
-
-
-<a href="/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself"><img src="/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [The 4 Modes of AI Coding (And Why Your Tool Picks Itself)](/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself)
-
-
-
-Working with AI agents is management. Most people think the IDE versus TUI debate is about tools. It is not. It is about management style. And like any good manager, you adjust based on two things. How well can you specify the task? And how much does the situation warrant trust? The worse you are at specifying and the less trust is warranted, the more you need to intervene.
-
-
-I think of it as four modes of working with AI agents. Four management styles. Mode 1: "I trust you only to complete what I started." Mode 2: "I need to review every single thing you do." Mode 3: "I observe what you are doing and intervene when needed." Mode 4: "I trust you with this task." These are not ranked from worst to best. They are different styles for different situations.
-
-Both IDEs and TUIs can operate in all four modes. But each has modes where it is native and modes where it is fighting its own architecture. And that gap widens as autonomy increases. I used to be IDE-only. Then I combined IDE and TUI. Now I use TUI exclusively. That was not a tribal choice. It followed my shift through these four modes. As my center of gravity moved toward higher autonomy, the IDE stopped being the right tool for most of what I do.
-
-So let me walk you through each mode, how IDE and TUI handle it differently, and where each paradigm hits its structural limits.
-
-**[Full article >>](/ai/the-4-modes-of-ai-coding-and-why-your-tool-picks-itself)**
 
 ---
