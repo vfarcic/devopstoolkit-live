@@ -20,14 +20,6 @@ So my real dream was never "more games." It's getting the work done without me h
 
 And that dream is not crazy. It's not just hype. An agent really can do that work. It provisions the clusters, wires up the databases, fixes the broken pipeline, and you get to lean back and pick up the controller.
 
-
-But there's a catch. And right about now, you're probably yelling at the screen. In your head, you're yelling at me. AI is not deterministic! Well, first of all, I can't hear you, so please stop yelling at your monitor. And second, you're right. That agent working for you is non-deterministic. Give it the same task twice and you can get two completely different answers. And it'll do risky things with total confidence, whether it's right or whether it's dead wrong.
-
-
-But sound familiar? Because that's you too. Give the same task to two engineers, or the same engineer on two different days, and you get two different answers, each delivered with the exact same confidence.
-
-The only real difference is that you are so annoyingly slow. You make the occasional mistake. An agent makes a thousand an hour. And it never gets tired.
-
 **[Full article >>](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)**
 
 ---

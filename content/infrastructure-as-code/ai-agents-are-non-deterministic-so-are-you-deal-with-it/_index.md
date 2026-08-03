@@ -1,7 +1,7 @@
 
 +++
 title = "AI Agents Are Non-Deterministic. So Are You. Deal with It."
-date = 2026-08-03T16:00:00+00:00
+date = 2026-08-03T15:00:00+00:00
 draft = false
 +++
 
