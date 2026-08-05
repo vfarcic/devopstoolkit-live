@@ -1,7 +1,7 @@
 
 +++
 title = "Docker's Rise and Fall: The Nightmare of Winning Too Well"
-date = 2026-08-10T16:00:00+00:00
+date = 2026-08-10T15:00:00+00:00
 draft = false
 +++
 
@@ -23,12 +23,6 @@ So tuck in. Because tonight's nightmare is the scariest kind there is. The kind 
 <!--more-->
 
 {{< youtube kmLztKueTcI >}}
-
-- TODO: Every paragraph below is tagged with what's on screen while it's narrated.
-- TODO: clip: <name> — a drop-in illustration clip. LOOP it for as long as that paragraph's narration runs; don't change its speed. A tag applies to the paragraph(s) beneath it until the next tag.
-- EXCEPTION — "zoom" clips are rendered slow and must NOT be looped: speed up / retime them to fit the narration. These are the cold-open clips (`01-cover`, `02-title`), every chapter card, and any marker flagged "do NOT loop".
-- TODO: clip: bedtime-docker-chapter-N — a chapter-title card: the storybook re-opens to a fresh page reading "CHAPTER N / <name>". The card STAYS on screen while the narrator reads the chapter's opening paragraph (the one directly beneath it) as voice-over; then cut to the first illustration. The on-screen text is the only title — nothing is read aloud for the card. Retime to VO, don't loop.
-- TODO: talking head — cut to the on-camera narrator (no clip). Each chapter opens on its chapter card (VO) and closes on a talking head.
 
 ## Once Upon a Time
 
