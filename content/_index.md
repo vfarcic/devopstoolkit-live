@@ -5,6 +5,30 @@ title = ""
 
 # Latest Posts
 
+<a href="/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well"><img src="/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Docker's Rise and Fall: The Nightmare of Winning Too Well](/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well)
+
+
+Gather round. Get comfortable, kids. Tonight, I'm going to read you a bedtime story.
+
+
+This is the tale of Docker. The whale who carries the world.
+
+
+And like all the best bedtime stories, it starts with a dream, it's full of wonder in the middle, and it ends with everyone screaming.
+
+
+Because this isn't one of those stories where the hero loses. Oh no. This is worse. This is the story of a hero who *won*. Who won so completely that his name became a verb, that he conquered every data center on the planet, that he changed how the entire industry ships software forever.
+
+
+So tuck in. Because tonight's nightmare is the scariest kind there is. The kind where you do everything right, and it still isn't enough.
+
+**[Full article >>](/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well)**
+
+---
+
+
 <a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
@@ -25,6 +49,7 @@ And that dream is not crazy. It's not just hype. An agent really can do that wor
 ---
 
 
+
 <a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
@@ -40,6 +65,7 @@ So in this video I'll walk through the ways people actually run coding agents. O
 ---
 
 
+
 <a href="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure"><img src="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Use AI to Test My App Like a Real User with DevAssure](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)
@@ -52,6 +78,7 @@ I've been using a tool called [DevAssure](https://www.devassure.io) that takes a
 **[Full article >>](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)**
 
 ---
+
 
 
 
@@ -74,6 +101,7 @@ Serving a single model on a single cluster is more or less a solved problem. Pic
 
 
 
+
 <a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
@@ -86,6 +114,7 @@ I'll get to what those videos actually are. But first I need to show you how I b
 **[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
 
 ---
+
 
 
 
@@ -118,6 +147,7 @@ The other is **isolation**. Agents execute code. They run commands. They install
 
 
 
+
 <a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
@@ -131,6 +161,7 @@ Now, AI is all the rage these days, and for good reason. So of course people are
 
 
 ---
+
 
 
 
@@ -161,6 +192,7 @@ why each role exists, and how I run all of it end-to-end. By the end, you'll hav
 
 
 
+
 <a href="/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit"><img src="/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why AI Code Review Goes First (And Humans Go Second) (feat: CodeRabbit)](/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit)
@@ -177,22 +209,5 @@ You can feel it if you've been paying attention. Pull requests sitting open for 
 In this video, I'll show you what's actually breaking and why, the workflow that closes the gap, and the specific tool I use on every pull request to make it real.
 
 **[Full article >>](/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit)**
-
----
-
-
-
-
-
-
-
-
-<a href="/ai/how-i-access-every-ai-model-without-the-lock-in"><img src="/ai/how-i-access-every-ai-model-without-the-lock-in/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [How I Access Every AI Model Without the Lock-In](/ai/how-i-access-every-ai-model-without-the-lock-in)
-
-New models keep dropping all the time, and I want to try them all. I want to see which one is better for which tasks, which one is cheaper, which one is faster. There's [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Google Gemini](https://gemini.google.com), [Moonshot AI](https://moonshot.ai), [xAI](https://x.ai), and the list just keeps growing. I do not want to be locked into one model or one family of models forever. So I got subscriptions to some, I'm paying for API access to others, and then there are models that I would typically have to host myself. I don't want to do that. Even if I did, I neither have the hardware nor the patience for it.
-
-**[Full article >>](/ai/how-i-access-every-ai-model-without-the-lock-in)**
 
 ---
