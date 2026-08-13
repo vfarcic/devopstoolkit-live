@@ -1,7 +1,7 @@
 
 +++
 title = "AI Testing Is Lying to You (And You Can't Tell)"
-date = 2026-08-17T16:00:00+00:00
+date = 2025-08-17T15:00:00+00:00
 draft = false
 +++
 
