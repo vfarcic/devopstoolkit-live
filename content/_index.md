@@ -5,6 +5,27 @@ title = ""
 
 # Latest Posts
 
+<a href="/development/ai-testing-is-lying-to-you-and-you-cant-tell"><img src="/development/ai-testing-is-lying-to-you-and-you-cant-tell/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Testing Is Lying to You (And You Can't Tell)](/development/ai-testing-is-lying-to-you-and-you-cant-tell)
+
+
+There are three things that go into testing anything you build, and it doesn't much matter what that is. An app, a cluster, a delivery pipeline, a pile of Terraform. You **write them**. You **maintain them**, because the thing underneath them keeps changing. And when the suite goes red on a Tuesday, you **diagnose them**, sorting the reds that mean something from the ones that are just flaky. Those are the worst kind, because a flaky red is how you learn to stop trusting reds at all. All three of those can be handed to an agent now.
+
+That sounds like every other job being automated right now, and mostly it is. But this one has a property nothing else in your pipeline has. 
+
+When an agent writes your code badly, something catches it. That is what the tests are for. When an agent writes your tests badly, nothing catches it, because there is nothing underneath. A bad test doesn't fail. It passes. And now you're sure about something that isn't true.
+
+
+
+
+You call all of this testing. So does everybody, and it's a fair mistake, because the word is baked into every part of the work. You write a test. You run the test suite. You measure test coverage. You call the whole practice test automation. The word comes free, so nobody stops to ask whether it fits. It doesn't. And the part of this that you assume will always need a person is going the same way as the rest of it. I'll come back to both of those. For now, keep thinking you're testing.
+
+**[Full article >>](/development/ai-testing-is-lying-to-you-and-you-cant-tell)**
+
+---
+
+
 <a href="/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well"><img src="/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Docker's Rise and Fall: The Nightmare of Winning Too Well](/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well)
@@ -29,6 +50,7 @@ So tuck in. Because tonight's nightmare is the scariest kind there is. The kind 
 ---
 
 
+
 <a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
@@ -50,6 +72,7 @@ And that dream is not crazy. It's not just hype. An agent really can do that wor
 
 
 
+
 <a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
@@ -66,6 +89,7 @@ So in this video I'll walk through the ways people actually run coding agents. O
 
 
 
+
 <a href="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure"><img src="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Use AI to Test My App Like a Real User with DevAssure](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)
@@ -78,6 +102,7 @@ I've been using a tool called [DevAssure](https://www.devassure.io) that takes a
 **[Full article >>](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)**
 
 ---
+
 
 
 
@@ -102,6 +127,7 @@ Serving a single model on a single cluster is more or less a solved problem. Pic
 
 
 
+
 <a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
@@ -114,6 +140,7 @@ I'll get to what those videos actually are. But first I need to show you how I b
 **[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
 
 ---
+
 
 
 
@@ -148,6 +175,7 @@ The other is **isolation**. Agents execute code. They run commands. They install
 
 
 
+
 <a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
@@ -161,6 +189,7 @@ Now, AI is all the rage these days, and for good reason. So of course people are
 
 
 ---
+
 
 
 
@@ -183,31 +212,5 @@ In this video, I'll walk through what that pipeline looks like,
 why each role exists, and how I run all of it end-to-end. By the end, you'll have a complete picture of how to set this up yourself, and a slightly uncomfortable realization about what your job becomes when the agents do the coding.
 
 **[Full article >>](/development/why-one-ai-agent-is-never-enough)**
-
----
-
-
-
-
-
-
-
-
-<a href="/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit"><img src="/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Why AI Code Review Goes First (And Humans Go Second) (feat: CodeRabbit)](/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit)
-
-
-
-Code review was the safety net. The last check before something shipped. The place where bad ideas got caught, sloppy work got pushed back, and someone with fresh eyes made sure the change actually made sense.
-
-On most teams, that net is breaking. Not because reviewers got worse. Not because standards dropped. Something fundamental about how code gets written changed, and the review process never caught up.
-
-
-You can feel it if you've been paying attention. Pull requests sitting open for days. Approvals coming back so fast nobody could have read the diff. Small mistakes slipping through that would've been caught two years ago. The cracks are showing.
-
-In this video, I'll show you what's actually breaking and why, the workflow that closes the gap, and the specific tool I use on every pull request to make it real.
-
-**[Full article >>](/ai/why-ai-code-review-goes-first-and-humans-go-second-feat-coderabbit)**
 
 ---
