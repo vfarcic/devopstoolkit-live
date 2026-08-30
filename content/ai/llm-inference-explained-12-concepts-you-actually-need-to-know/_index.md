@@ -1,7 +1,7 @@
 
 +++
 title = "LLM Inference Explained: 12 Concepts You Actually Need to Know"
-date = 2026-08-31T16:00:00+00:00
+date = 2026-08-31T15:00:00+00:00
 draft = false
 +++
 
