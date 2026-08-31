@@ -5,6 +5,28 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know"><img src="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [LLM Inference Explained: 12 Concepts You Actually Need to Know](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)
+
+
+Continuous batching. Paged attention. Prefix caching. Speculative decoding. Prefill-decode disaggregation.
+
+If you've been anywhere near a conversation about running your own models lately, you've heard every one of those. Probably in the same sentence. Probably from somebody saying them very quickly.
+
+And there's a decent chance you nodded.
+
+So this is everything you wanted to know about inference but were afraid to ask.
+
+We're going through the whole machine in one pass. What an engine actually is, what it's holding on that GPU, and every bit of jargon stacked on top of it. 12 ideas, give or take, a couple of minutes each.
+
+One thing to listen for as we go. These ideas don't all arrive at once. Some bite the moment you deploy anything at all. Some wait until fifty people are talking to it. Some you may genuinely never need.
+
+**[Full article >>](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)**
+
+---
+
+
 <a href="/development/ai-testing-is-lying-to-you-and-you-cant-tell"><img src="/development/ai-testing-is-lying-to-you-and-you-cant-tell/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Testing Is Lying to You (And You Can't Tell)](/development/ai-testing-is-lying-to-you-and-you-cant-tell)
@@ -24,6 +46,7 @@ You call all of this testing. So does everybody, and it's a fair mistake, becaus
 **[Full article >>](/development/ai-testing-is-lying-to-you-and-you-cant-tell)**
 
 ---
+
 
 
 <a href="/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well"><img src="/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -51,6 +74,7 @@ So tuck in. Because tonight's nightmare is the scariest kind there is. The kind 
 
 
 
+
 <a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
@@ -73,6 +97,7 @@ And that dream is not crazy. It's not just hype. An agent really can do that wor
 
 
 
+
 <a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
@@ -90,6 +115,7 @@ So in this video I'll walk through the ways people actually run coding agents. O
 
 
 
+
 <a href="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure"><img src="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Use AI to Test My App Like a Real User with DevAssure](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)
@@ -102,6 +128,7 @@ I've been using a tool called [DevAssure](https://www.devassure.io) that takes a
 **[Full article >>](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)**
 
 ---
+
 
 
 
@@ -128,6 +155,7 @@ Serving a single model on a single cluster is more or less a solved problem. Pic
 
 
 
+
 <a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
@@ -140,6 +168,7 @@ I'll get to what those videos actually are. But first I need to show you how I b
 **[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
 
 ---
+
 
 
 
@@ -176,6 +205,7 @@ The other is **isolation**. Agents execute code. They run commands. They install
 
 
 
+
 <a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
@@ -187,30 +217,5 @@ Now, AI is all the rage these days, and for good reason. So of course people are
 
 **[Full article >>](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)**
 
-
----
-
-
-
-
-
-
-
-<a href="/development/why-one-ai-agent-is-never-enough"><img src="/development/why-one-ai-agent-is-never-enough/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Why One AI Agent Is Never Enough](/development/why-one-ai-agent-is-never-enough)
-
-
-When I used to give an AI agent a task, it would finish in one go. Write the code, declare victory, done. Now, with th
-
-e setup I'm about to show you, the same task can take tens of iterations before the work is considered finished. The output is **dramatically better**, and I'm spending **less time** on it, not more.
-
-The reason is that there's no longer a single agent doing the work. There's a team. One agent writes the code. Another reviews it. A third audits it for security. A fourth ships it. They run on different models, with fresh context each time, and they push back on each other until the work actually holds up. I just play games until something genuinely needs me.
-
-In this video, I'll walk through what that pipeline looks like, 
-
-why each role exists, and how I run all of it end-to-end. By the end, you'll have a complete picture of how to set this up yourself, and a slightly uncomfortable realization about what your job becomes when the agents do the coding.
-
-**[Full article >>](/development/why-one-ai-agent-is-never-enough)**
 
 ---
