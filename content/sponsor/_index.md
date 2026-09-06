@@ -6,9 +6,8 @@ hidden = false
 
 The following sponsorship options are available on **[The DevOps Toolkit](https://youtube.com/@DevOpsToolkit)** YouTube channel:
 1. Full video review and/or tutorial
-2. Short video review and/or tutorial
-3. 30-60 seconds ad inside a video
-4. Shout-Out in a live stream
+2. 60+ seconds ad inside a video
+3. Shout-Out in a live stream
 
 The objective behind accepting sponsorships in the **[The DevOps Toolkit](https://youtube.com/@DevOpsToolkit)** channel is to **cover the costs** of equipment and post-production (e.g., editing, animations, etc.). As such, the number of sponsorship spots is **limited**.
 
@@ -20,13 +19,9 @@ The **transcript** including all the commands used in the video is published her
 
 Only videos about projects, products, or services we find interesting are eligible to be sponsored. As such, requests to sponsor a full video might be rejected.
 
-## Short video review and/or tutorial
+## 60+ seconds ad inside a video
 
-The price for a **short video review and/or tutorial** is **1700€** (**$2000**). The video is approximately **5-6 minutes long** (actual duration may vary). The same conditions apply as for the full video review and/or tutorial above: the video receives objective treatment, the sponsor cannot influence the content, the transcript is published on this site, and requests might be rejected.
-
-## 30-60 seconds ad inside a video
-
-The price of a 30-60 seconds ad inside a video is **850€** (**$1000**). The ad is placed within the first 3 minutes of the video containing a brief description of the project, service, or product and a call to action. Illustrations can be taken from the website or provided by the sponsor. The URL and logo is placed in lower-third of the video as well as in the description.
+The price of a 60+ seconds ad inside a video is **850€** (**$1000**). The ad is placed within the first 3 minutes of the video containing a brief description of the project, service, or product and a call to action. Illustrations can be taken from the website or provided by the sponsor. The URL and logo is placed in lower-third of the video as well as in the description.
 
 ## Shout-Out in a live stream
 
