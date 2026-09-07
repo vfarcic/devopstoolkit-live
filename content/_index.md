@@ -5,7 +5,9 @@ title = ""
 
 # Latest Posts
 
-## [Is Jenkins Dead? No, And That's Much Worse](/bedtime/is-jenkins-dead-no,-and-thats-much-worse)
+<a href="/bedtime/is-jenkins-dead-no-and-thats-much-worse"><img src="/bedtime/is-jenkins-dead-no-and-thats-much-worse/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+
+## [Is Jenkins Dead? No, And That's Much Worse](/bedtime/is-jenkins-dead-no-and-thats-much-worse)
 
 
 Gather round. Get comfortable, kids. Tonight, I'm going to read you a bedtime story.
@@ -23,7 +25,7 @@ Almost nobody chooses Jenkins any more. Ask around your office and you will find
 
 So tuck in. Because tonight's nightmare isn't that our hero dies at the end. It's that he doesn't. He is still running tonight. And you cannot switch him off.
 
-**[Full article >>](/bedtime/is-jenkins-dead-no,-and-thats-much-worse)**
+**[Full article >>](/bedtime/is-jenkins-dead-no-and-thats-much-worse)**
 
 ---
 

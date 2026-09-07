@@ -1,7 +1,7 @@
 
 +++
 title = "Is Jenkins Dead? No, And That's Much Worse"
-date = 2026-09-07T16:00:00+00:00
+date = 2026-09-07T15:00:00+00:00
 draft = false
 +++
 
