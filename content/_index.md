@@ -5,6 +5,31 @@ title = ""
 
 # Latest Posts
 
+<a href="/bedtime/is-jenkins-dead-no-and-thats-much-worse"><img src="/bedtime/is-jenkins-dead-no-and-thats-much-worse/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+
+## [Is Jenkins Dead? No, And That's Much Worse](/bedtime/is-jenkins-dead-no-and-thats-much-worse)
+
+
+Gather round. Get comfortable, kids. Tonight, I'm going to read you a bedtime story.
+
+
+This is the tale of Jenkins. The butler who never once said no.
+
+
+Now, this is not one of those stories where the hero loses. Jenkins won. Jenkins won everything. For the better part of a decade, if you wrote software for a living, Jenkins stood between your keyboard and your customers, and it built your code, and it tested it, and it shipped it, every single night, without ever once being thanked.
+
+
+And here's the thing. 
+
+Almost nobody chooses Jenkins any more. Ask around your office and you will find people who would rip it out tomorrow morning. They can't. Twenty-odd years after a young engineer at Sun Microsystems wrote the first version of it, it is still there, still running the thing that actually ships your product, and everybody has quietly agreed not to fucking touch it.
+
+So tuck in. Because tonight's nightmare isn't that our hero dies at the end. It's that he doesn't. He is still running tonight. And you cannot switch him off.
+
+**[Full article >>](/bedtime/is-jenkins-dead-no-and-thats-much-worse)**
+
+---
+
+
 <a href="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know"><img src="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [LLM Inference Explained: 12 Concepts You Actually Need to Know](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)
@@ -27,6 +52,7 @@ One thing to listen for as we go. These ideas don't all arrive at once. Some bit
 ---
 
 
+
 <a href="/development/ai-testing-is-lying-to-you-and-you-cant-tell"><img src="/development/ai-testing-is-lying-to-you-and-you-cant-tell/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Testing Is Lying to You (And You Can't Tell)](/development/ai-testing-is-lying-to-you-and-you-cant-tell)
@@ -46,6 +72,7 @@ You call all of this testing. So does everybody, and it's a fair mistake, becaus
 **[Full article >>](/development/ai-testing-is-lying-to-you-and-you-cant-tell)**
 
 ---
+
 
 
 
@@ -75,6 +102,7 @@ So tuck in. Because tonight's nightmare is the scariest kind there is. The kind 
 
 
 
+
 <a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
@@ -98,6 +126,7 @@ And that dream is not crazy. It's not just hype. An agent really can do that wor
 
 
 
+
 <a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
@@ -116,6 +145,7 @@ So in this video I'll walk through the ways people actually run coding agents. O
 
 
 
+
 <a href="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure"><img src="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Use AI to Test My App Like a Real User with DevAssure](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)
@@ -128,6 +158,7 @@ I've been using a tool called [DevAssure](https://www.devassure.io) that takes a
 **[Full article >>](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)**
 
 ---
+
 
 
 
@@ -156,6 +187,7 @@ Serving a single model on a single cluster is more or less a solved problem. Pic
 
 
 
+
 <a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
@@ -168,6 +200,7 @@ I'll get to what those videos actually are. But first I need to show you how I b
 **[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
 
 ---
+
 
 
 
@@ -196,26 +229,5 @@ One is **dedication**. If the agents are grinding through builds and tests on th
 The other is **isolation**. Agents execute code. They run commands. They install things, sometimes things you'd never install yourself. Keeping all of that well away from your daily-driver machine limits the blast radius when something inevitably goes sideways.
 
 **[Full article >>](/ai/how-i-built-a-server-that-runs-ai-agents-24-7-full-setup)**
-
----
-
-
-
-
-
-
-
-
-<a href="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies"><img src="/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Infrastructure with AI Agents for Dummies](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)
-
-
-AI agents are amplifiers. If you're good at your job, agents make you better. You do more great things, faster. But if you're bad at your job, agents amplify that too. Where you used to cause a slow trickle of shit, now you have the means to unleash a full-blown **shitstorm**, at scale, in minutes.
-
-Now, AI is all the rage these days, and for good reason. So of course people are using agents to manage real resources: infrastructure, databases, applications, all of it. The question is what happens when they do. That's what we're looking at today: an agent managing actual cloud resources, what goes wrong, why it goes wrong, and what it takes to make it work properly.
-
-**[Full article >>](/infrastructure-as-code/infrastructure-with-ai-agents-for-dummies)**
-
 
 ---
