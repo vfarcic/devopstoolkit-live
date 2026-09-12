@@ -1,7 +1,7 @@
 
 +++
 title = "Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)"
-date = 2026-09-14T16:00:00+00:00
+date = 2026-09-14T15:00:00+00:00
 draft = false
 +++
 

@@ -21,22 +21,6 @@ And the size barely matters here. Whether you're running something small enough 
 
 Now, I've said before that self-hosting your own models is a bad idea, and I still think that. But plenty of you are doing it anyway. Air-gapped environments. Data residency rules. Models you fine-tuned yourself. Those are real reasons. So if you're going to do it, let's do it properly.
 
-
-Four layers sit between a model and the person waiting for an answer. At the bottom, kernels, the attention implementations everyone benchmarks and nobody actually chooses. Above them, the engine, which loads the weights, manages GPU memory, batches requests, and serves an API. Then a control plane that deploys and manages engines, and a gateway that routes traffic across models and replicas.
-
-
-You can stop at the engine. It works. On your laptop. Maybe on that Mac mini you convinced yourself was an investment. For real inference, serving real traffic, you need the other two.
-
-Today we stay inside the engine, on a single question. How much can one GPU actually hold, and how many people does that let you serve? Which engine to run, and everything in the layers above it, I'll get to in other videos.
-
-Here's how we'll do it. We'll work out the arithmetic on paper first. Then we'll put a real model on a real GPU, throw a hundred requests at it, and watch it grind to a halt on camera. And then we'll fix it.
-
-By the end you'll know why **inference is a memory management problem** rather than a compute one. You'll know which line in your engine's startup logs tells you your real user ceiling, before a single request arrives. And you'll watch that ceiling move by roughly a factor of six, without touching the hardware or the model.
-
-The mental model almost everyone starts with is simple. The model is smaller than the GPU. It fits. Done.
-
-That's the mistake.
-
 **[Full article >>](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)**
 
 ---
