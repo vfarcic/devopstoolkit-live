@@ -12,7 +12,6 @@ title = ""
 
 Gather round. Get comfortable, kids. Tonight, I'm going to read you a bedtime story.
 
-
 This is the story of Stack Overflow. The machine that taught a generation of programmers how to copy and paste.
 
 
