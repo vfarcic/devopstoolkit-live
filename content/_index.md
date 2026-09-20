@@ -5,6 +5,8 @@ title = ""
 
 # Latest Posts
 
+<a href="/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it"><img src="/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+
 ## [Stack Overflow Is Dying and ChatGPT Killed It](/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it)
 
 
