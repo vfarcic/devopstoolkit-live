@@ -5,6 +5,26 @@ title = ""
 
 # Latest Posts
 
+<a href="/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it"><img src="/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+
+## [Stack Overflow Is Dying and ChatGPT Killed It](/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it)
+
+
+Gather round. Get comfortable, kids. Tonight, I'm going to read you a bedtime story.
+
+This is the story of Stack Overflow. The machine that taught a generation of programmers how to copy and paste.
+
+
+And you know Stack Overflow. Unless you started programming very recently, you have found the answer to a problem on Stack Overflow, copied the solution into your code, and accepted the praise when everything worked. That's all right. I won't tell anyone.
+
+For a generation, Stack Overflow was the most important tool developers pretended they were not using. Now it is fading, and nobody knows whether it will reinvent itself or become a footnote in the history of the industry it helped build.
+
+So tonight, I will tell you how Stack Overflow came into being, why it worked so well, what went wrong, and what it is trying to become next.
+
+**[Full article >>](/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it)**
+
+---
+
 <a href="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem"><img src="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)
