@@ -1,7 +1,7 @@
 
 +++
 title = "Stack Overflow Is Dying and ChatGPT Killed It"
-date = 2026-09-21T1500:00+00:00
+date = 2026-09-21T15:00:00+00:00
 draft = false
 +++
 
