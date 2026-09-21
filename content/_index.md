@@ -25,6 +25,26 @@ So tonight, I will tell you how Stack Overflow came into being, why it worked so
 
 ---
 
+<a href="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem"><img src="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)
+
+I put a model on a GPU. It fit, with room to spare. It loaded, it answered instantly, and for about ten minutes I looked like a genius.
+
+
+Then the third person asked it something, and the answers just stopped coming.
+
+The third. Not the three hundredth. Nothing else changed. Same GPU, same model, same prompt. The only difference was how many people were talking to it at once. Does the model fit is the wrong question. It's the check everybody runs before they deploy, and it tells you nothing at all about how many people you can serve.
+
+
+And the size barely matters here. Whether you're running something small enough to sit on one cheap card, or something so large it needs a rack of them, the arithmetic is the same shape, and the thing that runs out runs out for the same reason.
+
+Now, I've said before that self-hosting your own models is a bad idea, and I still think that. But plenty of you are doing it anyway. Air-gapped environments. Data residency rules. Models you fine-tuned yourself. Those are real reasons. So if you're going to do it, let's do it properly.
+
+**[Full article >>](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)**
+
+---
+
 
 <a href="/bedtime/is-jenkins-dead-no-and-thats-much-worse"><img src="/bedtime/is-jenkins-dead-no-and-thats-much-worse/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
