@@ -5,6 +5,21 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request"><img src="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Kubernetes GPU Autoscaling: Why Scale to Zero Costs You 10 Minutes Per Request](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)
+
+The same question, to the same model, on the same cluster. Four seconds one time, and over ten minutes the next, with nothing broken in between and nobody having touched a line of configuration.
+
+That is the price of turning a GPU off when nobody is using it, and turning it off is the only way to stop paying for it, because the cloud charges you for the machine whether or not anything is running on it. The same ten minutes governs the other direction too. A second replica has to be asked for long before the traffic that needs it arrives, because it will not turn up in time to serve it.
+
+So this is that trade, measured rather than argued. What scale to zero actually saves, what those ten minutes are made of, which parts of them you can attack, and when you have to ask for more.
+
+**[Full article >>](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)**
+
+---
+
+
 <a href="/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it"><img src="/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Stack Overflow Is Dying and ChatGPT Killed It](/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it)
@@ -25,6 +40,7 @@ So tonight, I will tell you how Stack Overflow came into being, why it worked so
 
 ---
 
+
 <a href="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem"><img src="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)
@@ -44,6 +60,7 @@ Now, I've said before that self-hosting your own models is a bad idea, and I sti
 **[Full article >>](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)**
 
 ---
+
 
 
 <a href="/bedtime/is-jenkins-dead-no-and-thats-much-worse"><img src="/bedtime/is-jenkins-dead-no-and-thats-much-worse/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
@@ -72,6 +89,7 @@ So tuck in. Because tonight's nightmare isn't that our hero dies at the end. It'
 
 
 
+
 <a href="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know"><img src="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [LLM Inference Explained: 12 Concepts You Actually Need to Know](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)
@@ -96,6 +114,7 @@ One thing to listen for as we go. These ideas don't all arrive at once. Some bit
 
 
 
+
 <a href="/development/ai-testing-is-lying-to-you-and-you-cant-tell"><img src="/development/ai-testing-is-lying-to-you-and-you-cant-tell/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Testing Is Lying to You (And You Can't Tell)](/development/ai-testing-is-lying-to-you-and-you-cant-tell)
@@ -115,6 +134,7 @@ You call all of this testing. So does everybody, and it's a fair mistake, becaus
 **[Full article >>](/development/ai-testing-is-lying-to-you-and-you-cant-tell)**
 
 ---
+
 
 
 
@@ -148,6 +168,7 @@ So tuck in. Because tonight's nightmare is the scariest kind there is. The kind 
 
 
 
+
 <a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
@@ -166,6 +187,7 @@ And that dream is not crazy. It's not just hype. An agent really can do that wor
 **[Full article >>](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)**
 
 ---
+
 
 
 
@@ -193,6 +215,7 @@ So in this video I'll walk through the ways people actually run coding agents. O
 
 
 
+
 <a href="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure"><img src="/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Use AI to Test My App Like a Real User with DevAssure](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)
@@ -203,49 +226,5 @@ You write an end-to-end test, it passes, everyone's happy. Then someone moves a 
 I've been using a tool called [DevAssure](https://www.devassure.io) that takes a very different swing at that problem, and I like it enough that I want to show you exactly how it fits into the way I work. So let me start with what it actually is.
 
 **[Full article >>](/development/how-i-use-ai-to-test-my-app-like-a-real-user-with-devassure)**
-
----
-
-
-
-
-
-
-
-
-<a href="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane"><img src="/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [One Control Plane for Every GPU Cluster (Modeplane)](/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane)
-
-
-We've been working on something new. A project called Modelplane. It's early, it's rough... but I think it's ready to fly.
-
-But before I show you what it does, let me back up and explain the problem it solves. Because that's really where this whole thing starts.
-
-
-Serving a single model on a single cluster is more or less a solved problem. Pick a serving engine, hand it a GPU, point some traffic at it, and you're done. The hard version is serving models at scale. GPUs are scarce and expensive, and they're scattered all over the place, across regions, across clouds, and across your own on-prem hardware, wherever you could actually get your hands on them. And the models people really care about, the big ones, won't even fit on a single machine. So you don't end up with a cluster. You end up with a whole fleet of GPU clusters.
-
-**[Full article >>](/infrastructure-as-code/one-control-plane-for-every-gpu-cluster-modeplane)**
-
----
-
-
-
-
-
-
-
-
-
-<a href="/development/how-i-review-ai-written-code-without-reading-a-single-line"><img src="/development/how-i-review-ai-written-code-without-reading-a-single-line/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [How I Review AI-Written Code Without Reading a Single Line](/development/how-i-review-ai-written-code-without-reading-a-single-line)
-
-
-The first thing I do in the morning is watch videos on YouTube. Still in bed. No time to lose. It might look like I'm being entertained, but I'm actually working. These aren't videos you'd ever want to watch. You'd get bored at best or, more likely, say "what the fuck is this?" if you ever saw one. Yet I find them genuinely engaging, real time-savers, and they've become my morning routine. They tell me more about my day than anything else.
-
-I'll get to what those videos actually are. But first I need to show you how I build software now, because that's the reason they exist. This is about two things. How agentic AI can write genuinely good code. And how I can **review and confirm a whole feature the agents built on their own**, in seconds, without reading a single line of it.
-
-**[Full article >>](/development/how-i-review-ai-written-code-without-reading-a-single-line)**
 
 ---
