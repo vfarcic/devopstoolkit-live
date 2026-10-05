@@ -1,7 +1,7 @@
 
 +++
 title = "Heroku Is Dead (And It Taught Us Everything We Know)"
-date = 2026-10-05T16:00:00+00:00
+date = 2026-10-05T15:00:00+00:00
 draft = false
 +++
 

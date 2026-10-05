@@ -5,6 +5,8 @@ title = ""
 
 # Latest Posts
 
+<a href="/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know"><img src="/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
+
 ## [Heroku Is Dead (And It Taught Us Everything We Know)](/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know)
 
 
