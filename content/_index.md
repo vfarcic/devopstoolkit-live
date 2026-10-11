@@ -5,6 +5,23 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours-for-$2"><img src="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours-for-$2/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Pentesting Found Real Kubernetes Exploits in 3 Hours for $2](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours-for-$2)
+
+A few hours of an agent's work, and a few minutes of mine. That's all it took to find a way into my own Kubernetes cluster. Not a maybe buried in a PDF. A real one, proven, with my session token stolen and my cluster's secrets read back out to an attacker. A human doing the same thing would have taken weeks, if I could even get one booked.
+
+And if you're a developer, in DevOps or SRE, or anyone who ships software and has already decided security testing isn't your job, don't go anywhere. **This one's for you.** It's a way to offload the work you don't want to do, or never get around to, and still get findings back in a shape you can act on.
+
+Here's the situation most of us are actually in. AI writes half our code now. Sometimes all of it. We ship faster than we ever have. And penetration testing, the thing that's supposed to catch the holes before someone else does, hasn't kept up. It's scarce, it's expensive, and it happens once a year, if it happens at all. By the time the report lands, you've shipped a dozen more releases, the version it actually tested isn't even running anymore, and half the findings are too late to fix cleanly. And what you get is usually a list of problems, not solutions. It's no wonder pentesters aren't most developers' favorite people to hear from.
+
+So this video is about what changes when that pentester is an AI. I'm going to point one at an app I actually own, let it genuinely break in, and see what that's worth.
+
+**[Full article >>](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours-for-$2)**
+
+---
+
+
 <a href="/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know"><img src="/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Heroku Is Dead (And It Taught Us Everything We Know)](/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know)
@@ -31,6 +48,7 @@ Those two facts are the same story.
 ---
 
 
+
 <a href="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request"><img src="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Kubernetes GPU Autoscaling: Why Scale to Zero Costs You 10 Minutes Per Request](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)
@@ -44,6 +62,7 @@ So this is that trade, measured rather than argued. What scale to zero actually 
 **[Full article >>](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)**
 
 ---
+
 
 
 
@@ -69,6 +88,7 @@ So tonight, I will tell you how Stack Overflow came into being, why it worked so
 
 
 
+
 <a href="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem"><img src="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)
@@ -88,6 +108,7 @@ Now, I've said before that self-hosting your own models is a bad idea, and I sti
 **[Full article >>](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)**
 
 ---
+
 
 
 
@@ -120,6 +141,7 @@ So tuck in. Because tonight's nightmare isn't that our hero dies at the end. It'
 
 
 
+
 <a href="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know"><img src="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [LLM Inference Explained: 12 Concepts You Actually Need to Know](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)
@@ -146,6 +168,7 @@ One thing to listen for as we go. These ideas don't all arrive at once. Some bit
 
 
 
+
 <a href="/development/ai-testing-is-lying-to-you-and-you-cant-tell"><img src="/development/ai-testing-is-lying-to-you-and-you-cant-tell/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Testing Is Lying to You (And You Can't Tell)](/development/ai-testing-is-lying-to-you-and-you-cant-tell)
@@ -165,6 +188,7 @@ You call all of this testing. So does everybody, and it's a fair mistake, becaus
 **[Full article >>](/development/ai-testing-is-lying-to-you-and-you-cant-tell)**
 
 ---
+
 
 
 
@@ -202,6 +226,7 @@ So tuck in. Because tonight's nightmare is the scariest kind there is. The kind 
 
 
 
+
 <a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
@@ -218,27 +243,5 @@ So my real dream was never "more games." It's getting the work done without me h
 And that dream is not crazy. It's not just hype. An agent really can do that work. It provisions the clusters, wires up the databases, fixes the broken pipeline, and you get to lean back and pick up the controller.
 
 **[Full article >>](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)**
-
----
-
-
-
-
-
-
-
-
-
-<a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
-
-An AI agent doesn't need to get hacked to wreck your day. It just needs to read the wrong thing. A poisoned dependency. A malicious comment buried in a file. A web page it fetches while doing perfectly ordinary work. The moment it reads instructions somebody hid in there, it follows them. With your permissions. Your credentials. On your machine.
-
-And here's the part that changes how you should think about all of this. **There is no patch for prompt injection.** It isn't a bug someone's about to fix. It's how these models work. So the real question was never "how do I stop this from happening." It's "when it happens, how much damage can it actually do?" That's what sandboxing is really about. Not trusting the agent.
-
-So in this video I'll walk through the ways people actually run coding agents. One agent you're watching. One agent you've walked away from. And a whole swarm of them running at once. Each one comes with a different security bill: what you lock down, how hard, and what it costs you to do it. Get it wrong in any of them and the damage is bigger than you think. Get it right and you can walk away from an agent and still sleep at night.
-
-**[Full article >>](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)**
 
 ---
