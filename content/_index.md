@@ -5,9 +5,9 @@ title = ""
 
 # Latest Posts
 
-<a href="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours-for-$2"><img src="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours-for-$2/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+<a href="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours"><img src="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
-## [AI Pentesting Found Real Kubernetes Exploits in 3 Hours for $2](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours-for-$2)
+## [AI Pentesting Found Real Kubernetes Exploits in 3 Hours for $2](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)
 
 A few hours of an agent's work, and a few minutes of mine. That's all it took to find a way into my own Kubernetes cluster. Not a maybe buried in a PDF. A real one, proven, with my session token stolen and my cluster's secrets read back out to an attacker. A human doing the same thing would have taken weeks, if I could even get one booked.
 
@@ -17,7 +17,7 @@ Here's the situation most of us are actually in. AI writes half our code now. So
 
 So this video is about what changes when that pentester is an AI. I'm going to point one at an app I actually own, let it genuinely break in, and see what that's worth.
 
-**[Full article >>](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours-for-$2)**
+**[Full article >>](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)**
 
 ---
 
