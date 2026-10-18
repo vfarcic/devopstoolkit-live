@@ -5,6 +5,30 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether"><img src="/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Run AI Agents in the Cloud Without Leaving Claude Code (with Aether)](/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether)
+
+I run AI agents on a machine that does nothing else. Not my laptop. A dedicated box, sitting in the corner, whose entire job is to run agents while I get on with something else. It's a good setup, and it's cheap. I paid for that box once. Renting something equivalent by the month would have cost more than the box did within a few months, and then it would have kept on costing.
+
+It also has a ceiling. Not a ceiling on how many agents I can have open, though. The number that matters is how many of them are compiling, running tests, or otherwise doing real work at the same moment. Once that gets to five or six, they start fighting each other for CPU, memory, and disk, and everything grinds. Or it breaks completely.
+
+So what do we do when we want to run more agents than the laptop or the server they're on can handle?
+
+The obvious answer is to buy a bigger machine. I don't want to buy a bigger machine. I hit that ceiling maybe twice a week. Most days four or five of them are actually building anything at once, and buying hardware that sits idle six days out of seven to cover the seventh is exactly the mistake we spent a decade learning not to make with servers.
+
+The other answer is the one we landed on with servers: keep the steady state on hardware you own, and rent the overflow when you need it. That works for agents too. What's much less obvious is how you keep control of the rented ones, because the moment your agents are somewhere else, most tools want you to go and look at them somewhere else too. In a browser. In their dashboard. Not in the agent you actually use.
+
+
+And I'm not switching. I use [Claude Code](https://claude.com/claude-code). I use [OpenCode](https://opencode.ai). I've put real time into getting good at both, into the prompts, the skills, the muscle memory. If you want me to drop all of that and work inside your web interface instead, it had better be bloody spectacular. Not adequate. Not a reasonable alternative. Better than what I already have, or I'm not moving. A dashboard with a list of tasks on it is not a reason to abandon the tool I live in all day. It's a reason to close the tab.
+
+That's what I wanted to find out. Whether I can borrow somebody else's machines without giving up the thing I actually work in. The answer turned out to be mostly yes, and the "mostly" is the interesting part.
+
+**[Full article >>](/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether)**
+
+---
+
+
 <a href="/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know"><img src="/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Heroku Is Dead (And It Taught Us Everything We Know)](/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know)
@@ -31,6 +55,7 @@ Those two facts are the same story.
 ---
 
 
+
 <a href="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request"><img src="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Kubernetes GPU Autoscaling: Why Scale to Zero Costs You 10 Minutes Per Request](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)
@@ -44,6 +69,7 @@ So this is that trade, measured rather than argued. What scale to zero actually 
 **[Full article >>](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)**
 
 ---
+
 
 
 
@@ -69,6 +95,7 @@ So tonight, I will tell you how Stack Overflow came into being, why it worked so
 
 
 
+
 <a href="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem"><img src="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)
@@ -88,6 +115,7 @@ Now, I've said before that self-hosting your own models is a bad idea, and I sti
 **[Full article >>](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)**
 
 ---
+
 
 
 
@@ -120,6 +148,7 @@ So tuck in. Because tonight's nightmare isn't that our hero dies at the end. It'
 
 
 
+
 <a href="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know"><img src="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [LLM Inference Explained: 12 Concepts You Actually Need to Know](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)
@@ -146,6 +175,7 @@ One thing to listen for as we go. These ideas don't all arrive at once. Some bit
 
 
 
+
 <a href="/development/ai-testing-is-lying-to-you-and-you-cant-tell"><img src="/development/ai-testing-is-lying-to-you-and-you-cant-tell/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Testing Is Lying to You (And You Can't Tell)](/development/ai-testing-is-lying-to-you-and-you-cant-tell)
@@ -165,6 +195,7 @@ You call all of this testing. So does everybody, and it's a fair mistake, becaus
 **[Full article >>](/development/ai-testing-is-lying-to-you-and-you-cant-tell)**
 
 ---
+
 
 
 
@@ -202,6 +233,7 @@ So tuck in. Because tonight's nightmare is the scariest kind there is. The kind 
 
 
 
+
 <a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
@@ -218,27 +250,5 @@ So my real dream was never "more games." It's getting the work done without me h
 And that dream is not crazy. It's not just hype. An agent really can do that work. It provisions the clusters, wires up the databases, fixes the broken pipeline, and you get to lean back and pick up the controller.
 
 **[Full article >>](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)**
-
----
-
-
-
-
-
-
-
-
-
-<a href="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you"><img src="/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Your AI Agent Doesn't Need to Get Hacked to Wreck You](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)
-
-An AI agent doesn't need to get hacked to wreck your day. It just needs to read the wrong thing. A poisoned dependency. A malicious comment buried in a file. A web page it fetches while doing perfectly ordinary work. The moment it reads instructions somebody hid in there, it follows them. With your permissions. Your credentials. On your machine.
-
-And here's the part that changes how you should think about all of this. **There is no patch for prompt injection.** It isn't a bug someone's about to fix. It's how these models work. So the real question was never "how do I stop this from happening." It's "when it happens, how much damage can it actually do?" That's what sandboxing is really about. Not trusting the agent.
-
-So in this video I'll walk through the ways people actually run coding agents. One agent you're watching. One agent you've walked away from. And a whole swarm of them running at once. Each one comes with a different security bill: what you lock down, how hard, and what it costs you to do it. Get it wrong in any of them and the damage is bigger than you think. Get it right and you can walk away from an agent and still sleep at night.
-
-**[Full article >>](/ai/your-ai-agent-doesnt-need-to-get-hacked-to-wreck-you)**
 
 ---
