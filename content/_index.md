@@ -5,6 +5,27 @@ title = ""
 
 # Latest Posts
 
+<a href="/development/how-i-manage-45-ai-agents-across-3-machines"><img src="/development/how-i-manage-45-ai-agents-across-3-machines/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Manage 45 AI Agents Across 3 Machines](/development/how-i-manage-45-ai-agents-across-3-machines)
+
+Right now, I have **forty-five agents working across three machines**: my laptop, a mini PC in my office, and a server in [InMotion Cloud](https://inmotioncloud.com). I call it my agent fleet. In a few hours, that fleet produces what would take me a week or two to write myself. Getting it to do the work is not the hard part anymore. Seeing what it's doing is.
+
+We all know how to run an agent and work with it. Many of us know how to do the same with a few agents running in parallel. But what happens when there are dozens of them, spread across multiple machines? How do we manage a fleet like that?
+
+Because that's what I am these days. A manager. And a good manager's work comes down to three things: delegating work, resolving conflicts, and removing obstacles so the team can keep going. To do that well, a manager needs a team that can work on its own most of the time, and a way to see what that team is doing when it can't.
+
+With AI, that team is made of agents. They're already very good at almost everything, and if I did my part, they know how I like to work, what the rules are, and what they should and shouldn't do. That's what `AGENTS.md` and skills are for. I'll assume those are in place, since that's a whole different topic.
+
+What I want to show you is how that team grows. From a single agent I have to babysit, to teams of agents spread across machines I don't even need to be near. And what happens to the manager along the way, because the agents scale much better than I do. The beginning is often the best place to start, so let's go back a year or two.
+
+> It would be close to impossible to reproduce the exact steps from this post. They depend on my machines, my repositories, my issues and my agent setup. Instead, try something similar with [Agent Deck](https://agent-deck.devopstoolkit.ai): start with one agent, add a dispatcher, and grow from there onto additional machines.
+
+**[Full article >>](/development/how-i-manage-45-ai-agents-across-3-machines)**
+
+---
+
+
 <a href="/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether"><img src="/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Run AI Agents in the Cloud Without Leaving Claude Code (with Aether)](/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether)
@@ -210,35 +231,5 @@ When an agent writes your code badly, something catches it. That is what the tes
 You call all of this testing. So does everybody, and it's a fair mistake, because the word is baked into every part of the work. You write a test. You run the test suite. You measure test coverage. You call the whole practice test automation. The word comes free, so nobody stops to ask whether it fits. It doesn't. And the part of this that you assume will always need a person is going the same way as the rest of it. I'll come back to both of those. For now, keep thinking you're testing.
 
 **[Full article >>](/development/ai-testing-is-lying-to-you-and-you-cant-tell)**
-
----
-
-
-
-
-
-
-
-
-<a href="/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well"><img src="/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Docker's Rise and Fall: The Nightmare of Winning Too Well](/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well)
-
-
-Gather round. Get comfortable, kids. Tonight, I'm going to read you a bedtime story.
-
-
-This is the tale of Docker. The whale who carries the world.
-
-
-And like all the best bedtime stories, it starts with a dream, it's full of wonder in the middle, and it ends with everyone screaming.
-
-
-Because this isn't one of those stories where the hero loses. Oh no. This is worse. This is the story of a hero who *won*. Who won so completely that his name became a verb, that he conquered every data center on the planet, that he changed how the entire industry ships software forever.
-
-
-So tuck in. Because tonight's nightmare is the scariest kind there is. The kind where you do everything right, and it still isn't enough.
-
-**[Full article >>](/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well)**
 
 ---
