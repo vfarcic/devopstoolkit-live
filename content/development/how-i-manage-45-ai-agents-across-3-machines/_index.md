@@ -1,7 +1,7 @@
 
 +++
 title = "How I Manage 45 AI Agents Across 3 Machines"
-date = 2026-10-26T16:00:00+00:00
+date = 2026-10-26T15:00:00+00:00
 draft = false
 +++
 
