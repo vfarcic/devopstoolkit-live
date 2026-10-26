@@ -5,6 +5,30 @@ title = ""
 
 # Latest Posts
 
+<a href="/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether"><img src="/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Run AI Agents in the Cloud Without Leaving Claude Code (with Aether)](/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether)
+
+I run AI agents on a machine that does nothing else. Not my laptop. A dedicated box, sitting in the corner, whose entire job is to run agents while I get on with something else. It's a good setup, and it's cheap. I paid for that box once. Renting something equivalent by the month would have cost more than the box did within a few months, and then it would have kept on costing.
+
+It also has a ceiling. Not a ceiling on how many agents I can have open, though. The number that matters is how many of them are compiling, running tests, or otherwise doing real work at the same moment. Once that gets to five or six, they start fighting each other for CPU, memory, and disk, and everything grinds. Or it breaks completely.
+
+So what do we do when we want to run more agents than the laptop or the server they're on can handle?
+
+The obvious answer is to buy a bigger machine. I don't want to buy a bigger machine. I hit that ceiling maybe twice a week. Most days four or five of them are actually building anything at once, and buying hardware that sits idle six days out of seven to cover the seventh is exactly the mistake we spent a decade learning not to make with servers.
+
+The other answer is the one we landed on with servers: keep the steady state on hardware you own, and rent the overflow when you need it. That works for agents too. What's much less obvious is how you keep control of the rented ones, because the moment your agents are somewhere else, most tools want you to go and look at them somewhere else too. In a browser. In their dashboard. Not in the agent you actually use.
+
+
+And I'm not switching. I use [Claude Code](https://claude.com/claude-code). I use [OpenCode](https://opencode.ai). I've put real time into getting good at both, into the prompts, the skills, the muscle memory. If you want me to drop all of that and work inside your web interface instead, it had better be bloody spectacular. Not adequate. Not a reasonable alternative. Better than what I already have, or I'm not moving. A dashboard with a list of tasks on it is not a reason to abandon the tool I live in all day. It's a reason to close the tab.
+
+That's what I wanted to find out. Whether I can borrow somebody else's machines without giving up the thing I actually work in. The answer turned out to be mostly yes, and the "mostly" is the interesting part.
+
+**[Full article >>](/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether)**
+
+---
+
+
 <a href="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours"><img src="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Pentesting Found Real Kubernetes Exploits in 3 Hours for $2](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)
@@ -216,32 +240,5 @@ Because this isn't one of those stories where the hero loses. Oh no. This is wor
 So tuck in. Because tonight's nightmare is the scariest kind there is. The kind where you do everything right, and it still isn't enough.
 
 **[Full article >>](/bedtime/dockers-rise-and-fall-the-nightmare-of-winning-too-well)**
-
----
-
-
-
-
-
-
-
-
-
-<a href="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it"><img src="/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Agents Are Non-Deterministic. So Are You. Deal with It.](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)
-
-
-Let me start with a question. Do you like games? Video games, board games, whatever it is. And would you play them all day if you actually could? I know I would.
-
-
-Here's my problem. I can't. I like games. But I also like money. Money for rent, for food, for more games. And to get that money, I have to get some shit done for the company that pays my bills. That's the deal.
-
-
-So my real dream was never "more games." It's getting the work done without me having to do it, so I can get back to the controller. There's all kinds of work I'd happily hand off, but I want to zoom in on one slice of it: the ops work. Provisioning the infrastructure, wiring the databases together, deploying apps, keeping the whole thing running. That's what I'm trying to get AI agents to do for me. Today.
-
-And that dream is not crazy. It's not just hype. An agent really can do that work. It provisions the clusters, wires up the databases, fixes the broken pipeline, and you get to lean back and pick up the controller.
-
-**[Full article >>](/infrastructure-as-code/ai-agents-are-non-deterministic-so-are-you-deal-with-it)**
 
 ---
