@@ -7,7 +7,6 @@ hidden = false
 The following sponsorship options are available on **[The DevOps Toolkit](https://youtube.com/@DevOpsToolkit)** YouTube channel:
 1. Full video review and/or tutorial
 2. 60+ seconds ad inside a video
-3. Shout-Out in a live stream
 
 The objective behind accepting sponsorships in the **[The DevOps Toolkit](https://youtube.com/@DevOpsToolkit)** channel is to **cover the costs** of equipment and post-production (e.g., editing, animations, etc.). As such, the number of sponsorship spots is **limited**.
 
@@ -22,10 +21,6 @@ Only videos about projects, products, or services we find interesting are eligib
 ## 60+ seconds ad inside a video
 
 The price of a 60+ seconds ad inside a video is **850€** (**$1000**). The ad is placed within the first 3 minutes of the video containing a brief description of the project, service, or product and a call to action. Illustrations can be taken from the website or provided by the sponsor. The URL and logo is placed in lower-third of the video as well as in the description.
-
-## Shout-Out in a live stream
-
-The price of a shout-out within a live stream Ask Us Anything is **430€** (**$500**). The Shout-Out is accompanied by a lower-third graphic containing a link, a logo, and, optionally, a "special" message like a discount or a slogan.
 
 ## Contact
 
