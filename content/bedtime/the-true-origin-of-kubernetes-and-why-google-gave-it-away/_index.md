@@ -1,7 +1,7 @@
 
 +++
 title = "The True Origin of Kubernetes (And Why Google Gave It Away)"
-date = 2026-11-02T16:00:00+00:00
+date = 2026-11-02T15:00:00+00:00
 draft = false
 +++
 
