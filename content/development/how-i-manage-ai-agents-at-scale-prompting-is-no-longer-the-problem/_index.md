@@ -1,7 +1,7 @@
 
 +++
 title = "How I Manage AI Agents at Scale (Prompting Is No Longer the Problem)"
-date = 2026-11-09T16:00:00+00:00
+date = 2025-11-09T15:00:00+00:00
 draft = false
 +++
 
