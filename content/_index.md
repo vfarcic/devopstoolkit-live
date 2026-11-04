@@ -5,6 +5,21 @@ title = ""
 
 # Latest Posts
 
+<a href="/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem"><img src="/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Manage AI Agents at Scale (Prompting Is No Longer the Problem)](/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem)
+
+Agents that manage agents, and those agents manage workers of their own. That's how most of my work gets done these days. And the whole team is made entirely of disposable context windows.
+
+That last part changes everything. With one agent, I write a prompt. With dozens, prompts stop being the problem. The problem becomes what each agent is allowed to know. Who keeps the plan. Who sees the logs. Who starts with a clean slate. That is the same problem every manager has, and it turns out to be most of what makes a large agent team work.
+
+That is what this video is about: how the way we instruct agents changes as we give them more autonomy, more work, and more responsibility. By the end, we will get to where I think this is going next: systems that decide how much organization each task actually deserves.
+
+**[Full article >>](/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem)**
+
+---
+
+
 <a href="/development/how-i-manage-45-ai-agents-across-3-machines"><img src="/development/how-i-manage-45-ai-agents-across-3-machines/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Manage 45 AI Agents Across 3 Machines](/development/how-i-manage-45-ai-agents-across-3-machines)
@@ -24,6 +39,7 @@ What I want to show you is how that team grows. From a single agent I have to ba
 **[Full article >>](/development/how-i-manage-45-ai-agents-across-3-machines)**
 
 ---
+
 
 
 <a href="/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether"><img src="/ai/how-i-run-ai-agents-in-the-cloud-without-leaving-claude-code-with-aether/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -50,6 +66,7 @@ That's what I wanted to find out. Whether I can borrow somebody else's machines 
 ---
 
 
+
 <a href="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours"><img src="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Pentesting Found Real Kubernetes Exploits in 3 Hours for $2](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)
@@ -65,6 +82,7 @@ So this video is about what changes when that pentester is an AI. I'm going to p
 **[Full article >>](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)**
 
 ---
+
 
 
 <a href="/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know"><img src="/bedtime/heroku-is-dead-and-it-taught-us-everything-we-know/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
@@ -94,6 +112,7 @@ Those two facts are the same story.
 
 
 
+
 <a href="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request"><img src="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Kubernetes GPU Autoscaling: Why Scale to Zero Costs You 10 Minutes Per Request](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)
@@ -107,6 +126,7 @@ So this is that trade, measured rather than argued. What scale to zero actually 
 **[Full article >>](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)**
 
 ---
+
 
 
 
@@ -134,6 +154,7 @@ So tonight, I will tell you how Stack Overflow came into being, why it worked so
 
 
 
+
 <a href="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem"><img src="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)
@@ -153,6 +174,7 @@ Now, I've said before that self-hosting your own models is a bad idea, and I sti
 **[Full article >>](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)**
 
 ---
+
 
 
 
@@ -187,6 +209,7 @@ So tuck in. Because tonight's nightmare isn't that our hero dies at the end. It'
 
 
 
+
 <a href="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know"><img src="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [LLM Inference Explained: 12 Concepts You Actually Need to Know](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)
@@ -205,31 +228,5 @@ We're going through the whole machine in one pass. What an engine actually is, w
 One thing to listen for as we go. These ideas don't all arrive at once. Some bite the moment you deploy anything at all. Some wait until fifty people are talking to it. Some you may genuinely never need.
 
 **[Full article >>](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)**
-
----
-
-
-
-
-
-
-
-<a href="/development/ai-testing-is-lying-to-you-and-you-cant-tell"><img src="/development/ai-testing-is-lying-to-you-and-you-cant-tell/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [AI Testing Is Lying to You (And You Can't Tell)](/development/ai-testing-is-lying-to-you-and-you-cant-tell)
-
-
-There are three things that go into testing anything you build, and it doesn't much matter what that is. An app, a cluster, a delivery pipeline, a pile of Terraform. You **write them**. You **maintain them**, because the thing underneath them keeps changing. And when the suite goes red on a Tuesday, you **diagnose them**, sorting the reds that mean something from the ones that are just flaky. Those are the worst kind, because a flaky red is how you learn to stop trusting reds at all. All three of those can be handed to an agent now.
-
-That sounds like every other job being automated right now, and mostly it is. But this one has a property nothing else in your pipeline has. 
-
-When an agent writes your code badly, something catches it. That is what the tests are for. When an agent writes your tests badly, nothing catches it, because there is nothing underneath. A bad test doesn't fail. It passes. And now you're sure about something that isn't true.
-
-
-
-
-You call all of this testing. So does everybody, and it's a fair mistake, because the word is baked into every part of the work. You write a test. You run the test suite. You measure test coverage. You call the whole practice test automation. The word comes free, so nobody stops to ask whether it fits. It doesn't. And the part of this that you assume will always need a person is going the same way as the rest of it. I'll come back to both of those. For now, keep thinking you're testing.
-
-**[Full article >>](/development/ai-testing-is-lying-to-you-and-you-cant-tell)**
 
 ---
