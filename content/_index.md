@@ -20,6 +20,28 @@ That is what this video is about: how the way we instruct agents changes as we g
 ---
 
 
+<a href="/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away"><img src="/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [The True Origin of Kubernetes (And Why Google Gave It Away)](/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away)
+
+
+Gather round. Get comfortable, kids. Tonight, I'm going to read you a bedtime story.
+
+
+This is the story of Kubernetes.
+
+
+You already know Kubernetes. That's exactly why you never asked where it came from. You wrote YAML this week. You know roughly what a pod is. You have been on a call where somebody said "we'll just put it in the cluster," and everybody nodded, and nobody said out loud what that was going to cost.
+
+But that is the last ten minutes of a much longer story. Before Kubernetes, machines had names. There was a system inside Google that nobody outside Google had ever laid eyes on. There was a genuinely better answer out of Berkeley, and it lost. And there was a meeting where the man in charge of Google's infrastructure listened to this whole plan and could not believe what he was hearing.
+
+So tonight I'll tell you where Kubernetes actually came from, why Google gave away the thing it called a competitive advantage, and which companies ended up collecting.
+
+**[Full article >>](/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away)**
+
+---
+
+
 <a href="/development/how-i-manage-45-ai-agents-across-3-machines"><img src="/development/how-i-manage-45-ai-agents-across-3-machines/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Manage 45 AI Agents Across 3 Machines](/development/how-i-manage-45-ai-agents-across-3-machines)
