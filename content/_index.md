@@ -5,6 +5,21 @@ title = ""
 
 # Latest Posts
 
+<a href="/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem"><img src="/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [How I Manage AI Agents at Scale (Prompting Is No Longer the Problem)](/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem)
+
+Agents that manage agents, and those agents manage workers of their own. That's how most of my work gets done these days. And the whole team is made entirely of disposable context windows.
+
+That last part changes everything. With one agent, I write a prompt. With dozens, prompts stop being the problem. The problem becomes what each agent is allowed to know. Who keeps the plan. Who sees the logs. Who starts with a clean slate. That is the same problem every manager has, and it turns out to be most of what makes a large agent team work.
+
+That is what this video is about: how the way we instruct agents changes as we give them more autonomy, more work, and more responsibility. By the end, we will get to where I think this is going next: systems that decide how much organization each task actually deserves.
+
+**[Full article >>](/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem)**
+
+---
+
+
 <a href="/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away"><img src="/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [The True Origin of Kubernetes (And Why Google Gave It Away)](/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away)
