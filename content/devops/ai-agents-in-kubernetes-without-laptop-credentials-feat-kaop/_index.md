@@ -1,7 +1,7 @@
 
 +++
 title = "AI Agents in Kubernetes Without Laptop Credentials (feat. KAOP)"
-date = 2026-11-16T16:00:00+00:00
+date = 2026-11-16T15:00:00+00:00
 draft = false
 +++
 
