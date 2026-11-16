@@ -5,6 +5,22 @@ title = ""
 
 # Latest Posts
 
+<a href="/devops/ai-agents-in-kubernetes-without-laptop-credentials-feat-kaop"><img src="/devops/ai-agents-in-kubernetes-without-laptop-credentials-feat-kaop/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [AI Agents in Kubernetes Without Laptop Credentials (feat. KAOP)](/devops/ai-agents-in-kubernetes-without-laptop-credentials-feat-kaop)
+
+Why would anyone put a platform between an AI agent and a Kubernetes cluster? Claude Code can fix clusters on its own. It finds the cause, rules out the red herrings, changes only what it should, and verifies the fix. No platform, no special setup. Just a terminal, a prompt, and my credentials. That works for one person. Does it work for a company, where it means every laptop holding the keys to production, nobody else approving what the agents change, no shared record of what they did or what it cost, and nothing happening unless someone sits at a keyboard?
+
+
+To find out, I tried a platform built for exactly that: [Komodor](https://komodor.com)'s Agentic Operations Platform, KAOP for short. It lets you define agents and run them inside your clusters instead of on someone's laptop, as services with their own identities. It sends their risky actions to people for approval, and it keeps a record of what they did and what it cost. It does more than that, like a catalog of ready-made agents, guardrails on the tools agents call, and side-by-side testing of a new model or prompt against the current one, and I'll come back to those at the end.
+
+So, do we need a platform at all? What changes when there is one? And is KAOP the one to pick? To answer that, we'll fix the same incident four times: with Claude Code alone, with Claude Code going through KAOP, and twice with nobody at a laptop. One of those fixes goes wrong in a way that says something about agents in general, not only about KAOP.
+
+**[Full article >>](/devops/ai-agents-in-kubernetes-without-laptop-credentials-feat-kaop)**
+
+---
+
+
 <a href="/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem"><img src="/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Manage AI Agents at Scale (Prompting Is No Longer the Problem)](/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem)
@@ -18,6 +34,7 @@ That is what this video is about: how the way we instruct agents changes as we g
 **[Full article >>](/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem)**
 
 ---
+
 
 
 <a href="/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away"><img src="/bedtime/the-true-origin-of-kubernetes-and-why-google-gave-it-away/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
@@ -42,6 +59,7 @@ So tonight I'll tell you where Kubernetes actually came from, why Google gave aw
 ---
 
 
+
 <a href="/development/how-i-manage-45-ai-agents-across-3-machines"><img src="/development/how-i-manage-45-ai-agents-across-3-machines/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Manage 45 AI Agents Across 3 Machines](/development/how-i-manage-45-ai-agents-across-3-machines)
@@ -61,6 +79,7 @@ What I want to show you is how that team grows. From a single agent I have to ba
 **[Full article >>](/development/how-i-manage-45-ai-agents-across-3-machines)**
 
 ---
+
 
 
 
@@ -89,6 +108,7 @@ That's what I wanted to find out. Whether I can borrow somebody else's machines 
 
 
 
+
 <a href="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours"><img src="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Pentesting Found Real Kubernetes Exploits in 3 Hours for $2](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)
@@ -104,6 +124,7 @@ So this video is about what changes when that pentester is an AI. I'm going to p
 **[Full article >>](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)**
 
 ---
+
 
 
 
@@ -135,6 +156,7 @@ Those two facts are the same story.
 
 
 
+
 <a href="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request"><img src="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Kubernetes GPU Autoscaling: Why Scale to Zero Costs You 10 Minutes Per Request](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)
@@ -148,6 +170,7 @@ So this is that trade, measured rather than argued. What scale to zero actually 
 **[Full article >>](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)**
 
 ---
+
 
 
 
@@ -177,6 +200,7 @@ So tonight, I will tell you how Stack Overflow came into being, why it worked so
 
 
 
+
 <a href="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem"><img src="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)
@@ -194,61 +218,5 @@ And the size barely matters here. Whether you're running something small enough 
 Now, I've said before that self-hosting your own models is a bad idea, and I still think that. But plenty of you are doing it anyway. Air-gapped environments. Data residency rules. Models you fine-tuned yourself. Those are real reasons. So if you're going to do it, let's do it properly.
 
 **[Full article >>](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)**
-
----
-
-
-
-
-
-
-<a href="/bedtime/is-jenkins-dead-no-and-thats-much-worse"><img src="/bedtime/is-jenkins-dead-no-and-thats-much-worse/thumbnail.png" style="width:50%; float:right; padding: 10px"></a>
-
-## [Is Jenkins Dead? No, And That's Much Worse](/bedtime/is-jenkins-dead-no-and-thats-much-worse)
-
-
-Gather round. Get comfortable, kids. Tonight, I'm going to read you a bedtime story.
-
-
-This is the tale of Jenkins. The butler who never once said no.
-
-
-Now, this is not one of those stories where the hero loses. Jenkins won. Jenkins won everything. For the better part of a decade, if you wrote software for a living, Jenkins stood between your keyboard and your customers, and it built your code, and it tested it, and it shipped it, every single night, without ever once being thanked.
-
-
-And here's the thing. 
-
-Almost nobody chooses Jenkins any more. Ask around your office and you will find people who would rip it out tomorrow morning. They can't. Twenty-odd years after a young engineer at Sun Microsystems wrote the first version of it, it is still there, still running the thing that actually ships your product, and everybody has quietly agreed not to fucking touch it.
-
-So tuck in. Because tonight's nightmare isn't that our hero dies at the end. It's that he doesn't. He is still running tonight. And you cannot switch him off.
-
-**[Full article >>](/bedtime/is-jenkins-dead-no-and-thats-much-worse)**
-
----
-
-
-
-
-
-
-
-<a href="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know"><img src="/ai/llm-inference-explained-12-concepts-you-actually-need-to-know/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [LLM Inference Explained: 12 Concepts You Actually Need to Know](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)
-
-
-Continuous batching. Paged attention. Prefix caching. Speculative decoding. Prefill-decode disaggregation.
-
-If you've been anywhere near a conversation about running your own models lately, you've heard every one of those. Probably in the same sentence. Probably from somebody saying them very quickly.
-
-And there's a decent chance you nodded.
-
-So this is everything you wanted to know about inference but were afraid to ask.
-
-We're going through the whole machine in one pass. What an engine actually is, what it's holding on that GPU, and every bit of jargon stacked on top of it. 12 ideas, give or take, a couple of minutes each.
-
-One thing to listen for as we go. These ideas don't all arrive at once. Some bite the moment you deploy anything at all. Some wait until fifty people are talking to it. Some you may genuinely never need.
-
-**[Full article >>](/ai/llm-inference-explained-12-concepts-you-actually-need-to-know)**
 
 ---
