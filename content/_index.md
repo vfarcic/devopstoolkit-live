@@ -5,6 +5,26 @@ title = ""
 
 # Latest Posts
 
+<a href="/observability/agent-observability-41-problems-my-ai-agents-never-told-me-about"><img src="/observability/agent-observability-41-problems-my-ai-agents-never-told-me-about/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
+
+## [Agent Observability: 41 Problems My AI Agents Never Told Me About](/observability/agent-observability-41-problems-my-ai-agents-never-told-me-about)
+
+
+When I work with one agent, I watch it. I read what it's doing, approve what it wants to run, and answer its questions the moment it asks them. If a build is slow, I see it. If a check keeps failing for the same silly reason, I see that too, and I fix whatever causes it. I don't need metrics for any of that. I am the metrics.
+
+That's not how I work anymore. I give an agent a task, let it rip, move to the next one, and do the same thing again, until dozens of them are running, many of them while I'm asleep. The slow builds, the failing checks, the questions waiting for an answer: I stopped seeing any of it.
+
+
+Here's one example. One of my projects has a CI alert that's supposed to tell me when the main branch breaks. It was added a couple of months ago, and the secrets it needs to send anything were never registered. For seven weeks, every time main went red, the alert fired and reached nobody. Once, main stayed red for nineteen hours. And the instructions my agents follow say that this alert is exactly how a broken main gets noticed. Working next to one agent, I'd have seen a red build within minutes. With a fleet, nobody noticed that the alarm itself was dead.
+
+That's what this video is about: improving agent workflows when nobody is watching. Not tuning the one agent you supervise, but finding what's wrong, what's slow and what's wasteful in a fleet of mostly unsupervised agents working around the clock. I'll use real data from a few days of agents building a real project, but the point is what you can take from it: a handful of practices that work for your own agents, whatever tools you use.
+
+
+**[Full article >>](/observability/agent-observability-41-problems-my-ai-agents-never-told-me-about)**
+
+---
+
+
 <a href="/devops/ai-agents-in-kubernetes-without-laptop-credentials-feat-kaop"><img src="/devops/ai-agents-in-kubernetes-without-laptop-credentials-feat-kaop/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Agents in Kubernetes Without Laptop Credentials (feat. KAOP)](/devops/ai-agents-in-kubernetes-without-laptop-credentials-feat-kaop)
@@ -21,6 +41,7 @@ So, do we need a platform at all? What changes when there is one? And is KAOP th
 ---
 
 
+
 <a href="/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem"><img src="/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Manage AI Agents at Scale (Prompting Is No Longer the Problem)](/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem)
@@ -34,6 +55,7 @@ That is what this video is about: how the way we instruct agents changes as we g
 **[Full article >>](/development/how-i-manage-ai-agents-at-scale-prompting-is-no-longer-the-problem)**
 
 ---
+
 
 
 
@@ -60,6 +82,7 @@ So tonight I'll tell you where Kubernetes actually came from, why Google gave aw
 
 
 
+
 <a href="/development/how-i-manage-45-ai-agents-across-3-machines"><img src="/development/how-i-manage-45-ai-agents-across-3-machines/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [How I Manage 45 AI Agents Across 3 Machines](/development/how-i-manage-45-ai-agents-across-3-machines)
@@ -79,6 +102,7 @@ What I want to show you is how that team grows. From a single agent I have to ba
 **[Full article >>](/development/how-i-manage-45-ai-agents-across-3-machines)**
 
 ---
+
 
 
 
@@ -109,6 +133,7 @@ That's what I wanted to find out. Whether I can borrow somebody else's machines 
 
 
 
+
 <a href="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours"><img src="/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [AI Pentesting Found Real Kubernetes Exploits in 3 Hours for $2](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)
@@ -124,6 +149,7 @@ So this video is about what changes when that pentester is an AI. I'm going to p
 **[Full article >>](/ai/ai-pentesting-found-real-kubernetes-exploits-in-3-hours)**
 
 ---
+
 
 
 
@@ -157,6 +183,7 @@ Those two facts are the same story.
 
 
 
+
 <a href="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request"><img src="/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
 
 ## [Kubernetes GPU Autoscaling: Why Scale to Zero Costs You 10 Minutes Per Request](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)
@@ -170,6 +197,7 @@ So this is that trade, measured rather than argued. What scale to zero actually 
 **[Full article >>](/ai/kubernetes-gpu-autoscaling-why-scale-to-zero-costs-you-10-minutes-per-request)**
 
 ---
+
 
 
 
@@ -193,30 +221,5 @@ For a generation, Stack Overflow was the most important tool developers pretende
 So tonight, I will tell you how Stack Overflow came into being, why it worked so well, what went wrong, and what it is trying to become next.
 
 **[Full article >>](/bedtime/stack-overflow-is-dying-and-chatgpt-killed-it)**
-
----
-
-
-
-
-
-
-<a href="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem"><img src="/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem/thumbnail.jpg" style="width:50%; float:right; padding: 10px"></a>
-
-## [Why Your GPU Fails at 3 Users (LLM Inference Isn't a Compute Problem)](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)
-
-I put a model on a GPU. It fit, with room to spare. It loaded, it answered instantly, and for about ten minutes I looked like a genius.
-
-
-Then the third person asked it something, and the answers just stopped coming.
-
-The third. Not the three hundredth. Nothing else changed. Same GPU, same model, same prompt. The only difference was how many people were talking to it at once. Does the model fit is the wrong question. It's the check everybody runs before they deploy, and it tells you nothing at all about how many people you can serve.
-
-
-And the size barely matters here. Whether you're running something small enough to sit on one cheap card, or something so large it needs a rack of them, the arithmetic is the same shape, and the thing that runs out runs out for the same reason.
-
-Now, I've said before that self-hosting your own models is a bad idea, and I still think that. But plenty of you are doing it anyway. Air-gapped environments. Data residency rules. Models you fine-tuned yourself. Those are real reasons. So if you're going to do it, let's do it properly.
-
-**[Full article >>](/ai/why-your-gpu-fails-at-3-users-llm-inference-isnt-a-compute-problem)**
 
 ---
