@@ -1,7 +1,7 @@
 
 +++
 title = "Agent Observability: 41 Problems My AI Agents Never Told Me About"
-date = 2026-11-23T16:00:00+00:00
+date = 2026-11-23T15:00:00+00:00
 draft = false
 +++
 
